@@ -146,6 +146,8 @@ def prepare():
                 node.getparent().replace(node, stub)
             changed_units[unit.get('id')] = unit
         for node in dom.xpath('//*[@href]'):
+            if node.text:
+                node.text = node.text.replace('（本機）', '（本站）').replace('(local)', '(this site)')
             target = local_target(path, node.get('href'))
             if target in blocked:
                 node.set('href', blocked[target]['source'])
@@ -197,6 +199,8 @@ def prepare():
     # Keep the custom search index, and update entries whose score directions changed.
     index = read(SOURCE / 'search-index.json')
     for item in index:
+        for field in ('text', 'en'):
+            item[field] = item[field].replace('（本機）', '（本站）').replace('(local)', '(this site)')
         key = urlsplit(item['url']).fragment
         if key in changed_units:
             unit = deepcopy(changed_units[key])
