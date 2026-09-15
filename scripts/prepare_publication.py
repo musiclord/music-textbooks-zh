@@ -92,7 +92,7 @@ def resource_catalog(policy):
 def external_link(url, label):
     a = etree.Element('a', href=url, target='_blank', rel='noopener noreferrer',
                       attrib={'class': 'external'})
-    a.text = label + ' ↗'
+    a.text = label
     return a
 
 
@@ -183,6 +183,9 @@ def prepare():
     docs['licenses.html'] = license_dom
     print(f'Writing {len(docs)} pages; copying referenced assets...', flush=True)
     for relative, dom in docs.items():
+        for link in dom.xpath('//a[contains(concat(" ",normalize-space(@class)," ")," external ")]'):
+            if link.text and link.text.rstrip().endswith('↗'):
+                link.text = link.text.rstrip()[:-1].rstrip()
         destination = OUTPUT / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(html.tostring(dom, encoding='utf-8', method='html', doctype='<!DOCTYPE html>'))
