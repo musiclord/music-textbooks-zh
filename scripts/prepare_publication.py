@@ -1,14 +1,9 @@
-"""Prepare the public reading site without changing the local reading edition.
-
-Only docs/ is deployed. Source snapshots, tools, drafts and review logs stay local.
-Run with the existing project Python (lxml is required).
-"""
+# SPDX-License-Identifier: MIT
+"""Prepare and validate the static website in docs/."""
 from __future__ import annotations
 
 import argparse
-from collections import Counter
 from copy import deepcopy
-from html import escape
 from functools import lru_cache
 import json
 import os
@@ -161,11 +156,8 @@ def prepare():
         if main:
             note = etree.SubElement(main[0], 'p', attrib={'class': 'publication-note'})
             rel = os.path.relpath(OUTPUT / 'licenses.html', (OUTPUT / relative).parent).replace('\\', '/')
-            etree.SubElement(note, 'a', href=rel).text = '來源、授權與版本說明'
-            if affected:
-                note.text = '本頁部分譜例以原來源連結提供。'
-            if relative == 'index.html':
-                note.text = '繁中翻譯持續校訂中；部分譜例請至原來源查看。'
+            note.text = '非營利教育分享 · '
+            etree.SubElement(note, 'a', href=rel).text = '版權與授權'
         heads = dom.xpath('//head')
         if heads:
             etree.SubElement(heads[0], 'link', rel='canonical', href=PUBLIC_URL + relative)
@@ -186,7 +178,7 @@ def prepare():
     for child in list(main):
         main.remove(child)
     main.append(html.fromstring((ROOT / 'publication-license.html').read_text(encoding='utf-8')))
-    license_dom.xpath('//title')[0].text = '來源、授權與版本說明 – 音樂教材'
+    license_dom.xpath('//title')[0].text = '版權與授權 – 音樂教材'
     license_dom.xpath('//link[@rel="canonical"]')[0].set('href', PUBLIC_URL + 'licenses.html')
     docs['licenses.html'] = license_dom
     print(f'Writing {len(docs)} pages; copying referenced assets...', flush=True)
@@ -227,6 +219,9 @@ def prepare():
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(path, destination)
         expected_files.add(relative)
+    for filename, destination in [('LICENSE', 'LICENSE.txt'), ('THIRD_PARTY_NOTICES.txt', 'THIRD_PARTY_NOTICES.txt')]:
+        shutil.copyfile(ROOT / filename, OUTPUT / destination)
+        expected_files.add(destination)
     with (OUTPUT / 'reader.css').open('a', encoding='utf-8') as stream:
         stream.write('\n.publication-note{font-size:.85rem;color:var(--muted);margin:2rem 0;padding:1rem 0;border-top:1px solid var(--border)}.publication-external-media{display:block;padding:1rem 0}.publication-license{max-width:52rem;margin:auto;padding:2rem 1.5rem;line-height:1.8}\n')
     (OUTPUT / '.nojekyll').write_text('', encoding='utf-8')
@@ -260,6 +255,9 @@ def verify():
     manifest = read(OUTPUT / 'publication-manifest.json')
     errors, links, images = [], 0, 0
     for path, dom in documents.items():
+        visible_text = ' '.join(dom.xpath('//body//text()[not(ancestor::script or ancestor::style)]'))
+        if re.search(r'本繁中譯本由\s+\w+|本專案執行期間|原文快照完整保存在|active agent session|逐音版本比對|尚未與線上互動譜逐音比對', visible_text):
+            errors.append('Internal editorial wording: ' + path.name)
         for node in dom.xpath('//*[@href or @src]'):
             for attr in ('href', 'src'):
                 value = node.get(attr)
@@ -288,6 +286,12 @@ def verify():
     for path in manifest['external_only_assets']:
         if (OUTPUT / path).exists():
             errors.append('External-only asset was copied: ' + path)
+    for filename in ('LICENSE.txt', 'THIRD_PARTY_NOTICES.txt'):
+        if not (OUTPUT / filename).is_file():
+            errors.append('Missing license notice: ' + filename)
+    for name in ('index.html', 'licenses.html'):
+        if '非營利教育分享' not in documents[(OUTPUT / name).resolve()].xpath('string(//body)'):
+            errors.append('Missing project purpose: ' + name)
     for item in read(OUTPUT / 'search-index.json'):
         u = urlsplit(item['url'])
         target = Path(os.path.abspath(OUTPUT / unquote(u.path).lstrip('/')))

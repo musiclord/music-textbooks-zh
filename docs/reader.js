@@ -1,3 +1,6 @@
+/* SPDX-License-Identifier: MIT
+ * Copyright (c) 2026 musiclord and contributors
+ */
 (() => {
   'use strict';
   function prepareFormula(source){

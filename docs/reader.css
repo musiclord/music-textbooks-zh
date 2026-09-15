@@ -1,3 +1,6 @@
+/* SPDX-License-Identifier: MIT
+ * Copyright (c) 2026 musiclord and contributors
+ */
 #title-block-header{display:none}
 .reading td.standalone-music-symbol,.reading th.standalone-music-symbol{font-family:'Segoe UI Symbol','Noto Music',serif;font-size:2em;line-height:1.2;text-align:center;min-width:2.5em}
 .image-labels{font-size:.8em;color:var(--muted);line-height:1.65}

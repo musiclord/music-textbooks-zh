@@ -1,10 +1,11 @@
-# Publish an explicit allowlist. Local sources, manuscript drafts, tools and logs
-# remain in this workspace and are never implicitly added to GitHub.
+# Public repository contents.
 /*
 !/.gitignore
 !/.gitattributes
 !/README.md
-!/LICENSE.md
+!/LICENSE
+!/COPYRIGHT.md
+!/THIRD_PARTY_NOTICES.txt
 !/publication-policy.json
 !/publication-license.html
 !/.github/
