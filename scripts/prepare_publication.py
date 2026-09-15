@@ -259,6 +259,9 @@ def verify():
     errors, links, images = [], 0, 0
     for path, dom in documents.items():
         visible_text = ' '.join(dom.xpath('//body//text()[not(ancestor::script or ancestor::style)]'))
+        accessible_text = visible_text + ' '.join(dom.xpath('//@aria-label|//@title|//@data-image-caption|//@data-resource-status'))
+        if re.search(r'需[連聯][網線]|requires internet', accessible_text, re.I):
+            errors.append('Obsolete connection label: ' + path.name)
         if re.search(r'本繁中譯本由\s+\w+|本專案執行期間|原文快照完整保存在|active agent session|逐音版本比對|尚未與線上互動譜逐音比對', visible_text):
             errors.append('Internal editorial wording: ' + path.name)
         for node in dom.xpath('//*[@href or @src]'):
@@ -296,6 +299,8 @@ def verify():
         if '非營利教育分享' not in documents[(OUTPUT / name).resolve()].xpath('string(//body)'):
             errors.append('Missing project purpose: ' + name)
     for item in read(OUTPUT / 'search-index.json'):
+        if re.search(r'需[連聯][網線]|requires internet', item['text'] + item['en'], re.I):
+            errors.append('Obsolete connection label in search: ' + item['url'])
         u = urlsplit(item['url'])
         target = Path(os.path.abspath(OUTPUT / unquote(u.path).lstrip('/')))
         if target not in anchors or unquote(u.fragment) not in anchors[target]:

@@ -23,6 +23,9 @@
   const root=document.documentElement;
   const siteBase=new URL('.',document.currentScript.src);
   const siteURL=path=>new URL(path.replace(/^\//,''),siteBase);
+  // This header remains mounted while chapter URLs change.
+  const homeLink=document.querySelector('.library-name');
+  if(homeLink)homeLink.href=siteURL('index.html').href;
   const content=document.getElementById('reader-content');
   if(!content)return;
   // Initialization runs on a page or newly appended chapter, never on the whole book.
