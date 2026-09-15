@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>自然音調式與半音階入門 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group" open=""><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a aria-current="page" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-intro-to-diatonic-modes-and-the-chromatic-scale" data-book="omt" data-page-url="/omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html" data-next-url="/omt/omt-intervals.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">自然音調式與半音階入門</h1><p class="authors">Chelsey Hamm</p><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>自然音調式是類似音階的音集合，各有特定的半音與全音排列。</li><li>調式可依<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-modal-brightness">調式明亮度</a>排列在一條連續光譜上：較明亮的調式聽起來較像大音階，較陰暗的調式則較像小音階。</li><li>三種明亮調式包含 <em>mi</em>（[latex]\hat{3}[/latex]），即主音上方的大三度音；它們是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-lydian">利底安（lydian）</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ionian">伊奧尼安（ionian）</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-mixolydian">混合利底安（mixolydian）</a>。</li><li>四種陰暗調式包含 <em>me</em>（[latex]\downarrow\hat{3}[/latex]），即主音上方的小三度音；它們是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dorian">多利安（dorian）</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-aeolian">愛奧利安（aeolian）</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrygian">弗里吉安（phrygian）</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-locrian">洛克里安（locrian）</a>。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-chromatic-scale">半音階</a>由十二個相鄰的半音構成。上行時通常使用升記號，下行時通常使用降記號，但並非總是如此。</li></ul><p><em>本書從不同角度介紹調式。更多內容請參閱〈<a href="../omt/omt-chord-scale-theory.html">和弦音階理論（爵士樂）</a>〉、〈<a href="../omt/omt-modal-schemas.html">調式圖式（流行音樂）</a>〉、〈<a href="../omt/omt-diatonic-modes.html">自然音調式（二十／二十一世紀）</a>〉與〈<a href="https://viva.pressbooks.pub/openmusictheory/chapter/analyzing-with%E2%80%93collections-scales-and-modes/" target="_blank" rel="noopener noreferrer" class="external" aria-label="運用調式、音階與音集合進行分析（二十／二十一世紀）（外部網站，另開分頁）">運用調式、音階與音集合進行分析（二十／二十一世紀）</a>〉。〈<a href="../omt/omt-collections.html">音集合</a>〉也更深入介紹五聲音集合。</em></p></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>The diatonic modes are scale-like collections of notes with patterns of half and whole steps.</li>
+<li>Modes can be described within a continuum of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-modal-brightness">modal brightness</a>: brighter modes sound more like a major scale, while darker modes sound more like a minor scale.</li>
+<li>The three bright modes, which contain <em>m</em><em>i </em>([latex]\hat{3}[/latex]) (a major third above the tonic) are <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-lydian">lydian</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ionian">ionian</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-mixolydian">mixolydian</a>.</li>
+<li>The four dark modes, which contain <em>m</em><em>e </em>([latex]\downarrow\hat{3}[/latex]) (a minor third above the tonic) are <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dorian">dorian</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-aeolian">aeolian</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrygian">phrygian</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-locrian">locrian</a>.</li>
+<li>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-chromatic-scale">chromatic scale</a> consists of twelve adjacent half steps. Chromatic scales are often (but not always) written with sharps while ascending and with flats while descending.</li>
+</ul>
+<p><em>This book covers modes from many different angles. For more information on modes, check <a href="../omt/omt-chord-scale-theory.html">Chord-Scale Theory (jazz)</a>, <a href="../omt/omt-modal-schemas.html">Modal Schemas (pop)</a>, <a href="../omt/omt-diatonic-modes.html">Diatonic Modes (20th/21st-c.)</a>, and <a href="https://viva.pressbooks.pub/openmusictheory/chapter/analyzing-with%E2%80%93collections-scales-and-modes/" target="_blank" rel="noopener noreferrer" class="external" aria-label="Analyzing with Modes, Scales, and Collections (20th–/21st-c.)（外部網站，另開分頁）">Analyzing with Modes, Scales, and Collections (20th–/21st-c.)</a>. This book also covers the pentatonic collection in more depth in <a href="../omt/omt-collections.html">Collections</a>. </em></p>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0002"><h2 id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-1" class="section-header"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-modes-and-the-parallel-relationship"></a>調式與同主音關係</h2></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0003"><p>自然音調式是類似音階的音集合，各有不同的半音、全音排列。前面已經學過，共用主音的音階具有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-relationship">同主音關係</a>。本章會以同主音關係說明調式，也會依<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-modal-brightness">調式明亮度</a>將它們放在一條連續光譜上：較明亮的調式聽起來較像大音階，較陰暗的調式則較像小音階。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0004"><p><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0005">譜例 1</a>依相對明暗程度排列七種自然音調式，也整理各調式相較於伊奧尼安（大調）調式，哪些音階級數有所變化；下文會進一步說明。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0005"><figure id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-attachment_12240" aria-describedby="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-caption-attachment-12240" class="wp-caption aligncenter"><img class="wp-image-12240 size-large zoomable" src="../assets/omt/caea4adf48980f9f.png" alt="由最陰暗到最明亮排列：洛克里安、弗里吉安、愛奧利安、多利安、混合利底安、伊奧尼安、利底安；各名稱下列出相對大音階改變的級數。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Examples-for-OMT-05-2048x304.png" loading="lazy" tabindex="0" role="button" width="2048" height="304"><figcaption id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-caption-attachment-12240" class="wp-caption-text"><span class="example-caption-name">譜例 1。</span>調式的相對明暗程度。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Darker：較陰暗；</li><li>Brighter：較明亮。</li></ul><p>由左至右：洛克里安（降低第2、3、5、6、7級）、弗里吉安（降低第2、3、6、7級）、愛奧利安（降低第3、6、7級）、多利安（降低第3、7級）、混合利底安（降低第7級）、伊奧尼安（無變化）、利底安（升高第4級）。</p><p>各升降均相較於同主音大音階。</p></section></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0006"><p>最明亮的是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-lydian">利底安</a>調式，其半音與全音的上行排列為 W–W–W–H–W–W–H。也可以把它想成升高 [latex]\hat{4}[/latex] 的大音階；這個音的唱名是 <em>fi</em> [latex](\uparrow\hat{4})[/latex]。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0007">譜例 2</a>顯示 C 利底安調式，並標上唱名。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0007"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439799/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0008"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0007">譜例 2。</a>C 利底安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0009"><p>接著是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ionian">伊奧尼安</a>調式，其半音與全音的上行排列與大音階相同：W–W–H–W–W–W–H。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0010">譜例 3</a>顯示 C 伊奧尼安調式，並標上唱名。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0010"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439871/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0011"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0010">譜例 3。</a>C 伊奧尼安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0012"><p>接著是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-mixolydian">混合利底安</a>調式，其半音與全音的上行排列為 W–W–H–W–W–H–W。也可以把它想成降低 [latex]\hat{7}[/latex] 的大音階。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0013">譜例 4</a>顯示 C 混合利底安調式，並標上唱名。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0013"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439772/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0014"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0013">譜例 4。</a>C 混合利底安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0015"><p>利底安、伊奧尼安與混合利底安通常被視為較明亮、較具大調色彩的調式，因為它們使用 <em>mi</em> 而非 <em>me</em>，也就是未變化的 [latex]\hat{3}[/latex]，而非降低的 [latex]\hat{3}[/latex]。多利安、愛奧利安、弗里吉安與洛克里安則通常被視為較陰暗、較具小調色彩的調式，因為它們使用 <em>me</em> 而非 <em>mi</em>，也就是 [latex]\downarrow\hat{3}[/latex]，而非未變化的 [latex]\hat{3}[/latex]。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0016"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dorian">多利安</a>是接下來第一個較陰暗、較具小調色彩的調式，其半音與全音的上行排列為 W–H–W–W–W–H–W。也可以把它想成升高 [latex]\hat{6}[/latex]（<em>la</em>）的自然小音階。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0017">譜例 5</a>顯示 C 多利安調式，並標上唱名：</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0017"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439892/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0018"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0017">譜例 5。</a>C 多利安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0019"><p>再往陰暗方向，是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-aeolian">愛奧利安</a>調式。<span>其半音與全音的上行排列與自然小音階相同：W–H–W–W–H–W–W。</span><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0020">譜例 6</a><span>顯示 C 愛奧利安調式，並標上唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0020"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439928/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0021"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0020">譜例 6。</a>C 愛奧利安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0022"><p>再往陰暗方向，是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrygian">弗里吉安</a>調式。其半音與全音的上行排列為 H–W–W–W–H–W–W，相當於降低 [latex]\hat{2}[/latex] 的自然小音階；降低後的唱名是 <em>ra</em>。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0023">譜例 7</a>顯示 C 弗里吉安調式，並標上唱名：</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0023"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439733/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0024"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0023">譜例 7。</a>C 弗里吉安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0025"><p>最陰暗的是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-locrian">洛克里安</a>調式。其半音與全音的上行排列為 H–W–W–H–W–W–W，相當於降低 [latex]\hat{2}[/latex]（<em>ra</em>）與 [latex]\hat{5}[/latex] 的自然小音階；降低後的第五級唱名是 <em>se</em>。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0026">譜例 8</a>顯示 C 洛克里安調式，並標上唱名：</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0026"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439829/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0027"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0026">譜例 8。</a>C 洛克里安調式，附唱名。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0028"><p>每種調式都可以從任何音開始。例如，可以從 D♭ 建立混合利底安音集合，從 G♭ 建立愛奧利安音集合，或從 F♯ 建立利底安音集合。記寫調式音集合時，請仔細考慮所需的變音記號。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0029"><p><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">譜例 9</a>由最明亮到最陰暗（利底安至洛克里安），列出各種調式，並標示音階級數與唱名：</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26438716/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0031"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">譜例 9。</a>由最明亮到最陰暗的各種調式，均以 C 為起音，附音階級數。</span></p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0032"><p>仔細聆聽<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">譜例 9</a>，觀察各調式之間的差異。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-1" class="section-header"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-modes-and-the-parallel-relationship"></a>Modes and the Parallel Relationship</h2><p>The diatonic modes are scale-like collections of notes with different patterns of half and whole steps. As we have learned previously, scales that share a tonic have a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-relationship">parallel relationship</a>. In this chapter, modes are going to be described using the parallel relationship. Modes will also be described within a continuum of modal brightness; <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-modal-brightness">modal brightness</a>: brighter modes sound more like a major scale, while darker modes sound more like a minor scale.</p><p><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0005">Example 1</a> ranks the seven diatonic modes in terms of relative brightness and darkness. It also summarizes which scale degrees are altered in relation to the ionian (major) mode, which will be explained in more detail below.</p><figure id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-attachment_12240" aria-describedby="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-caption-attachment-12240" class="wp-caption aligncenter"><img class="wp-image-12240 size-large zoomable" src="../assets/omt/caea4adf48980f9f.png" alt='A double-headed arrow points from "Darkest" to "Brightest"; modes are listed below: locrian, phrygian, aeolian, dorian, mixolydian, ionian, lydian. Altered scale-degrees are listed below each.' data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Examples-for-OMT-05-2048x304.png" loading="lazy" tabindex="0" role="button" width="2048" height="304"><figcaption id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-caption-attachment-12240" class="wp-caption-text"><span class="example-caption-name">Example 1.</span> Relative darkness and brightness of modes.</figcaption></figure><p>The brightest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-lydian">lydian</a> mode. The ascending pattern of half and whole steps in this mode is W‑W‑W‑H‑W‑W‑H. Another way to think of this mode is as a major scale but with raised [latex]\hat{4}[/latex], whose solfège is <em>fi </em>[latex](\uparrow\hat{4})[/latex]. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0007">Example 2</a> shows C lydian with solfège.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439799/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0007">Example 2.</a> C lydian with solfège.</span></p><p>The next brightest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ionian">ionian</a> mode. This mode consists of an ascending pattern of half and whole steps that is the same as a major scale: W–W–H–W–W–W–H. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0010">Example 3</a> shows C ionian with solfège.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439871/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0010">Example 3.</a> C ionian with solfège.</span></p><p>The next brightest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-mixolydian">mixolydian</a> mode, with W–W–H–W–W–H–W as the ascending pattern of half and whole steps. Another way to think of this mode is as a major scale but with lowered [latex]\hat{7}[/latex]. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0013">Example 4</a> shows C mixolydian with solfège.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439772/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0013">Example 4.</a> C mixolydian with solfège.</span></p><p>The lydian, ionian, and mixolydian modes are usually considered the brighter (or more major) modes because they contain <em>m</em><em>i</em> instead of <em>m</em><em>e</em> (unaltered [latex]\hat{3}[/latex] instead of lowered [latex]\hat{3}[/latex]). The dorian, aeolian, phrygian, and locrian modes are usually considered darker (or more minor) modes because they contain <em>me</em> instead of <em>mi</em> ([latex]\downarrow\hat{3}[/latex] instead of unaltered [latex]\hat{3}[/latex]).</p><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dorian">dorian</a> mode is the first darker (or more minor) mode. This mode’s ascending pattern of half and whole steps is W–H–W–W–W–H–W. Another way to think of this mode is as a minor scale but with raised [latex]\hat{6}[/latex] (<em>la</em>). <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0017">Example 5</a> shows C dorian with solfège:</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439892/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0017">Example 5.</a> C dorian with solfège.</span></p><p>The next darkest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-aeolian">aeolian</a> mode. <span>The aeolian mode’s ascending pattern of half and whole steps is the same as a natural minor scale: W–H–W–W–H–W–W. </span><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0020">Example 6</a><span> shows C aeolian with solfège.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439928/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0020">Example 6.</a> C aeolian with solfège.</span></p><p>The next darkest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrygian">phrygian</a> mode. The ascending pattern of half and whole steps in the phrygian mode is H–W–W–W–H–W–W. This is the same pattern as a natural minor scale, but with lowered [latex]\hat{2}[/latex], whose solfège is <em>ra</em>. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0023">Example 7</a> shows C phrygian with solfège:</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439733/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0023">Example 7.</a> C phrygian with solfège. </span></p><p>The darkest mode is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-locrian">locrian</a> mode. The locrian mode’s ascending pattern of half and whole steps is H–W–W–H–W–W–W. This is the same pattern as a natural minor scale, but with lowered [latex]\hat{2}[/latex] (<em>ra</em>) and lowered [latex]\hat{5}[/latex], whose solfège is <em>se</em>. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0026">Example 8</a> shows C locrian with solfège:</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26439829/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0026">Example 8.</a> C locrian with solfège.</span></p><p>Each mode can start on any note. For example, one could build a mixolydian collection starting on D♭, an aeolian collection starting on G♭, or a lydian collection starting on F♯. When writing modal collections, be sure to think about your accidentals carefully.</p><p><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">Example 9</a> shows all of the different modes with scale degrees and solfège, ordered from brightest to darkest (lydian to locrian):</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26438716/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">Example 9. </a>The modes from brightest to darkest, starting on C, with scale degrees. </span></p><p>Listen to <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0030">Example 9</a> carefully, observing the difference between the modes.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0033"><h2 id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-2" class="section-header"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chromatic-scales"></a>五聲音集合</h2></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0034"><p>除了調式，還有其他<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-diatonic">自然音</a><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-collection">音集合</a>，其中之一是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pentatonic-collection">五聲音集合</a>。這個含五個音的集合，音程依 ma2–ma2–mi3–ma2–mi3 排列，也就是大二度、大二度、小三度、大二度、小三度。它恰好可以對應鋼琴的黑鍵（<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">譜例 10a</a>），不過也能從任何音開始，例如<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">譜例 10b</a>就是 D 五聲音集合。也可以用唱名理解大調五聲音集合：<em>do</em>、<em>re</em>、<em>mi</em>、<em>sol</em>、<em>la</em>、<em>do</em>。以音階級數來說，通常沿用大音階級數，但省略 [latex]\hat4[/latex] 與 [latex]\hat7[/latex]，成為 [latex]\hat1-\hat2-\hat3-\hat5-\hat6[/latex]。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26419297/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0036"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">譜例 10。</a>先是大調五聲音集合，再接小調五聲音集合，附唱名。</span></p></div><aside class="translator-note">譯註：原文前段以鋼琴黑鍵與D五聲音集合描述譜例10a、10b，但本圖說改稱大調與小調五聲音集合；兩處說明不一致，這裡保留底本文字供對照，內嵌譜面尚待補齊。</aside><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0037"><p>記住這些音集合的唱名模式，並對照同起音的大音階，就能寫出音名。例如，要寫出 B♭ 大調五聲音集合，先想 B♭ 大音階，再取出 <em>do</em>、<em>re</em>、<em>mi</em>、<em>sol</em>、<em>la</em>、<em>do</em> [latex](\hat1-\hat2-\hat3-\hat5-\hat6-\hat1)[/latex]，便得到 B♭–C–D–F–G–B♭。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-2" class="section-header"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chromatic-scales"></a>The Pentatonic Collection</h2><p>There are other <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-diatonic">diatonic</a> <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-collection">collections</a> of notes besides the modes. One is the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pentatonic-collection">pentatonic collection</a>. This five-note collection uses the interval sequence ma2–ma2–mi3–ma2–mi3. It maps exactly onto the black keys of the piano (<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">Example 10a</a>), but it can begin on any note (<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">Example 10b</a> contains a D pentatonic collection, for example). Another way to think of the major pentatonic collection is in solfège: <em>do</em>, <em>re</em>, <em>mi, </em><em>sol</em>, <em>la</em>, and <em>do. </em>When speaking in scale degrees, pentatonic scale degrees are often related to the major scale, but with [latex]\hat4[/latex] and [latex]\hat7[/latex] omitted: [latex]\hat1-\hat2-\hat3-\hat5-\hat6[/latex].</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26419297/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0035">Example 10. </a>A major pentatonic collection followed by a minor pentatonic collection, with solfège. </span></p><p>You can spell these collections by memorizing their solfège patterns and relating them to the major scale that starts on the same note. For example, if you wanted to spell a B♭ major pentatonic collection, you would first think of a B♭ major scale. Then you would write <em>do</em>, <em>re</em>, <em>mi</em>, <em>sol</em>, <em>la</em>, and <em>do </em>[latex](\hat1-\hat2-\hat3-\hat5-\hat6-\hat1)[/latex]: B♭–C–D–F–G–B♭.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0038"><h2 id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-3" class="section-header"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chromatic-scales--2"></a>半音階</h2></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0039"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-chromatic-scale">半音階</a>由十二個相鄰的半音構成。<a class="footnote" id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-return-footnote-4925-1" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-footnote-4925-1"><sup class="footnote">[1]</sup></a><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">譜例 11</a>顯示三個半音階：第一個從 C 開始，第二與第三個則帶有調號，分別從 A 與 E♭ 開始：</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26441134/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0041"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">譜例 11。</a>兩個分別從 A 與 E♭ 開始的半音階。</span></p></div><aside class="translator-note">譯註：原文正文稱譜例11有三個半音階（C、A、E♭），本圖說卻只列A與E♭兩個。這裡保留底本文字供對照，內嵌譜面尚待補齊。</aside><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0042"><p>如<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">譜例 11</a>所示，半音階上行時通常使用升記號，下行時通常使用降記號或還原記號，但並非總是如此。若半音階從帶降記號的音開始，例如<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">譜例 11</a>第三行，上行通常使用還原記號與升記號，下行使用降記號。記寫半音階時，別忘了<a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤</a>上有兩對白鍵相距半音：B/C 與 E/F。<a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">譜例 11</a>也介紹四個新的唱名：<em>di</em>（升高的 <em>do</em>）、<em>ri</em>（升高的 <em>re</em>）、<em>si</em>（升高的 <em>sol</em>）與 <em>li</em>（升高的 <em>la</em>）。一般而言，升高音的唱名以母音 <em>-i</em> 結尾，降低音的唱名以 <em>-e</em> 結尾，但 <em>ra</em> 是例外。</p></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0043"><div class="textbox shaded"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-online-resources"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0044"><ul><li>Day-O’Connell, Jeremy。2001。〈Pentatonic〉（五聲音階）。<em>Grove Music Online</em>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.21263" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.21263（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.21263</a>。</li><li>Dyson, George，William Drabkin 修訂。〈Chromatic〉（半音的）。<em>Grove Music Online</em>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.05718" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.05718（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.05718</a>。</li><li>McGrain, Mark。1986。<em>Music Notation</em>（音樂記譜法）。波士頓：Berklee Press。</li><li>Palmer, Willard A. 等。1994。<em>The Complete Book of Scales, Chords, Arpeggios &amp; Cadences</em>（音階、和弦、琶音與終止式全書）。加州 Van Nuys：Alfred Publishing。</li><li>Powers, Harold S. 等。2001。〈Mode〉（調式）。<em>Grove Music Online</em>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.43718" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.43718（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.43718</a>。</li><li>Rechberger, Herman。<em>Scales and Modes around the World</em>（世界各地的音階與調式）。2008。芬蘭：Fennica-Gehrman。</li><li>Roemer, Clinton。1985。<em>The Art of Music Copying: The Preparation of Music for Performance</em>（抄譜的藝術：為演出準備樂譜），第 2 版。Sherman Oaks：Roerick Music Company。</li></ul></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0045"><div class="textbox shaded"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-online-resources--2"></a>線上資源</div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0046"><ul><li><a href="https://www.classicfm.com/discover-music/latest/guide-to-musical-modes/" target="_blank" rel="noopener noreferrer" class="external" aria-label="調式概觀與歷史（Classic FM）（外部網站，另開分頁）">調式概觀與歷史（Classic FM）</a></li><li><a href="https://learningmusic.ableton.com/advanced-topics/modes.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="從共用音集合的角度理解調式（Learning Music）（外部網站，另開分頁）">從共用音集合的角度理解調式（Learning Music）</a></li><li><a href="http://musictheoryfundamentals.com/MusicTheory/modes.php" target="_blank" rel="noopener noreferrer" class="external" aria-label="調式教學與測驗（musictheoryfundamentals.com）（外部網站，另開分頁）">調式教學與測驗（musictheoryfundamentals.com）</a></li><li><a href="https://music-theory-practice.com/modes/scale-modes-quiz.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="調式辨識測驗（music-theory-practice.com）（外部網站，另開分頁）">調式辨識測驗（music-theory-practice.com）</a></li><li><a href="https://www.youtube.com/watch?v=Wroc0m7Hj-8" target="_blank" rel="noopener noreferrer" class="external" aria-label="五聲音階教學（YouTube）（外部網站，另開分頁）">五聲音階教學（YouTube）</a></li><li><a href="https://hellomusictheory.com/learn/chromatic-scale/" target="_blank" rel="noopener noreferrer" class="external" aria-label="半音階（Hello Music Theory）（外部網站，另開分頁）">半音階（Hello Music Theory）</a></li></ul></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0047"><div class="textbox shaded"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-assignments-from-the-internet"></a>網路作業資源</div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0048"><ol type="A"><li>記寫調式，第 3 頁（<a href="https://s3.amazonaws.com/graceimmanuel.gracemusic/theory/worksheets/3.9.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>），以及從共用音集合的角度記寫調式（<a href="http://funmusiccoimages.com/pdf/54_bk4_modal-scales-worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>多利安調式，第 1 頁；利底安調式，第 3 頁（<a href="http://dsmusic.com.au/wp-content/uploads/2012/01/vce_worksheets_11_to_16.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>調式辨識（<a href="http://www.scottlaird.net/files/TheoryWorksheets/Adv__2_student.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://www.scribd.com/document/351464211/Worksheet" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>），以及第 2、4 頁（<a href="https://s3.amazonaws.com/graceimmanuel.gracemusic/theory/worksheets/3.9.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫大調五聲音集合（<a href="https://www.musictechteacher.com/music_worksheets/worksheet_0019_pentatonic_practice.htm" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫半音階與調式，第 1 頁；五聲音集合，第 3 頁（<a href="http://dsmusic.com.au/wp-content/uploads/2012/01/vce_worksheets_17_to_22.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫半音階（<a href="https://earlhaig.ca/departments/music/downloads/Mr.%20Kettle/2)%20JAZZ/3)%20THEORY/05)%20Accidentals/10)%20chromatic%20scale%2037.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>），以及第 1 頁（<a href="https://thedockforlearning.org/document/worksheet-2-5-chromatic-scale/" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li></ol></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0049"><div class="textbox shaded"><a id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-assignments"></a>作業</div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0050"><ol><li>自然音調式 A：要求學生在有調號與無調號的情況下記寫自然音調式。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>自然音調式 B：要求學生在有調號與無調號的情況下記寫自然音調式。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>半音階 A：要求學生在有調性脈絡與無調性脈絡的情況下記寫半音階。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>半音階 B：要求學生在有調性脈絡與無調性脈絡的情況下記寫半音階。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li></ol></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0051"><div class="media-attributions clear"><h2>媒體出處與授權</h2><ul><li>〈調式的明暗程度〉© Nathaniel Mitchell，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li></ul></div></div><div class="translation-unit" id="omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0052"><div class="footnotes"><ol><li id="zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-footnote-4925-1">半音階不像大音階或小音階那樣具有功能性，因此樂理學者有時會將它視為音集合。<a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#zh-omt-intro-to-diatonic-modes-and-the-chromatic-scale-return-footnote-4925-1" class="return-footnote">↵</a></li></ol></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chapter-4925-section-3" class="section-header"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-chromatic-scales--2"></a>Chromatic Scales</h2><p>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-chromatic-scale">chromatic scale</a> consists of twelve adjacent half steps.<a class="footnote" title="Because it lacks functionality like a major or minor scale, music theorists sometimes think of the chromatic scale as a collection instead." id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-return-footnote-4925-1" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-footnote-4925-1"><sup class="footnote">[1]</sup></a> <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">Example 11</a> shows three chromatic scales, the first starting on C, while the second and third have key signatures (A and E♭):</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26441134/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">Example 11.</a> Two chromatic scales starting on A and E♭.</span></p><p>As you can see in <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">Example 11</a>, chromatic scales are often (but not always) written with sharps while ascending and with flats (and/or naturals) while descending. A chromatic scale that begins with a flat note (such as the third line in <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">Example 11</a>) is usually written with naturals/sharps while ascending and with flats while descending. When you write chromatic scales, don’t forget that two pairs of white keys on <a href="../omt/omt-the-keyboard-and-grand-staff.html">the keyboard</a> are half steps: B/C and E/F. <a class="example-caption-name" href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#omt-intro-to-diatonic-modes-and-the-chromatic-scale-u0040">Example 11 </a>also introduces four new solfège syllables: <em>di</em> (raised <em>do</em>), <em>ri</em> (raised <em>re</em>), <em>si</em> (raised <em>sol</em>), and <em>li </em>(raised <em>la</em>). In general, raised solfège syllables use an <em>-i </em>vowel ending, and lowered syllables use <em>-e </em>(<em>ra </em>is an exception).</p><div class="textbox shaded"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-online-resources"></a>Further Readings</div><ul>
+<li>Day-O'Connell, Jeremy. 2001. "Pentatonic." <em>Grove Music Online</em>. <a href="https://doi.org/10.1093/gmo/9781561592630.article.21263" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.21263（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.21263</a>.</li>
+<li>Dyson, George, revised by William Drabkin. "Chromatic." <em>Grove Music Online</em>. <a href="https://doi.org/10.1093/gmo/9781561592630.article.05718" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.05718（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.05718</a>.</li>
+<li>McGrain, Mark. 1986. <em>Music Notation</em>. Boston: Berklee Press.</li>
+<li>Palmer, Willard A. et al. 1994. <em>The Complete Book of Scales, Chords, Arpeggios &amp; Cadences</em>. Van Nuys, CA: Alfred Publishing.</li>
+<li>Powers, Harold S. et al. 2001. "Mode." <em>Grove Music Online. </em><a href="https://doi.org/10.1093/gmo/9781561592630.article.43718" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.43718（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.43718</a>.</li>
+<li>Rechberger, Herman. <em>Scales and Modes around the World</em>. 2008. Finland: Fennica-Gehrman.</li>
+<li>Roemer, Clinton. 1985. <em>The Art of Music Copying: The Preparation of Music for Performance</em>, 2nd edition. Sherman Oaks: Roerick Music Company.</li>
+</ul><div class="textbox shaded"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-online-resources--2"></a>Online Resources</div><ul>
+<li><a href="https://www.classicfm.com/discover-music/latest/guide-to-musical-modes/" target="_blank" rel="noopener noreferrer" class="external" aria-label="Overview of the Modes and History (Classic FM)（外部網站，另開分頁）">Overview of the Modes and History (Classic FM)</a></li>
+<li><a href="https://learningmusic.ableton.com/advanced-topics/modes.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Modes from a Relative Conception (Learning Music)（外部網站，另開分頁）">Modes from a Relative Conception (Learning Music)</a></li>
+<li><a href="http://musictheoryfundamentals.com/MusicTheory/modes.php" target="_blank" rel="noopener noreferrer" class="external" aria-label="Modes Tutorial and Quiz (musictheoryfundamentals.com)（外部網站，另開分頁）">Modes Tutorial and Quiz (musictheoryfundamentals.com)</a></li>
+<li><a href="https://music-theory-practice.com/modes/scale-modes-quiz.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Modes Identification Quiz (music-theory-practice.com)（外部網站，另開分頁）">Modes Identification Quiz (music-theory-practice.com)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Wroc0m7Hj-8" target="_blank" rel="noopener noreferrer" class="external" aria-label="Pentatonic Scale Tutorial (YouTube)（外部網站，另開分頁）">Pentatonic Scale Tutorial (YouTube)</a></li>
+<li><a href="https://hellomusictheory.com/learn/chromatic-scale/" target="_blank" rel="noopener noreferrer" class="external" aria-label="Chromatic Scales (Hello Music Theory)（外部網站，另開分頁）">Chromatic Scales (Hello Music Theory)</a></li>
+</ul><div class="textbox shaded"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-assignments-from-the-internet"></a>Assignments from the Internet</div><ol type="A">
+<li>Writing Modes, p. 3 (<a href="https://s3.amazonaws.com/graceimmanuel.gracemusic/theory/worksheets/3.9.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>), from a Relative Conception (<a href="http://funmusiccoimages.com/pdf/54_bk4_modal-scales-worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Dorian p. 1, and Lydian p. 3 (<a href="http://dsmusic.com.au/wp-content/uploads/2012/01/vce_worksheets_11_to_16.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Mode Identification (<a href="http://www.scottlaird.net/files/TheoryWorksheets/Adv__2_student.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://www.scribd.com/document/351464211/Worksheet" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>), pp. 2 and 4 (<a href="https://s3.amazonaws.com/graceimmanuel.gracemusic/theory/worksheets/3.9.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing Major Pentatonic Collections (<a href="https://www.musictechteacher.com/music_worksheets/worksheet_0019_pentatonic_practice.htm" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing Chromatic Scales and Modes p. 1, and pentatonic collections (p. 3) (<a href="http://dsmusic.com.au/wp-content/uploads/2012/01/vce_worksheets_17_to_22.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing Chromatic Scales (<a href="https://earlhaig.ca/departments/music/downloads/Mr.%20Kettle/2)%20JAZZ/3)%20THEORY/05)%20Accidentals/10)%20chromatic%20scale%2037.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>) and p. 1 (<a href="https://thedockforlearning.org/document/worksheet-2-5-chromatic-scale/" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+</ol><div class="textbox shaded"><a id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-assignments"></a>Assignments</div><ol>
+<li>Diatonic Modes A. Asks students to write diatonic modes within and outside of a key signature.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble/bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Diatonic Modes B. Asks students to write diatonic modes within and outside of a key signature.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble/bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-diatonic-modes-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Chromatic Scales A. Asks students to write chromatic scales within and outside of a key context.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble/bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Chromatic Scales B. Asks students to write chromatic scales within and outside of a key context.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble/bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-chromatic-scales-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Brightness and Darkness of Modes  ©  Nathaniel Mitchell    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li></ul></div><div class="footnotes"><ol><li id="en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-footnote-4925-1">Because it lacks functionality like a major or minor scale, music theorists sometimes think of the chromatic scale as a collection instead. <a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html#en-omt-intro-to-diatonic-modes-and-the-chromatic-scale-return-footnote-4925-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-minor-scales.html">上一節：小音階、音階級數與調號</a><a href="../omt/omt-intervals.html">下一節：音程</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/intro-to-diatonic-modes-and-the-chromatic-scale/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

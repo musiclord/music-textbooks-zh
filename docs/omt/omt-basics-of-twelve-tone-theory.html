@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>十二音理論基礎 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-basics-of-twelve-tone-theory.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group" open=""><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a aria-current="page" href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-basics-of-twelve-tone-theory" data-book="omt" data-page-url="/omt/omt-basics-of-twelve-tone-theory.html" data-next-url="/omt/omt-naming-conventions-for-rows.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">十二音理論基礎</h1><p class="authors">Mark Gotham and Brian Moseley</p><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>十二音作曲大致平等地使用全部十二個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class">音高類</a>，因此通常不宜直接尋找調性、調式、主音等調性要素。</li><li>作曲家常把十二音高類排成固定順序，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row">音列</a>，再以不同方式調整，主要包括：<ul><li>移位（T）</li><li>倒影（I）</li><li>逆行（R）</li><li>逆行倒影（RI）</li></ul></li><li>實際創作中，作曲家運用十二音的方法非常多樣。</li></ul></div></div></div><aside class="translator-note">譯註：「大致平等」是對音高階序的概括，不表示每個音高類必須有完全相同的出現次數、音值或力度。後文會展示具有中心感、或偏離嚴格音列規則的例子。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/7t9wVMPPjOgOsnyVPCaWDO?si=8ff71f22a0b746c4" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0003"><p>十二音音樂常與一種稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-serialism">序列技法</a>的作曲方法或風格相聯繫，但兩個名詞並不等同：</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0004"><ul><li>「序列」廣義上指將事物按順序組織。例如連續劇依特定集數順序播出，講述連貫的故事。音樂中的序列技法，也將音高、時值、力度或其他音樂要素，依某種順序安排。因此，不是所有序列作品都使用十二音音列。</li><li>「十二音作曲」則更具體地指以十二個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class">音高類</a>的排列為基礎的音樂。</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0005"><p>這種作曲方式通常與一群有時稱為「第二維也納樂派」的作曲家相聯繫，包括Arnold Schoenberg（荀貝格）、Anton Webern（魏本）與Alban Berg（貝爾格）。<a class="footnote" title="依這種稱法，第一維也納樂派以海頓、莫札特與貝多芬為核心。" id="zh-omt-basics-of-twelve-tone-theory-return-footnote-623-1" href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-footnote-623-1"><sup class="footnote">[1]</sup></a>不過，十二音技法及其相關理念影響了許多作曲家，序列與十二音音樂至今仍有人創作。許多作品共享一些基本前提，後續各章會加以說明；但必須強調，作曲家從這些概念發展出非常不同的方法。對大多數作曲家而言，重心仍是音樂，技法雖重要，卻居於輔助的位置。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>Twelve-tone composition involves using all twelve <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class">pitch classes</a> roughly equally. That means it (usually) isn’t appropriate to look for a key, mode, tonic pitch, or other tonal elements.</li>
+<li>Composers often use a fixed ordering of the twelve pitch classes called a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row">row</a>, but also adapt it in various ways, notably through:
+<ul>
+<li>Transposition (T)</li>
+<li>Inversion (I)</li>
+<li>Retrograde (R)</li>
+<li>Retrograde inversion (RI)</li>
+</ul>
+</li>
+<li>In practice, there is a great variety of how composers approach the task of composing with twelve tones.</li>
+</ul>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/7t9wVMPPjOgOsnyVPCaWDO?si=8ff71f22a0b746c4" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>Twelve-tone music is most often associated with a compositional technique, or style, called <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-serialism">serialism</a>, though these terms are not equivalent:</p><ul>
+<li>“Serialism” is a broad designator referring to the ordering of things. In television, for instance, a serialized show is one in which the episodes are aired in a specific order to tell a continuous story. Serialism in music involves putting musical elements in some kind of order, whether they are pitches, durations, dynamics, or something else. So note that not all serial pieces use a twelve-tone row.</li>
+<li>“Twelve-tone composition” refers more specifically to music based on orderings of the twelve <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class">pitch classes</a>.</li>
+</ul><p>This style of composition is commonly associated with a group of composers (sometimes called the “Second Viennese School”) whose members included Arnold Schoenberg, Anton Webern, and Alban Berg.<a class="footnote" title='The "First Viennese School" (by this logic) centers on Haydn, Mozart, and Beethoven.' id="en-omt-basics-of-twelve-tone-theory-return-footnote-623-1" href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-footnote-623-1"><sup class="footnote">[1]</sup></a> But twelve-tone compositional techniques and the ideas associated with them have been influential for many composers, and serial and twelve-tone music is still being written today. Much of this music shares similar axioms, which we outline in the following chapters, but it’s important to stress that composers have used these basic ideas to cultivate a wide range of different approaches, and that the emphasis for most composers is on the music, with the technique as an important but subsidiary consideration.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0006"><h2 id="zh-omt-basics-of-twelve-tone-theory-chapter-623-section-1" class="section-header"><a id="zh-omt-basics-of-twelve-tone-theory-rows"></a>音列</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0007"><p>十二音音樂以一個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-series">序列</a>——也稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row">音列</a>——為基礎，將全部十二個音高類依特定順序排列。每首作品不必採用相同順序；事實上，共有479,001,600種排列可以選擇！<a class="footnote" title="12!是十二階乘，即12×11×10×…×2×1。" id="zh-omt-basics-of-twelve-tone-theory-return-footnote-623-2" href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-footnote-623-2"><sup class="footnote">[2]</sup></a>有些音列因具有多位作曲家喜愛的特性，被用於多首作品；另外許多排列則從未被採用。</p></div><aside class="translator-note">譯註：12!計算的是十二個不同音高類各出現一次的有序排列；此數尚未把移位、倒影或逆行等價的排列合併成音列類。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-basics-of-twelve-tone-theory-chapter-623-section-1" class="section-header"><a id="en-omt-basics-of-twelve-tone-theory-rows"></a>Rows</h2><p>Twelve-tone music is based on a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-series">series</a> (sometimes called a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row">row</a>) that contains all twelve pitch classes in a particular order. This order is not the same in each piece—in fact, there are 479,001,600 rows to choose from!<a class="footnote" title='This number comes from the mathematical expression 12! (read: "12 factorial"), which means 12 × 11 × 10 … × 2 × 1.' id="en-omt-basics-of-twelve-tone-theory-return-footnote-623-2" href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-footnote-623-2"><sup class="footnote">[2]</sup></a> Some of these row forms have been used in multiple works, as they contain properties that several composers may favor, while many others have never been used at all.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0008"><h2 id="zh-omt-basics-of-twelve-tone-theory-chapter-623-section-2" class="section-header"><a id="zh-omt-basics-of-twelve-tone-theory-operations"></a>運算</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0009"><p>作曲家主要用四種方式改變音列，而保留它的基本關係。我們把這些方式稱為數學意義下的「運算」。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0010"><ul><li><strong>移位（T）。</strong>將所有音整體向上或向下移動指定的半音數。調性音樂中也常見移位，但此處與<a href="../omt/omt-pc-sets-normal-order-and-transformations.html">集合論</a>相同，始終以半音數計算，不以自然音音階的級數計算。</li><li><strong>倒影（I）。</strong>反轉音程方向：上行變下行，下行變上行。它類似其他脈絡中的旋律倒影，但此處是精確倒影，保持半音數所表示的音程大小，不採自然音倒影，也不只保留<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-generic-interval">音程度數</a>。</li><li><strong>逆行（R）。</strong>把音的順序倒過來，最後一音變成第一音，依此類推。調性音樂也有先例，例如逆行卡農，又稱蟹行卡農（crab／cancrizans），但比移位與倒影少見得多。</li><li><strong>逆行倒影（RI）。</strong>結合逆行與倒影。若倒影軸固定，先逆行或先倒影會得到相同結果；不同命名與運算的區別，還會在後續章節討論。</li></ul></div><aside class="translator-note">譯註：原文說逆行與倒影的先後「有影響」。若採本書音高類集合論的固定倒影運算Iₙ(x)=n−x（mod12），則R(Iₙ(row))與Iₙ(R(row))完全相同，兩者可交換次序。若中途重新選倒影軸或重新命名，就不是同一固定運算；不要把名稱的改變當成此等式失效。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0011"><p>若兩個十二音音列能透過移位、倒影或逆行互相聯繫，便視為同一音列的不同形式。除非音列具有某些對稱特性，使它在這些運算後與自身重合，否則通常有48種形式：原形（P）、倒影形（I）、逆行形（R）與逆行倒影形（RI），四類各有十二個移位位置。這些形式共同構成一個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row-class">音列類</a>。</p></div><aside class="translator-note">譯註：48是通常的上限與矩陣上的形式位置數；若有對稱，不同標籤可能指同一有序音列。例如本章上行半音示範的P/I/R/RI移位合計只有24個不同排列。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-basics-of-twelve-tone-theory-chapter-623-section-2" class="section-header"><a id="en-omt-basics-of-twelve-tone-theory-operations"></a>Operations</h2><p>There are four main ways in which composers move a row around without fundamentally changing it. We call these “operations” (in the mathematical sense rather than the medical one).</p><ul>
+<li><strong>Transposition (T).</strong> Take all the pitches and move them up or down by a specified number of semitones. Transposition is a familiar process from tonal music, but note that (as in <a href="../omt/omt-pc-sets-normal-order-and-transformations.html">set theory</a>) we’re always working in transposition by semi-tones here and never diatonic steps.</li>
+<li><strong>Inversion (I).</strong> Reverse the direction of the intervals: rising intervals becoming falling intervals, and vice versa. Again, this is just like melodic inversion in other contexts, and once again, we’re only dealing with exact inversion, preserving the interval size in terms of semitones (not using diatonic inversion or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-generic-interval">generic intervals</a> here).</li>
+<li><strong>Retrograde (R).</strong> Reverse the order of pitches so the last comes first, and vice versa. This, too, has a precedent in tonal music with the “retrograde” (also known as the “crab” or “cancrizans”) canon, for instance, though it’s a lot rarer in tonal music than transposition and inversion.</li>
+<li><strong>Retrograde inversion (RI).</strong> As the name suggests, this really involves combining two of the operations described above: the retograde and the inversion. The order in which you do those operations does matter, but we’ll return to that later on.</li>
+</ul><p>Twelve-tone rows that can be related to each other by transposition, inversion, and/or retrograde operations are considered to be forms of the same row. Unless a row has certain properties that allow it to map onto itself when transposed, inverted, or retrograded, there will be 48 forms of the row: the four types—prime (P), inversion (I), retrograde (R), and retrograde inversion (RI)—each transposed to begin on all of the twelve pitch classes. As such, a row produces a collection of 48 forms in what is called a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row-class">row class</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0012"><h2>先用一個示範音列</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0013"><p>要理解作曲家對音列所作的基本運算，先用一個教學用的假設例子：從C開始上行的半音音階（<a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">例1</a>）。作曲家通常偏好更有趣的音列，但這個簡單例子很適合說明。音列形式通常也不限定各音放在哪個八度；這裡用高音與低音譜號寫在五線譜上，是為了清楚呈現倒影。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0014"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="半音音列四種形式原譜（外部網站，另開分頁）">半音音列四種形式原譜</a><p class="score-source">原章嵌入譜的完整單頁原圖，已保存供離線閱讀，附中文圖例。 <a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>例1，完整單頁原譜。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><ul class="label-terms"><li>Prime＝原形；</li><li>Retrograde＝逆行；</li><li>Inversion＝倒影；</li><li>Retrograde inversion＝逆行倒影。</li></ul><ul class="label-terms"><li>依本章命名：左上P₀的音高類依序0、1、2、3、4、5、6、7、8、9、10、11；</li><li>右上R₀反向由11至0。</li></ul><ul class="label-terms"><li>左下I₀為0、11、10、9、8、7、6、5、4、3、2、1；</li><li>右下RI₀為1、2、3、4、5、6、7、8、9、10、11、0。</li></ul><p>下排用低音譜號，音域只是為了清楚展示反向，不是音列固定的八度要求。</p><p>此對稱示例的48個形式標籤合計只得到24個不同音高類排列。</p></section></div></div></div></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0015"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">例1。</a>半音音階的原形、逆行、倒影與逆行倒影四種形式。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>A fake example</h2><p>To get a sense of the basic operations the composers perform on tone rows, let’s start with a fake example: an ascending chromatic scale starting on C (<a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">Example 1</a>). Composers tend to prefer more interesting tone rows, but we’ll start with this simple case for illustration. Row forms also don’t usually commit to placing pitches in a specific octave, but we’ll set it out in musical notation and with treble and bass clefs to show the inversions nice and clearly.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete single-page original from the chapter embed, saved for offline reading. <a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/6591448/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>Example 1, complete original single-page score.</figcaption></figure></div></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">Example 1.</a> A chromatic scale in four forms: prime, retrograde, inversion, and retrograde inversion.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0016"><h2>原形</h2></div><aside class="translator-note">譯註：這裡的prime form是音列的「原形（P）」，不是前面無序音高類集合論中，以壓縮排列選出的「原型」。音列的順序不能任意重排。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0017"><p>音列的原形是其他形式的主要參照，如<a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">例1</a>左上。有些作品中，某一種形式會明顯主導織體；若沒有，通常選作品開頭最突出的音列，標作<strong>P</strong>，代表prime（原形）。若開頭有兩個同樣突出的音列，選其中之一即可，甚至可以擲硬幣決定！哪個被稱為原形不一定重要，但指定一個共同參照點很有用。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0018"><p>與起始原形相同，或是它的精確移位，也都屬於原形。決定開頭的主要原形之後，後面凡是將它整體移位所得的音列，都歸入P類。換句話說，具有相同<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-pitch-class-interval">有序音高類音程</a>序列的音列，都是原形的移位形式。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0019"><p><strong>P</strong>可以移到任何音高類位置，因此用下標區分。下標有幾種常見系統；本書採用最直接的一種，以音列的第一個音高類編號。例如，原形從G（音高類7）開始，就是<strong>P<sub>7</sub></strong>；從B（11）開始，就是<strong>P<sub>11</sub></strong>。詳見〈<a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a>〉。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Prime form</h2><p>The prime form of the row (top left in <a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0014">Example 1</a> above) is the main form to which all other forms are related. In some pieces, one form of the row will clearly dominate the texture. If that is not the case, we generally choose the most salient row at the beginning of the work and label it <strong>P</strong> (for “prime”). If more than one row seems equally prominent at the beginning, then simply choose one (flip a coin!). The decision of which to call “prime” is not always important, but it’s useful to allocate a single row form to serve as a point of reference.</p><p>Any row form that is the same as, or a strict transposition of, that opening prime form is also a prime form. Once you have labeled the main prime form at the beginning of the piece, any subsequent row that is an exact transposition of that row is prime. Likewise, any row that exhibits the same succession of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-pitch-class-interval">ordered pitch-class intervals</a> is also a prime form.</p><p>Since <strong>P</strong> can be transposed to any pitch-class level, we distinguish them with subscripts. There are multiple common systems for deciding the numbering. The simplest, which we will follow in this book, is to number the row by its starting pitch class. If the prime form begins on G (pitch class 7), it is <strong>P<sub>7</sub></strong>; on B (pitch class 11) it is <strong>P<sub>11</sub></strong>. The <a href="../omt/omt-naming-conventions-for-rows.html">Naming Conventions chapter</a> has more on this subject.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0020"><h2>逆行形</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0021"><p>逆行形將原形的音高類順序完全倒轉。因此，相鄰音程的先後也倒過來，方向一併反轉。逆行形以R標示，下標採用音列的<strong>最後一個</strong>音高類；如此一來，互為精確逆行的兩種形式，就會有相同下標。</p></div><aside class="translator-note">譯註：若原形相鄰的有序音高類音程為d₁,…,d₁₁，逆行的相鄰音程是−d₁₁,…,−d₁（各取模12），不是只反排數字而不改方向。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0022"><p>例如，一個音列與原形互為精確逆行，且最後一音是F♯（6），便記為<strong>R<sub>6</sub></strong>，不論它從哪個音開始。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Retrograde form</h2><p>A retrograde form of the row takes a prime form and exactly reverses the pitch classes. Its interval content, then, is the reverse of the prime forms. Retrograde forms are labeled R followed by a subscript denoting the last pitch class in the row. This will ensure that if two row forms are exact retrogrades of each other, they will have the same subscript.</p><p>For example, if a row has the exact reverse interval structure of the prime forms and ends on F♯ (6), it is <strong>R<sub>6</sub></strong>, regardless of its first pitch.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0023"><h2>倒影形</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0024"><p>精確反轉原形音程方向的音列，稱為倒影形；例如上行3個半音變成下行3個半音。<a class="footnote" title="在模12下，下行3個半音等同於上行9個半音。" id="zh-omt-basics-of-twelve-tone-theory-return-footnote-623-3" href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-footnote-623-3"><sup class="footnote">[3]</sup></a>倒影形以下列形式的第一個音高類命名：從E♭（3）開始的倒影音列，就是<strong>I<sub>3</sub></strong>。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0025"><p>請注意，這個音列形式的下標，不一定與產生它的倒影<strong>運算</strong>下標相同。若從<strong>P<sub>0</sub></strong>出發，運算下標與所得音列形式的下標相同；若從其他位置出發，就會不同，兩者不可混淆。</p></div><aside class="translator-note">譯註：例如從P₇產生I₃，需要倒影運算I₁₀，因為10−7≡3（mod12）。I₃是所得音列的名稱，I₁₀才是這次運算；一般由Pₐ到Iᵦ所用的運算下標為a+b（mod12）。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Inversion form</h2><p>A row form that exactly inverts the interval structure of the prime form (for example, 3 semitones up becomes 3 semitones down)<a class="footnote" title="Or, equivalently, or 9 semitones up, modulo 12." id="en-omt-basics-of-twelve-tone-theory-return-footnote-623-3" href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-footnote-623-3"><sup class="footnote">[3]</sup></a> is in inversion form. Inversion forms are labeled according to the first pitch class of the row form. An inversion-form row that begins on E♭ (3) is <strong>I<sub>3</sub></strong>.</p><p>Note that this label is not always the same as the inversion operation that produces it. If you begin with <strong>P<sub>0</sub></strong>, the inversion operation and the resulting row form will have the same subscript. Otherwise, they will be different. Take care not to confuse them.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0026"><h2>逆行倒影形</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0027"><p>逆行倒影（<strong>RI</strong>）與倒影（<strong>I</strong>）的關係，就像逆行（<strong>R</strong>）與原形（<strong>P</strong>）的關係。RI將I形式的音高類順序倒轉，並以音列的<strong>最後一個</strong>音高類命名。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Retrograde inversion form</h2><p>The relationship of the retrograde inversion (<strong>RI</strong>) to the inversion (<strong>I</strong>) is the same as that between retrograde (<strong>R</strong>) and prime (<strong>P</strong>). Retrograde inversion forms reverse the pitch classes of inversion forms and are named for the last pitch class in the row form.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0028"><h2>實際作品的例子</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0029"><article class="wrap post">掌握基本概念後，來看它如何出現在真正的音樂中。我們沿用相同圖式，以Elisabeth Lutyens（伊莉莎白・魯琴絲）的《<em>Motet (Excerpta Tractati Logico-Philosophici)</em>》（經文歌：《邏輯哲學論》摘錄），Op.27所用音列為例。<a class="footnote" title="此音列出自Lutyens的BL Add. Ms.64789手稿，第48b葉；感謝Laurel Parsons提供。" id="zh-omt-basics-of-twelve-tone-theory-return-footnote-623-4" href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-footnote-623-4"><sup class="footnote">[4]</sup></a></article></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0030"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Lutyens經文歌音列原譜（外部網站，另開分頁）">Lutyens經文歌音列原譜</a><p class="score-source">原章嵌入譜的完整單頁原圖，已保存供離線閱讀，附中文圖例。 <a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>例2，完整單頁原譜。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><p>Prime＝原形P₀：0、11、3、7、8、4、2、6、5、1、9、10。</p><p>Retrograde＝逆行R₀：10、9、1、5、6、2、4、8、7、3、11、0。</p><p>Inversion＝倒影I₀：0、1、9、5、4、8、10、6、7、11、3、2。</p><p>Retrograde inversion＝逆行倒影RI₀：2、3、11、7、6、10、8、4、5、9、1、0。</p><p>P、I以第一音命名，R、RI以最後一音命名，因此本圖四者下標皆為0。</p><ul class="label-terms"><li>升、降、還原記號保留原譜的拼寫；</li><li>比較音列時按模12的音高類，不以五線譜上的上下位置代替音高類。</li></ul></section></div></div></div></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0031"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0030">例2。</a><a href="https://open.spotify.com/track/1KHlQk1IYYZZocedHyughI?si=6fcda3cb90c1470a" target="_blank" rel="noopener noreferrer" class="external" aria-label="Elisabeth Lutyens《Motet (Excerpta Tractati Logico-Philosophici)》，Op.27（外部網站，另開分頁）">Elisabeth Lutyens《<em>Motet (Excerpta Tractati Logico-Philosophici)</em>》，Op.27</a>的音列形式。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>A real example</h2><article class="wrap post">Now that we’ve got the basic idea, let’s see how this works in a real musical context, using the same layout and taking as our example the row form in Elisabeth Lutyens’s <em>Motet (Excerpta Tractati Logico-Philosophici)</em>, Op. 27.<a class="footnote" title="This is the row form given by Lutyens in the BL Add. Ms. 64789. manuscript (f.48b). Credit and thanks to Laurel Parsons for providing this." id="en-omt-basics-of-twelve-tone-theory-return-footnote-623-4" href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-footnote-623-4"><sup class="footnote">[4]</sup></a></article><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete single-page original from the chapter embed, saved for offline reading. <a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>Example 2, complete original single-page score.</figcaption></figure></div></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0030">Example 2.</a> The row form in <a href="https://open.spotify.com/track/1KHlQk1IYYZZocedHyughI?si=6fcda3cb90c1470a" target="_blank" rel="noopener noreferrer" class="external" aria-label="Elisabeth Lutyens, Motet (Excerpta Tractati Logico-Philosophici), Op. 27（外部網站，另開分頁）">Elisabeth Lutyens, <em>Motet (Excerpta Tractati Logico-Philosophici)</em>, Op. 27</a>.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0032"><h2 id="zh-omt-basics-of-twelve-tone-theory-chapter-623-section-3" class="section-header"><a id="zh-omt-basics-of-twelve-tone-theory-enter-the-matrix"></a>認識音列矩陣</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0033"><p>最後再介紹一項技術與術語：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row-matrix">矩陣</a>（matrix，複數matrices）。它用一個12×12的方格，簡潔地整理同一<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row-class">音列類</a>的48個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row">音列形式</a>位置。慣例如下：</p></div><aside class="translator-note">譯註：矩陣的12×12指中央144個音高類數字，不包含四周的形式標籤。48種閱讀位置仍可能因音列對稱而重複。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0034"><ul><li>原形<strong>P<sub>n</sub></strong>放在最上方橫列，從<em>左向右</em>讀。以下假設這一列是<strong>P<sub>0</sub></strong>。</li><li><strong>R<sub>0</sub></strong>正好是P<sub>0</sub>的逆行，因此同一橫列從<em>右向左</em>讀，就是R<sub>0</sub>。</li><li><strong>I<sub>0</sub></strong>與P<sub>0</sub>從相同音高開始，放在最左側直行，由<em>上向下</em>讀。</li><li><strong>RI<sub>0</sub></strong>之於I<sub>0</sub>，如同R<sub>0</sub>之於P<sub>0</sub>，因此沿著I的同一直行、反方向由<em>下向上</em>讀，就是RI。</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0035"><p><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0036">例3</a>是<a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0030">例2</a>Lutyens《<em>經文歌</em>》的音列矩陣。〈<a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a>〉還會進一步討論矩陣。</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0036"><table class="grid aligncenter score-table">
+<tbody>
+<tr>
+<td></td>
+<td><strong>I<sub>0</sub></strong></td>
+<td><strong><span>I</span><sub>11</sub></strong></td>
+<td><strong><span>I</span><sub>3</sub></strong></td>
+<td><strong><span>I</span><sub>7</sub></strong></td>
+<td><strong><span>I</span><sub>8</sub></strong></td>
+<td><strong><span>I</span><sub>4</sub></strong></td>
+<td><strong><span>I</span><sub>2</sub></strong></td>
+<td><strong><span>I</span><sub>6</sub></strong></td>
+<td><strong><span>I</span><sub>5</sub></strong></td>
+<td><strong><span>I</span><sub>1</sub></strong></td>
+<td><strong><span>I</span><sub>9</sub></strong></td>
+<td><strong><span>I</span><sub>10</sub></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>0</sub></strong></td>
+<td>0</td>
+<td>11</td>
+<td>3</td>
+<td>7</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>9</td>
+<td>10</td>
+<td><strong>R<sub>0</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>1</sub></strong></td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+<td>8</td>
+<td>9</td>
+<td>5</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+<td>2</td>
+<td>10</td>
+<td>11</td>
+<td><strong>R<sub>1</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>9</sub></strong></td>
+<td>9</td>
+<td>8</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+<td>6</td>
+<td>7</td>
+<td><strong>R<sub>9</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>5</sub></strong></td>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+<td>0</td>
+<td>1</td>
+<td>9</td>
+<td>7</td>
+<td>11</td>
+<td>10</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td><strong>R<sub>5</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>4</sub></strong></td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>11</td>
+<td>0</td>
+<td>8</td>
+<td>6</td>
+<td>10</td>
+<td>9</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td><strong>R<sub>4</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>8</sub></strong></td>
+<td>8</td>
+<td>7</td>
+<td>11</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>9</td>
+<td>5</td>
+<td>6</td>
+<td><strong>R<sub>8</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>10</sub></strong></td>
+<td>10</td>
+<td>9</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>3</td>
+<td>11</td>
+<td>7</td>
+<td>8</td>
+<td><strong>R<sub>10</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>6</sub></strong></td>
+<td>6</td>
+<td>5</td>
+<td>9</td>
+<td>1</td>
+<td>2</td>
+<td>10</td>
+<td>8</td>
+<td>0</td>
+<td>11</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td><strong>R<sub>6</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>7</sub></strong></td>
+<td>7</td>
+<td>6</td>
+<td>10</td>
+<td>2</td>
+<td>3</td>
+<td>11</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>8</td>
+<td>4</td>
+<td>5</td>
+<td><strong>R<sub>7</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>11</sub></strong></td>
+<td>11</td>
+<td>10</td>
+<td>2</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>0</td>
+<td>8</td>
+<td>9</td>
+<td><strong>R<sub>11</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>3</sub></strong></td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>10</td>
+<td>11</td>
+<td>7</td>
+<td>5</td>
+<td>9</td>
+<td>8</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td><strong>R<sub>3</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>2</sub></strong></td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>9</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+<td>8</td>
+<td>7</td>
+<td>3</td>
+<td>11</td>
+<td>0</td>
+<td><strong>R<sub>2</sub></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>RI<sub>0</sub></strong></td>
+<td><strong>RI<sub>11</sub></strong></td>
+<td><strong>RI<sub>3</sub></strong></td>
+<td><strong>RI<sub>7</sub></strong></td>
+<td><strong>RI<sub>8</sub></strong></td>
+<td><strong>RI<sub>4</sub></strong></td>
+<td><strong>RI<sub>2</sub></strong></td>
+<td><strong>RI<sub>6</sub></strong></td>
+<td><strong>RI<sub>5</sub></strong></td>
+<td><strong>RI<sub>1</sub></strong></td>
+<td><strong>RI<sub>9</sub></strong></td>
+<td><strong>RI<sub>10</sub></strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：原矩陣右側R與下側RI按逆行讀法的第一音標號，與本章正文、例3前的說明，以及〈音列的命名慣例〉第11單元所採「最後一音」規則不一致。中文矩陣已校正24個R／RI下標：每一橫列的R與左側P同號，每一直行的RI與上側I同號。中央144數字及P、I標號完全保留；英文原表維持原貌供對照。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0037"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0036">例3。</a>Lutyens《<em>經文歌</em>》的音列矩陣。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-basics-of-twelve-tone-theory-chapter-623-section-3" class="section-header"><a id="en-omt-basics-of-twelve-tone-theory-enter-the-matrix"></a>Enter the Matrix</h2><p>As one final piece of technical, terminological preamble, we introduce the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row-matrix">matrix</a> (plural: matrices). This is a neat, compact way of setting out all of the 48 <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row">rows</a> in a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row-class">row class </a>on one 12-by-12 grid. By convention:</p><ul>
+<li>A prime form of the row (<strong>P<sub>n</sub></strong>) always appears along the top row <em>left to right</em>. For this explanation, let’s assume we are beginning with <strong>P<sub>0</sub></strong>.</li>
+<li>Because <strong>R<sub>0</sub></strong> is exactly the same as P<sub>0</sub> in reverse, you already have R<sub>0</sub> also on that top row, by reading from <em>right to left</em>.</li>
+<li><strong>I<sub>0</sub></strong> begins on the same pitch as P<sub>0</sub>, so we set that out in the other direction: down along the first column, <em>top to bottom</em>.</li>
+<li><strong>RI<sub>0</sub></strong> is to I<sub>0</sub> as R<sub>0</sub> is to P<sub>0</sub>, so again, we read RI forms along the same axis as I, in the opposite direction: <em>bottom to top</em>.</li>
+</ul><p><span><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0036">Example 3</a> is the row matrix for the Lutyens <em>Motet</em> from <a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0030">Example 2</a>. We’ll take another look at matrices in the <a href="../omt/omt-naming-conventions-for-rows.html">Naming Conventions chapter</a>.</span></p><table class="grid aligncenter score-table">
+<tbody>
+<tr>
+<td></td>
+<td><strong>I<sub>0</sub></strong></td>
+<td><strong><span>I</span><sub>11</sub></strong></td>
+<td><strong><span>I</span><sub>3</sub></strong></td>
+<td><strong><span>I</span><sub>7</sub></strong></td>
+<td><strong><span>I</span><sub>8</sub></strong></td>
+<td><strong><span>I</span><sub>4</sub></strong></td>
+<td><strong><span>I</span><sub>2</sub></strong></td>
+<td><strong><span>I</span><sub>6</sub></strong></td>
+<td><strong><span>I</span><sub>5</sub></strong></td>
+<td><strong><span>I</span><sub>1</sub></strong></td>
+<td><strong><span>I</span><sub>9</sub></strong></td>
+<td><strong><span>I</span><sub>10</sub></strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>0</sub></strong></td>
+<td>0</td>
+<td>11</td>
+<td>3</td>
+<td>7</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+<td>9</td>
+<td>10</td>
+<td><strong>R<sub>10</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>1</sub></strong></td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+<td>8</td>
+<td>9</td>
+<td>5</td>
+<td>3</td>
+<td>7</td>
+<td>6</td>
+<td>2</td>
+<td>10</td>
+<td>11</td>
+<td><strong>R<sub>11</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>9</sub></strong></td>
+<td>9</td>
+<td>8</td>
+<td>0</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>11</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+<td>6</td>
+<td>7</td>
+<td><strong>R<sub>7</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>5</sub></strong></td>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+<td>0</td>
+<td>1</td>
+<td>9</td>
+<td>7</td>
+<td>11</td>
+<td>10</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td><strong>R<sub>3</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>4</sub></strong></td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>11</td>
+<td>0</td>
+<td>8</td>
+<td>6</td>
+<td>10</td>
+<td>9</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td><strong>R<sub>2</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>8</sub></strong></td>
+<td>8</td>
+<td>7</td>
+<td>11</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>10</td>
+<td>2</td>
+<td>1</td>
+<td>9</td>
+<td>5</td>
+<td>6</td>
+<td><strong>R<sub>6</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>10</sub></strong></td>
+<td>10</td>
+<td>9</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>3</td>
+<td>11</td>
+<td>7</td>
+<td>8</td>
+<td><strong>R<sub>8</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>6</sub></strong></td>
+<td>6</td>
+<td>5</td>
+<td>9</td>
+<td>1</td>
+<td>2</td>
+<td>10</td>
+<td>8</td>
+<td>0</td>
+<td>11</td>
+<td>7</td>
+<td>3</td>
+<td>4</td>
+<td><strong>R<sub>4</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>7</sub></strong></td>
+<td>7</td>
+<td>6</td>
+<td>10</td>
+<td>2</td>
+<td>3</td>
+<td>11</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>8</td>
+<td>4</td>
+<td>5</td>
+<td><strong>R<sub>5</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>11</sub></strong></td>
+<td>11</td>
+<td>10</td>
+<td>2</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>0</td>
+<td>8</td>
+<td>9</td>
+<td><strong>R<sub>9</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>3</sub></strong></td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+<td>10</td>
+<td>11</td>
+<td>7</td>
+<td>5</td>
+<td>9</td>
+<td>8</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td><strong>R<sub>1</sub></strong></td>
+</tr>
+<tr>
+<td><strong><span>P</span><sub>2</sub></strong></td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>9</td>
+<td>10</td>
+<td>6</td>
+<td>4</td>
+<td>8</td>
+<td>7</td>
+<td>3</td>
+<td>11</td>
+<td>0</td>
+<td><strong>R<sub>0</sub></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>RI<sub>2</sub></strong></td>
+<td><strong>RI<sub>1</sub></strong></td>
+<td><strong>RI<sub>5</sub></strong></td>
+<td><strong>RI<sub>9</sub></strong></td>
+<td><strong>RI<sub>10</sub></strong></td>
+<td><strong>RI<sub>6</sub></strong></td>
+<td><strong>RI<sub>4</sub></strong></td>
+<td><strong>RI<sub>8</sub></strong></td>
+<td><strong>RI<sub>7</sub></strong></td>
+<td><strong>RI<sub>3</sub></strong></td>
+<td><strong>RI<sub>11</sub></strong></td>
+<td><strong>RI<sub>0</sub></strong></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-basics-of-twelve-tone-theory.html#omt-basics-of-twelve-tone-theory-u0036">Example 3.</a> Row matrix for Lutyens, <em>Motet</em>.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0038"><h2 id="zh-omt-basics-of-twelve-tone-theory-chapter-623-section-4" class="section-header"><a id="zh-omt-basics-of-twelve-tone-theory-from-theory-to-practice"></a>從理論走向實作</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0039"><article>概括而言，十二音技法的基本框架規定：</article></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0040"><ol><li>音高類依音列<strong>指定的順序</strong>出現。</li><li>某音高類出現後，在下一個音列開始前<strong>不再重複</strong>。</li></ol></div><aside class="translator-note">譯註：這是入門用的嚴格模型，不是所有作品都逐音遵守的禁令。下文立即討論音高與動機重複、音列逐漸展開，以及不使用完整十二音音列的序列操作。</aside><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0041"><p>十二音作曲家至少都知道這些基本「規則」，但如開頭所說，實際運用差異很大。因此，一開始就來看幾個「例外」吧。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-basics-of-twelve-tone-theory-chapter-623-section-4" class="section-header"><a id="en-omt-basics-of-twelve-tone-theory-from-theory-to-practice"></a>From Theory to Practice</h2><article>In general, then, the basics of twelve-tone technique stipulate that:</article><ol>
+<li>Pitch classes are played <strong>in the order specified</strong> by the row.</li>
+<li>Once a pitch class has been played, <strong>it isn’t repeated</strong> until the next row.</li>
+</ol><p>Those are the basic “rules” of which all twelve-tone composers are at least aware, but as we said at the outset, composers vary widely in what they actually do with this technique in practice. To that effect, let’s take some “exceptional” examples right from the beginning.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0042"><h3>十二音序列作品，也可以不那麼嚴格</h3></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0043"><p>Luigi Dallapiccola（達拉皮寇拉）的《<a href="https://open.spotify.com/track/6TuIPzAl86OSluM7LH1B0v?si=720d7c15f17840ea" target="_blank" rel="noopener noreferrer" class="external" aria-label="Piccola Musica Notturna（外部網站，另開分頁）"><em>Piccola Musica Notturna</em></a>》（字面意為「小夜曲」，1954）是知名的十二音作品。不過，從開頭到全曲，他對音高甚至動機音型的重複都很自由。音列確實存在，卻是逐漸展開，而非僵硬地遵守規則。這是達拉皮寇拉風格、這首作品豐潤氛圍的重要特徵，也見於許多「序列」音樂；偏離嚴格程序，其實非常常見。至少在本章作者聽來，這首曲子與德布西的音樂世界，和與「嚴格」序列作曲家的世界，同樣密切相關——或許可以把它想成德布西《<em>牧神午後前奏曲</em>》的夜間對照？</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Twelve-tone serial, but not so strict</h3><p>Luigi Dallapiccola’s <a href="https://open.spotify.com/track/6TuIPzAl86OSluM7LH1B0v?si=720d7c15f17840ea" target="_blank" rel="noopener noreferrer" class="external" aria-label="Piccola Musica Notturna（外部網站，另開分頁）"><em>Piccola Musica Notturna</em></a> (literally “little night music,” 1954) certainly features in the canon of well-known twelve-tone works, but note how right from the beginning, and throughout, there is a free and easy attitude to repeating pitches and even motivic figures. There is a row, but it unfolds gradually, undogmatically. This is key to Dallapiccola’s style, to the luxuriant atmosphere of this piece, and to much “serial” music in which some form of deviation from strict practice is extremely common. All told, to my ears at least, this piece has as much to do with the world of Claude Debussy (as a “night time” complement to Debussy’s <em>Prélude à l’après-midi d’un faune</em>, perhaps?) as to the “strict” serialists.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0044"><h3>使用序列技法，卻不是十二音</h3></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0045"><p>同樣也有明顯不屬於十二音序列音樂，卻運用嚴格序列操作的作品。聽聽John Tavener（塔文納）的《<a href="https://open.spotify.com/track/6mJlwt6XPR6p3CD1JjaJq8?si=4122a9297402412f" target="_blank" rel="noopener noreferrer" class="external" aria-label="The Lamb（外部網站，另開分頁）"><em>The Lamb</em></a>》（羔羊）。開頭女高音唱「Little lamb, who made thee?」（小羔羊，是誰創造了你？），音高類為G、B、A、F♯、G。第二句「Dost thou know who made thee?」（你可知道是誰創造了你？）由女高音重複同一旋律，女低音則唱它的倒影：</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0046"><ul><li>女高音（原形）：G–B–A–F♯–G</li><li>女低音（倒影）：G–E♭–F–A♭–G</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0047"><p>接著女高音唱出較長的旋律，歌詞為「Gave thee life and bid thee feed / By the stream and o’er the mead」（賜你生命，讓你在溪畔與草地上覓食）。後半段是前半段的精確逆行：</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0048"><ul><li>「Gave thee life and bid thee feed」（原形）：G–B–A–F♯–E♭–F–A♭</li><li>「By the stream and o’er the mead」（逆行）：A♭–F–E♭–F♯–A–B–G</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0049"><p>這段旋律又出現一次，搭配「Gave thee clothing of delight / Softest clothing wooly bright」（賜你令人喜悅的衣裳，柔軟明亮的羊毛衣裳），此時女低音唱倒影：</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0050"><ul><li>女高音（原形接逆行）：G–B–A–F♯–E♭–F–A♭ | A♭–F–E♭–F♯–A–B–G</li><li>女低音（倒影接逆行倒影）：G–E♭–F–A♭–B–A–F♯ | F♯–A–B–A♭–F–E♭–G</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0051"><p>這顯然是高度運用序列操作的寫法。不過，此段又有非常清楚的調式終止音G；女高音與女低音分開看時，也可以嘗試從一般調式的角度理解，尤其是開頭的短旋律。可參閱〈<a href="../omt/omt-diatonic-modes.html">自然音調式</a>〉複習。</p></div><aside class="translator-note">譯註：原文稱兩聲部分開可視為一般調式，並寫作standard chord modes；此處據所連自然音調式章理解為調式解讀。開頭G–B–A–F♯可包含於G大調，倒影G–E♭–F–A♭可包含於G弗里吉安；但後面完整的七音旋律已混合這些音，不能把每個聲部整段都斷定為單一自然音調式。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Serial but not twelve-tone</h3><p>Likewise, we also get music that’s clearly not twelve-tone serial, but that uses strict serial techniques. Listen to <a href="https://open.spotify.com/track/6mJlwt6XPR6p3CD1JjaJq8?si=4122a9297402412f" target="_blank" rel="noopener noreferrer" class="external" aria-label="The Lamb（外部網站，另開分頁）"><em>The Lamb</em></a> by John Tavener. The pitch classes in the soprano melody at the beginning (“Little lamb, who made thee?”) are G, B, A, F♯, G. The soprano then repeats that melody for the second line (“Dost thou know who made thee?”), while the altos sing the  inversion:</p><ul>
+<li>Soprano (prime): G–B–A–F♯–G</li>
+<li>Alto (inversion): G–E♭–F–A♭–G</li>
+</ul><p>Then the soprano sings a longer tune (“Gave thee life and bid thee feed / By the stream and o’er the mead”) with the second half as a a strict retrograde of the first:</p><ul>
+<li>“Gave thee life and bid thee feed” (prime): G–B–A–F♯–E♭–F–A♭</li>
+<li>“By the stream and o’er the mead” (retrograde): A♭–F–E♭–F♯–A–B–G</li>
+</ul><p>Again, we get this melody a second time (“Gave thee clothing of delight / Softest clothing wooly bright”) with the altos now singing the inversion:</p><ul>
+<li>Soprano (prime then retrograde): G–B–A–F♯–E♭–F–A♭ | A♭–F–E♭–F♯–A–B–G</li>
+<li>Alto (inversion then retrograde inversion): G–E♭–F–A♭–B–A–F♯ | F♯–A–B–A♭–F–E♭–G</li>
+</ul><p>Clearly this is a highly serial way of writing. Then again, this passage has a very clear modal final on G, and the two parts (soprano and alto separately) can be considered in terms of standard chord modes. (See <a href="../omt/omt-diatonic-modes.html">Diatonic Modes</a> to review.)</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0052"><h2>目前可以確定什麼？</h2></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0053"><p>運用十二音技法基本概念創作音樂的方法很多，界線也不總是清楚。儘管有這些差異，十二音音列至少會以某種方式參與下列材料的構成：</p></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0054"><ul><li><strong>主題。</strong>但序列音樂的主題不一定、甚至往往不是剛好十二個音，也未必是一次完整音列陳述。</li><li><strong>動機。</strong>例如音列本身包含一個小音型的數次反覆，便與此相關，詳見〈<a href="../omt/omt-row-properties.html">音列的特性</a>〉。</li><li><strong>和弦。</strong>我們通常不受調性規則限制，即使偶爾使用調性材料，也有許多可能的和弦配置；音列的特性會影響具體和弦的構成。</li></ul></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0055"><div class="textbox shaded"><a id="zh-omt-basics-of-twelve-tone-theory-assignments"></a>作業</div></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0056"><ol><li>從〈<a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a>〉選一個感興趣的音列，寫出：<ul><li>包含48個形式位置的音列矩陣，像上表一樣以數字填入方格。</li><li><strong>P<sub>0</sub></strong>、<strong>R<sub>0</sub></strong>、<strong>I<sub>0</sub></strong>與<strong>RI<sub>0</sub></strong>的五線譜。</li></ul></li></ol></div><div class="translation-unit" id="omt-basics-of-twelve-tone-theory-u0057"><div class="footnotes"><ol><li id="zh-omt-basics-of-twelve-tone-theory-footnote-623-1">依這種稱法，「第一維也納樂派」以海頓、莫札特與貝多芬為核心。<a href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-return-footnote-623-1" class="return-footnote">↵</a></li><li id="zh-omt-basics-of-twelve-tone-theory-footnote-623-2">這個數字來自12!，讀作「十二階乘」，即12×11×10×…×2×1。<a href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-return-footnote-623-2" class="return-footnote">↵</a></li><li id="zh-omt-basics-of-twelve-tone-theory-footnote-623-3">在模12下，下行3個半音也等同於上行9個半音。<a href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-return-footnote-623-3" class="return-footnote">↵</a></li><li id="zh-omt-basics-of-twelve-tone-theory-footnote-623-4">此音列形式出自Lutyens的BL Add. Ms.64789手稿，第48b葉。感謝Laurel Parsons提供。<a href="../omt/omt-basics-of-twelve-tone-theory.html#zh-omt-basics-of-twelve-tone-theory-return-footnote-623-4" class="return-footnote">↵</a></li></ol></div></div><aside class="translator-note">譯註：原英文第3註含尚未展開的Pressbooks術語短碼；中文保留其實際意思「模12」，不把出版系統的標記當成正文。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>What do we know?</h2><p>So, there is a wide range of approaches to making music with the basics of the twelve-tone technique, and it’s not always clear what counts. Those differences notwithstanding, at a minimum, twelve-tone rows are used somehow in the construction of:</p><ul>
+<li><strong>Themes.</strong> That said, note that serial themes are not always (or even often) exactly twelve notes in length, or complete row statements.</li>
+<li><strong>Motives.</strong> This is pertinent, for instance, in cases where the row form includes several iterations of a smaller cell (see the <a href="../omt/omt-row-properties.html">Row Properties</a> chapter for more information).</li>
+<li><strong>Chords.</strong> As we’re generally not working within tonal constraints (and even when we occasionally are), there are many different chordal configurations possible. The row’s properties give rise to the particular construction of chords used.</li>
+</ul><div class="textbox shaded"><a id="en-omt-basics-of-twelve-tone-theory-assignments"></a>Assignments</div><ol>
+<li>Chose any row from the <a href="../omt/omt-anthology-twelve-tone.html">Twelve-Tone Anthology</a> that interests you and write out:
+<ul>
+<li>The row matrix with all 48 row forms (i.e., with numbers on the grid as shown above)</li>
+<li><strong>P<sub>0, </sub></strong><strong>R<sub>0, </sub></strong><strong>I<sub>0, </sub></strong><strong>RI<sub>0 </sub></strong>in musical notation</li>
+</ul>
+</li>
+</ol><div class="footnotes"><ol><li id="en-omt-basics-of-twelve-tone-theory-footnote-623-1">The "First Viennese School" (by this logic) centers on Haydn, Mozart, and Beethoven. <a href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-return-footnote-623-1" class="return-footnote">↵</a></li><li id="en-omt-basics-of-twelve-tone-theory-footnote-623-2">This number comes from the mathematical expression 12! (read: "12 factorial"), which means 12 × 11 × 10 … × 2 × 1. <a href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-return-footnote-623-2" class="return-footnote">↵</a></li><li id="en-omt-basics-of-twelve-tone-theory-footnote-623-3">Or, equivalently, or 9 semitones up, modulo 12. <a href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-return-footnote-623-3" class="return-footnote">↵</a></li><li id="en-omt-basics-of-twelve-tone-theory-footnote-623-4">This is the row form given by Lutyens in the BL Add. Ms. 64789. manuscript (f.48b). Credit and thanks to Laurel Parsons for providing this. <a href="../omt/omt-basics-of-twelve-tone-theory.html#en-omt-basics-of-twelve-tone-theory-return-footnote-623-4" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-twelve-tone-music.html">上一節：十二音音樂</a><a href="../omt/omt-naming-conventions-for-rows.html">下一節：音列的命名慣例</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/basics-of-twelve-tone-theory/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note">本頁部分譜例以原來源連結提供。<a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

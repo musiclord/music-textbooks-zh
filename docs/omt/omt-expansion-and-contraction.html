@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>樂句層次的擴展與縮減 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-expansion-and-contraction.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group" open=""><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a aria-current="page" href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-expansion-and-contraction" data-book="omt" data-page-url="/omt/omt-expansion-and-contraction.html" data-next-url="/omt/omt-formal-sections-in-general.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">樂句層次的擴展與縮減</h1><p class="authors">John Peterson</p><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-expansion">擴展</a>使樂句比預期更長，可以發生在內部（樂句開始與結束之間），也可以發生在外部（開始之前或結束之後）。<ul><li>內部擴展的技巧包括<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-repetition">重複</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-stretching">拉長</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-one-more-time">再來一次技巧</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-alternative-path">替代路徑</a>。</li><li>外部擴展分為兩類：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-prefix">前綴</a>出現在開始之前，例如導奏。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-suffix">後綴</a>出現在終止式之後，例如<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-post-cadential-extension-pce">終止後延伸</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-codetta">小尾聲</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-coda-classical">尾聲</a>。</li></ul></li></ul></li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contraction">縮減</a>使樂句比預期更短。</li></ul></div></div></div><div class="translation-unit" id="omt-expansion-and-contraction-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/6XzDtaE6Qtto0mvrKJvJT6?si=abb6c65eec4a449b" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0003"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-expansion">擴展</a>（expansion）與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contraction">縮減</a>（contraction）指的是作曲家改變樂句預期長度的方式。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0004"><p>「預期長度」是什麼意思？</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0005"><ul><li>當一個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>讓人聯想到某種<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-archetype">典型結構</a>，卻沒有完全依照它進行時，我們往往能判斷：如果它更接近該典型結構，原本會有多長。</li><li>有時，樂句朝向終止式的進行，會讓我們預期終止式可能出現在哪裡；樂句卻<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-evaded-cadence">避開</a>了這個預期中的終止式。</li><li>有時，一首作品呈現同一樂句的兩種版本，一個沒有擴展，另一個有擴展，讓我們有原型可供比較。</li></ul></div><div class="translation-unit" id="omt-expansion-and-contraction-u0006"><p>擴展是使樂句比預期更長的過程，增加的長度可能在樂句內部，即「<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-internal-expansion">內部擴展</a>」，也可能在樂句外部，即「<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-external-expansion">外部擴展</a>」。縮減則是使樂句比預期更短，而且一定發生在樂句內部。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0007"><p>本章概述幾種樂句擴展與縮減的技巧，雖未涵蓋所有可能，已包括數種較常見的做法。這些技巧的術語很容易多到令人難以掌握；最重要的是能辨認樂句何時比預期更長或更短，並說明長度差異如何產生。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-expansion">Expansions</a> make a phrase last longer than expected. They can be internal (between the beginning and ending of the phrase) or external (before the beginning or after the end).
+<ul>
+<li>Internal expansion techniques include <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-repetition">repetition</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-stretching">stretching</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-one-more-time">one-more-time technique</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-alternative-path">alternative path</a>.</li>
+<li>External expansions fall into two categories:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-prefix">Prefixes</a> occur before the beginning, such as an introduction.</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-suffix">Suffixes</a> occur after the cadence, such as <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-post-cadential-extension-pce">post-cadential extensions</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-codetta">codettas</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-coda-classical">codas</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contraction">Contractions</a> make a phrase shorter than expected.</li>
+</ul></div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/6XzDtaE6Qtto0mvrKJvJT6?si=abb6c65eec4a449b" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>The terms <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-expansion">expansion</a> and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contraction">contraction</a> refer to ways composers play with the expected length of a phrase.</p><p>What does "expected length" mean?</p><ul>
+<li>When a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a> invokes one of the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-archetype">archetypes</a> without following it exactly, we can often identify how long a closer representation of that archetype would have been.</li>
+<li>Sometimes the cadential motion of the phrase allows us to anticipate where a cadence might occur, but the phrase <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-evaded-cadence">evades</a> the expected cadence.</li>
+<li>Sometimes a piece states two versions of a phrase—one unexpanded and the other expanded—giving us a model to which we can compare the expanded version.</li>
+</ul><p>Expansion refers to the process of making a phrase longer than we expect. This lengthening might occur within the phrase ("<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-internal-expansion">internal expansion</a>") or outside of the phrase ("<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-external-expansion">external expansion</a>"). Contraction refers to the process of making a phrase shorter than we expect, and it always occurs within a phrase.</p><p>In this chapter, we offer an overview of several techniques for phrase expansion and contraction. This isn't an exhaustive list, but it covers several of the more common techniques. The terminology concerning expansion and contraction techniques can quickly become overwhelming. What's most important is to be able to recognize when a phrase is longer or shorter than expected and to be able to describe what's creating the difference in length.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0008"><h2 id="zh-omt-expansion-and-contraction-chapter-2292-section-1" class="section-header"><a id="zh-omt-expansion-and-contraction-internal-expansions"></a>內部擴展</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0009"><p>以下四種技巧——<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-repetition">重複</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-stretching">拉長</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-one-more-time">再來一次</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-alternative-path">替代路徑</a>——都發生在樂句<em>內部</em>，也就是樂句開始之後、終止式之前。作曲家常結合使用這些技巧；事實上，只用單一技巧擴展樂句的情況反而較少見。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-expansion-and-contraction-chapter-2292-section-1" class="section-header"><a id="en-omt-expansion-and-contraction-internal-expansions"></a>Internal Expansions</h2><p>The four techniques we discuss below—<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-repetition">repetition</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-stretching">stretching</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-one-more-time">one-more-time</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-alternative-path">alternative path</a>—all occur <em>within</em> a phrase: after the phrase's beginning, but before its cadence. Often, composers use these techniques in combination; in fact, it's relatively rare to find a phrase that's expanded using only one technique.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0010"><h2>重複</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0011"><figure id="zh-omt-expansion-and-contraction-attachment_2305" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-2305" class="wp-caption alignright"><a href="../assets/omt/6a9c9d6c82bf53d1.png"><img class="wp-image-2305 size-thumbnail zoomable" src="../assets/omt/6a9c9d6c82bf53d1.png" alt="Robert Sheldon《Bright Lights!》長笛聲部：四小節前句接五小節後句，後句中的動機重複以紅圈標示，整個樂段九小節。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_001_Repetition_Sheldon_Bright_Lights.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-2305" class="wp-caption-text"><span class="example-caption-name">例 1</span>。Robert Sheldon 的 <em>Bright Lights!</em>，以完全相同的重複形成內部擴展（<a href="https://youtu.be/rQCGWof1_us?t=48" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:49–1:03（外部網站，另開分頁）">0:49–1:03</a>）。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Flute Part＝長笛聲部；</li><li>repeated motive＝重複的動機；</li><li>period＝樂段；</li><li>expanded＝已擴展。</li></ul><ul class="label-terms"><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>ant.／antecedent＝前句；</li><li>cons.／consequent＝後句；</li><li>HC＝半終止；</li><li>IAC＝不完全正格終止；</li><li>PAC＝完全正格終止。</li></ul><ul class="label-terms"><li>圖中9小節＝前句4＋後句5；</li><li>後句由2小節基本樂思與3小節對比樂思組成。</li></ul></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0012"><p>作曲家重複材料時，有時會因<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-repetition">重複</a>而增加長度。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0013"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0011">例 1</a> 在<em>一個單位內</em>完全重複同一動機，因而增加長度：四小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-antecedent">前句</a>之後，接上擴展為五小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-consequent">後句</a>。多出來的長度，來自單位內<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-motive">動機</a>的重複。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0014"><figure id="zh-omt-expansion-and-contraction-attachment_7904" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-7904" class="wp-caption alignright"><a href="../assets/omt/6cf4a3a0145be4cc.png"><img class="wp-image-7904 size-thumbnail zoomable" src="../assets/omt/6cf4a3a0145be4cc.png" alt="莫札特K.447第一樂章：四小節複合基本樂思接五小節延續部，模進原型及兩次移位重複以紅色標出，終止於HC。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/06/combined-Example_002b_Repetition_Mozart_447-3.png" loading="lazy" tabindex="0" role="button" width="1400" height="1466"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-7904" class="wp-caption-text"><span class="example-caption-name">例 2。</span>莫札特法國號協奏曲 K. 447，第一樂章第 1–9 小節，以變化重複形成內部擴展（<a href="https://open.spotify.com/track/29lQckJgUUlqkiGFDIcNfU?si=nJK2FsKrRU-ScM9xR270kg" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:18（外部網站，另開分頁）">0:00–0:18</a>）。</figcaption></figure></div><aside class="translator-note">譯註：右下圖把整體長度標為8，但下層明列複合基本樂思4小節、延續部5小節，合計應為9；這也與正文及第1–9小節的圖說一致。原圖保留，勿將上方的8視為正確加總。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>compound basic idea／c.b.i.＝複合基本樂思；</li><li>continuation＝延續部；</li><li>model＝原型；</li><li>copy＝移位重複；</li><li>cad.＝終止樂思；</li><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>HC＝半終止。</li></ul><p>延續部由1+1+1+2構成，共5小節，前面複合基本樂思4小節。</p><ul class="label-terms"><li>Clarinetti in B＝B♭調單簧管；</li><li>Fagotti＝低音管；</li><li>Corno principale in Es＝E♭調獨奏法國號；</li><li>Violino I／II＝第一／第二小提琴；</li><li>Viola＝中提琴；</li><li>Violoncello e Basso＝大提琴與低音聲部；</li><li>Allegro＝快板。</li></ul></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0015"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0014">例 2</a> 呈現變化重複，將<em>整個單位</em>重複以增加長度：四小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-compound-basic-idea">複合基本樂思（c.b.i.）</a>之後，接上五小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-continuation">延續部</a>。延續部以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-sequence">模進</a>開始，使原本預期的四小節擴展成五小節。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0016"><p>並不是所有重複都會形成擴展！請區分出乎預期、增加長度的重複，以及較可預期的重複，例如呈示部中的基本樂思重複。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Repetition</h2><figure id="en-omt-expansion-and-contraction-attachment_2305" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-2305" class="wp-caption alignright"><a href="../assets/omt/6a9c9d6c82bf53d1.png"><img class="wp-image-2305 size-thumbnail zoomable" src="../assets/omt/6a9c9d6c82bf53d1.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_001_Repetition_Sheldon_Bright_Lights.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-2305" class="wp-caption-text"><span class="example-caption-name">Example 1</span>. Internal expansion via exact repetition in Robert Sheldon's <em>Bright Lights!</em> (<a href="https://youtu.be/rQCGWof1_us?t=48" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:49–1:03（外部網站，另開分頁）">0:49–1:03</a>).</figcaption></figure><p>Sometimes when a composer repeats material, the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-repetition">repetition</a> creates extra length.</p><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0011">Example 1</a> shows an exact repetition of a motive <em>within a unit</em> that creates extra length: a four-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-antecedent">antecedent</a> is followed by an expanded five-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-consequent">consequent</a>. The extra length results from a repeated <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-motive">motive</a> within a unit.</p><figure id="en-omt-expansion-and-contraction-attachment_7904" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-7904" class="wp-caption alignright"><a href="../assets/omt/6cf4a3a0145be4cc.png"><img class="wp-image-7904 size-thumbnail zoomable" src="../assets/omt/6cf4a3a0145be4cc.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/06/combined-Example_002b_Repetition_Mozart_447-3.png" loading="lazy" tabindex="0" role="button" width="1400" height="1466"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-7904" class="wp-caption-text"><span class="example-caption-name">Example 2.</span> Internal expansion via varied repetition in Mozart's Horn Concerto, K. 447, I, mm. 1–9 (<a href="https://open.spotify.com/track/29lQckJgUUlqkiGFDIcNfU?si=nJK2FsKrRU-ScM9xR270kg" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:18（外部網站，另開分頁）">0:00–0:18</a>).</figcaption></figure><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0014">Example 2</a> shows a varied repetition in which <em>a whole unit</em> is repeated to add extra length: a four-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-compound-basic-idea">compound basic idea (c.b.i.)</a> is followed by a five-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-continuation">continuation</a>. The continuation begins with a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-sequence">sequence</a> that expands it from the expected four measures to five.</p><p>Not all repetitions create expansion! Be careful to differentiate expansion-creating repetitions, which are unexpected, from more predictable repetitions, such as when the basic idea is repeated in a presentation.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0017"><h2>拉長</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0018"><figure id="zh-omt-expansion-and-contraction-attachment_2383" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-2383" class="wp-caption alignright"><a href="../assets/omt/60f7ee1d7c37bf22.png"><img class="wp-image-2383 size-thumbnail zoomable" src="../assets/omt/60f7ee1d7c37bf22.png" alt="舒伯特D.459第一樂章：四小節呈示部與五小節延續部；終止樂思的I⁶與終止屬和聲被拉長，形成三小節終止樂思。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_003a_Stretching_Schubert_459.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-2383" class="wp-caption-text"><span class="example-caption-name">例 3。</span>舒伯特鋼琴奏鳴曲 D. 459，第一樂章第 1–9 小節，以拉長形成內部擴展（<a href="https://open.spotify.com/track/2w7acEUx1nzuh5ADgTvikr?si=7vpt2nHNQDGd8r-tqSj1kQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:17（外部網站，另開分頁）">0:00–0:17</a>）。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>presentation＝呈示部；</li><li>continuation＝延續部；</li><li>sentence＝樂句型；</li><li>b.i.＝基本樂思；</li><li>f.＝片段；</li><li>cad.＝終止樂思；</li><li>stretching＝拉長；</li><li>PAC＝完全正格終止。</li></ul><p>9小節＝呈示部4＋延續部5，後者為1+1+3。</p><p>Ger⁶表示德國增六和弦。</p><p>Allegro moderato＝中庸的快板。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0019"><p>有時，作曲家會增加某個和聲或旋律的持續時間，讓它比預期更長。這時，我們說包含該和聲或旋律的單位被<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-stretching">拉長</a>（stretching）了。在<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0018">例 3</a> 中，四小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-presentation">呈示部</a>之後，接上五小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-continuation">延續部</a>。延續部的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadential">終止樂思</a>被拉長：[latex]\mathrm{I}^6[/latex] 與終止屬和聲各自持續一整小節，而非原本共同出現在一個小節內；這個屬和聲又以 [latex]\mathrm{Ger}^6[/latex] 與終止 [latex]^6_4[/latex] 加以裝飾。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Stretching</h2><figure id="en-omt-expansion-and-contraction-attachment_2383" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-2383" class="wp-caption alignright"><a href="../assets/omt/60f7ee1d7c37bf22.png"><img class="wp-image-2383 size-thumbnail zoomable" src="../assets/omt/60f7ee1d7c37bf22.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_003a_Stretching_Schubert_459.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-2383" class="wp-caption-text"><span class="example-caption-name">Example 3. </span>Internal expansion via stretching in Schubert's Piano Sonata D. 459, I, mm. 1–9 (<a href="https://open.spotify.com/track/2w7acEUx1nzuh5ADgTvikr?si=7vpt2nHNQDGd8r-tqSj1kQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:17（外部網站，另開分頁）">0:00–0:17</a>).</figcaption></figure><p>Sometimes composers will lengthen a harmony or melody by increasing its duration so that it lasts longer than expected. When that happens, we say that the unit that contains the harmony or melody has been <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-stretching">stretched</a>. In <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0018">Example 3</a>, a four-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-presentation">presentation</a> is followed by a five-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-continuation">continuation</a>. The continuation's <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadential">cadential idea</a> is stretched when a [latex]\mathrm{I}^6[/latex] chord and the cadential dominant (embellished by a [latex]\mathrm{Ger}^6[/latex] and a cadential [latex]^6_4[/latex]) each last for a full measure as opposed to both occurring within a single measure.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0020"><h2>再來一次技巧（o.m.t.）</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0021"><p>Janet Schmalfeldt（1989）提出「再來一次技巧」（one-more-time technique），包含三個步驟：（1）音樂嘗試形成終止式；（2）這個終止式被迴避；（3）音樂再次嘗試終止。再次嘗試時常使用相同材料，讓人感到音樂像是「往回退了一步」；但也可能換用不同的終止材料。</p></div><aside class="translator-note">譯註：正文以1989年標示Schmalfeldt提出此技巧，延伸閱讀則將相關文章列為1992年。本稿保留兩處原載年份，未把它們擅自合併成同一年。</aside><div class="translation-unit" id="omt-expansion-and-contraction-u0022"><figure id="zh-omt-expansion-and-contraction-attachment_8157" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-8157" class="wp-caption alignright"><a href="../assets/omt/387f71279047230f.png"><img class="wp-image-8157 size-thumbnail zoomable" src="../assets/omt/387f71279047230f.png" alt="孟德爾頌〈Pilgerspruch〉：前句之後的延續部迴避第一次終止，再以o.m.t.重試並拉長終止材料，最後達到PAC。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide5-6.png" loading="lazy" tabindex="0" role="button" width="1400" height="1138"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-8157" class="wp-caption-text"><span class="example-caption-name">例 4。</span>孟德爾頌 Op. 8 第5首〈Pilgerspruch〉中，以再來一次技巧形成內部擴展（<a href="https://open.spotify.com/track/31CjWqgQhH2wMHumjyAcnF?si=PelVogCOSdez3BER7aMk0g" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:37（外部網站，另開分頁）">0:00–0:37</a>）。</figcaption></figure></div><aside class="translator-note">譯註：下方分組圖的整體為12小節、前句4小節、延續部8小節，但延續部下層寫成1+1+2+2，只合計6。依譜面重試終止時的拉長，以及8−1−1−2的加總，最後o.m.t.應為4小節，而非圖上的2。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>antecedent＝前句；</li><li>continuation＝延續部；</li><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>f.＝片段；</li><li>cad.＝終止樂思；</li><li>o.m.t. (= repeat the cadence)＝再來一次（重試終止）；</li><li>劃叉的CAD表示預期終止未完成；</li><li>HC＝半終止；</li><li>PAC＝完全正格終止。</li></ul><ul class="label-terms"><li>Singstimme＝歌唱聲部；</li><li>Pianoforte＝鋼琴；</li><li>Andante＝行板。</li></ul><p>原譜歌詞保留。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0023"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0022">例 4</a> 在第 10 小節提出一次終止，但它被迴避了，進行為 [latex]\mathrm{cad^6_4 – V^4_2 – I^6}[/latex]。接著，以再來一次技巧重複<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadential">終止樂思</a>。這個再來一次單位也被<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-stretching">拉長</a>：旋律 C–B♭–A–G 的下行花了兩小節，原本只需一小節；終止 [latex]\mathrm{^6_4}[/latex] 解決到 [latex]\mathrm{V}^7[/latex]，也花了一整小節，原本只需半小節。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>One-More-Time Technique (o.m.t.)</h2><p>Coined by Janet Schmalfeldt (1989), the one-more-time technique involves three steps: 1) the music tries to cadence, 2) the attempted cadence is evaded, and 3) the music retries the cadence. The re-tried cadence often uses the same material, such that it feels like the music is "backing up," but it may also retry the cadence with different cadential material.</p><figure id="en-omt-expansion-and-contraction-attachment_8157" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-8157" class="wp-caption alignright"><a href="../assets/omt/387f71279047230f.png"><img class="wp-image-8157 size-thumbnail zoomable" src="../assets/omt/387f71279047230f.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide5-6.png" loading="lazy" tabindex="0" role="button" width="1400" height="1138"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-8157" class="wp-caption-text"><span class="example-caption-name">Example 4.</span> Internal expansion via the one-more-time technique in Mendelssohn, Op. 8, no. 5, "Pilgerspruch" (<a href="https://open.spotify.com/track/31CjWqgQhH2wMHumjyAcnF?si=PelVogCOSdez3BER7aMk0g" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:37（外部網站，另開分頁）">0:00–0:37</a>).</figcaption></figure><p>In <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0022">Example 4</a>, a cadence is proposed in m. 10, but it's evaded ([latex]\mathrm{cad^6_4 – V^4_2 – I^6}[/latex]). A one-more-time repetition of the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadential">cadential idea</a> ensues. The one-more-time unit is <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-stretching">stretched</a>: notice that it takes two measures (compared to one originally) for the melody to descend C–B♭–A–G, and it takes a full measure (compared to a half measure originally) for the cadential [latex]\mathrm{^6_4}[/latex] to resolve to [latex]\mathrm{V}^7[/latex].</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0024"><h2>替代路徑</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0025"><p>當出乎預期的新材料，使樂句暫時或永久偏離原本走向終止式的路線，就形成<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-alternative-path">替代路徑</a>（alternative path）。暫時偏離稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-detour">繞道</a>（detour）：在真正抵達終止式之前，先返回該樂句先前的材料。永久偏離則稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-reroute">改道</a>（reroute）：不返回樂句先前的材料，便走向終止式。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0026"><figure id="zh-omt-expansion-and-contraction-attachment_8171" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-8171" class="wp-caption alignright"><a href="../assets/omt/42a2f5a3f57b4bc0.png"><img class="size-thumbnail wp-image-8171 zoomable" src="../assets/omt/42a2f5a3f57b4bc0.png" alt="孟德爾頌《赫布里底群島》：延續部重複後繞道兩小節，降低力度、以持續A♯及伴奏音型造成停滯，之後返回拉長的終止樂思。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide8-10.png" loading="lazy" tabindex="0" role="button" width="1400" height="1894"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-8171" class="wp-caption-text"><span class="example-caption-name">例 5。</span>孟德爾頌《<em>赫布里底群島</em>》序曲第 9–26 小節，以替代路徑中的繞道形成內部擴展（<a href="https://open.spotify.com/track/268QFsnVawnmGdlRhMum3T?si=2KI7fqQiRUyWKeGMsx0N3g" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:20–0:58（外部網站，另開分頁）">0:20–0:58</a>）。</figcaption></figure></div><aside class="translator-note">譯註：下方總覽圖的最後PAC標籤，畫在繞道與後續終止樂思的交界附近；但上方譜面把PAC標在最後四小節終止樂思的結尾。閱讀時應以上方譜面與正文所述的返回終止材料為準，不要把繞道結尾誤讀為該PAC的位置。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>presentation＝呈示部；</li><li>continuation＝延續部；</li><li>repetition of continuation＝延續部的重複；</li><li>sentence＝樂句型；</li><li>b.i.＝基本樂思；</li><li>u.＝單位；</li><li>cad.＝終止樂思；</li><li>detour＝繞道；</li><li>PAC＝完全正格終止。</li></ul><ul class="label-terms"><li>紅字accompanimental gestures, no melody＝伴奏音型，沒有旋律；</li><li>dynamic reduced＝力度降低；</li><li>sustained A♯ creates stasis＝持續的A♯造成停滯感。</li></ul><p>先有8小節樂句型（4+4），再以2+2+2+4構成10小節的延續部重複。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0027"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0026">例 5</a> 展示繞道：樂句型的延續部再次出現。當終止樂思的動機在第 19 小節出現後，又於第 20 小節重複，我們察覺這次重複開始「偏離路線」；因為先前對應的第 15 小節並沒有這樣做。接著，第 21–22 小節出現高度對比的兩小節片段，之後在第 23–26 小節返回類似第 19–20 小節終止樂思的材料，只是這次被拉長了。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0028"><figure id="zh-omt-expansion-and-contraction-attachment_8178" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-8178" class="wp-caption alignright"><a href="../assets/omt/dccf8950b40beef9.png"><img class="wp-image-8178 size-thumbnail zoomable" src="../assets/omt/dccf8950b40beef9.png" alt="〈Sicilienne〉四小節前句接六小節後句；後句的對比樂思改走不同方向，再加入新的兩小節終止樂思，形成十小節樂段。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide10-11.png" loading="lazy" tabindex="0" role="button" width="1046" height="1095"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-8178" class="wp-caption-text"><span class="example-caption-name">例 6。</span>Maria Theresia von Paradis〈Sicilienne〉第 1–10 小節，以替代路徑中的改道形成內部擴展（<a href="https://open.spotify.com/track/55dSAv52AK0DnVj5ZUIDBh?si=1G2p8eSASG-y2QyHp2xhRw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:42（外部網站，另開分頁）"><em>0:00–0:42</em></a>）。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>reroute＝改道；</li><li>period＝樂段；</li><li>expanded＝已擴展；</li><li>cad.＝終止樂思；</li><li>c.i.¹／c.i.²表示兩種不同的對比樂思。</li></ul><ul class="label-terms"><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>ant.／antecedent＝前句；</li><li>cons.／consequent＝後句；</li><li>HC＝半終止；</li><li>IAC＝不完全正格終止；</li><li>PAC＝完全正格終止。</li></ul><ul class="label-terms"><li>10小節＝前句4＋後句6；</li><li>後句由基本樂思、改道的對比樂思與新終止樂思各2小節構成。</li></ul><p>Andantino＝小行板。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0029"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0028">例 6</a> 展示改道：四小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-antecedent">前句</a>之後，接上擴展為六小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-consequent">後句</a>。後句以和前句相同的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-basic-idea">基本樂思</a>開始，但它的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contrasting-idea">對比樂思</a>卻朝顯著不同的方向前進，並未導向終止式。因此，需要新的終止樂思，才能將樂句帶向<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-perfect-authentic-cadence-pac">完全正格終止（PAC）</a>。<span> </span></p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0030"><p>雖然<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-one-more-time">再來一次技巧</a>與替代路徑都與終止式有關，兩者卻是很不一樣的技巧，如下表所示：</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0031"><table class=" score-table"><tbody><tr><td><strong>再來一次技巧</strong></td><td><strong>替代路徑</strong></td></tr><tr><td><ul><li>片段已嘗試形成終止式，但沒有成功。</li><li>感覺像是樂句往回退，重新嘗試剛才未成功的終止式。</li></ul></td><td><ul><li>片段尚未嘗試形成終止式。</li><li>感覺像是樂句偏離了原本路線。</li></ul></td></tr></tbody></table></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Alternative Paths</h2><p>An <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-alternative-path">alternative path</a> occurs when unexpected new material either temporarily or permanently causes a phrase to deviate from its expected trajectory toward a cadence. A temporary deviation is called a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-detour">detour</a>. Detours return to previous material from within the phrase before the phrase achieves a cadence. A permanent deviation is called a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-reroute">reroute</a>. Reroutes achieve cadences without returning to previous material from within the phrase.</p><figure id="en-omt-expansion-and-contraction-attachment_8171" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-8171" class="wp-caption alignright"><a href="../assets/omt/42a2f5a3f57b4bc0.png"><img class="size-thumbnail wp-image-8171 zoomable" src="../assets/omt/42a2f5a3f57b4bc0.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide8-10.png" loading="lazy" tabindex="0" role="button" width="1400" height="1894"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-8171" class="wp-caption-text"><span class="example-caption-name">Example 5.</span> Internal expansion via alternative path (detour) in Mendelssohn, <em>Hebrides</em> Overture, mm. 9–26 (<a href="https://open.spotify.com/track/268QFsnVawnmGdlRhMum3T?si=2KI7fqQiRUyWKeGMsx0N3g" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:20–0:58（外部網站，另開分頁）">0:20–0:58</a>).</figcaption></figure><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0026">Example 5</a> shows a detour: the sentence's continuation is repeated. We realize the repetition is getting "off track" when the motive in the cadential idea (m. 19) is repeated (m. 20), which did not happen in the analogous place before (m. 15). A highly contrasting two-measure passage emerges (mm. 21–22) that leads to a return of material (mm. 23–26) similar to the cadential idea in mm. 19–20, now stretched.</p><figure id="en-omt-expansion-and-contraction-attachment_8178" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-8178" class="wp-caption alignright"><a href="../assets/omt/dccf8950b40beef9.png"><img class="wp-image-8178 size-thumbnail zoomable" src="../assets/omt/dccf8950b40beef9.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide10-11.png" loading="lazy" tabindex="0" role="button" width="1046" height="1095"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-8178" class="wp-caption-text"><span class="example-caption-name">Example 6.</span> Internal expansion via alternative path (reroute) in Maria Theresia von Paradis, Sicilienne, mm. 1–10 (<a href="https://open.spotify.com/track/55dSAv52AK0DnVj5ZUIDBh?si=1G2p8eSASG-y2QyHp2xhRw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:42（外部網站，另開分頁）"><em>0:00–0:42</em></a>).</figcaption></figure><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0028">Example 6</a> shows a reroute: a four-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-antecedent">antecedent</a> is followed by a six-measure expanded <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-consequent">consequent</a>. The consequent begins with the same <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-basic-idea">basic idea</a> as the antecedent, but its <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contrasting-idea">contrasting idea</a> moves in a markedly different direction, one that doesn't lead to a cadence. A new cadential idea is needed to bring the phrase to a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-perfect-authentic-cadence-pac">perfect authentic cadence (PAC)</a>.<span> </span></p><p>Although <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-one-more-time">one-more-time technique</a> and alternative paths both involve cadences, they are very different techniques, as explained below:</p><table class=" score-table">
+<tbody>
+<tr>
+<td><strong>One-more-time technique</strong></td>
+<td><strong>Alternative path</strong></td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Passage has tried and failed to achieve a cadence</li>
+<li>Feels as though the phrase backs up to try the failed cadence again</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Passage has not yet tried to cadence</li>
+<li>Feels as though the phrase has gone off course</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0032"><h2 id="zh-omt-expansion-and-contraction-chapter-2292-section-2" class="section-header"><a id="zh-omt-expansion-and-contraction-external-expansions"></a>外部擴展</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0033"><p>作曲家在樂句外部增加長度時，可以在樂句開始前增加小節，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-prefix">前綴</a>；也可以在終止式之後增加，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-suffix">後綴</a>。分析圖用虛線弧線或方括線標示外部擴展。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-expansion-and-contraction-chapter-2292-section-2" class="section-header"><a id="en-omt-expansion-and-contraction-external-expansions"></a>External Expansions</h2><p>When composers add length outside of a phrase, they may add measures before the beginning (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-prefix">prefixes</a>) or after the cadence (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-suffix">suffixes</a>). In diagrams, we indicate external expansions using dashed arcs or brackets.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0034"><h2>前綴</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0035"><figure id="zh-omt-expansion-and-contraction-attachment_8183" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-8183" class="wp-caption alignright"><a href="../assets/omt/ae000e72578d681e.png"><img class="wp-image-8183 size-thumbnail zoomable" src="../assets/omt/ae000e72578d681e.png" alt="Chaminade〈L’amour captif〉：紅色虛線標出兩小節器樂前綴，之後為四小節複合基本樂思及四小節終止型結尾。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide12-13.png" loading="lazy" tabindex="0" role="button" width="1006" height="1279"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-8183" class="wp-caption-text"><span class="example-caption-name">例 7。</span>Cécile Chaminade〈L'amour captif〉第 1–10 小節，以短小前綴形成外部擴展（<a href="https://open.spotify.com/track/243TaFRW3lZHhNNMIJqacw?si=Hnd3vfj3SFCniqoz2iiiPw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:13（外部網站，另開分頁）">0:00–0:13</a>）。</figcaption></figure></div><aside class="translator-note">譯註：本例圖說寫第1–10小節，正文則將核心低音變體定位在第8–11小節。譜中有弱起，而圖上未逐小節列號；此處保留兩處原載範圍，不自行改用其中一種計數。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>prefix＝前綴；</li><li>compound basic idea／c.b.i.＝複合基本樂思；</li><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>cadential／cad.＝終止型結尾；</li><li>u.＝單位；</li><li>PAC＝完全正格終止。</li></ul><p>圖示2小節前綴之後接8小節樂句（4+4），外部前綴使用紅色虛線。</p><ul class="label-terms"><li>Voice＝歌唱聲部；</li><li>Piano＝鋼琴；</li><li>Allegretto＝稍快板；</li><li>dolce＝柔美地。</li></ul><p>原譜雙語歌詞保留。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0036"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-prefix">前綴</a>（prefix）位於樂句開始之前，通常是導奏。前綴可以很短，也可以很長，例如交響曲開頭的慢速導奏。<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0035">例 7</a> 展示短小的前綴。如同許多歌曲，這首<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-melodie">法國藝術歌曲</a>（mélodie）在歌者進入前，先有一段器樂導奏，也就是在樂句開始前先出現的材料。請注意，這個樂句還使用典型<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-core-bass-pattern">核心低音終止型態</a>的變體：Chaminade 不用 <em>mi-fa-sol-do</em>（[latex]\hat{3}-\hat{4}-\hat{5}-\hat{1}[/latex]），而寫成 <em>di-re-sol-do</em>（[latex]\uparrow\hat{1}-\hat{2}-\hat{5}-\hat{1}[/latex]），出現在第 8–11 小節。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>The Prefix</h2><figure id="en-omt-expansion-and-contraction-attachment_8183" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-8183" class="wp-caption alignright"><a href="../assets/omt/ae000e72578d681e.png"><img class="wp-image-8183 size-thumbnail zoomable" src="../assets/omt/ae000e72578d681e.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Slide12-13.png" loading="lazy" tabindex="0" role="button" width="1006" height="1279"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-8183" class="wp-caption-text"><span class="example-caption-name">Example 7. </span>External expansion via small prefix in Cécile Chaminade, "L'amour captif," mm. 1–10 (<a href="https://open.spotify.com/track/243TaFRW3lZHhNNMIJqacw?si=Hnd3vfj3SFCniqoz2iiiPw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:13（外部網站，另開分頁）">0:00–0:13</a>).</figcaption></figure><p>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-prefix">prefix</a> occurs before the beginning of a phrase, usually taking the form of an introduction. A prefix can be small, but it may also be large, such as when a composer begins a symphony with a slow introduction. <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0035">Example 7</a> shows a small prefix. As is very common with songs, this <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-melodie">mélodie</a> opens with an instrumental introduction before the singer enters—that is, before the phrase beginningg. Note also that this phrase includes a variant on the typical <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-core-bass-pattern">core bass cadential pattern</a>. Instead of <em>mi-fa-sol-do</em> ([latex]\hat{3}-\hat{4}-\hat{5}-\hat{1}[/latex]), Chaminade writes <em>di-re-sol-do</em> ([latex]\uparrow\hat{1}-\hat{2}-\hat{5}-\hat{1}[/latex]) (mm. 8–11).</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0037"><h2>後綴</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0038"><p>後綴出現在樂句已形成終止之後。<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">例 8</a> 的術語，可彈性用來描述不同種類的後綴。雖然<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">例 8</a> 提供使用指引，有人稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-post-cadential-extension-pce">終止後延伸</a>的片段，另一人可能稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-codetta">小尾聲</a>。比起執著哪個術語最適切，更重要的是辨認這段後綴在樂句範圍之外增加了長度。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0039"><table id="zh-omt-expansion-and-contraction-tablepress-13" class="tablepress tablepress-id-13 score-table"><thead><tr class="row-1 odd"><th class="column-1">術語</th><th class="column-2">平均長度</th><th class="column-3">特徵</th><th class="column-4">典型位置</th><th class="column-5">範例</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">終止後延伸（p.c.e.）</td><td class="column-2">短<br>（1–2 小節）</td><td class="column-3"><ul><li>材料較少：旋律材料很少或沒有。</li><div class="wp-nocaption "></div><li>常重複終止式的和弦，例如 V–I，或最後的主和弦。</li><div class="wp-nocaption "></div><li>通常不會呈現完整樂句。</li></ul></td><td class="column-4">段落內，一個樂句結束之後。</td><td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">例 9</a></td></tr><tr class="row-3 odd"><td class="column-1">小尾聲（codetta）</td><td class="column-2">中等<br>（4–8 小節）</td><td class="column-3"><ul><li>常使用短小的動機材料，並加以重複。</li><div class="wp-nocaption "></div><li>可能完整走過一輪終止和聲進行。</li><div class="wp-nocaption "></div><li>可能呈現完整樂句，也可能沒有。</li></ul></td><td class="column-4">作品或樂章內，一個段落結束之後。</td><td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">例 10</a></td></tr><tr class="row-4 even"><td class="column-1">尾聲（coda）</td><td class="column-2">長<br>（8 小節以上）</td><td class="column-3"><ul><li>材料較充實：可能呈現新主題，或先前主題的再現。</li><div class="wp-nocaption "></div><li>常包含數個樂句。</li></ul></td><td class="column-4">作品或樂章主體結束之後。</td><td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">例 11</a></td></tr></tbody></table></div><div class="translation-unit" id="omt-expansion-and-contraction-u0040"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">例 8。</a>區分常見後綴類型的特徵。</span></p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0041"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">例 9</a> 呈現一個長<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-period">樂段</a>的結尾。<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-consequent">後句</a>以完全正格終止結束後，接著兩小節的終止後延伸，藉由琶音延長最後的主和聲。<a class="footnote" title="所連結的錄音是本曲唯一的商業錄音。我們希望更多人錄製這首優美的作品。" id="zh-omt-expansion-and-contraction-return-footnote-2292-1" href="../omt/omt-expansion-and-contraction.html#zh-omt-expansion-and-contraction-footnote-2292-1"><sup class="footnote">[1]</sup></a></p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0042"><p>在<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">例 10</a> 中，一個長樂句於第 41 小節，以 A♭ 大調的完全正格終止結束這首鋼琴奏鳴曲的呈示部。終止式之後接著小尾聲；請留意其中重複的兩小節單位，其和聲配置使用終止低音線 <em>fi-sol-do</em>（[latex]\uparrow\hat{4}-\hat{5}-\hat{1}[/latex]）。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0043"><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">例 11</a> 展示最長的一類後綴：尾聲。導奏先返回（4:52），接著有所變化（5:03），然後在 5:32 以和後續開頭重疊的完全正格終止，結束作品本體。尾聲也從 5:32 開始，以充滿活力的音樂為作品的收束喝采；它將先前聽過的主題改為快速版本，並包含數個樂句。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0044"><div id="zh-omt-expansion-and-contraction-gallery-1" class="gallery galleryid-2292 gallery-columns-2 gallery-size-thumbnail"><dl class="gallery-item"><dt class="gallery-icon landscape"><a href="../assets/omt/e73db95876316d06.png"><img src="../assets/omt/e73db95876316d06.png" class="attachment-thumbnail size-thumbnail zoomable" alt="Chaminade〈Les presents〉：四小節後句以PAC結束後，接兩小節終止後延伸，延長主和聲。" aria-describedby="zh-omt-expansion-and-contraction-gallery-1-2480" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_010_Chaminade_Presents-e1623956324859.png" loading="lazy" tabindex="0" role="button" width="1398" height="787"></a></dt><dd class="wp-caption-text gallery-caption" id="zh-omt-expansion-and-contraction-gallery-1-2480"><span class="example-caption-name">例 9。</span>Cécile Chaminade〈Les presents〉以後綴中的終止後延伸形成外部擴展（<a href="https://open.spotify.com/track/1hyX06OrRGiO8AUJWIHrFH?si=efK7Hbc7TfK8kVt8NdvU2w" target="_blank" rel="noopener noreferrer" class="external" aria-label="2:31–2:57（外部網站，另開分頁）">2:31–2:57</a>）。</dd></dl><dl class="gallery-item"><dt class="gallery-icon landscape"><a href="../assets/omt/bd1b522c6fad2c18.png"><img src="../assets/omt/bd1b522c6fad2c18.png" class="attachment-thumbnail size-thumbnail zoomable" alt="貝多芬Op.2第1號奏鳴曲：呈示部末尾PAC之後的七小節小尾聲，以2+2+3單位反覆終止低音材料。" aria-describedby="zh-omt-expansion-and-contraction-gallery-1-2482" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_011_codetta_Beethoven_2_1-e1623956414121.png" loading="lazy" tabindex="0" role="button" width="1085" height="787"></a></dt><dd class="wp-caption-text gallery-caption" id="zh-omt-expansion-and-contraction-gallery-1-2482"><span class="example-caption-name">例 10。</span>貝多芬鋼琴奏鳴曲 Op. 2 第1號，第 36–48 小節，以後綴中的小尾聲形成外部擴展（<a href="https://open.spotify.com/track/2E0Q7KZ2b6wTMsuDA8lRhz?si=0oMmAbdxTYCWfHp2HDeHqw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:45–0:58（外部網站，另開分頁）">0:45–0:58</a>）。</dd></dl><p><br></p></div></div><aside class="translator-note">譯註：例10下方示意圖將樂句層標為4，卻在它下面畫出兩個各4小節的cad.單位，數字彼此不一致。若依圖中的兩個下層單位加總，應為8小節；不能將上方4當成這兩組的總長。此處要辨認的重點，是PAC之後另加的7小節小尾聲。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>例9：period＝樂段；</li><li>ant.／antecedent＝前句；</li><li>cons.／consequent＝後句；</li><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>suffix (p.c.e.)＝後綴（終止後延伸）；</li><li>4小節後句結束後再延伸2小節。</li></ul><ul class="label-terms"><li>例10：phrase＝樂句；</li><li>cad.＝終止樂思；</li><li>u.＝單位；</li><li>suffix (codetta)＝後綴（小尾聲）；</li><li>小尾聲為2+2+3，共7小節。</li></ul><ul class="label-terms"><li>HC＝半終止；</li><li>PAC＝完全正格終止。</li></ul><ul class="label-terms"><li>dolce＝柔美地；</li><li>con espress.＝富有表情地。</li></ul><p>原譜歌詞、力度與奏法記號保留。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0045"><table id="zh-omt-expansion-and-contraction-tablepress-15" class="tablepress tablepress-id-15 score-table"><thead><tr class="row-1 odd"><th class="column-1">時間</th><th class="column-2">音樂事件</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">4:52</td><td class="column-2">導奏以變化形式返回。</td></tr><tr class="row-3 odd"><td class="column-1">5:03</td><td class="column-2">導奏的第二次變化開始。</td></tr><tr class="row-4 even"><td class="column-1">5:32</td><td class="column-2">尾聲開始，材料取自 2:00 出現的第二主題。</td></tr></tbody></table></div><div class="translation-unit" id="omt-expansion-and-contraction-u0046"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">例 11。</a><a href="https://open.spotify.com/track/6Mz6UuaghVRC2VEF5Td7SF?si=1XChkFQMRY2WWyTKjriFHA" target="_blank" rel="noopener noreferrer" class="external" aria-label="蕭士塔高維契《慶典序曲》（外部網站，另開分頁）">蕭士塔高維契《<em>慶典序曲</em>》</a>中，以後綴中的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-coda-pop">尾聲</a>形成外部擴展。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>The Suffix</h2><p>A suffix occurs after a phrase has cadenced. The terms in <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">Example 8</a> are flexibly used to describe different types of suffix. While <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">Example 8</a> provides guidelines for their use, what one person calls a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-post-cadential-extension-pce">post-cadential extension</a>, another might choose to call a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-codetta">codetta</a>. It's more important to recognize that a given suffix adds length outside the bounds of a phrase than to worry about which term is most appropriate.</p><table id="en-omt-expansion-and-contraction-tablepress-13" class="tablepress tablepress-id-13 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Term</th>
+<th class="column-2">Avg. Length</th>
+<th class="column-3">Characteristics</th>
+<th class="column-4">Typical Location</th>
+<th class="column-5">Example</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Post-cadential extension (p.c.e.)</td>
+<td class="column-2">Short <br>
+(1-2 mm.)</td>
+<td class="column-3">
+<ul>
+<li>Insubstantial: little or no melodic material</li>
+<div class="wp-nocaption "></div>
+<li>Often repeats the chords of the cadence (e.g. V–I) or the final tonic</li>
+<div class="wp-nocaption "></div>
+<li>Atypical to state an entire phrase</li>
+</ul>
+</td>
+<td class="column-4">After the end of a phrase within a section</td>
+<td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">Example 9</a></td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Codetta</td>
+<td class="column-2">Medium <br>
+(4-8 mm.)</td>
+<td class="column-3">
+<ul>
+<li>Often features short motivic material that gets repeated</li>
+<div class="wp-nocaption "></div>
+<li>May cycle through an entire cadential progression</li>
+<div class="wp-nocaption "></div>
+<li>May or may not state an entire phrase</li>
+</ul>
+</td>
+<td class="column-4">After the end of a section within a piece or movement</td>
+<td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">Example 10</a></td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Coda</td>
+<td class="column-2">Long <br>
+(8+ mm.)</td>
+<td class="column-3">
+<ul>
+<li>Substantial: may feature a new theme or reprise of a previous theme</li>
+<div class="wp-nocaption "></div>
+<li>Often contains multiple phrases</li>
+</ul>
+</td>
+<td class="column-4">After the end of a piece or movement</td>
+<td class="column-5"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">Example 11</a></td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0039">Example 8.</a> Characteristics that differentiate common suffix types.</span></p><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">Example 9</a> shows the end of a lengthy <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-period">period</a>. After the perfect authentic cadence that ends the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-consequent">consequent</a>, a two-measure post-cadential extension prolongs the final tonic via arpeggiation.<a class="footnote" title="The recording linked is the only commercial recording of the piece. We hope more people will record this beautiful work." id="en-omt-expansion-and-contraction-return-footnote-2292-1" href="../omt/omt-expansion-and-contraction.html#en-omt-expansion-and-contraction-footnote-2292-1"><sup class="footnote">[1]</sup></a></p><p>In <a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0044">Example 10</a>, a lengthy phrase ends the exposition of the piano sonata with a PAC in A♭ major at m. 41. The cadence is followed by a codetta: notice that it features a repeated two-measure unit harmonized with the cadential bass line <em>fi-sol-do</em> ([latex]\uparrow\hat{4}-\hat{5}-\hat{1}[/latex]).</p><p><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">Example 11</a> features the longest kind of suffix: a coda. After the introduction returns (4:52) and then is varied (5:03), an elided PAC ends the piece proper (5:32). The coda (also at 5:32) presents an energetic celebration of the piece's closure, featuring a fast version of a previously-heard theme with several phrases.</p><div id="en-omt-expansion-and-contraction-gallery-1" class="gallery galleryid-2292 gallery-columns-2 gallery-size-thumbnail">
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+                <a href="../assets/omt/e73db95876316d06.png"><img src="../assets/omt/e73db95876316d06.png" class="attachment-thumbnail size-thumbnail zoomable" alt="Notation" aria-describedby="en-omt-expansion-and-contraction-gallery-1-2480" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_010_Chaminade_Presents-e1623956324859.png" loading="lazy" tabindex="0" role="button" width="1398" height="787"></a>
+            </dt>
+<dd class="wp-caption-text gallery-caption" id="en-omt-expansion-and-contraction-gallery-1-2480">
+                <span class="example-caption-name">Example 9.</span> External expansion via suffix (post-cadential extension) in Cécile Chaminade, “Les presents” (<a href="https://open.spotify.com/track/1hyX06OrRGiO8AUJWIHrFH?si=efK7Hbc7TfK8kVt8NdvU2w" target="_blank" rel="noopener noreferrer" class="external" aria-label="2:31–2:57（外部網站，另開分頁）">2:31–2:57</a>).
+                </dd>
+</dl>
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+                <a href="../assets/omt/bd1b522c6fad2c18.png"><img src="../assets/omt/bd1b522c6fad2c18.png" class="attachment-thumbnail size-thumbnail zoomable" alt="Notation" aria-describedby="en-omt-expansion-and-contraction-gallery-1-2482" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_011_codetta_Beethoven_2_1-e1623956414121.png" loading="lazy" tabindex="0" role="button" width="1085" height="787"></a>
+            </dt>
+<dd class="wp-caption-text gallery-caption" id="en-omt-expansion-and-contraction-gallery-1-2482">
+                <span class="example-caption-name">Example 10.</span> External expansion via suffix (codetta) in Beethoven, Piano Sonata Op. 2, no. 1, mm. 36–48 (<a href="https://open.spotify.com/track/2E0Q7KZ2b6wTMsuDA8lRhz?si=0oMmAbdxTYCWfHp2HDeHqw" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:45–0:58（外部網站，另開分頁）">0:45–0:58</a>).
+                </dd>
+</dl>
+<p><br>
+        </p></div><table id="en-omt-expansion-and-contraction-tablepress-15" class="tablepress tablepress-id-15 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Timestamp</th>
+<th class="column-2">Event</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">4:52</td>
+<td class="column-2">Introduction returns in varied form</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">5:03</td>
+<td class="column-2">A second variation on the introduction begins</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">5:32</td>
+<td class="column-2">Coda begins; its material is drawn from the second theme (from 2:00)</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0045">Example 11.</a> External expansion via suffix (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-coda-pop">coda</a>) in <a href="https://open.spotify.com/track/6Mz6UuaghVRC2VEF5Td7SF?si=1XChkFQMRY2WWyTKjriFHA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Shostakovich, Festive Overture（外部網站，另開分頁）">Shostakovich, <em>Festive Overture</em></a>. </span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-expansion-and-contraction-u0047"><h2 id="zh-omt-expansion-and-contraction-chapter-2292-section-3" class="section-header"><a id="zh-omt-expansion-and-contraction-contraction"></a>縮減</h2></div><div class="translation-unit" id="omt-expansion-and-contraction-u0048"><figure id="zh-omt-expansion-and-contraction-attachment_2486" aria-describedby="zh-omt-expansion-and-contraction-caption-attachment-2486" class="wp-caption alignright"><a href="../assets/omt/fe566c6f60768216.png"><img class="wp-image-2486 size-thumbnail zoomable" src="../assets/omt/fe566c6f60768216.png" alt="Elmas第1號鋼琴協奏曲第三樂章：四小節複合基本樂思接三小節延續部，以PAC收束，總長縮短為七小節。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_013_Contraction_Elmas_PC_1_III.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="zh-omt-expansion-and-contraction-caption-attachment-2486" class="wp-caption-text"><span class="example-caption-name">例 12。</span>Stéphan Elmas 第1號鋼琴協奏曲，第三樂章第 15–21 小節中的縮減（<a href="https://www.youtube.com/watch?v=O-iFgieitho&amp;amp;t=231s" target="_blank" rel="noopener noreferrer" class="external" aria-label="32:21–32:28（外部網站，另開分頁）">32:21–32:28</a>）。</figcaption></figure></div><aside class="translator-note">譯註：原始影音連結含t=231s（3:51），與圖說所列32:21–32:28不同；此處保留原連結與圖說，未把尚未聆聽核對的時間改成已確認的定位。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>compound basic idea／c.b.i.＝複合基本樂思；</li><li>continuation／cont.＝延續部；</li><li>b.i.＝基本樂思；</li><li>c.i.＝對比樂思；</li><li>PAC＝完全正格終止。</li></ul><p>4小節複合基本樂思＋3小節延續部＝7小節。</p></section></div><div class="translation-unit" id="omt-expansion-and-contraction-u0049"><p>縮減比擴展少見。當樂句比我們預期更短時，就產生<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contraction">縮減</a>。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0050"><p>在<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0048"><span class="example-text"><span class="example-caption">例 12</span></span></a>中，四小節的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-compound-basic-idea">複合基本樂思</a>之後，接著三小節的延續部。依複合基本樂思的長度，我們可能原本期待延續部也有四小節，形成比例平衡。聆聽時，請留意終止式來得多麼突然；縮減通常會帶來這種感覺。</p></div><div class="translation-unit" id="omt-expansion-and-contraction-u0051"><div class="textbox shaded"><a id="zh-omt-expansion-and-contraction-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-expansion-and-contraction-u0052"><ul><li>Jarvis, Brian, and John Peterson. 2019. “Alternative Paths, Phrase Expansion, and the Music of Felix Mendelssohn.” <em>Music Theory Spectrum</em> 41, no. 2 (Fall): 187–217.</li><li>Schmalfeldt, Janet. 1992. “Cadential Processes: The Evaded Cadence and the ‘One More Time’ Technique.” <em>Journal of Musicological Research</em> 12 (1–2): 1–52.</li></ul></div><div class="translation-unit" id="omt-expansion-and-contraction-u0053"><div class="textbox shaded"><a id="zh-omt-expansion-and-contraction-assignments"></a>作業</div></div><div class="translation-unit" id="omt-expansion-and-contraction-u0054"><ol><li>分析擴展技巧（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Expansion-Techniques.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Expansion-Techniques.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>）。請學生為音樂摘錄命名形式、進行分組與標示，並指出各種擴展技巧出現的位置。另含可選作的和聲分析。<a class="little-button external" href="https://open.spotify.com/playlist/6b7oUNlbuo8RVxIgwikZba" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a></li><li>分析多種擴展技巧（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Multiple-Phrase-Expansion-Techniques.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Multiple-Phrase-Expansion-Techniques.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>）。範例比學習單 1 更複雜，每段摘錄都經過明顯擴展。<a class="little-button external" href="https://open.spotify.com/playlist/5ZnYTLqxS8CMMEyfSnWHpx" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a></li><li>改寫以移除擴展（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Recomposing-to-Remove-Expansions.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Recomposing-to-Remove-Expansions.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>）。請學生改寫學習單 1 的音樂摘錄，移除典型結構中被擴展的部分。<a class="little-button external" href="https://open.spotify.com/playlist/3y0bMIkzRtZ5ccYRRi70xH" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a></li></ol></div><div class="translation-unit" id="omt-expansion-and-contraction-u0055"><div class="media-attributions clear"><h2>媒體素材署名</h2><ul><li>Example_001_Repetition_Sheldon_Bright_Lights © John Peterson 與 Megan Lavengood，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li><li>combined-Example_002b_Repetition_Mozart_447-3 © John Peterson 與 Megan Lavengood，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li><li>Example_003a_Stretching_Schubert_459，原文著作權人欄載為「例2：莫札特法國號協奏曲 K. 447，第一樂章第1–9小節，以變化重複形成內部擴展（0:00–0:18）」，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li><li>Slide5-6 © John Peterson 與 Megan Lavengood。</li><li>Slide8-10 © John Peterson 與 Megan Lavengood。</li><li>Slide10-11 © John Peterson 與 Megan Lavengood。</li><li>Slide12-13 © John Peterson 與 Megan Lavengood，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li><li>Example_013_Contraction_Elmas_PC_1_III © John Peterson 與 Megan Lavengood，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li></ul></div></div><aside class="translator-note">譯註：來源將Example_003a_Stretching_Schubert_459的著作權人欄填成另一個莫札特譜例的圖說，顯然不是正常的作者署名。本稿如實保留該欄內容與其CC BY-SA連結，不自行推定正確權利人。</aside><div class="translation-unit" id="omt-expansion-and-contraction-u0056"><div class="footnotes"><ol><li id="zh-omt-expansion-and-contraction-footnote-2292-1">所連結的錄音是本曲唯一的商業錄音。我們希望更多人錄製這首優美的作品。 <a href="../omt/omt-expansion-and-contraction.html#zh-omt-expansion-and-contraction-return-footnote-2292-1" class="return-footnote">↵</a></li></ol></div></div><aside class="translator-note">譯註：「唯一的商業錄音」是原作者的說法；本稿未重新盤點目前所有發行錄音，不將它視為已查證的現況。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-expansion-and-contraction-chapter-2292-section-3" class="section-header"><a id="en-omt-expansion-and-contraction-contraction"></a>Contraction</h2><figure id="en-omt-expansion-and-contraction-attachment_2486" aria-describedby="en-omt-expansion-and-contraction-caption-attachment-2486" class="wp-caption alignright"><a href="../assets/omt/fe566c6f60768216.png"><img class="wp-image-2486 size-thumbnail zoomable" src="../assets/omt/fe566c6f60768216.png" alt="Notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Example_013_Contraction_Elmas_PC_1_III.png" loading="lazy" tabindex="0" role="button" width="1400" height="788"></a><figcaption id="en-omt-expansion-and-contraction-caption-attachment-2486" class="wp-caption-text"><span class="example-caption-name">Example 12.</span> Contraction in Stéphan Elmas, Piano Concerto No. 1, III, mm. 15–21 (<a href="https://www.youtube.com/watch?v=O-iFgieitho&amp;amp;t=231s" target="_blank" rel="noopener noreferrer" class="external" aria-label="32:21–32:28（外部網站，另開分頁）">32:21–32:28</a>).</figcaption></figure><p>Contractions occur less frequently than expansions. A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contraction">contraction</a> occurs when a phrase is shorter than we might expect it to be.</p><p>In<a class="example-caption-name" href="../omt/omt-expansion-and-contraction.html#omt-expansion-and-contraction-u0048"> <span class="example-text"><span class="example-caption">Example 12</span></span></a>, a four-measure <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-compound-basic-idea">compound basic idea</a> is followed by a three-measure continuation. Given the length of the compound basic idea, we might have expected the continuation to be four measures long to create proportional balance. As you listen, notice how the cadence feels abrupt, a feeling that usually accompanies contraction.</p><div class="textbox shaded"><a id="en-omt-expansion-and-contraction-further-reading"></a>Further Reading</div><ul>
+<li>Jarvis, Brian, and John Peterson. 2019. "Alternative Paths, Phrase Expansion, and the Music of Felix Mendelssohn." <em>Music Theory Spectrum</em> 41, no. 2 (Fall): 187–217.</li>
+<li>Schmalfeldt, Janet. 1992. "Cadential Processes: The Evaded Cadence and the 'One More Time' Technique." <em>Journal of Musicological Research</em> 12 (1–2): 1–52.</li>
+</ul><div class="textbox shaded"><a id="en-omt-expansion-and-contraction-assignments"></a>Assignments</div><ol>
+<li>Analyzing expansion techniques (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Expansion-Techniques.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Expansion-Techniques.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). Asks students to name, segment, and label the form of excerpts and identify the location of any expansion technique(s). Optional harmonic analysis included. <a class="little-button external" href="https://open.spotify.com/playlist/6b7oUNlbuo8RVxIgwikZba" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+<li>Analyzing multiple expansion techniques (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Multiple-Phrase-Expansion-Techniques.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Analyzing-Multiple-Phrase-Expansion-Techniques.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). More complicated examples than in worksheet 1. Each excerpt is significantly expanded. <a class="little-button external" href="https://open.spotify.com/playlist/5ZnYTLqxS8CMMEyfSnWHpx" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+<li>Recomposing to remove expansions (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Recomposing-to-Remove-Expansions.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Expansion-and-Contraction-at-the-Phrase-Level-%E2%80%93-Recomposing-to-Remove-Expansions.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). Asks students to recompose excerpts from worksheet 1 to remove the expanded portion of the archetypal form. <a class="little-button external" href="https://open.spotify.com/playlist/3y0bMIkzRtZ5ccYRRi70xH" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Example_001_Repetition_Sheldon_Bright_Lights  ©  John Peterson and Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>combined-Example_002b_Repetition_Mozart_447-3  ©  John Peterson and Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Example_003a_Stretching_Schubert_459  ©  EXAMPLE 2. Internal expansion via varied repetition in Mozart's Horn Concerto, K. 447, I, mm. 1–9 (0:00–0:18).    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Slide5-6  ©  John Peterson and Megan Lavengood     </li><li>Slide8-10  ©  John Peterson and Megan Lavengood     </li><li>Slide10-11  ©  John Peterson and Megan Lavengood     </li><li>Slide12-13  ©  John Peterson and Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Example_013_Contraction_Elmas_PC_1_III  ©  John Peterson and Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li></ul></div><div class="footnotes"><ol><li id="en-omt-expansion-and-contraction-footnote-2292-1">The recording linked is the only commercial recording of the piece. We hope more people will record this beautiful work. <a href="../omt/omt-expansion-and-contraction.html#en-omt-expansion-and-contraction-return-footnote-2292-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-hybrid-phrase-level-forms.html">上一節：混合的樂句層次形式</a><a href="../omt/omt-formal-sections-in-general.html">下一節：曲式段落概論</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/expansion-and-contraction/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

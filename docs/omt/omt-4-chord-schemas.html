@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>四和弦圖式 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-4-chord-schemas.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group" open=""><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a aria-current="page" href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-4-chord-schemas" data-book="omt" data-page-url="/omt/omt-4-chord-schemas.html" data-next-url="/omt/omt-classical-schemas.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">四和弦圖式</h1><p class="authors">Bryn Hughes and Megan Lavengood</p><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><p>I、IV、V與vi是流行音樂最常見的和聲，可以排列成幾種聲響各異的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-schema">圖式</a>。每種圖式都能透過<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-chord-substitution">和弦替代</a>或<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-rotation-pop-schemas">輪換起點</a>等方式變化，仍讓人辨認出原圖式。</p><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-doo-wop-schema">Doo-wop圖式</a>為<strong>I–vi–IV–V</strong>，常見於1960年代流行音樂。常見變化：<ul><li>I–vi–ii–V：以ii取代IV。</li><li>IV–V–I–vi：輪換起點。</li></ul></li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-singersongwriter-schema">創作歌手圖式</a>為<strong>vi–IV–I–V或I–V–vi–IV</strong>，常見於1990年代創作歌手的音樂。也能以關係小調理解為<strong>i–VI–III–VII</strong>。常見變化是輪換為IV–I–V–vi。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hopscotch-schema">跳格子圖式</a>為<strong>IV–V–vi–I</strong>，常見於2010年以來的流行音樂。也能以關係小調理解為<strong>VI–VII–i–III</strong>。常見變化為VI–V–i–III，也就是在小調中以V取代VII。</li></ul></div></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/6rmP1CniCruvA0LpUAAvSh?si=-moG_aRGTwqZyQEH5EeDnw" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-4-chord-schemas-u0003"><p>本章討論的進行，都有一個共同點：使用I、IV、V與vi這四個和弦，它們可能是整個流行音樂中最常用的和弦。因此，這些圖式聽起來有些相似；差別在和弦排列順序。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<p>I, IV, V, and vi are the most common harmonies in pop music, and they can be arranged into several <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-schema">schemas</a>, each with a distinct sound. Each schema can have variations, such as <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-chord-substitution">chord substitution</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-rotation-pop-schemas">rotation</a>, while still remaining recognizable as that schema.</p>
+<ul>
+<li>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-doo-wop-schema">doo-wop schema</a> is <strong>I–vi–IV–V</strong>, and it was common in 1960s pop music. Common variations:
+<ul>
+<li>I–vi–ii–V (ii substitutes for IV)</li>
+<li>IV–V–I–vi (rotation)</li>
+</ul>
+</li>
+<li>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-singersongwriter-schema">singer/songwriter schema</a> is <strong>vi–IV–I–V or I–V–vi–IV</strong>, and it was common in 1990s singer/songwriter music. It can also be understood in its relative minor: <strong>i–VI–III–VII. </strong>A common variation is IV–I–V–vi (rotation).</li>
+<li>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hopscotch-schema">hopscotch schema</a> is <strong>IV–V–vi–I</strong>, and it is common in recent pop music (since 2010). It can also be understood in its relative minor: <strong>VI–VII–i–III. </strong>A common variation is VI–V–i–III (V substitutes for VII in minor).</li>
+</ul>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/6rmP1CniCruvA0LpUAAvSh?si=-moG_aRGTwqZyQEH5EeDnw" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>The progressions discussed in this chapter all have something in common. They use the same four chords: I, IV, V, and vi, which are probably the most common chords in all of pop music. Because of this, they all sound somewhat similar; the difference is in the order of the chords.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0004"><h2 id="zh-omt-4-chord-schemas-chapter-1623-section-1" class="section-header"><a id="zh-omt-4-chord-schemas-doo-wop"></a>Doo-wop</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0005"><p><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0006">例1</a>以五線譜、和弦代號與羅馬數字呈現<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-doo-wop-schema">Doo-wop圖式</a>：<strong>I–vi–IV–V</strong>，在C大調即<strong>C–Ami–F–G</strong>。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0006"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/25136911/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Doo-wop圖式與替代和弦譜例（外部網站，另開分頁）">Doo-wop圖式與替代和弦譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0007"><p><span class="caption-manual"><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0006">例1。</a>左為Doo-wop圖式；右為常見變化，以ii取代IV。</span></span></p></div><div class="translation-unit" id="omt-4-chord-schemas-u0008"><p>這個循環和弦進行的名稱，來自它常見於1950年代及1960年代初期的搖滾抒情歌曲，例如<a href="https://open.spotify.com/track/6Hy22YDN9HJMRlJP1LwnJy?si=fv7w9yseRUe2hs8V0dHRDQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="Gene Chandler〈Duke of Earl〉（外部網站，另開分頁）">Gene Chandler〈Duke of Earl〉</a>（1962）。此後它也持續被廣泛使用，例如<a href="https://open.spotify.com/track/4fK6E2UywZTJIa5kWnCD6x?si=5FDAmsoETiO6ZQzg4CWYBg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Rebecca Black〈Friday〉（外部網站，另開分頁）">Rebecca Black〈Friday〉</a>（2011）的主歌與副歌，以及<a href="https://open.spotify.com/track/5prTs2HAw2G4idHZyeFp8o?si=3SEREINnQcafYPKou2UheQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="Bonnie Tyler〈Total Eclipse of the Heart〉（外部網站，另開分頁）">Bonnie Tyler〈Total Eclipse of the Heart〉</a>（1983）的副歌，後者從0:49開始。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-4-chord-schemas-chapter-1623-section-1" class="section-header"><a id="en-omt-4-chord-schemas-doo-wop"></a>Doo-wop</h2><p><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0006">Example 1</a> shows music notation, chord symbols, and Roman numerals for the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-doo-wop-schema">doo-wop schema</a>:  <strong>I–vi–IV–V, </strong>or <strong>C–Ami–F–G </strong>in C major.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/25136911/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="caption-manual"><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0006">Example 1.</a> The doo-wop schema (left) and a common variation of it that replaces IV with ii (right).</span></span></p><p>The name for this cyclical chord progression comes from its common use in rock ballads from the 1950s and early 1960s, such as  <a href="https://open.spotify.com/track/6Hy22YDN9HJMRlJP1LwnJy?si=fv7w9yseRUe2hs8V0dHRDQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Duke of Earl” by Gene Chandler（外部網站，另開分頁）">“Duke of Earl” by Gene Chandler</a> (1962). However, it has continued to be used frequently ever since: examples include the verse and chorus of <a href="https://open.spotify.com/track/4fK6E2UywZTJIa5kWnCD6x?si=5FDAmsoETiO6ZQzg4CWYBg" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Friday” by Rebecca Black（外部網站，另開分頁）">“Friday” by Rebecca Black</a> (2011) and the chorus of <a href="https://open.spotify.com/track/5prTs2HAw2G4idHZyeFp8o?si=3SEREINnQcafYPKou2UheQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Total Eclipse of the Heart” by Bonnie Tyler（外部網站，另開分頁）">“Total Eclipse of the Heart” by Bonnie Tyler</a> (1983) (starts at 0:49).</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-4-chord-schemas-u0009"><h2>以ii取代IV</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0010"><p>由於ii與IV在這個和弦進行中具有相同<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-subdominant">功能</a>，兩者可以互相替代，例如<a href="https://open.spotify.com/track/1KsI8NEeAna8ZIdojI3FiT?si=2862410efe0b44e3" target="_blank" rel="noopener noreferrer" class="external" aria-label="Bruce Springsteen〈Hungry Heart〉（外部網站，另開分頁）">Bruce Springsteen〈Hungry Heart〉</a>（1980）。</p></div><aside class="translator-note">譯註：本段的功能特指ii與IV共有的前屬／下屬角色，不是任意兩個和弦都能互換。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Substituting ii for IV</h2><p>Because ii and IV share the same <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-subdominant">function</a> in this chord progression, ii can be swapped out for IV, as in <a href="https://open.spotify.com/track/1KsI8NEeAna8ZIdojI3FiT?si=2862410efe0b44e3" target="_blank" rel="noopener noreferrer" class="external" aria-label="Bruce Springsteen's &quot;Hungry Heart&quot;（外部網站，另開分頁）">Bruce Springsteen's "Hungry Heart"</a> (1980).</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0011"><h2>輪換起點</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0012"><p>Doo-wop圖式通常循環使用，因此也能由循環中的另一個和弦開始，仍按原來的順序前進，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-rotation-pop-schemas">輪換起點</a>。例如<a href="https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b?si=KEtSstrNRJCd0S5M3ocGbg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Coldplay〈Viva la Vida〉（外部網站，另開分頁）">Coldplay〈Viva la Vida〉</a>（2008）反覆使用同一串和弦，但樂句由IV而非I開始（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0013">例2</a>）。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0013"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769536/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="〈Viva la Vida〉輪換Doo-wop進行譜例（外部網站，另開分頁）">〈Viva la Vida〉輪換Doo-wop進行譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0014"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0013">例2。</a>Coldplay〈Viva la Vida〉中，輪換起點的Doo-wop進行。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Rotation</h2><p>Because the doo-wop schema is typically employed in cycles, it can also start on a different chord in the cycle and then proceed through the same succession of chords (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-rotation-pop-schemas">rotation</a>). For example, <a href="https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b?si=KEtSstrNRJCd0S5M3ocGbg" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Viva la Vida” by Coldplay（外部網站，另開分頁）">“Viva la Vida” by Coldplay</a> (2008) works through a cyclical repetition of the same succession of chords, but the phrases begin on IV rather than I (<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0013">Example 2</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769536/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0013">Example 2.</a> Rotated doo-wop progression in Coldplay, "Viva la Vida."</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0015"><h2 id="zh-omt-4-chord-schemas-chapter-1623-section-2" class="section-header"><a id="zh-omt-4-chord-schemas-singer-songwriter"></a>創作歌手圖式</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0016"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-singersongwriter-schema">創作歌手圖式</a>可能是最廣為人知的四和弦圖式。常見的羅馬數字分析是<strong>vi–IV–I–V</strong>，在C大調即<strong>Ami–F–C–G</strong>；但從I開始的輪換版本，也極為常見。此外，這兩種輪換，都可能被理解為以大調主和弦或關係小調主和弦為中心。<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0017">例3</a>最能說明這點。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0017"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769538/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="創作歌手圖式的兩種輪換譜例（外部網站，另開分頁）">創作歌手圖式的兩種輪換譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0018"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0017">例3。</a>創作歌手圖式的兩種常見輪換。</span></p></div><div class="translation-unit" id="omt-4-chord-schemas-u0019"><p>和1950年代的Doo-wop一樣，這也是四和弦的循環進行。它存在已久，可見於多種音樂風格；但從1990年代中期開始，在<a href="https://open.spotify.com/track/3ozomn4PrGEKEuusxX2HpC?si=I-sIVNHSSdmZrZ0AlSRATg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Sarah McLachlan（外部網站，另開分頁）">Sarah McLachlan</a>、<a href="https://open.spotify.com/track/3pPyv196sOJrbZdNiVNYCA?si=JKYMFqAxRO6s2X8fCXb-Jg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Jewel（外部網站，另開分頁）">Jewel</a>與<a href="https://open.spotify.com/track/39aRmixB9qNtCU2t8BmsC1?si=INzr4Z_0Ro-ZLhQxR8YpKw" target="_blank" rel="noopener noreferrer" class="external" aria-label="Joan Osborne（外部網站，另開分頁）">Joan Osborne</a>等創作歌手的作品中，變得越來越常見。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-4-chord-schemas-chapter-1623-section-2" class="section-header"><a id="en-omt-4-chord-schemas-singer-songwriter"></a>Singer/Songwriter</h2><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-singersongwriter-schema">singer/songwriter schema</a> may be the best known of all the four-chord schemas. A common Roman numeral analysis for this schema is <strong>vi–IV–I–V</strong>, or <strong>Ami–F–C–G </strong>in C major, but the rotation starting with I is also exceedingly common. On top of that, either rotation may be understood as having either the major tonic or the relative minor tonic. This is best understood through <a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0017">Example 3</a>.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769538/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0017">Example 3.</a> The singer/songwriter schema in its two common rotations.</span></p><p>Like the 1950s doo-wop, this is a four-chord cyclical progression. It has been around for some time and can be found in a variety of musical styles, but it became increasingly common beginning in the mid-1990s with singer/songwriters such as <a href="https://open.spotify.com/track/3ozomn4PrGEKEuusxX2HpC?si=I-sIVNHSSdmZrZ0AlSRATg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Sarah McLachlan（外部網站，另開分頁）">Sarah McLachlan</a>, <a href="https://open.spotify.com/track/3pPyv196sOJrbZdNiVNYCA?si=JKYMFqAxRO6s2X8fCXb-Jg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Jewel（外部網站，另開分頁）">Jewel</a>, and <a href="https://open.spotify.com/track/39aRmixB9qNtCU2t8BmsC1?si=INzr4Z_0Ro-ZLhQxR8YpKw" target="_blank" rel="noopener noreferrer" class="external" aria-label="Joan Osborne（外部網站，另開分頁）">Joan Osborne</a>,</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0020"><h2>調性模糊</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0021"><p>這個進行的重要特徵，是單靠它本身，無法清楚確立唯一的主和弦，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tonal-ambiguity">調性模糊</a>。例如<a href="https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A" target="_blank" rel="noopener noreferrer" class="external" aria-label="Luis Fonsi與Daddy Yankee的〈Despacito〉（外部網站，另開分頁）">Luis Fonsi與Daddy Yankee的〈Despacito〉</a>（2017），和弦進行Bmi–G–D–A，對不同聽者而言，可能是D大調的vi–IV–I–V，也可能是B小調的i–VI–III–VII（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0022">例4</a>）。創作歌手圖式之所以模糊，部分原因是沒有正格終止：兩種可能的收束進行，分別是變格IV–I或級進VII–i。缺乏強烈的和聲終止時，聽者可能只能依前後的和弦進行、循環由哪些和弦開始與結束，以及旋律中的重要音，判斷主和弦；也可能始終無法確定。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0022"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5810723/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="〈Despacito〉兩種調性理解譜例（外部網站，另開分頁）">〈Despacito〉兩種調性理解譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0023"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0022">例4。</a>〈<a href="https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A" target="_blank" rel="noopener noreferrer" class="external" aria-label="Despacito（外部網站，另開分頁）">Despacito</a>〉使用調性模糊的創作歌手圖式，因此D大和弦與B小和弦，都可能被聽成主和弦。</span></p></div><div class="translation-unit" id="omt-4-chord-schemas-u0024"><p>有些創作者會利用這種雙重性，讓歌曲在關係大小調之間往返轉調，或讓音樂呼應歌詞中的雙重意義；這也解釋了它為何適合上述1990年代中期的創作歌手。Heart的〈What About Love〉（1985）就是例子：前奏明確在D小調；主歌由0:23開始，使用創作歌手進行，在D小調與F大調之間模糊；1:10開始的副歌則明確在F大調。聆聽時請對照下表（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0026">例5</a>）。</p></div><aside class="translator-note">譯註：原文標1982，但共同作者Jim Vallance的歌曲資料頁區分：1982年3月寫成，Heart版本收於1985年專輯，並在1985年錄製。此處依所分析的Heart錄音改為1985。歌曲與表格的時間碼依原文保留，未逐秒聆聽重驗。</aside><p class="image-labels">譯註來源：<a href="https://jimvallance.com/01-music-folder/songs-folder-may-27/pg-song-heart-what-about.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Jim Vallance: What About Love? — writing date and Heart recording（外部網站，另開分頁）">Jim Vallance: What About Love? — writing date and Heart recording</a></p><div class="translation-unit" id="omt-4-chord-schemas-u0025"><div><aside class="external-resource"><a href="https://open.spotify.com/embed/track/5nN1jGnCadYk1jYm6oV5zN?si=3l_XloKJTYuLseHCr2FDkQ&amp;utm_source=oembed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Spotify：〈What About Love?〉（外部網站，另開分頁）">Spotify：〈What About Love?〉</a></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0026"><table id="zh-omt-4-chord-schemas-tablepress-6" class="tablepress tablepress-id-6 score-table"><thead><tr class="row-1 odd"><th class="column-1">時間</th><th class="column-2">段落</th><th class="column-3">進行：和弦代號</th><th class="column-4">進行：羅馬數字</th><th class="column-5">暗示的調性</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">0:00</td><td class="column-2">前奏</td><td class="column-3">Dmi–C–B♭–C，配D持續低音</td><td class="column-4">i–VII–VI-VII，配主音持續低音</td><td class="column-5">D小調</td></tr><tr class="row-3 odd"><td class="column-1">0:23</td><td class="column-2">主歌</td><td class="column-3">Dmi–B♭–F–C</td><td class="column-4">vi–IV–I–V<br>或<br>i–VI–III–VII</td><td class="column-5">D小調與F大調之間模糊</td></tr><tr class="row-4 even"><td class="column-1">1:10</td><td class="column-2">副歌</td><td class="column-3">F/A–Bb–C</td><td class="column-4">I6–IV–V</td><td class="column-5">F大調</td></tr><tr class="row-5 odd"><td class="column-1">1:33</td><td class="column-2">間奏</td><td class="column-3">Dmi–C–B♭–C，配D持續低音</td><td class="column-4">i–VII–VI-VII，配主音持續低音</td><td class="column-5">D小調</td></tr><tr class="row-6 even"><td class="column-1">1:44</td><td class="column-2">主歌</td><td class="column-3">Dmi–B♭–F–C</td><td class="column-4">vi–IV–I–V<br>或<br>i–VI–III–VII</td><td class="column-5">D小調與F大調之間模糊</td></tr><tr class="row-7 odd"><td class="column-1">2:08</td><td class="column-2">副歌</td><td class="column-3">F/A–B♭–C</td><td class="column-4">I6–IV–V</td><td class="column-5">F大調</td></tr><tr class="row-8 even"><td class="column-1">2:29</td><td class="column-2">橋段：吉他獨奏</td><td class="column-3">B♭–C</td><td class="column-4">IV–V</td><td class="column-5">F大調</td></tr><tr class="row-9 odd"><td class="column-1">2:53</td><td class="column-2">副歌</td><td class="column-3">F/A–B♭–C</td><td class="column-4">I6–IV–V</td><td class="column-5">F大調</td></tr><tr class="row-10 even"><td class="column-1">3:11</td><td class="column-2">尾聲</td><td class="column-3">B♭–C–D，配D持續低音</td><td class="column-4">♭VI–♭VII–I，配主音持續低音</td><td class="column-5">D大調</td></tr></tbody></table></div><aside class="translator-note">譯註：I6是本表對第一轉位主和弦的簡寫，對應F/A，不是附加六音和弦F6。Bb與B♭都是降B。表中的持續低音D，跨越上方和弦更替保持；D大調尾聲與D小調前奏的大小和弦差異依原表保留。</aside><div class="translation-unit" id="omt-4-chord-schemas-u0027"><p id="zh-omt-4-chord-schemas-tablepress-6-name" class="tablepress-table-name tablepress-table-name-id-6 example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0026">例5</a>。Heart〈What About Love〉利用創作歌手圖式的調性模糊，銜接小調前奏與大調副歌。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Tonal ambiguity</h2><p>One important feature of this progression is that it does not, on its own, clearly communicate a definitive tonic chord. This property is known as <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tonal-ambiguity">tonal ambiguity</a>. An example is <a href="https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Despacito" by Luis Fonsi and Daddy Yankee（外部網站，另開分頁）'>"Despacito" by Luis Fonsi and Daddy Yankee</a> (2017). The chord progression, Bmi–G–D–A,<strong> </strong>can sound like vi–IV–I–V in D major or like i–VI–III–VII in B minor to different listeners (<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0022">Example 4</a>). One reason the singer/songwriter schema is ambiguous is because there is no authentic cadence: the two potential cadential motions are either plagal (IV–I) or stepwise (VII–i). Without a strong harmonic cadence, listeners might only be able to determine the tonic chord—if at all—by the progressions before and after the singer/songwriter schema, which chords in the cycle begin and end it, and the important pitches of the melody.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5810723/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0022">Example 4.</a> Both D major and B minor are plausible tonic chords for "<a href="https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A" target="_blank" rel="noopener noreferrer" class="external" aria-label="Despacito（外部網站，另開分頁）">Despacito</a>" because of its use of the tonally ambiguous singer/songwriter schema.</span></p><p>In fact, some songwriters take advantage of this duality in songs that modulate back and forth between relative major and minor keys, as well as in songs with some parallel ambiguity in the text (hence its usefulness for those mid-1990s songwriters). An example is “What About Love” by Heart (1982), which has an obvious D minor intro, a D minor/F major verse (begins at 0:23) using the singer/songwriter progression, and a chorus obviously in F major (begins at 1:10)—listen while following along with the chart below (<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0026">Example 5</a>).</p><div><aside class="external-resource"><a href="https://open.spotify.com/embed/track/5nN1jGnCadYk1jYm6oV5zN?si=3l_XloKJTYuLseHCr2FDkQ&amp;utm_source=oembed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Spotify Embed: What About Love?（外部網站，另開分頁）">Spotify Embed: What About Love?</a></aside></div><table id="en-omt-4-chord-schemas-tablepress-6" class="tablepress tablepress-id-6 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">timestamp</th>
+<th class="column-2">section</th>
+<th class="column-3">progression (chord symbols)</th>
+<th class="column-4">progression (Roman numerals)</th>
+<th class="column-5">implied key</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">0:00</td>
+<td class="column-2">intro</td>
+<td class="column-3">Dmi–C–B♭–C over D pedal</td>
+<td class="column-4">i–VII–VI-VII over tonic pedal</td>
+<td class="column-5">D minor</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">0:23</td>
+<td class="column-2">verse</td>
+<td class="column-3">Dmi–B♭–F–C</td>
+<td class="column-4">vi–IV–I–V <br>
+or <br>
+i–VI–III–VII</td>
+<td class="column-5">ambiguous between D minor and F major</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">1:10</td>
+<td class="column-2">chorus</td>
+<td class="column-3">F/A–Bb–C</td>
+<td class="column-4">I6–IV–V</td>
+<td class="column-5">F major</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">1:33</td>
+<td class="column-2">interlude</td>
+<td class="column-3">Dmi–C–B♭–C over D pedal</td>
+<td class="column-4">i–VII–VI-VII over tonic pedal</td>
+<td class="column-5">D minor</td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">1:44</td>
+<td class="column-2">verse</td>
+<td class="column-3">Dmi–B♭–F–C</td>
+<td class="column-4">vi–IV–I–V <br>
+or <br>
+i–VI–III–VII</td>
+<td class="column-5">ambiguous between D minor and F major</td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">2:08</td>
+<td class="column-2">chorus</td>
+<td class="column-3">F/A–B♭–C</td>
+<td class="column-4">I6–IV–V</td>
+<td class="column-5">F major</td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1">2:29</td>
+<td class="column-2">bridge (guitar solo)</td>
+<td class="column-3">B♭–C</td>
+<td class="column-4">IV–V</td>
+<td class="column-5">F major</td>
+</tr>
+<tr class="row-9 odd">
+<td class="column-1">2:53</td>
+<td class="column-2">chorus</td>
+<td class="column-3">F/A–B♭–C</td>
+<td class="column-4">I6–IV–V</td>
+<td class="column-5">F major</td>
+</tr>
+<tr class="row-10 even">
+<td class="column-1">3:11</td>
+<td class="column-2">coda</td>
+<td class="column-3">B♭–C–D over D pedal</td>
+<td class="column-4">♭VI–♭VII–I over tonic pedal</td>
+<td class="column-5">D major</td>
+</tr>
+</tbody>
+</table><p id="en-omt-4-chord-schemas-tablepress-6-name" class="tablepress-table-name tablepress-table-name-id-6 example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0026">Example 5</a>. "What about Love" by Heart exploits the singer/songwriter schema's tonal ambiguity to link between a minor-mode intro and a major-mode chorus.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-4-chord-schemas-u0028"><h2>輪換起點</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0029"><p>如前文所述，這個圖式從I或vi開始的兩種<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-rotation-pop-schemas">輪換</a>，同樣常見。有時也從IV開始，形成<strong>IV–I–V–vi</strong>，以V–vi的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-deceptive-motion">假終止</a>作結，因而成為帶有假解決的變體。<a href="https://open.spotify.com/track/15pu8u4n3q4BKl4tF20c5v?si=QHMPu5CUQyS3LERhKAicqQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="Lady Gaga〈Alejandro〉（外部網站，另開分頁）">Lady Gaga〈Alejandro〉</a>（2009）的副歌，從1:11開始，就使用這種輪換。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Rotations</h2><p>As discussed above, this schema has two equally common <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-rotation-pop-schemas">rotations</a> that start the progression on I and vi. From time to time, the singer/songwriter progression might also begin on the IV chord, resulting in a “deceptive” variant of this progression that ends with V–vi—a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-deceptive-motion">deceptive</a> cadence (<strong>IV–I–V–vi</strong>). The chorus (starts at 1:11) of <a href="https://open.spotify.com/track/15pu8u4n3q4BKl4tF20c5v?si=QHMPu5CUQyS3LERhKAicqQ" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Alejandro" by Lady Gaga（外部網站，另開分頁）'>"Alejandro" by Lady Gaga</a> (2009) uses this rotation of the singer/songwriter schema.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0030"><h2 id="zh-omt-4-chord-schemas-chapter-1623-section-3" class="section-header"><a id="zh-omt-4-chord-schemas-hopscotch"></a>跳格子圖式</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0031"><p>約2010年以來，另一種四和弦圖式越來越常見：<strong>IV–V–vi–I</strong>，在小調中則為<strong>VI–VII–i–III</strong>。例子包括<a href="https://open.spotify.com/album/77qMEqlvpP3A9birVl9bjn" target="_blank" rel="noopener noreferrer" class="external" aria-label="Sam Smith〈Dancing with a Stranger〉（外部網站，另開分頁）">Sam Smith〈Dancing with a Stranger〉</a>（2019），以及<a href="https://open.spotify.com/album/02drHFQa59AoJWU6DXSSjd" target="_blank" rel="noopener noreferrer" class="external" aria-label="DJ Khaled、Justin Bieber與Quavo的〈No Brainer〉（外部網站，另開分頁）">DJ Khaled、Justin Bieber與Quavo的〈No Brainer〉</a>（2018）。我們稱它為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hopscotch-schema">跳格子圖式</a>，因為它的根音進行是<a href="../assets/omt/753e9ff70bf47463.gif">級進、級進、三度小跳</a>。</p></div><aside class="translator-note">譯註：連結的動圖是跳格子遊戲示意：黃色方格、紅色腳印與黑色標記，沒有和弦或音高標註。它說明圖式名稱的比喻，不是音樂譜例。</aside><div class="translation-unit" id="omt-4-chord-schemas-u0032"><p>和<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-singersongwriter-schema">創作歌手圖式</a>一樣，跳格子圖式也可能具有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tonal-ambiguity">調性模糊</a>。換句話說，在<strong>F–G–Ami–C</strong>中，A小和弦或C大和弦，都可能被聽成主和弦（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0033">例6</a>）。這個進行通常缺乏明確的終止動作，尤其是進入C和弦的時候。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0033"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769529/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="跳格子圖式譜例（外部網站，另開分頁）">跳格子圖式譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside><br><span class="example-caption-text"><span class="example-caption-name">例6。</span>跳格子圖式，以標註呈現「級進—級進—三度小跳」模式。</span></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-4-chord-schemas-chapter-1623-section-3" class="section-header"><a id="en-omt-4-chord-schemas-hopscotch"></a>Hopscotch</h2><p>In recent years (since about 2010), another type of four-chord schema has become increasingly common: <strong>IV–V–vi–I,</strong> or <strong>VI–VII–i–III in minor</strong>.  Examples include <a href="https://open.spotify.com/album/77qMEqlvpP3A9birVl9bjn" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Dancing with a Stranger" by Sam Smith（外部網站，另開分頁）'>"Dancing with a Stranger" by Sam Smith</a> (2019) and <a href="https://open.spotify.com/album/02drHFQa59AoJWU6DXSSjd" target="_blank" rel="noopener noreferrer" class="external" aria-label='"No Brainer" by DJ Khaled, Justin Bieber, and Quavo（外部網站，另開分頁）'>"No Brainer" by DJ Khaled, Justin Bieber, and Quavo</a> (2018). We will refer to this as the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hopscotch-schema">hopscotch schema</a> because of its root motion: <a href="../assets/omt/753e9ff70bf47463.gif">step, step, skip</a>.</p><p>Like the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-singersongwriter-schema">singer/songwriter schema</a>, the hopscotch schema can be <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tonal-ambiguity">tonally ambiguous</a>. In other words, in the progression <strong>F–G–Ami–C</strong>, either Ami or C might sound like tonic (<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0033">Example 6</a>). There is often no definitive cadential motion, especially moving into the C chord.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769529/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><br>
+<span class="example-caption-text"><span class="example-caption-name">Example 6.</span> The hopscotch schema, with annotations showing the “step-step-skip” pattern.</span></div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0034"><h2>在小調中以V取代VII</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0035"><p>一種特別常見的和弦替代，可以強化跳格子圖式的小調理解：用大和弦V取代下主音和弦VII，讓VI–VII–i–III變成VI–V–i–III。<a href="https://open.spotify.com/track/340UVheS8z3ncW9TTUhAbc?si=fWr9GnzZRT6MCfOvdkY68Q" target="_blank" rel="noopener noreferrer" class="external" aria-label="BLACKPINK〈Love to Hate Me〉（外部網站，另開分頁）">BLACKPINK〈Love to Hate Me〉</a>（2020）就這樣做。兩個和弦雖有相同的和聲<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dominant-function">功能</a>，色彩卻相差很大：小調中的大V使用<em>ti</em> [latex](\hat7)[/latex]，VII則使用<em>te</em> [latex](\downarrow\hat7)[/latex]。有些歌曲，例如<a href="https://open.spotify.com/track/6vWEAOUSxohKxhp0K1BsxL?si=HjEjPdv3QHyQPSagg1l1uA" target="_blank" rel="noopener noreferrer" class="external" aria-label="YNW Melly〈Mixed Personalities〉（外部網站，另開分頁）">YNW Melly〈Mixed Personalities〉</a>，將V轉位，讓低音仍保持跳格子的「級進—級進—三度小跳」，即使<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-root-motion">根音進行</a>已經改變（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0036">例7</a>）。</p></div><aside class="translator-note">譯註：本段的「功能相同」採流行調式分析觀點：兩者都可導向小調主和弦。不能因此認為VII與V有相同音程結構或導音；V中的升高第七級，正是本段要比較的色彩差異。</aside><div class="translation-unit" id="omt-4-chord-schemas-u0036"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769537/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="以V取代VII的跳格子圖式譜例（外部網站，另開分頁）">以V取代VII的跳格子圖式譜例</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0037"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0036">例7。</a>跳格子圖式以V取代VII，將VII中的G換成V中的G♯。</span></p></div><aside class="translator-note">譯註：這個G／G♯的比較以A小調為準：VII為G–B–D，V為E–G♯–B。替代還涉及D換成E，並非只有升高G就能把整個VII和弦變成V。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Replacing VII in minor with V</h2><p>An especially common harmonic substitution that encourages a minor-mode interpretation of the hopscotch schema is to replace the subtonic VII chord with the major V chord, so that VI–VII–i–III becomes VI–V–i–III. One song that does this is <a href="https://open.spotify.com/track/340UVheS8z3ncW9TTUhAbc?si=fWr9GnzZRT6MCfOvdkY68Q" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Love to Hate Me" by BLACKPINK（外部網站，另開分頁）'>"Love to Hate Me" by BLACKPINK</a> (2020). Although these chords have the same harmonic <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dominant-function">function</a>, the two chords have quite distinct colors, since the major V chord in minor uses <em>ti </em>[latex](\hat7)[/latex] while VII uses <em>te </em>[latex](\downarrow\hat7)[/latex]. Some songs, like <a href="https://open.spotify.com/track/6vWEAOUSxohKxhp0K1BsxL?si=HjEjPdv3QHyQPSagg1l1uA" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Mixed Personalities" by YNW Melly（外部網站，另開分頁）'>"Mixed Personalities" by YNW Melly</a>, invert this V chord, which allows the bass motion of the hopscotch schema to stay the same (step-step-skip) even though the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-root-motion">root motion</a> has changed (<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0036">Example 7</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769537/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0036">Example 7.</a> The hopscotch schema with V replacing VII, meaning the G of the VII is replaced with the G♯ of the V chord.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-4-chord-schemas-u0038"><h2 id="zh-omt-4-chord-schemas-chapter-1623-section-4" class="section-header"><a id="zh-omt-4-chord-schemas-recognizing-by-ear"></a>用耳朵辨認</h2></div><div class="translation-unit" id="omt-4-chord-schemas-u0039"><p>這些四和弦圖式都使用I、IV、V與vi，因此聽起來相似。而且每種圖式都可以輪換，不能只看進行由哪個和弦開始、在哪個和弦結束！請改聽<em>大調主和弦如何被接近</em>（<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0040">例8</a>）。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0040"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769540/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="三種圖式接近大調主和弦的方式（外部網站，另開分頁）">三種圖式接近大調主和弦的方式</a><p class="missing-score">靜態樂譜尚待補齊；原資源包含本章使用的譜例。</p></aside><br><span class="example-caption-text"><span class="example-caption-name">例8。</span>每種圖式都從不同和弦接入大調主和弦。</span></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0041"><ul><li>Doo-wop圖式以十分傳統的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-authentic-cadence">正格進行</a>接入主和弦，和古典音樂相似。</li><li>創作歌手圖式以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-plagal-motion">變格進行</a>接入大調主和弦。</li><li>跳格子圖式以三度小跳接入大調主和弦，與傳統終止類型沒有直接對應關係。</li></ul></div><aside class="translator-note">譯註：這裡辨認的是接入和弦的進行方向，不表示循環中每次V–I或IV–I都已構成樂句結尾的完整終止；正格進行的詞條連到本書正格終止定義，可對照其和聲關係。</aside><div class="translation-unit" id="omt-4-chord-schemas-u0042"><p>即使你認為真正的主和弦是小調主和弦，聽大調主和弦如何被接近，仍有助於區分這幾種四和弦圖式。只聽小調主和弦的接近方式，可能沒有那麼有用，因為創作歌手與跳格子圖式，都是以級進接入小調主和弦。</p></div><div class="translation-unit" id="omt-4-chord-schemas-u0043"><div class="textbox shaded"><a id="zh-omt-4-chord-schemas-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-4-chord-schemas-u0044"><div class="csl-bib-body"><ul><li class="csl-entry"><span>Axis of Awesome。2011。</span><i>4 Chords</i><span>（〈四個和弦〉）。YouTube。</span><a href="https://www.youtube.com/channel/UCb4jjgJb5rtQqQN5GcypFow" target="_blank" rel="noopener noreferrer" class="external" aria-label="原文所附頻道連結（外部網站，另開分頁）">原文所附頻道連結</a><span>。</span></li><li class="csl-entry">Doll, Christopher。2017。<i>Hearing Harmony: Toward a Tonal Theory for the Rock Era</i>（《聆聽和聲：邁向搖滾年代的調性理論》）。Ann Arbor：密西根大學出版社。</li><li class="csl-entry">Richards, Mark。2017。〈Tonal Ambiguity in Popular Music’s Axis Progressions〉（〈流行音樂軸心進行中的調性模糊〉）。<i>Music Theory Online</i> 23（3）。<a href="http://mtosmt.org/issues/mto.17.23.3/mto.17.23.3.richards.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="閱讀原文（外部網站，另開分頁）">閱讀原文</a>。</li></ul></div></div><div class="translation-unit" id="omt-4-chord-schemas-u0045"><div class="textbox shaded"><a id="zh-omt-4-chord-schemas-assignments"></a>作業</div></div><div class="translation-unit" id="omt-4-chord-schemas-u0046"><ol><li>辨識四和弦圖式（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-no-variations.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-no-variations.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="Word（外部網站，另開分頁）">Word</a>）：辨認數首歌曲使用的圖式，每首都清楚呈現該圖式。<a class="little-button external" href="https://open.spotify.com/playlist/1iEqHR8AULYf36TvhcIdmE?si=PAaTYIx2RV-IIihoZzvzzw" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a>。</li><li>四和弦圖式的變化（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-with-variations.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-with-variations.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="Word（外部網站，另開分頁）">Word</a>）：從對本章圖式作些微改動的歌曲中，辨認圖式及其變化。<a class="little-button external" href="https://open.spotify.com/playlist/2JXMAQzEK1hIEuQZDE25aw?si=QYLCelAQSE6nHrwlW8Tx9g" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a>。</li><li>辨識圖式（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/12/WK-identifying-schemas.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/12/WK-identifying-schemas.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="Word（外部網站，另開分頁）">Word</a>）：從多種可能性中辨認流行歌曲圖式，包括<a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a>、<a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a>、<a href="../omt/omt-puff-schemas.html">Puff圖式</a>與<a href="../omt/omt-classical-schemas.html">古典圖式</a>。<a class="little-button external" href="https://open.spotify.com/playlist/3sngqJ1o4LUpYHdsyoZppq?si=aee29c543ea942e9" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a>。</li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-4-chord-schemas-chapter-1623-section-4" class="section-header"><a id="en-omt-4-chord-schemas-recognizing-by-ear"></a>Recognizing by Ear</h2><p>All of these four-chord schemas sound similar to one another, since they all use I, IV, V, and vi. All the schemas can be rotated, so it's not simply a matter of seeing where the progression begins and ends! Instead, try listening to <em>how the major tonic is approached </em>(<a class="example-caption-name" href="../omt/omt-4-chord-schemas.html#omt-4-chord-schemas-u0040">Example 8</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5769540/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><br>
+<span class="example-caption-text"><span class="example-caption-name">Example 8.</span> Each schema approaches the major tonic from a different chord.</span></div><ul>
+<li>In the doo-wop schema, the tonic is approached with very traditional <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-authentic-cadence">authentic motion</a>, as in classical music.</li>
+<li>In the singer/songwriter schema, the major tonic is approached with <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-plagal-motion">plagal motion</a>.</li>
+<li>In the hopscotch schema, the major tonic is approached by a skip (not related to any traditional cadence).</li>
+</ul><p>Even if you think the real tonic is the minor tonic, listening to the approach to the major tonic will help distinguish among these four-chord schema options. Listening to the approach to the minor tonic may not be helpful, since both the singer/songwriter and the hopscotch schemas approach the minor tonic by step.</p><div class="textbox shaded"><a id="en-omt-4-chord-schemas-further-reading"></a>Further reading</div><div class="csl-bib-body">
+<ul>
+<li class="csl-entry"><span>Axis of Awesome. 2011. </span><i>4 Chords</i><span>. YouTube. </span><a href="https://www.youtube.com/channel/UCb4jjgJb5rtQqQN5GcypFow" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://www.youtube.com/channel/UCb4jjgJb5rtQqQN5GcypFow（外部網站，另開分頁）">https://www.youtube.com/channel/UCb4jjgJb5rtQqQN5GcypFow</a><span>.</span></li>
+<li class="csl-entry">Doll, Christopher. 2017. <i>Hearing Harmony: Toward a Tonal Theory for the Rock Era</i>. Ann Arbor: University of Michigan Press.</li>
+<li class="csl-entry">Richards, Mark. 2017. “Tonal Ambiguity in Popular Music’s Axis Progressions.” <i>Music Theory Online </i>23 (3). <a href="http://mtosmt.org/issues/mto.17.23.3/mto.17.23.3.richards.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="http://mtosmt.org/issues/mto.17.23.3/mto.17.23.3.richards.html（外部網站，另開分頁）">http://mtosmt.org/issues/mto.17.23.3/mto.17.23.3.richards.html</a>.</li>
+</ul>
+</div><div class="textbox shaded"><a id="en-omt-4-chord-schemas-assignments"></a>Assignments</div><ol>
+<li>Identifying Four-Chord Schemas (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-no-variations.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-no-variations.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). Students must identify which schema is used in a number of songs, each of which clearly presents the schema. <a class="little-button external" href="https://open.spotify.com/playlist/1iEqHR8AULYf36TvhcIdmE?si=PAaTYIx2RV-IIihoZzvzzw" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+<li>Variations on Four-Chord Schemas (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-with-variations.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/WK-4-chord-Schemas-with-variations.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). Using songs that put slight variations on the schemas discussed in this chapter, asks students to identify schemas and variations on the schemas. <a class="little-button external" href="https://open.spotify.com/playlist/2JXMAQzEK1hIEuQZDE25aw?si=QYLCelAQSE6nHrwlW8Tx9g" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+<li>Identifying schemas (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/12/WK-identifying-schemas.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/12/WK-identifying-schemas.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Asks students to identify schemas in pop songs from a wide pool of possibilities, including <a href="../omt/omt-blues-based-schemas.html">blues-based schemas</a>, <a href="../omt/omt-4-chord-schemas.html">four-chord schemas</a>, <a href="../omt/omt-puff-schemas.html">puff schemas</a>, and <a href="../omt/omt-classical-schemas.html">classical schemas</a>. <a class="little-button external" href="https://open.spotify.com/playlist/3sngqJ1o4LUpYHdsyoZppq?si=aee29c543ea942e9" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+</ol></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-blues-based-schemas.html">上一節：以藍調為基礎的圖式</a><a href="../omt/omt-classical-schemas.html">下一節：流行音樂中的古典圖式</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/4-chord-schemas/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

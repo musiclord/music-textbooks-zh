@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>和弦—音階理論 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-chord-scale-theory.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group" open=""><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a aria-current="page" href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-chord-scale-theory" data-book="omt" data-page-url="/omt/omt-chord-scale-theory.html" data-next-url="/omt/omt-blues-harmony.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">和弦—音階理論</h1><p class="authors">John Kocur</p><section class="bilingual-section"><div class="translation-unit" id="omt-chord-scale-theory-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><p>和弦—音階理論，是把和弦與音階相互連結的即興方法。</p><ul><li>名稱來自這個想法：十三和弦的各音重新排列後，可以形成七音音階。</li><li>選擇和弦音階時，先用羅馬數字分析，辨認調中心與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-function">和聲功能</a>。</li><li>羅馬數字可以對應調式的序號。例如，大調中的<strong>ii</strong>和弦，可以用大調音階的<b>第二</b>調式，也就是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dorian">多利安（dorian）</a>，為和弦增添色彩。</li><li>使用和弦音階即興時，把和弦音放在拍點上，讓旋律與和弦進行相連。</li></ul><p><em>本書從不同角度介紹調式，也可參閱〈<a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式入門（一般樂理）</a>〉、〈<a href="../omt/omt-modal-schemas.html">調式圖式（流行音樂）</a>〉、〈<a href="../omt/omt-diatonic-modes.html">自然音調式（二十／二十一世紀音樂）</a>〉及〈<a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">運用調式、音階與音集合分析（二十／二十一世紀音樂）</a>〉。</em></p></div></div></div><aside class="translator-note">譯註：此處的拍點（原文downbeat）是把和弦音安排在節拍落點的入門原則，不必理解成只准在每小節第一拍使用和弦音，也不是禁止切分或非和弦音。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/1jOCAfufleSsoRQsXdhmEk?si=YR4meW2CSSSgFPMllrNCZw" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0003"><p>爵士即興的一項挑戰，是在選擇音高的同時，還要兼顧律動、合奏互動，以及音樂敘事的形式。和弦—音階理論，是伯克利音樂學院及許多大學教授的一種方法，協助樂手在爵士即興中選擇音高。它以George Russell的<em>Lydian Chromatic Concept of Tonal Organization</em>（《調性組織的利底安半音概念》，[1953] 2001）為基礎，並由爵士教育家Jamey Aebersold、David Baker與Jerry Coker推廣。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0004"><p>基本想法是：每個和弦都能來自一個母音階；換個說法，進行中的每個和弦，都能用相關音階增添色彩。例如，把Dmi<sup>7</sup>延伸到十三音，就得到D、F、A、C、E、G、B；這與D多利安調式的音相同，只是改用三度堆疊（<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0005">例1</a>）。因此，遇到Dmi<sup>7</sup>時，即興樂手可以選用D多利安的音，創造新的旋律。</p></div><aside class="translator-note">譯註：這是在說明一種可選的對應，不表示Dmi7只能配D多利安。把延伸和弦與音階比較時，指的是相同音級材料，不要求相同排列與八度。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0005"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300405/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0006"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0005">例1。</a>Dmi<sup>13</sup>和弦與D多利安音階，使用相同的音。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<p>Chord-Scale Theory is an approach to improvising that relates chords to scales.</p>
+<ul>
+<li>The name "Chord-Scale Theory" comes from the idea that the notes of a thirteenth chord can be rearranged as a seven-note scale.</li>
+<li>To determine chord-scales, identify key centers and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-function">chord functions</a> through Roman numeral analysis.</li>
+<li>Roman numerals can be related to mode numbers. For example, if a chord is a <strong>ii</strong> chord in a major key, the <b>second</b> mode (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dorian">dorian</a>) can be used to color that chord.</li>
+<li>When playing chord-scales, place chord tones on the downbeat to connect improvised melodies to the chord progression.</li>
+</ul>
+<p><em>This book covers modes from many different angles. For more information on modes, check <a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">Introduction to Diatonic Modes (general)</a>, <a href="../omt/omt-modal-schemas.html">Modal Schemas (pop)</a>, <a href="../omt/omt-diatonic-modes.html">Diatonic Modes (20<sup>th</sup>/21<sup>st</sup>-c.)</a>, and <a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">Analyzing with Modes, Scales, and Collections (20<sup>th</sup>-/21<sup>st</sup>-c.)</a>.</em></p>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/1jOCAfufleSsoRQsXdhmEk?si=YR4meW2CSSSgFPMllrNCZw" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>One of the challenges of improvising jazz is making choices about pitches while also paying attention to groove, interaction, and narrative form. The Chord-Scale Theory is a method, taught at the Berklee College of Music and many other colleges and universities, that facilitates pitch choices in jazz improvisation. Chord-Scale Theory is based on George Russell’s <em>Lydian Chromatic Concept of Tonal Organization</em> ([1953] 2001), and it was popularized by jazz educators Jamey Aebersold, David Baker, and Jerry Coker.</p><p>The basic concept is that every chord comes from a parent scale; or, to put it another way, every chord in a progression can be colored by a related scale. For example, a Dmi<sup>7</sup> chord extended to the thirteenth consists of the notes D, F, A, C, E, G, and B, which are identical to the notes of the D dorian mode stacked in thirds (<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0005">Example 1</a>). Therefore, when confronting a Dmi<sup>7</sup> chord in a chord progression, an improvising musician could choose to improvise using the notes of the D dorian mode to create new melodies.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300405/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0005">Example 1.</a> A Dmi<sup>13</sup> chord and a D dorian scale have identical pitches. </span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chord-scale-theory-u0007"><h2 id="zh-omt-chord-scale-theory-chapter-6355-section-1" class="section-header"><a id="zh-omt-chord-scale-theory-basic-chord-scale-relationships"></a>基本和弦—音階關係</h2></div><div class="translation-unit" id="omt-chord-scale-theory-u0008"><p>以大調音階的七個音，分別作為起點，就能得到七種調式。每種調式的全音、半音排列不同，因此具有不同色彩。詳見〈<a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式入門</a>〉及〈<a href="../omt/omt-diatonic-modes.html">自然音調式</a>〉。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0009"><p><a href="../omt/omt-ii-v-i.html">ii–V–I圖式</a>在爵士標準曲中非常常見，因此通常先教<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0010">例2</a>的三種和弦—音階關係。<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0012">例3</a>則把這三種關係，放進C調ii–V–I進行中。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0010"><table id="zh-omt-chord-scale-theory-tablepress-49" class="tablepress tablepress-id-49 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">和弦性質</th>
+<th class="column-2">調式</th>
+<th class="column-3">例子</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">小七和弦</td>
+<td class="column-2">多利安</td>
+<td class="column-3">Dmi<sup>7</sup> = D 多利安</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">屬七和弦</td>
+<td class="column-2">混合利底安</td>
+<td class="column-3">G<sup>7</sup> = G 混合利底安</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">大七和弦</td>
+<td class="column-2">伊奧尼安</td>
+<td class="column-3">C<sup>ma7</sup> = C 伊奧尼安</td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：表中的等號表示本例可搭配的和弦與音階，不是說四音七和弦本身等於七音音階。這是ii–V–I入門配對；後文還會按功能區分其他選項。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0011"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0010">例2。</a>基本和弦—音階關係。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0012"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300394/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0013"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0012">例3。</a>C調ii–V–I進行中的和弦—音階關係。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0014"><p>面對主要由ii–V–I組成的歌曲，初學者可能先把小七和弦配多利安、屬七和弦配混合利底安、大七和弦配伊奧尼安。如<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0015">例4</a>所示，把和弦音放在拍點上，即興旋律就能暗示和聲。七音調式也可以看成四音的七和弦，再加三個經過音[latex](\hat{2}[/latex]、[latex]\hat{4}[/latex]、[latex]\hat{6})[/latex]，或把這三音視為延伸音，也就是九、十一、十三音。</p></div><aside class="translator-note">譯註：這裡的2、4、6相對每個和弦根音及所選調式計算；它們在旋律中是否真的構成經過音，還要看前後級進與節奏，不是音階裡的非和弦音一律就是經過音。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0015"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300392/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0016"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0015">例4。</a>ii–V–I的基本和弦—音階關係，運用於<a href="https://open.spotify.com/track/6eTC4K6kgWb1uabLqrLAxW?si=LRIWFwNKR6CK02XgIwT2ug" target="_blank" rel="noopener noreferrer" class="external" aria-label="Miles Davis〈Tune Up〉（1953）（外部網站，另開分頁）">Miles Davis〈Tune Up〉（1953）</a>的一種可能方式。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chord-scale-theory-chapter-6355-section-1" class="section-header"><a id="en-omt-chord-scale-theory-basic-chord-scale-relationships"></a>Basic Chord-Scale Relationships</h2><p>Starting a major scale on each of its seven notes will yield seven different modes. Each of the modes will have a different pattern of half steps and whole steps and thus a different color. (For more information, see <a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">Introduction to Diatonic Modes</a> and/or <a href="../omt/omt-diatonic-modes.html">Diatonic Modes</a>).</p><p>Since the <a href="../omt/omt-ii-v-i.html">ii–V–I schema</a> is so common in jazz standards, the three chord-scale relationships in <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0010">Example 2</a> are often taught first. <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0012">Example 3</a> shows these three relationships within the context of a ii–V–I progression in C.</p><table id="en-omt-chord-scale-theory-tablepress-49" class="tablepress tablepress-id-49 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Chord quality</th>
+<th class="column-2">Mode</th>
+<th class="column-3">Example</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">minor seventh chord</td>
+<td class="column-2">dorian</td>
+<td class="column-3">Dmi<sup>7</sup> = D dorian</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">dominant seventh chord</td>
+<td class="column-2">mixolydian</td>
+<td class="column-3">G<sup>7</sup> = G mixolydian</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">major seventh chord</td>
+<td class="column-2">ionian</td>
+<td class="column-3">C<sup>ma7</sup> = C ionian</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0010">Example 2.</a> Basic chord-scale relationships.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300394/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0012">Example 3.</a> Chord-scale relationships in a ii–V–I progression in C.</span></p><p>A beginning improviser might approach a song consisting mainly of ii–V–I progressions by simply applying the dorian mode to minor seventh chords, the mixolydian mode to dominant seventh chords, and the ionian mode to major seventh chords. As <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0015">Example 4</a> shows, an improvised melody can imply a harmony by placing chord tones on the downbeats, and a seven-note mode can be thought of as a four-note seventh chord with three passing tones [latex](\hat{2}[/latex], [latex]\hat{4}[/latex], [latex]\hat{6})[/latex] or extensions (ninth, eleventh, thirteenth).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300392/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0015">Example 4</a>. The basic chord-scale relationships for ii–V–I as they might be used in <a href="https://open.spotify.com/track/6eTC4K6kgWb1uabLqrLAxW?si=LRIWFwNKR6CK02XgIwT2ug" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Tune Up" by Miles Davis (1953)（外部網站，另開分頁）'>"Tune Up" by Miles Davis (1953)</a>.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chord-scale-theory-u0017"><h2 id="zh-omt-chord-scale-theory-chapter-6355-section-2" class="section-header"><a id="zh-omt-chord-scale-theory-chord-scales-and-major-keys"></a>和弦音階與大調</h2></div><div class="translation-unit" id="omt-chord-scale-theory-u0018"><p>除了上述關係，還有許多可能的和弦音階。自然音音階的七個音，對應七種基本關係，整理於<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">例5</a>與<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0021">例6</a>。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0019"><table id="zh-omt-chord-scale-theory-tablepress-50" class="tablepress tablepress-id-50 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">羅馬數字</th>
+<th class="column-2">調式</th>
+<th class="column-3">C大調中的例子</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">I<sup>ma7</sup></td>
+<td class="column-2">伊奧尼安</td>
+<td class="column-3">C<sup>ma7</sup> = C 伊奧尼安</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">ii<sup>7</sup></td>
+<td class="column-2">多利安</td>
+<td class="column-3">Dmi<sup>7</sup> = D 多利安</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">iii<sup>7</sup></td>
+<td class="column-2">弗里吉安</td>
+<td class="column-3">Emi<sup>7</sup> = E 弗里吉安</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">IV<sup>ma7</sup></td>
+<td class="column-2">利底安</td>
+<td class="column-3">F<sup>ma7</sup> = F 利底安</td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">V<sup>7</sup></td>
+<td class="column-2">混合利底安</td>
+<td class="column-3">G<sup>7</sup> = G 混合利底安</td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">vi<sup>7</sup></td>
+<td class="column-2">愛奧利安</td>
+<td class="column-3">Ami<sup>7</sup> = A 愛奧利安</td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1">vii<sup>ø7</sup></td>
+<td class="column-2">洛克里安</td>
+<td class="column-3">B<sup>ø7</sup> = B 洛克里安</td>
+</tr>
+</tbody>
+</table></div><div class="translation-unit" id="omt-chord-scale-theory-u0020"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">例5。</a>羅馬數字與調式之間的和弦—音階關係。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0021"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300399/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0022"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0021">例6。</a>C調全部自然音和弦的和弦—音階關係。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0023"><p><span class="NormalTextRun SCXW144968210 BCX4">同樣的方法，也能從旋律小調、和聲小調與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-major">和聲大調</a></span><span class="NormalTextRun SCXW144968210 BCX4">的各種調式，推導更多和弦—音階關係。進一步內容可參閱下方<a href="../omt/omt-chord-scale-theory.html#zh-omt-chord-scale-theory-further-reading">延伸閱讀</a>。</span></p></div><aside class="translator-note">譯註：爵士和弦音階語境中的旋律小調，通常採固定的上行型音集合，不隨下行改回自然小調；本章此處只指向延伸閱讀，沒有列出其全部衍生調式。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chord-scale-theory-chapter-6355-section-2" class="section-header"><a id="en-omt-chord-scale-theory-chord-scales-and-major-keys"></a>Chord-Scales and Major Keys</h2><p>There are many more possible chord-scale relationships beyond those above. The seven notes of the diatonic scale suggest seven basic chord-scale relationships, as summarized in <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">Examples 5</a> and <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0021">6</a>.</p><table id="en-omt-chord-scale-theory-tablepress-50" class="tablepress tablepress-id-50 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Roman numeral</th>
+<th class="column-2">Mode</th>
+<th class="column-3">Example in C major</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">I<sup>ma7</sup></td>
+<td class="column-2">ionian</td>
+<td class="column-3">C<sup>ma7</sup> = C ionian</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">ii<sup>7</sup></td>
+<td class="column-2">dorian</td>
+<td class="column-3">Dmi<sup>7</sup> = D dorian</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">iii<sup>7</sup></td>
+<td class="column-2">phrygian</td>
+<td class="column-3">Emi<sup>7</sup> = E phrygian</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">IV<sup>ma7</sup></td>
+<td class="column-2">lydian</td>
+<td class="column-3">F<sup>ma7</sup> = F lydian</td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">V<sup>7</sup></td>
+<td class="column-2">mixolydian</td>
+<td class="column-3">G<sup>7</sup> = G mixolydian</td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">vi<sup>7</sup></td>
+<td class="column-2">aeolian</td>
+<td class="column-3">Ami<sup>7</sup> = A aeolian</td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1">vii<sup>ø7</sup></td>
+<td class="column-2">locrian</td>
+<td class="column-3">B<sup>ø7</sup> = B locrian</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">Example 5.</a> Chord-scale relationships between Roman numerals and modes.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300399/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0021">Example 6.</a> Chord-scale relationships for all diatonic harmonies in C.</span></p><p><span class="NormalTextRun SCXW144968210 BCX4">A similar approach to the one above can be used to derive more chord-scale relationships from the melodic minor, harmonic minor, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-major">harmonic major</a></span><span class="NormalTextRun SCXW144968210 BCX4"> modes. To learn more about this, consult <a href="../omt/omt-chord-scale-theory.html#en-omt-chord-scale-theory-further-reading">Further Reading</a> below.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chord-scale-theory-u0024"><h2 id="zh-omt-chord-scale-theory-chapter-6355-section-3" class="section-header"><a id="zh-omt-chord-scale-theory-applying-chord-scales-to-progressions-within-a-key"></a>在同一調性的和弦進行中運用和弦音階</h2></div><div class="translation-unit" id="omt-chord-scale-theory-u0025"><p>若按和弦性質重新整理，就會得到<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0026">例7</a>的音階選項。例如，在小七和弦上即興，可以選多利安、弗里吉安或愛奧利安三種和弦音階（<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0028">例8</a>）。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0026"><table id="zh-omt-chord-scale-theory-tablepress-51" class="tablepress tablepress-id-51 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">和弦性質</th>
+<th class="column-2">音階選項</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">小七和弦</td>
+<td class="column-2">多利安, 弗里吉安, 愛奧利安</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">大七和弦</td>
+<td class="column-2">伊奧尼安, 利底安</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">屬七和弦</td>
+<td class="column-2">混合利底安</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">半減七和弦</td>
+<td class="column-2">洛克里安</td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：這張表只整理前文七種自然音調式。屬七和弦也有其他音階選項，不能把表中的混合利底安理解為唯一可能。選擇還須配合調中心、功能、旋律與想要的色彩。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0027"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0026">例7。</a>把<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">例5</a>的同一組和弦—音階關係，改按和弦性質分類。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0028"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300396/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0029"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0028">例8。</a>小七和弦的和弦音階選項。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0030"><p>不過，和弦—音階理論並不是說，每換一個和弦就轉一次調；這些和弦音階並不等於調中心。每種調式會帶出不同延伸音，因此先用羅馬數字辨認<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-function">和聲功能</a>，有助於選出最符合整體調中心的音階。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0031"><p>例如，〈<a href="https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=oQ--ro2iQ7GAjdV-HVkX_Q" target="_blank" rel="noopener noreferrer" class="external" aria-label="Fly Me to the Moon〉（1954）（外部網站，另開分頁）">Fly Me to the Moon〉（1954）</a>的開頭幾小節，以五度圈式根音進行，呈現七種自然音和弦—音階關係中的六種（<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0032">例9</a>）。這段明顯位於C調，並不是七個不同的調。若不把所有小和弦一律配多利安、所有大和弦一律配伊奧尼安，而是區分vi與ii、I與IV，就更容易得到自然流暢的即興旋律。</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0032"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6301594/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0033"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0032">例9。</a>運用於<a href="https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=eERTnc7BS5CDVy8oDFpitA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Bart Howard〈Fly Me to the Moon〉（1954）（外部網站，另開分頁）">Bart Howard〈Fly Me to the Moon〉（1954）</a>的和弦音階，即使面對相同性質的和弦，也會依不同功能作區分。</span></p></div><div class="translation-unit" id="omt-chord-scale-theory-u0034"><p><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0035">例10</a>採錄John Coltrane在〈<a href="https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw" target="_blank" rel="noopener noreferrer" class="external" aria-label="Giant Steps〉（1960）（外部網站，另開分頁）">Giant Steps〉（1960）</a>中即興獨奏的第一輪，並轉寫成B♭調次中音薩克斯風的譜。由於速度快、調中心關係又不尋常，他主要用琶音與音階片段構成旋律。注意，他在大和弦上使用伊奧尼安，在屬七和弦上使用混合利底安，第9小節還在<em>do</em>與<em>te</em>［[latex]\hat{1}[/latex]與[latex]\downarrow\hat{7}[/latex]］之間加入經過音；小和弦則使用多利安。</p></div><aside class="translator-note">譯註：B♭在此指移調樂器：次中音薩克斯風實際發聲比記譜低大九度。原文不是說〈Giant Steps〉全曲改成單一B♭大調；chorus指完整和聲曲式的一輪，不是歌曲副歌。原譜待補，本輪未獨立聽寫或核對該段錄音。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0035"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300401/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（外部網站，另開分頁）">音樂譜例</a><p class="missing-score">靜態樂譜待補；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-chord-scale-theory-u0036"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0035">例10。</a><a href="https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw" target="_blank" rel="noopener noreferrer" class="external" aria-label="John Coltrane〈Giant Steps〉（1960）（外部網站，另開分頁）">John Coltrane〈Giant Steps〉（1960）</a>第一輪獨奏的採譜。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chord-scale-theory-chapter-6355-section-3" class="section-header"><a id="en-omt-chord-scale-theory-applying-chord-scales-to-progressions-within-a-key"></a>Applying Chord-Scales to Progressions within a Key</h2><p>Reorganizing these relationships by chord quality reveals the choices listed in <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0026">Example 7</a> for matching chord qualities to scales. For example, when improvising on a minor seventh chord, a musician can choose from three chord-scales: dorian, phrygian, or aeolian (<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0028">Example 8</a>).</p><table id="en-omt-chord-scale-theory-tablepress-51" class="tablepress tablepress-id-51 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">chord quality</th>
+<th class="column-2">scale(s)</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">minor seventh chord</td>
+<td class="column-2">dorian, phrygian, aeolian</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">major seventh chord</td>
+<td class="column-2">ionian, lydian</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">dominant seventh chord</td>
+<td class="column-2">mixolydian</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">half-diminished seventh chord</td>
+<td class="column-2">locrian</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0026">Example 7.</a> The same chord-scale relationships as in <a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0019">Example 5</a>, rearranged by chord quality.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300396/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0028">Example 8</a>. Chord-scale choices for a minor-seventh chord.</span></p><p>However, it's important to realize that Chord-Scale Theory does not imply that the key modulates each time the chord changes. In other words, these chord-scales are not key centers. Since each mode will imply different extensions, identifying <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-function">chord functions</a> through Roman numeral analysis helps an improviser choose chord-scales that best fit the key center.</p><p>For example, the opening measures of <a href="https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=oQ--ro2iQ7GAjdV-HVkX_Q" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Fly Me to the Moon” (1954)（外部網站，另開分頁）">“Fly Me to the Moon” (1954)</a> contain six of the seven diatonic chord-scale relationships in a circle-of-fifths root movement (<a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0032">Example 9</a>). The chord progression in this example is clearly in the key of C, not seven different keys. Rather than simply coloring each minor chord with a dorian mode and each major chord with an ionian mode, differentiating between the vi and ii chords and between the I and IV chords will result in a more natural-sounding improvised line.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6301594/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0032">Example 9</a>. These chord-scales applied to <a href="https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=eERTnc7BS5CDVy8oDFpitA" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Fly Me to the Moon" by Bart Howard (1954)（外部網站，另開分頁）'>"Fly Me to the Moon" by Bart Howard (1954)</a> distinguish between different chords of the same quality, because the chords still have different functions.</span></p><p><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0035">Example 10</a> is the a transcription of the first chorus of John Coltrane’s improvised solo on <a href="https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw" target="_blank" rel="noopener noreferrer" class="external" aria-label='“Giant Steps" (1960)（外部網站，另開分頁）'>“Giant Steps" (1960)</a>, transposed to B♭ for tenor saxophone. Because of the fast tempo and unusual key center relationships, Coltrane improvises melodies that consist mainly of arpeggios and scale fragments. Note how he uses the ionian mode on major chords, the mixolydian mode (with a passing tone between <em>do</em> and <em>te</em> [[latex]\hat{1}[/latex] and [latex]\downarrow\hat{7}[/latex]] in m. 9) on dominant seventh chords, and the dorian mode on minor chords.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6300401/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chord-scale-theory.html#omt-chord-scale-theory-u0035">Example 10</a>. Transcription of the first chorus of <a href="https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw" target="_blank" rel="noopener noreferrer" class="external" aria-label='“Giant Steps" by John Coltrane (1960)（外部網站，另開分頁）'>“Giant Steps" by John Coltrane (1960)</a>.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chord-scale-theory-u0037"><h2 id="zh-omt-chord-scale-theory-chapter-6355-section-4" class="section-header"><a id="zh-omt-chord-scale-theory-limitations-of-chord-scale-theory"></a>和弦—音階理論的限制</h2></div><div class="translation-unit" id="omt-chord-scale-theory-u0038"><p>一些爵士教育者指出，和弦—音階方法有下列限制：</p></div><div class="translation-unit" id="omt-chord-scale-theory-u0039"><ul><li><strong>忽略和弦之間的聲部連接。</strong>學生可能把每個和弦都當成新調中心，沒有把整段進行放回母音階理解。結果可能是即興斷斷續續、缺乏旋律性，也缺少跨和弦的平順聲部連接。</li><li><strong>未充分涵蓋咆勃與藍調風格常用的半音語彙。</strong>和弦—音階理論通常不足以說明Charlie Parker、Dizzy Gillespie、Bud Powell等咆勃樂手運用的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-neighbor-tones-nts">鄰音</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-passing">經過音</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-secondary-leading-tone">副導音</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-blue-notes">藍調音</a>。</li><li><strong>把1960年代的調式概念套回1920至1950年代的曲子，有時代錯置的問題。</strong>Louis Armstrong與Charlie Parker並非以和弦音階思考。Hal Galper、Hal Crook等教育者，主張先重視旋律裝飾、以和弦音即興，以及以藍調語彙即興，再深入和弦—音階關係。</li><li><strong>忽略口傳傳統。</strong>這種理論著重視覺與理性分析，較少依靠耳朵與直覺。練習和弦音階，不能取代聽寫爵士即興獨奏、背熟曲子、跟著錄音即興，或與其他樂手合奏；這些都是學習爵士即興口傳傳統的重要方法。</li></ul></div><aside class="translator-note">譯註：以上是原作者整理的教學批評，並非說使用和弦音階就必然缺乏聲部連接或聽覺。第二點著重半音化的鄰音、經過音等超出基本音階配對的語彙，前文並未排除自然音經過音。「副導音」原連結實際指向副導音和弦詞條；單一導向暫時主音的導音，與包含它的副導音和弦，仍須區分。</aside><div class="translation-unit" id="omt-chord-scale-theory-u0040"><div class="textbox shaded"><a id="zh-omt-chord-scale-theory-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-chord-scale-theory-u0041"><ul><li>Haerle, Dan。1982。<i>The Jazz Language: A Theory Text for Jazz Composition and Improvisation</i>（《爵士語言：爵士作曲與即興的理論教材》）。佛羅里達州海厄利亞：Alfred Music。</li><li>Nettles, Barrie與Richard Graf。2015。<i>The Chord Scale Theory &amp; Jazz Harmony</i>（《和弦音階理論與爵士和聲》）。美因茨：Alfred Music。</li><li>Russell, George。（1953）2001。<i>The Lydian Chromatic Concept of Tonal Organization: The Art and Science of Tonal Gravity by George Russell</i>（《調性組織的利底安半音概念：George Russell的調性引力藝術與科學》）。第4版。麻州布魯克萊恩：Concept Publishing Company。</li></ul></div><div class="translation-unit" id="omt-chord-scale-theory-u0042"><div class="textbox shaded"><a id="zh-omt-chord-scale-theory-assignments"></a>作業</div></div><div class="translation-unit" id="omt-chord-scale-theory-u0043"><ol><li>原書註記：即將提供。</li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chord-scale-theory-chapter-6355-section-4" class="section-header"><a id="en-omt-chord-scale-theory-limitations-of-chord-scale-theory"></a>Limitations of Chord-Scale Theory</h2><p>Some jazz educators have pointed out limitations of the Chord-Scale approach, such as:</p><ul>
+<li><strong>The absence of voice leading between chords.</strong> Chord-Scale Theory can lead a student to see each chord as a new key center, instead of viewing an entire chord progression as derived from a parent scale. This can result in choppy, un-melodic improvisation that lacks smooth voice leading between chords.</li>
+<li><strong>Lack of the chromaticism commonly used in bebop and blues-based styles.</strong> Chord-Scale Theory generally does not account for <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-neighbor-tones-nts">neighbor tones</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-passing">passing tones</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-secondary-leading-tone">secondary leading tones</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-blue-notes">blue notes</a> employed by bebop musicians such as Charlie Parker, Dizzy Gillespie, and Bud Powell.</li>
+<li><strong>The anachronism of applying a 1960s modal concept to tunes from 1920–50.</strong> Louis Armstrong and Charlie Parker did not think in terms of chord-scales. Educators such as Hal Galper and Hal Crook emphasize the importance of melodic embellishment, chord tone improvisation, and blues-based improvisation before delving into chord-scale relationships.</li>
+<li><strong>The avoidance of the oral tradition.</strong> Chord-Scale Theory emphasizes the eye and intellect rather than the ear and intuition. Practicing chord-scale relationships does not substitute for transcribing improvised jazz solos, memorizing tunes, improvising along with recordings, or jamming with other musicians as the preferred methods of learning the oral tradition of jazz improvisation.</li>
+</ul><div class="textbox shaded"><a id="en-omt-chord-scale-theory-further-reading"></a>Further Reading</div><ul>
+<li>Haerle, Dan. 1982. <i>The Jazz Language: A Theory Text for Jazz Composition and Improvisation</i>. Hialeah, FL: Alfred Music.</li>
+<li>Nettles, Barrie, and Richard Graf. 2015. <i>The Chord Scale Theory &amp; Jazz Harmony</i>. Mainz: Alfred Music.</li>
+<li>Russell, George. (1953) 2001. <i>The Lydian Chromatic Concept of Tonal Organization: The Art and Science of Tonal Gravity by George Russell</i>. 4<sup>th</sup> edition. Brookline, MA: Concept Publishing Company.</li>
+</ul><div class="textbox shaded"><a id="en-omt-chord-scale-theory-assignments"></a>Assignments</div><ol>
+<li>Coming soon!</li>
+</ol></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-substitutions.html">上一節：替代和弦</a><a href="../omt/omt-blues-harmony.html">下一節：藍調和聲</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/chord-scale-theory/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

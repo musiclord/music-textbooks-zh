@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>音列的特性 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-row-properties.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group" open=""><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a aria-current="page" href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-row-properties" data-book="omt" data-page-url="/omt/omt-row-properties.html" data-next-url="/omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">音列的特性</h1><p class="authors">Mark Gotham and Brian Moseley</p><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>有些音列比其他音列更常受到作曲家青睞，往往與音列本身的特性有關。</li><li>本章說明幾種常見特性：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-all-interval-row">全音程性</a></li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-derived-row">衍生音列</a></li><li>不變性</li><li>六音組的互補組合性</li><li>部分有序集合</li></ul></li><li>更多細節見〈<a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a>〉。</li></ul></div></div></div><div class="translation-unit" id="omt-row-properties-u0002"><p>十二音作曲家也許把<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row">音列</a>中的各音看作平等，卻不一定同樣看待不同<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-row-form">音列形式</a>；具有某些特性的音列，明顯更吸引他們。本章概覽值得留意的幾種特殊性質與形式，反覆關注的重點，是音列內部較小片段的特性。這些構成部分可以用兩種方式觀察：重疊的片段，以及<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-discrete">互不重疊</a>的片段。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>Some rows are used more by composers than others. Often this is because of the row's properties.</li>
+<li>This chapter explains some row properties that are especially common:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-all-interval-row">all interval</a></li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-derived-row">derived rows</a></li>
+<li>Invariance</li>
+<li>Hexachordal combinatoriality</li>
+<li>Partially-ordered sets</li>
+</ul>
+</li>
+<li>The <a href="../omt/omt-anthology-twelve-tone.html">Twelve-Tone Anthology</a> has more detail on this topic.</li>
+</ul>
+</div>
+</div><p>Twelve-tone composers may view the notes in a tone <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row">row </a>as equal, but they do not appear to feel the same way about different <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-row-form">row forms</a>. Instead, rows with certain properties have disproportionately attracted composers’ attention. This chapter surveys some of the special types of properties and row forms to look out for. A recurring focus is on the properties of the smaller constituent parts of a row—its internal segments. There are two ways to view these constituent parts: overlapping and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-discrete">discrete</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0003"><h2 id="zh-omt-row-properties-chapter-6789-section-1" class="section-header"><a id="zh-omt-row-properties-overlapping-segments"></a>重疊片段與全音程音列</h2></div><div class="translation-unit" id="omt-row-properties-u0004"><p>考慮音列中所有「重疊」<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-segment">片段</a>，就是依次從每個音開始查看。例如二音組含兩個音與一個音程，可以先看第1、2個音，再看第2、3個，接著第3、4個，依此類推。每次取兩音、向前移一個位置，因此相鄰音組總有一音重疊。這個方法得到音列相鄰音程的內容，也能辨認第一種重要類型：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-all-interval-row">全音程音列</a>。</p></div><div class="translation-unit" id="omt-row-properties-u0005"><p>標準十二音音列都包含十二個不同音高類，但只有部分音列的十一個相鄰有序音高類音程，恰好涵蓋1至11各一次（<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">例1</a>）。若將移位與倒影相關的音列合併計數，具有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-all-interval-row">全音程性</a>的類型共有1,928種；其中仍有些比其他更受作曲家青睞。這些音列的首尾必相隔三全音；<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">例1</a>還有更特殊的對稱：第1與12、2與11、3與10、4與9、5與8、6與7個音，都相隔三全音。例如此列從A開始，在D♯結束。</p></div><aside class="translator-note">譯註：原文把第1/12、2/11等每一對對稱位置都相隔三全音，說成所有全音程音列的必然性，這不正確。必然的是首尾相差6，因為1+…+11=66≡6（mod12）。反例[0,1,3,7,2,10,8,11,5,4,9,6]的相鄰音程為[1,2,4,7,8,10,3,6,11,5,9]，確實各含1至11，但第2與11音是1與9，相隔8，不是6。1,928的數量則須說明等價關係：研究列出3,856個規範形式，再合併倒影相關者成1,928；此處沒有重新窮舉全部音列。</aside><p class="image-labels">譯註來源：<a href="https://arxiv.org/abs/2006.05007" target="_blank" rel="noopener noreferrer" class="external" aria-label="Marco Buongiorno Nardelli（2020），The Hitchhiker’s Guide to the All-Interval 12-Tone Rows，頁1–4（外部網站，另開分頁）">Marco Buongiorno Nardelli（2020），The Hitchhiker’s Guide to the All-Interval 12-Tone Rows，頁1–4</a></p><div class="translation-unit" id="omt-row-properties-u0006"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862120/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Nono全音程音列原譜（外部網站，另開分頁）">Nono全音程音列原譜</a><p class="missing-score">靜態譜例待補；原始資源包含本章必要的樂譜。</p></aside></div></div><div class="translation-unit" id="omt-row-properties-u0007"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">例1。</a>Luigi Nono《<em>Il Canto Sospeso</em>》中的全音程音列。</span></p></div><div class="translation-unit" id="omt-row-properties-u0008"><p>這個全音程音列，是所謂「祖母和弦」（Grandmother chord，一般歸於Nicolas Slonimsky）的線性排列。產生方法是先上行半音，有序音高類音程為1；再下行全音，取模12後為10，接著讓奇數與偶數音程交替，奇數依次增大、偶數依次減小。因此，這個音高序列可以看成兩條交錯的半音音階，如<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">例1</a>，本質上是半音楔形。巴赫的BWV548賦格、蕭士塔高維契《二十四首前奏曲與賦格》Op.87第15首等調性作品，也可視為這種寫法的先例。<a class="footnote" title="兩首賦格都以楔形為主題，作為核心材料頻繁重現，或許更強化這個聯繫。" id="zh-omt-row-properties-return-footnote-6789-1" href="../omt/omt-row-properties.html#zh-omt-row-properties-footnote-6789-1"><sup class="footnote">[1]</sup></a></p></div><aside class="translator-note">譯註：原文把10稱為interval class，與本書IC最大為6的定義衝突；此處應為有序音高類音程。完整步距是1、10、3、8、5、6、7、4、9、2、11。依本段規則從A＝9起算，得到9、10、8、11、7、0、6、1、5、2、4、3；兩條交錯的半音線與六對三全音對稱，都是這個特定楔形音列的性質。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-1" class="section-header"><a id="en-omt-row-properties-overlapping-segments"></a>Overlapping Segments and the "All-Interval" Row</h2><p>Considering every "overlapping" <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-segment">segment</a> of a row means looking at segments starting at each pitch in turn. For instance, for dyads (two pitches, one interval), we look at pitches 1 and 2, then 2 and 3, followed by 3 and 4, and so on. By considering two pitches at a time and stepping forward by one, there’s always one pitch overlapping. That specific approach gives us the interval content of a row and allows us to identify our first notable row type: the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-all-interval-row">all-interval row</a>.</p><p>While all standard twelve-tone rows include all twelve distinct pitches, only some also feature all eleven distinct intervals between neighboring pitches (<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">Example 1</a>). There are 1,928 distinct row forms with this <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-all-interval-row">all interval</a> property, but again, some of them have appealed to composers more than others. One true-by-definition property of these rows is that there is a tritone between each pair of notes around the central pair, i.e., between notes 1 and 12, 2 and 11, 3 and 10, 4 and 9, 5 and 8, <span>and 6 and 7. In <a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">Example 1</a>, for instance, the row starts with A and ends with D♯, and so on.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862120/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">Example 1. </a>An all-interval row from Luigi Nono, <em>Il Canto Sospeso</em>.</span></p><p>This example of an all-interval row is a linear layout of the so-called "Grandmother chord" (credited to Nicolas Slonimsky). To produce this succession of pitches, start with a semitone up (interval class 1), then a tone down (interval class 10), and continue to alternate odd and even intervals with the odd intervals getting successively larger and the even ones smaller. As a consequence, the resulting pitch succession can be viewed as two interleaved chromatic scales (as shown in <a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0006">Example 1</a>) which is essentially a chromatic wedge and can therefore be seen to have precedents in tonal works such as fugues by Bach (BWV 548) and Shostakovich (24 Preludes and Fugues, Op. 87, no. 15).<a class="footnote" title="That the wedge is the subject of a fugue in both these cases, and therefore a central focus, recurring frequently throughout, perhaps strengthens the connection." id="en-omt-row-properties-return-footnote-6789-1" href="../omt/omt-row-properties.html#en-omt-row-properties-footnote-6789-1"><sup class="footnote">[1]</sup></a></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0009"><h2 id="zh-omt-row-properties-chapter-6789-section-2" class="section-header"><a id="zh-omt-row-properties-discrete-segments"></a>不重疊片段與衍生音列</h2></div><div class="translation-unit" id="omt-row-properties-u0010"><p>另一種分段方法是看音列中互不重疊的部分，這可能是最常見的觀察方式。依此限制，十二音音列可以分成六個二音組、四個三音組、三個四音組，或兩個六音組。這麼多種等分方式，來自數字12的性質，也是十二音系統的優點之一。</p></div><div class="translation-unit" id="omt-row-properties-u0011"><p>從重疊片段轉向不重疊片段時，關注點也常從「全部」轉成「只用某一種」：有些序列作曲家特別喜歡尋找並使用由同一集合類的多個實例組成的音列。</p></div><aside class="translator-note">譯註：原文說反覆使用「同一個pitch-class set」，若照字面重複同一組音，就不會包含十二個不同音高類。依接著的(0123)例子，這裡指同一集合類經移位、倒影等得到的不同實例。</aside><div class="translation-unit" id="omt-row-properties-u0012"><p><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">例2</a>取自魏本《弦樂四重奏》Op.28，是經典例子。音符下方的括弧將音列分成三個互不重疊的四音組，它們都屬於<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-set-class">集合類</a>(0123)，也就是半音四音組。上方弧線顯示，不重疊的二音組也有相同特性：每組都是半音。</p></div><div class="translation-unit" id="omt-row-properties-u0013"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862261/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="魏本Op.28音列原譜（外部網站，另開分頁）">魏本Op.28音列原譜</a><p class="missing-score">靜態譜例待補；原始資源包含本章必要的樂譜。</p></aside></div></div><div class="translation-unit" id="omt-row-properties-u0014"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">例2。</a>魏本《弦樂四重奏》Op.28音列的不重疊分段；注意其中集合類與音程種類的限制。</span></p></div><div class="translation-unit" id="omt-row-properties-u0015"><p>具有這種特性的音列，有時稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-derived-row">衍生音列</a>，意思是整列可以看作由一個音高類集合經過變換而構成。這個詞也有更具體的用法：從既有音列中的某個子片段出發，直接衍生出具有此特性的新音列。例如，上述類型的音列，也可能從另一個恰好含有(0123)片段的音列衍生而來。</p></div><div class="translation-unit" id="omt-row-properties-u0016"><p>從作曲與聆聽的角度，衍生音列提供許多可能。音列移位、倒影等變換，不會改變相應片段所屬的集合類；因此，即使用了不同音列形式，這些集合類仍會在作品中不斷出現。衍生音列使集合類規律重現，有助於建立某種統一性。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-2" class="section-header"><a id="en-omt-row-properties-discrete-segments"></a>Discrete Segments and "Derived" Rows</h2><p>The alternative segmentation method is to look at the discrete (non-overlapping) parts of a row. This is perhaps the most common way of thinking about row forms. Given this constraint, a twelve-tone row can be divided into six dyads, four trichords, three tetrachords, or two hexachords. The fact that there are so many of these options is a property of the number 12 and one of the benefits of having a 12-based system.</p><p>In turning from overlapping to discrete segments, we also tend to turn our attention from considerations of "all" to "only." Specifically, it has been a preoccupation of some serial composers to find and use row forms featuring several instances of only one pitch class set.</p><p><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">Example 2</a> is a classic example from Anton Webern’s String Quartet, Op. 28. The brackets below the notes indicate the three discrete tetrachords belonging to the same <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-set-class">set class</a>: (0123), a chromatic tetrachord. Slurs above show a similar consistency in the discrete dyads, which are all semitones.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862261/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">Example 2. </a>A row from Anton Webern's String Quartet Op. 28, divided into discrete segments. Notice the limited number of set classes and intervals.</span></p><p>Rows with this property are sometimes called <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-derived-row">derived rows</a>, meaning that the whole row can be considered to be made out of ("derived" from) one pitch-class set. It’s worth also noting the more specific use of the term, where a new row with this property is derived more directly from an existing one with the relevant set as one of its subsegments. For instance, the row above might have been derived from another row that happened to have a (0123) subsegment in it.</p><p>From a compositional and listener-oriented perspective, derived rows are very suggestive. Because the set-class content of a row doesn’t change when it’s transposed, inverted, etc., these set classes will circulate constantly throughout a piece, even as different row forms are used. Therefore, a derived row guarantees the regular recurrence of set classes, which can be helpful in cultivating a particular type of unity.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0017"><h2 id="zh-omt-row-properties-chapter-6789-section-3" class="section-header"><a id="zh-omt-row-properties-segmental-invariance"></a>片段不變性</h2></div><div class="translation-unit" id="omt-row-properties-u0018"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-invariance">不變性</a>指某種特徵得到保留。音程、力度、節奏、音高等任何音樂屬性，都可能在不同脈絡中保持相同；其他部分雖然改變，這個面向卻沒有變。在十二音理論中，我們主要關心音程不變性與音高類片段不變性。前者非常常見：音列每次整體移位，有序音程序列都不變；逆行倒影則讓這個音程序列反向排列，而保留各音程值。</p></div><div class="translation-unit" id="omt-row-properties-u0019"><p>片段不變性較少見，值得單獨說明。音列變換後，若某片段的音高類內容仍然出現，就說這個片段「保持不變」（<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0022">例3</a>）。上方譜表重現<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">例2</a>的音列與三個四音組，下方則把整列上移四個半音，等同下移八個半音，標作P<sub>4</sub>。P<sub>0</sub>與P<sub>4</sub>這兩個不同音列，包含相同的四音組；不只是集合類相同，實際音高類內容也相同：</p></div><aside class="translator-note">譯註：本段的不變主要指實際音高類集合相同，不必保留八度，也不必保留片段內部順序；更不表示同一音集仍在音列的相同序位。原文的in place與absolute pitches容易讓人誤解。</aside><div class="translation-unit" id="omt-row-properties-u0020"><ul><li>P<sub>0</sub>的前四音，也就是圖中第一小節，對應P<sub>4</sub>的後四音，以淺藍色表示。</li><li>P<sub>0</sub>的中間四音，也就是第二小節，對應P<sub>4</sub>的前四音，以紅色表示。</li><li>P<sub>0</sub>的後四音，也就是最後一小節，對應P<sub>4</sub>的中間四音，以深藍色表示。</li></ul></div><div class="translation-unit" id="omt-row-properties-u0021"><p>這些四音組就是<em>不變片段</em>。依例3的上移四半音T<sub>4</sub>操作，原本第一組的音高類內容變成第二組，第二組變成第三組，第三組則變成第一組。因此，整列移位後，同樣的三個四音音集仍然出現，只是位置循環調換。這裡的「不變」指音高類內容得到保留，不表示片段永遠停在原來的位置。</p></div><aside class="translator-note">譯註：原文此段混用T₈與上移四半音，並把第一組的去向寫成最後一組。依前兩段對P₀/P₄與三組顏色對應的描述，例示操作是T₄，映射第一→第二→第三→第一。T₈是反向循環，不能把上移8與下移8混為一談；下移8才等於上移4。</aside><div class="translation-unit" id="omt-row-properties-u0022"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862222/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="魏本片段不變性原譜（外部網站，另開分頁）">魏本片段不變性原譜</a><p class="missing-score">靜態譜例待補；原始資源包含本章必要的樂譜。</p></aside></div></div><div class="translation-unit" id="omt-row-properties-u0023"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0022">例3。</a>魏本《弦樂四重奏》Op.28的片段不變性。</span></p></div><div class="translation-unit" id="omt-row-properties-u0024"><p>要判斷音列中的某個音高類片段，何時會在變換後保持不變：</p></div><div class="translation-unit" id="omt-row-properties-u0025"><ol><li>在音列其他位置尋找同一集合類的片段，可以是二音組、三音組、四音組等。</li><li>確定兩個實際片段之間的移位或倒影關係。</li><li>將整個音列施以<em>相同</em>的變換，便會讓某個片段得到另一片段原有的音高類內容。</li></ol></div><aside class="translator-note">譯註：光知道兩個片段同屬一集合類還不夠，必須求出實際音高類之間的T或I關係。若要求保留有序片段，也要另外核對內部順序；本文例子主要比較無序音集內容。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-3" class="section-header"><a id="en-omt-row-properties-segmental-invariance"></a>(Segmental) Invariance</h2><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-invariance">Invariance</a> refers to the preservation of something. Any musical attribute (such as a series of intervals, dynamics, rhythms, or pitches) may be kept the same from one context to another. While other parts of the music change, the aspect in question is not varied: hence the term "invariant." In twelve-tone theory, we are mostly concerned with intervallic invariance and pitch-class segmental invariance. The first type, intervallic invariance, is very common. Any time a row is transposed, the ordered intervallic content of the row is unchanged. (Likewise, retrograde inversion creates retrograde intervallic invariance.)</p><p>Segmental invariance is rarer and warrants separate comment here. Where a pitch-class segment of a row remains in place when that row is transformed, we say that the segment is “held invariant” (<a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0022">Example 3</a>). The upper staff reproduces the row as we saw it in <a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0013">Example 2</a> (with the discrete tetrachords shown), and the lower staff sets out the same row transposed up four semitones (or, equivalently, down eight), i.e., as P<sub>4</sub>. Notice that these two different rows (P<sub>0</sub> and P<sub>4</sub>) comprise the same tetrachords, not only in terms of set class, but in terms of absolute pitches:</p><ul>
+<li>The first four pitches of P<sub>0</sub> (the first measure in the example) are the last four pitches of P<sub>4</sub>. This is shown in light blue.</li>
+<li>The middle four pitches of P<sub>0</sub> (the second measure in the example) are the first four pitches of P<sub>4</sub>. This is shown in red.</li>
+<li>The last four pitches of P<sub>0</sub> (the final measure in the example) are the middle four pitches of P<sub>4</sub>. This is shown in navy.</li>
+</ul><p>We say that these tetrachords are <em>invariant segments.</em> These segments are held invariant because they share the same relationship with one another as that shared between the rows: because the tetrachords are related by T<sub>8</sub>, when the whole row is transposed by T<sub>8</sub>, those tetrachords are “held invariant.” Put another way, when the first tetrachord is transposed up four semitones, it <em>becomes</em> the last tetrachord, so the same thing happens when the whole row is transposed by that interval.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862222/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0022">Example 3. </a>Segmental invariance in Anton Webern's String Quartet Op. 28.</span></p><p>To determine when and if a pitch-class segment of a row will be held invariant:</p><ol>
+<li>Find an equivalent set-class elsewhere in the row. This may be a dyad, trichord, tetrachord, etc.</li>
+<li>Determine the transpositional or inversional relationship between them.</li>
+<li>When the row is transposed or inverted by that <em>same</em> relationship a segment will be held invariant.</li>
+</ol></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-row-properties-u0026"><h2 id="zh-omt-row-properties-chapter-6789-section-4" class="section-header"><a id="zh-omt-row-properties-hexachords"></a>六音組</h2></div><div class="translation-unit" id="omt-row-properties-u0027"><p>衍生音列的討論通常著重三音或四音片段，但音列中兩個互不重疊的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hexachord">六音組</a>，也就是第1至6音與第7至12音這兩半，同樣長期受到理論家與作曲家關注，尤其是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hexachordal-combinatoriality">六音組的互補組合性</a>。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-4" class="section-header"><a id="en-omt-row-properties-hexachords"></a>Hexachords</h2><p>While discussion of derived rows typically focuses on subsegments of three or four notes, the two discrete <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hexachord">hexachords</a> of a row (i.e., the two halves, pitches 1–6 and 7–12) have attracted at least as much attention from theorists and composers over the years, not least in terms of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hexachordal-combinatoriality">hexachordal combinatoriality</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0028"><h2>六音組的互補組合性</h2></div><div class="translation-unit" id="omt-row-properties-u0029"><p>標準十二音音列中，每個音高類恰好出現一次，因此P<sub>0</sub>的前六音組與後六音組<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-complementary-set">互為補集</a>，合起來就是全部十二個音高類。R<sub>0</sub>的前六音，依定義就是P<sub>0</sub>後六音的逆序，所以P<sub>0</sub>與R<sub>0</sub>的前六音組也互補。這說明我們也能透過比較兩種音列形式，找出互補的六音組。</p></div><div class="translation-unit" id="omt-row-properties-u0030"><p>這個關係必然存在於同下標的P–R、I–RI之間，例如P<sub>0</sub>與R<sub>0</sub>，或I<sub>4</sub>與RI<sub>4</sub>。當其他變換關係的形式，例如P–P、P–I或P–RI，也能找到這種互補搭配時，「組合性」便具有進一步的意義。採用Milton Babbitt（巴比特）的術語，可區分兩種程度：</p></div><div class="translation-unit" id="omt-row-properties-u0031"><ul><li><strong>部分組合性（semi-combinatorial）。</strong>除了必然存在的逆行互補外，還能在移位（P–P）、倒影（P–I）、逆行倒影（P–RI）其中一類變換中，找到前六音組互補的搭配。</li><li><strong>全組合性（all-combinatorial）。</strong>上述各類變換都能產生互補搭配。具有這種性質的基本六音組集合類共有六種；不是只有六條具體的十二音音列。作品例子包括魏本《<em>交響曲</em>》的音列，<a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">下一章</a>會進一步探討。</li></ul></div><aside class="translator-note">譯註：原文「只有六個不同音列」應為六種全組合六音組的基本集合類；每種六音組內部仍有許多排列，並可搭配互補的後半音列。這裡所謂各類變換可搭配，也不是說同一對固定音列必須同時互為P–P、P–I、P–RI，而是各類操作可各自找到互補形式。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Hexachordal combinatoriality</h2><p>For a standard twelve-tone row with each pitch stated exactly once, the first hexachord (half) of P<sub>0</sub> <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-complementary-set">complements</a> the second half: they make up the total chromatic collection together. Since the first hexachord of R<sub>0</sub> has the same pitches as the second hexachord of P<sub>0</sub> by definition, we can also observe that the first hexachords of P<sub>0</sub> and R<sub>0</sub> are complementary—giving you the total chromatic collection. This illustrates that we can also find complementary hexachords by comparing two row forms.</p><p>By definition, this relation holds between P<sub>0</sub> and R<sub>0</sub>, and all other P–R and I–RI pairs (e.g., I<sub>4</sub>-RI<sub>4</sub>). This "combinatoriality" relation becomes meaningful when it holds between rows related by other transformations, i.e., between a P–P, P–I, or P–RI pair. Using Milton Babbitt’s terminology, we distinguish between two degrees of this relation:</p><ul>
+<li><strong>Semi-combinatorial</strong> pairs are related by one such transformation: transposition (P–P), inversion (P–I), or retrograde inversion (P–RI).</li>
+<li><strong>All-combinatorial</strong> pairs are related by each such serial transformation. There are only six distinct rows with this property where this relation holds between the row and transformations of itself. Repertoire examples include the row of Webern’s <em>Symphonie </em>(as explored further in <a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">the next chapter</a>).</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0032"><h2>(014589)：魔法六音組</h2></div><div class="translation-unit" id="omt-row-properties-u0033"><p>如同某些音列特性特別吸引作曲家，某些六音組也格外受青睞。這裡介紹一個著名例子：集合類(014589)，又稱「魔法六音組」（magic hexachord）、「<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hexatonic-scale">六音音集</a>」、「hexatonic集合類」，或「拿破崙頌六音組」。它具有下列特性：</p></div><div class="translation-unit" id="omt-row-properties-u0034"><ul><li>很容易形成全組合音列；例如移位＋2、−2或6個半音，都能得到互補六音組。只有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-whole-tone-collection">全音音集</a>(02468t)有更多這類移位位置：任何奇數半音的移位都能互補。</li><li>它與〈<a href="../omt/omt-collections.html">音集</a>〉章的1:3距離模型調式相同。</li><li>包含許多三和弦；〈<a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼和聲</a>〉章六音循環所用的音，都在這個音集中。</li><li>取出五個音時，雖有不同實際子集，但都屬於同一集合類(01458)。</li><li>增加一個音形成七音超集時，也都屬於同一集合類(0124589)；這個七音集合類與上述五音集合類(01458)互補。</li><li>見於許多作品，包括魏本《<em>協奏曲</em>》（見<a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">下一章</a>）、荀貝格《<em>拿破崙頌</em>》——其中一個別名由此而來——以及Maderna、Nono的作品。</li></ul></div><aside class="translator-note">譯註：「一種五音子集／七音超集」指一種集合類，不是一個唯一的實際集合。從六個音中刪一音有6個五音子集；從其餘六音加一音，也有6個七音超集，它們各自都互為T/I等價。兩個原型字串不一定直接互補；互補關係是在實際音集或相應集合類層次上成立。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>(014589): The "magic hexachord"</h2><p>Just as the properties of some rows have attracted composers, so too have some hexachords. We’ll introduce just one "celebrity" hexachord here: set class (014589), the so-called "magic hexachord" (also known as the "<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hexatonic-scale">hexatonic collection</a>," "hexatonic set class," or "Ode-to-Napoleon hexachord"). This hexachord has the following properties:</p><ul>
+<li>Creates all-combinatorial rows unusually readily, for instance, by transposition in three ways (+/-2 and 6 semitones). Only the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-whole-tone-collection">whole-tone collection</a> (02468t) exceeds this, with combinatoriality by transposition of any odd-numbered interval.</li>
+<li>Related to the 1:3 "distance model" mode discussed in the <a href="../omt/omt-collections.html">Collections</a> chapter.</li>
+<li>Many internal triads: this set contains within it all the pitches of the hexatonic cycle discussed in the <a href="../omt/omt-neo-riemannian-triadic-progressions.html">neo-Riemannian</a> chapter.</li>
+<li>Has only one possible five-note subset, set class (01458).</li>
+<li>Has only one possible seven-note superset: (0124589), which is the complement of that five-note subset, (01458).</li>
+<li>Used in many pieces, including Webern’s <em>Konzert</em> (as discussed in <a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">the next chapter</a>), Schoenberg’s <em>Ode to Napoleon </em>(hence one of its names), and works by Maderna and Nono.</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0035"><h2 id="zh-omt-row-properties-chapter-6789-section-5" class="section-header"><a id="zh-omt-row-properties-partially-ordered-sets"></a>部分有序集合</h2></div><div class="translation-unit" id="omt-row-properties-u0036"><p>什麼時候「序列」音樂不完全依照嚴格序列運作？答案或許令人意外：經常如此。若嚴格要求十二音音樂始終依固定的十二音順序，並只使用參照音列的簡單移位或倒影，那麼許多被稱為序列音樂的作品，實際上都不完全符合。</p></div><div class="translation-unit" id="omt-row-properties-u0037"><p>一個重要例子是借自數學的「部分有序集合」概念。它比固定全部十二音的順序更有彈性。衍生音列是很好的起點：我們已著重音列的四音組等構成片段，以及它們的集合類。再往前一步，就可以把一個「音列」主要界定為這些片段的音高內容，而不完全依賴片段內部的特定順序。</p></div><div class="translation-unit" id="omt-row-properties-u0038"><p><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0039">例4</a>再次在上方列出魏本Op.28音列，下方則把每一對相鄰音的內部順序對調，形成新音列。兩者具有相同的二音組與四音組內容，但片段內部的次序改變了。它仍包含全部十二個音高類，卻是另一個排列。</p></div><div class="translation-unit" id="omt-row-properties-u0039"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862252/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="魏本音列局部重排原譜（外部網站，另開分頁）">魏本音列局部重排原譜</a><p class="missing-score">靜態譜例待補；原始資源包含本章必要的樂譜。</p></aside></div></div><div class="translation-unit" id="omt-row-properties-u0040"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0039">例4。</a>將魏本《弦樂四重奏》Op.28音列局部重排所得的音列。</span></p></div><div class="translation-unit" id="omt-row-properties-u0041"><p>這個魏本例子只是示範；相關概念後來由Milton Babbitt提出，重排方法也可以複雜得多。它雖然偏離「十二音固定順序」的嚴格定義，卻同樣不斷輪換完整的半音音集，也就是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-aggregate-twelve-tone">十二音總集</a>。而且，即使在嚴格序列音樂中，作曲家也會使用多音同時發聲的和弦；這就需要從部分有序的角度思考，而不能只看逐音先後。至少某種程度的這類思考，其實非常常見。</p></div><aside class="translator-note">譯註：魏本音列在這裡是用來示範重排概念，不是宣稱魏本本人已使用Babbitt後來提出的這套術語。多音同時發聲時，不能從實際起音時間替它們硬排唯一先後。</aside><div class="translation-unit" id="omt-row-properties-u0042"><p>最後，兩個音列能透過局部重排相互聯繫，究竟有多重要？先想想十二音共有數億種排列。固定兩個六音組的內容與位置後，排列數雖變少；固定更小片段時又更少，但仍然很多：</p></div><div class="translation-unit" id="omt-row-properties-u0043"><ul><li>十二音任意排列：<strong>12!＝479,001,600</strong>。原書此處誤植的公式為<s>[latex]12! = 490,001,600[/latex]</s>。</li><li>固定兩個六音組：[latex]6!×6! = 720^2 = 518,400[/latex]。</li><li>固定三個四音組：[latex]4!×4!×4! = 24^3 = 13,824[/latex]。</li><li>固定四個三音組：[latex]3!×3!×3!×3! = 6^4 = 1,296[/latex]。</li><li>固定六個二音組：[latex]2!×2!×2!×2!×2!×2! = 2^6 = 64[/latex]。</li></ul></div><aside class="translator-note">譯註：原式12!=490,001,600為數字誤植，正確是479,001,600，亦與上一章的十二階乘一致。中文先給正確結果，再明確引用原誤式供核對，其餘四個公式原樣保留。各片段內容及片段位置固定，只在片段內排列；沒有另乘交換片段位置的排列數。</aside><div class="translation-unit" id="omt-row-properties-u0044"><p>因此，只有這項關係，可能還不足以建立有意義的音列聯繫，尤其每次重新排列，音程內容也可能改變。與許多分析問題一樣，關鍵仍是作曲家在作品中實際如何運用這個特性。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-5" class="section-header"><a id="en-omt-row-properties-partially-ordered-sets"></a>"Partially ordered" sets</h2><p>When is "serial" music not really serial? Surprising as it might seem, the answer is "often." In the strict sense that twelve-tone music is supposed to be consistently based on a fixed succession of the twelve pitches in a simple (transposed and/or inverted) version of a referential row, much of what we call "serial" music doesn’t actually work like that.</p><p>A key example of this is the idea of a "partially ordered" set (another term borrowed from mathematics), which gives us a more flexible constraint than all twelve pitches being in a fixed order. Derived rows provide a good introduction to this situation. As we’ve seen, derived rows comprise one context in which we focus on the constituent segments (tetrachords, for instance) of a row and their set class. It’s a small step from this to a "row" that is defined more by the content of those segments than by any specific ordering.</p><p><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0039">Example 4</a> shows Webern’s Op. 28 row one more time (upper staff), and it creates a new row by reversing each pair of pitches (lower staff). The second case has the same dyadic and tetrachordal segments as the first, but the internal order of those segments has changed. By definition, we still have a row with all twelve pitches, but a different one.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8862252/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-row-properties.html#omt-row-properties-u0039">Example 4.</a> Partially re-ordered row created from Anton Webern's row in String Quartet, Op. 28.</span></p><p>We provide the Webern example for illustration; really, this is a concept introduced later, by Milton Babbitt, and the kinds of re-ordering can get a lot more complex. While this practice clearly deviates from the "strict" definition of twelve pitches in a fixed order, what they share is a constant turning over of the total chromatic collection (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-aggregate-twelve-tone">aggregate</a>). Moreover, even in "strict" serialism, composers still use chords (several pitches sounding at once), which necessitates thinking more in the partially ordered sense than in the strictly serial sense. In short, at least some form of this thinking is very, very common indeed.</p><p>Finally, how significant is it for rows to be related by partial ordering? First, recall that there are hundreds of millions of different orderings of the twelve pitches. Well, there are fewer when you fix the hexachords in place (and fewer still for smaller subsegments), but still a lot! Here are some numbers:</p><ul>
+<li>Any ordering of the 12 pitches: [latex]12! = 490,001,600[/latex]</li>
+<li>Hexachords fixed: [latex]6!×6! = 720^2 = 518,400[/latex]</li>
+<li>Tetrachords fixed: [latex]4!×4!×4! = 24^3 = 13,824[/latex]</li>
+<li>Trichords fixed: [latex]3!×3!×3!×3! = 6^4 = 1,296[/latex]</li>
+<li>Dyads fixed: [latex]2!×2!×2!×2!×2!×2! = 2^6 = 64[/latex]</li>
+</ul><p>So this alone might be considered weak grounds for meaningful relation between row forms, especially as the interval content changes with each pitch permutation. As so often in analysis, it all comes down to how the composer actually uses the property in practice.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-row-properties-u0045"><h2 id="zh-omt-row-properties-chapter-6789-section-6" class="section-header"><a id="zh-omt-row-properties-other-special-types"></a>其他特殊音列形式</h2></div><div class="translation-unit" id="omt-row-properties-u0046"><p>本章只介紹了作曲家所探索的眾多音列特性中的一小部分。最後簡列其他幾種，呈現這個領域的廣度。</p></div><div class="translation-unit" id="omt-row-properties-u0047"><p><strong>對稱的音程序列。</strong>標準十二音音列不重複音高類，因此不可能讓<em>音高類順序</em>本身形成正讀、反讀完全相同的迴文；但<em>音程序列</em>可以對稱，某些作曲家特別喜歡這種特性。</p></div><aside class="translator-note">譯註：此處只排除不重複音高類的字面迴文，不排除音列在倒影、逆行加移位等變換下具有對稱。</aside><div class="translation-unit" id="omt-row-properties-u0048"><p><strong>循環序列（cyclic series）音列。</strong>George Perle的這個術語，在此指隔一個音所形成的音程都相同：第1與第3音的音程，等於第2與第4音的音程，依此類推。</p></div><div class="translation-unit" id="omt-row-properties-u0049"><p><strong>多於或少於十二音的音列。</strong>有些作曲家以更長或更短的音列探索序列程序。這會帶來不同特性，例如超過十二項的音列必然重複某些音高類，但作曲程序與關注重點仍可以相同。如本部分開頭所說，序列思考本來就不限於十二音。以下是一些例子：</p></div><div class="translation-unit" id="omt-row-properties-u0050"><table class="no-borders score-table">
+<tbody>
+<tr>
+<td>Ruth Crawford Seeger，《Diaphonic Suite No.1》：</td><td>7–9–8–11–0–5–1–7 （原列8項；原表標9音）</td>
+</tr>
+<tr>
+<td>Ruth Crawford Seeger，《弦樂四重奏》：</td><td>2–4–5–3–6–9–8–7–1–0 （10音）</td>
+</tr>
+<tr>
+<td>Elisabeth Lutyens，《Requiescat In Memoriam Igor Stravinsky》（安息吧：紀念史特拉汶斯基）：</td><td>6–8–4–2–11–0–3–1–5–7–10 （11音）</td>
+</tr>
+<tr>
+<td>Elisabeth Lutyens，《室內協奏曲》Op.8，第1號，第一樂章：</td><td>3–2–5–6–11–0–7–1–9–10–2–6–8–5–4 （15音）</td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：第一列實際列出7、9、8、11、0、5、1、7，共8項，且7重複，因此只有7個不同音高類；原表的「9 notes」與所列資料不符。中文按實際提供的8項註明，未自行猜補缺音，也不以此斷定作品原始材料的完整長度。另依本書前章作者姓名，將原表Elizabeth統一為Elisabeth；原英文表與所有音高類數字保留。</aside><div class="translation-unit" id="omt-row-properties-u0051"><div class="textbox shaded"><a id="zh-omt-row-properties-assignments"></a>作業</div></div><div class="translation-unit" id="omt-row-properties-u0052"><ol><li>到〈<a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a>〉的衍生音列段落，選一個音列，例如「相同二音組／音程出現六次」或「相同三音組出現四次」中的例子。<ul><li>用五線譜寫出完整音列。</li><li>在每個同類片段上方畫弧線，例如四組、每組三音。</li><li>另外把這些片段寫成和弦，可以放在下方。</li></ul></li></ol></div><div class="translation-unit" id="omt-row-properties-u0053"><div class="footnotes"><ol><li id="zh-omt-row-properties-footnote-6789-1">兩個例子中的楔形都是賦格主題，因此是核心材料，會在全曲頻繁重現；這或許更強化了它們之間的聯繫。<a href="../omt/omt-row-properties.html#zh-omt-row-properties-return-footnote-6789-1" class="return-footnote">↵</a></li></ol></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-row-properties-chapter-6789-section-6" class="section-header"><a id="en-omt-row-properties-other-special-types"></a>Other Special Types of Row Forms</h2><p>This chapter has surveyed only a few of the many row properties that composers have explored. We end simply with a short list of some others, as a nod to the huge range out there.</p><p><strong>Symmetrical interval progressions:</strong> While a strictly symmetrical succession of <em>pitches</em> is obviously not possible (given that we don’t repeat pitches within the row), a symmetrical succession of <em>intervals</em> is, and rows with this property are popular among some composers.</p><p><strong>"Cyclic series" rows</strong> (George Perle): This term and property refer to rows in which the pairs of notes separated by one all form the same interval, i.e., the interval between pitches 1 and 3 is the same as that between 2 and 4, and so on.</p><p><strong>Rows with more or fewer than twelve notes:</strong> Some composers have explored serial processes with tone rows longer or shorter than twelve notes. Clearly this leads to slightly different properties (e.g., repeating notes in the case of rows with more than twelve notes), but the compositional processes and priorities can be the same. And as we noted at the start of this section, "serial" thought is not limited to twelve-tone thinking anyway. Examples include:</p><table class="no-borders score-table">
+<tbody>
+<tr>
+<td>Ruth Crawford Seeger, <em>Diaphonic Suite No. 1:</em></td>
+<td>7–9–8–11–0–5–1–7 (9 notes)</td>
+</tr>
+<tr>
+<td>Ruth Crawford Seeger, String Quartet:</td>
+<td>2–4–5–3–6–9–8–7–1–0 (10 notes)</td>
+</tr>
+<tr>
+<td>Elizabeth Lutyens, <em>Requiescat In Memoriam Igor Stravinsky:</em></td>
+<td>6–8–4–2–11–0–3–1–5–7–10 (11 notes)</td>
+</tr>
+<tr>
+<td>Elizabeth Lutyens, <em>Chamber Concerto</em>, Op. 8, no. 1, mvmt. I:</td>
+<td>3–2–5–6–11–0–7–1–9–10–2–6–8–5–4 (15 notes)</td>
+</tr>
+</tbody>
+</table><div class="textbox shaded"><a id="en-omt-row-properties-assignments"></a>Assignments</div><ol>
+<li>Head to the <a href="../omt/omt-anthology-twelve-tone.html">Twelve-Tone Anthology</a> and pick any row listed in the sections on derived rows (e.g., "6x Same Dyad (interval)" or "4x Same Trichord").
+<ul>
+<li>Write out the full row in musical notation.</li>
+<li>Put slur lines over each repeated segment (e.g., 4 x 3 notes in the "4x Same Trichord").</li>
+<li>Separately (e.g., below), write out those subsegments as chords.</li>
+</ul>
+</li>
+</ol><div class="footnotes"><ol><li id="en-omt-row-properties-footnote-6789-1">That the wedge is the subject of a fugue in both these cases, and therefore a central focus, recurring frequently throughout, perhaps strengthens the connection. <a href="../omt/omt-row-properties.html#en-omt-row-properties-return-footnote-6789-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-naming-conventions-for-rows.html">上一節：音列的命名慣例</a><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">下一節：十二音分析範例：魏本Op.21與Op.24</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/row-properties/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

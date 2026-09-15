@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>和聲、終止式與樂句結尾入門 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-intro-to-harmony.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group" open=""><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a aria-current="page" href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-intro-to-harmony" data-book="omt" data-page-url="/omt/omt-intro-to-harmony.html" data-next-url="/omt/omt-strengthening-endings-with-v7.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">和聲、終止式與樂句結尾入門</h1><p class="authors">John Peterson</p><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>本章先介紹《<em>Open Music Theory</em>》的和聲部分，再開始討論如何讓<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>產生結束感。目前只使用 I 與 V。</li><li>本書以兩個較大的概念安排和聲教學：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-function">和聲功能</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase-model">樂句模型</a>。</li><li>樂句結尾常由<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadence">終止式</a>標示，主要有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-authentic-cadence">正格終止</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-half-cadence-hc">半終止</a>兩類。<ul><li>正格終止包含 V–I 進行。若兩個和弦都是原位，而且主和弦上的最高聲部為 <em>do</em> [latex](\hat{1})[/latex]，便是完全正格終止；其中任何一項不符合，則是不完全正格終止。</li><li>半終止包含 <em>x</em>–V 進行，<em>x</em> 可以是多種和弦。</li></ul></li></ul></div></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/6kmui77ocrE2vw2jBiWaM4?si=267868512e414880" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>This chapter provides an introduction to the harmony section of <em>Open Music Theory</em>, then begins a discussion of how to create a sense of ending in a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a>. We focus exclusively on using I and V for now.</li>
+<li>Two larger concepts inform the way we present harmony here: <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-function">harmonic function</a> and the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase-model">phrase model</a>.</li>
+<li>Endings are often marked by <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadence">cadences</a>, of which there are two primary types: <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-authentic-cadence">authentic cadences </a>and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-half-cadence-hc">half cadences</a>.
+<ul>
+<li>Authentic cadences involve the progression V–I. They are perfect when both harmonies are in root position and <em>do</em> [latex](\hat{1})[/latex] is in the soprano over tonic. If either of these conditions is not met, the authentic cadence is imperfect.</li>
+<li>Half cadences involve the progression <em>x</em>–V, where <em>x</em> is any of a variety of harmonies.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/6kmui77ocrE2vw2jBiWaM4?si=267868512e414880" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0003"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-1" class="section-header"><a id="zh-omt-intro-to-harmony-introduction-to-harmony"></a>和聲入門</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0004"><p>本部分著重西方古典音樂共同慣例時期的作曲家，如何在<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>中使用和聲。和聲是讓樂句朝向目標推進的重要因素之一。學習時，要同時記住兩個相關的大概念：和聲功能與樂句模型。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0005"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-function">和聲功能</a>將和弦分為三類：</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0006"><ol><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tonic-function">主功能（T）</a>：聽起來安定，帶來歸屬或中心感的和弦。在西方古典音樂中，屬於這類的只有 I，小調中為 i。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-predominant-function">屬前功能（PD）</a>：使音樂離開主功能、走向屬功能的和弦，可再分兩組：<ol><li>強屬前和弦，預示屬功能和弦即將到來：IV 與 ii；小調中為 iv 與 ii<sup>o</sup>。</li><li>弱屬前和弦，使音樂離開主功能，通常走向作用較強的屬前和弦：iii 與 vi；小調中為 VII、III、VI。</li></ol></li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dominant-function">屬功能（D）</a>：帶來急切解決到主和弦之感的和弦：V 與 vii<sup>o</sup>，小調中也相同。</li></ol></div><aside class="translator-note">譯註：這是本章樂句模型採用的功能分類。後續分析仍須依和弦在樂句中的位置與作用判斷，不能只看和弦名稱。</aside><div class="translation-unit" id="omt-intro-to-harmony-u0007"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase-model">樂句模型</a>說明樂句中和聲功能的典型次序與流向。其原則是：樂句至少需要主功能與屬功能和聲，才會有發展方向。更常見的情況是再加入屬前和聲，加強朝向收束的感覺。樂句幾乎總是依模型由左向右進行，少有由右向左的情況；稍後會討論一些例外。<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0008">範例 1</a><span>彙整了這個模型。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0008"><figure id="zh-omt-intro-to-harmony-attachment_5474" aria-describedby="zh-omt-intro-to-harmony-caption-attachment-5474" class="wp-caption aligncenter"><a href="../assets/omt/409e83e209b4042c.png"><img class="wp-image-5474 zoomable" src="../assets/omt/409e83e209b4042c.png" alt="樂句模型三列：可行的主到屬、較常見的主到屬前再到屬與可選主，以及不採用的反向進行。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/09/Phrase_Model.png" loading="lazy" tabindex="0" role="button" width="563" height="365"></a><figcaption id="zh-omt-intro-to-harmony-caption-attachment-5474" class="wp-caption-text"><span class="example-caption-name">範例 1。</span>樂句模型：（a）形成向前推進感所需的最少功能；（b）較常見的樂句功能配置，最後的主功能可有可無；（c）和聲功能不由右向左進行。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>圖中 T＝主功能；</li><li>PD＝屬前功能；</li><li>D＝屬功能；</li><li>括號中的 T 表示末尾主功能可省略。</li></ul><p>綠色勾號與右向箭頭表示模型的正常進行，紅色叉號與左向箭頭表示不採用的反向進行。</p></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-1" class="section-header"><a id="en-omt-intro-to-harmony-introduction-to-harmony"></a>Introduction to Harmony</h2><p>In this section, we'll focus on how composers of common-practice Western classical music use harmony in a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a>. Harmony is one important component (among others) of creating a phrase's sense of forward motion toward a goal. As we study harmony, it's important to keep two larger related concepts in mind: harmonic function and the phrase model.</p><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-function">Harmonic function</a> refers to three categories of chords:</p><ol>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tonic-function">Tonic (T)</a>: Chords that sound stable, providing a sense of home or center. In Western classical music, the only chord that belongs to this category is I (in minor: i).</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-predominant-function">Predominant (PD)</a>: Chords that transition away from tonic function toward dominant function. This category can be split into two groups:
+<ol>
+<li>Strong predominants signal that a dominant function chord is imminent: IV and ii (in minor: iv and ii<sup>o</sup>).</li>
+<li>Weak predominants transition away from tonic, typically moving to a stronger predominant: iii and vi (in minor: VII, III, and VI).</li>
+</ol>
+</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dominant-function">Dominant (D)</a>: Chords that provide a sense of urgency to resolve toward the tonic chord: V and vii<sup>o</sup> (the same in minor).</li>
+</ol><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase-model">phrase model</a> refers to the typical order and flow of harmonic functions in a phrase. The principle of the phrase model is that a phrase needs at least tonic function and dominant function harmonies in order to exhibit a sense of trajectory. More often, phrases also include a predominant harmony to heighten the sense of trajectory toward closure. Phrases almost always progress from left to right in the phrase model, not from right to left, although we'll discuss some exceptions later. This is summarized in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0008">Example 1</a><span>.</span></p><figure id="en-omt-intro-to-harmony-attachment_5474" aria-describedby="en-omt-intro-to-harmony-caption-attachment-5474" class="wp-caption aligncenter"><a href="../assets/omt/409e83e209b4042c.png"><img class="wp-image-5474 zoomable" src="../assets/omt/409e83e209b4042c.png" alt="diagram" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/09/Phrase_Model.png" loading="lazy" tabindex="0" role="button" width="563" height="365"></a><figcaption id="en-omt-intro-to-harmony-caption-attachment-5474" class="wp-caption-text"><span class="example-caption-name">Example 1.</span> The phrase model: (a) the minimum functions needed to create forward motion, (b) more common functional layout for a phrase (the final tonic is optional), (c) harmonic functions do not progress right to left.</figcaption></figure></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0009"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-2" class="section-header"><a id="zh-omt-intro-to-harmony-introduction-to-cadences"></a>終止式入門</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0010"><p>讓<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>結尾產生收束感的一種方式，是使用<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadence">終止式</a>。它是形成目標的旋律與和聲型態，有些像文章句子裡的標點。終止式不只幫助我們判斷樂句何時結束，也有助於確立調性，因此分析時，通常可以先聽出可能的終止位置。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0011"><p><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">範例 2</a> 呈現兩個樂句，以及兩種主要的終止感：（1）未完全結束；（2）已收束。第一個樂句在第 4 小節以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-half-cadence-hc">半終止</a>（HC）結束，聽來意猶未盡。第二個樂句從第 5 小節開始，在第 8 小節以聽來已收束的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-authentic-cadence">正格終止</a>結束。<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-perfect-authentic-cadence-pac">PAC</a> 標籤表示這是其中一種特定類型，稱為完全正格終止，下文會介紹。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0012"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6827779/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Saint-George：第6號芭蕾舞曲的兩種終止譜例（外部網站，另開分頁）">Saint-George：第6號芭蕾舞曲的兩種終止譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0013"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">範例 2。</a>Joseph Boulogne, Chevalier de Saint-George：《L’amant anonyme》第二幕〈第6號芭蕾舞曲〉中的兩個終止（<a href="https://open.spotify.com/track/3OXzn1bVmfvj33Pf6kYfvh?si=yUFCPxiGR_yGgk30svbrKg" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:07（外部網站，另開分頁）">0:00–0:07</a>）。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-2" class="section-header"><a id="en-omt-intro-to-harmony-introduction-to-cadences"></a>Introduction to Cadences</h2><p>One way to create a sense of closure at the end of a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a> is through <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadence">cadences</a>—melodic and harmonic patterns that create goals, kind of like punctuation marks in literary sentences. They're important not only because they can help you determine phrase endings, but also because they help establish a key. As a result, listening for potential cadence points is typically a good first step in analysis.</p><p><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">Example 2</a> shows two phrases and the two main categories of cadence: (1) inconclusive and (2) conclusive. The first phrase ends in m. 4 with a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-half-cadence-hc">half cadence</a> (HC) that sounds inconclusive. The second phrase begins in m. 5 and ends in m. 8 with an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-authentic-cadence">authentic cadence</a> that sounds conclusive. The label <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-perfect-authentic-cadence-pac">PAC</a> marks this as a particular kind of authentic cadence called a perfect authentic cadence, discussed below.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6827779/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">Example 2.</a> Two cadences in Joseph Boulogne, Chevalier de Saint-George's "Ballet No. 6" from L'amant anonyme, Act II (<a href="https://open.spotify.com/track/3OXzn1bVmfvj33Pf6kYfvh?si=yUFCPxiGR_yGgk30svbrKg" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:07（外部網站，另開分頁）">0:00–0:07</a>).</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0014"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-3" class="section-header"><a id="zh-omt-intro-to-harmony-authentic-cadences-they-sound-conclusive"></a>正格終止：聽起來已經收束</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0015"><p>當 V–I 進行在樂句末尾形成結束，小調中為 V–i，就構成<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-authentic-cadence">正格終止</a>。正格終止有兩種：</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0016"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-perfect-authentic-cadence-pac">完全正格終止（PAC）</a>必須同時符合以下兩項條件，見<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">範例 2</a> 第 8 小節：<ul><li>主和弦上的最高聲部為 <em>do</em> [latex](\hat{1})[/latex]。</li><li>V 與 I 都是原位。</li></ul></li><li>若仍有 V–I，但以上任何一項條件不符合，就是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-imperfect-authentic-cadence-iac">不完全正格終止（IAC）</a>，如<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">範例 3</a>。例如：<ul><li>主和弦上的最高聲部是 <em>mi</em>，小調中為 <em>me</em> [latex](\hat{3})[/latex]，如<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">範例 3</a>；或</li><li>V、I，或兩者採用轉位。</li></ul></li></ul></div><div class="translation-unit" id="omt-intro-to-harmony-u0017"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6617197/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Fanny Hensel〈Ferne〉的不完全正格終止譜例（外部網站，另開分頁）">Fanny Hensel〈Ferne〉的不完全正格終止譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0018"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">範例 3。</a>Fanny Hensel〈Ferne〉，Op. 9, No. 2 中的不完全正格終止（IAC，<a href="https://open.spotify.com/track/7FntcviFpSkbT67SoPHVfq?si=G2NlQSZ0SaKFUJw906wshQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:14（外部網站，另開分頁）">0:00–0:14</a>）。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-3" class="section-header"><a id="en-omt-intro-to-harmony-authentic-cadences-they-sound-conclusive"></a>Authentic Cadences (they sound conclusive!)</h2><p>An <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-authentic-cadence">authentic cadence</a> occurs when the harmonic progression V–I (or V–i in minor) marks the end of a phrase. There are two kinds of authentic cadence:</p><ul>
+<li>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-perfect-authentic-cadence-pac">perfect authentic cadence (PAC)</a> occurs when both of the following conditions are met (<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">Example 2</a>, m. 8):
+<ul>
+<li><em>Do</em> [latex](\hat{1})[/latex] is in the soprano over the tonic chord</li>
+<li>Both V and I are in root position</li>
+</ul>
+</li>
+<li>An <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-imperfect-authentic-cadence-iac">imperfect authentic cadence (IAC)</a> occurs if either of the above two conditions isn't met, but V–I is still involved (<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">Example 3</a>). For instance, an IAC can occur when:
+<ul>
+<li><em>Mi</em> (<em>me</em> in minor) [latex](\hat{3})[/latex] is in the soprano over the tonic chord (as in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">Example 3</a>), or</li>
+<li>V, I, or both harmonies are inverted</li>
+</ul>
+</li>
+</ul><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6617197/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">Example 3.</a> An imperfect authentic cadence (IAC) in Fanny Hensel, "Ferne" Op. 9, No. 2 (<a href="https://open.spotify.com/track/7FntcviFpSkbT67SoPHVfq?si=G2NlQSZ0SaKFUJw906wshQ" target="_blank" rel="noopener noreferrer" class="external" aria-label="0:00–0:14（外部網站，另開分頁）">0:00–0:14</a>).</span></p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-intro-to-harmony-u0019"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-4" class="section-header"><a id="zh-omt-intro-to-harmony-half-cadences-they-sound-inconclusive"></a>半終止：聽起來意猶未盡</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0020"><p>樂句在 V 上結束時，便構成<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-half-cadence-hc">半終止</a>（HC），如<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">範例 2</a> 第 4 小節。V 前面可以接多種和弦，因此我們常把半終止的和聲進行寫成「<em>x</em>–V」。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0021"><p>目前先把可用和弦限於 I 與 V，小調中為 i 與 V，以便學習聲部進行的基本技巧。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-4" class="section-header"><a id="en-omt-intro-to-harmony-half-cadences-they-sound-inconclusive"></a>Half Cadences (they sound inconclusive!)</h2><p>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-half-cadence-hc">half cadence</a> (HC) occurs when a phrase ends on V (<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0012">Example 2</a>, m. 4). A variety of chords can precede V, so we often refer to the harmonic progression that marks HCs as "<em>x–</em>V."</p><p>For now, we'll restrict our vocabulary to only I and V chords (or i and V in minor) so we can learn some basic techniques of voice-leading.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0022"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-5" class="section-header"><a id="zh-omt-intro-to-harmony-cadential-strength-and-the-iac"></a>終止強度與不完全正格終止</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0023"><p>PAC 能帶來明確的最終結束感，因此是作曲家可用的最強終止類型；HC 聽起來尚未結束，因而最弱。IAC 的特別之處，在於它的終止強度位於 HC 與 PAC 之間（<span class="example-caption-name">範例 4</span>）。<br><a href="../assets/omt/9e16ae970f11714a.png"><img class="size-full wp-image-2873 aligncenter zoomable" src="../assets/omt/9e16ae970f11714a.png" alt="終止強度圖：左側完全正格終止PAC最強，中間不完全正格終止IAC，右側半終止HC較弱。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/09/Example_3_Cadence_Strength_Spectrum.png" loading="lazy" tabindex="0" role="button" width="504" height="91"></a></p></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Stronger（very conclusive）＝較強、結束感很明確；</li><li>Weaker（inconclusive）＝較弱、意猶未盡。</li></ul><p>PAC＝完全正格終止，IAC＝不完全正格終止，HC＝半終止。</p></section></div><div class="translation-unit" id="omt-intro-to-harmony-u0024"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0023">範例 4。</a>終止強度的連續範圍。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0025"><p>IAC 有許多寫法：理論上，作曲家可以搭配不同的和弦轉位與旋律音階級數，因此也能選擇讓 IAC 的結束感較強或較弱。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0026"><p>前面的<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">範例 3</a> 終止感較強：它使用原位 V–i，最高聲部為 <em>me</em> [latex](\hat{3})[/latex]；位置在一句歌詞的結尾，使用二分音符，後面有休止符，而且接下來的音樂聽起來像新樂句。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0027"><p><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028"><strong>範例 5</strong></a> 中可能的 IAC 相對較弱：它使用 V<sup>6</sup>–I，該瞬間很快就過去了。後面的材料既可能被理解為延續尚未結束的樂句，<em>也可能</em>呼應剛結束樂句的開頭；後一種聽法會加強把第 5 小節視為 IAC 的理由。演出者對<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028">範例 5</a> 是否真的有 IAC，可能看法不同，並據此調整演奏。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0028"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391384/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Schubert D. 845 第三樂章可能的不完全正格終止（外部網站，另開分頁）">Schubert D. 845 第三樂章可能的不完全正格終止</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0029"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028">範例 5。</a><a href="https://open.spotify.com/track/1k64rvGui2IyN8Uwq98C2C?si=47fc096da0894f9b" target="_blank" rel="noopener noreferrer" class="external" aria-label="Schubert 鋼琴奏鳴曲 D. 845，第三樂章（外部網站，另開分頁）">Schubert 鋼琴奏鳴曲 D. 845，第三樂章</a>中可能的不完全正格終止。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0030"><p>情況還可能更複雜：作曲家常用符合 IAC 描述、卻沒有真正結束樂句的進行，來避開 PAC。在<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0031">範例 6</a> 中，第 8 小節有一個可能的 IAC；但第 9 小節開始重複第 5 小節的材料，比較第 9 小節低音與第 5 小節最高聲部，就會聽到這段音樂像是在重新準備終止，試圖得到比第 8 小節更強的收束。因此，譜上將第 8 小節的終止標籤畫掉，表示這個終止已被<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-subversion-of-a-cadence">化解（subverted）</a>，沒有真正成立。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0031"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391423/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Beethoven Op. 2 No. 3 第一樂章避開終止的譜例（外部網站，另開分頁）">Beethoven Op. 2 No. 3 第一樂章避開終止的譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0032"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0031">範例 6。</a><a href="https://open.spotify.com/track/1ZULnG1rUN3PrrG6cpIzVg?si=0kxsSo1uTjKBo4L6sv9ftw" target="_blank" rel="noopener noreferrer" class="external" aria-label="Beethoven 鋼琴奏鳴曲 Op. 2, No. 3，第一樂章，第 1–13 小節（外部網站，另開分頁）">Beethoven 鋼琴奏鳴曲 Op. 2, No. 3，第一樂章，第 1–13 小節</a>中避開終止的寫法。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0033"><p>可能性這麼多，如何判定一處是否真的是 IAC？下一節「聽辨終止式」提供一些幫助。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-5" class="section-header"><a id="en-omt-intro-to-harmony-cadential-strength-and-the-iac"></a>Cadential Strength and the IAC</h2><p>PACs are the strongest kind of cadence available to a composer because of the sense of finality they can create, and HCs are the weakest kind of cadence because of their unfinished sound. IACs are special because they occupy the space between HCs and PACs in terms of cadential strength (<span class="example-caption-name">Example 4</span>).<br>
+<a href="../assets/omt/9e16ae970f11714a.png"><img class="size-full wp-image-2873 aligncenter zoomable" src="../assets/omt/9e16ae970f11714a.png" alt="Diagram" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/09/Example_3_Cadence_Strength_Spectrum.png" loading="lazy" tabindex="0" role="button" width="504" height="91"></a></p><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0023">Example 4.</a> Spectrum of cadential strength.</span></p><p>Since there are many ways to compose an IAC (a composer can theoretically use various combinations of inverted chords and scale degrees in the melody), a composer can choose to make an IAC more or less strong.</p><p>The cadence in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0017">Example 3</a> above is relatively strong: it uses root position V–i with <em>me</em> [latex](\hat{3})[/latex] in the soprano, it comes at the end of a sentence in the lyrics, it uses a half note, it's followed by a rest, and the music that follows sounds like a new phrase.</p><p>The potential IAC in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028"><strong>Example</strong> <strong>5</strong></a> is comparably weaker: it uses V<sup>6</sup>–I, the moment goes by relatively quickly, and it's followed by material that could easily be understood as continuing a phrase that's under way <em>or</em> as referencing the beginning of a phrase that has just concluded, something that would strengthen reading m. 5 as an IAC. Performers may disagree on whether <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028">Example 5</a> contains an IAC or not, and they may adjust their playing accordingly.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391384/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0028">Example 5.</a> A potential IAC in <a href="https://open.spotify.com/track/1k64rvGui2IyN8Uwq98C2C?si=47fc096da0894f9b" target="_blank" rel="noopener noreferrer" class="external" aria-label="Schubert's Piano Sonata D. 845, III（外部網站，另開分頁）">Schubert's Piano Sonata D. 845, III</a>.</span></p><p>An additional complication is that composers often avoid creating a PAC using progressions that fit the description of an IAC, but that don't mark the end of a phrase. In <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0031">Example 6</a>, m. 8 contains a potential IAC, but when m. 9 begins to repeat the material from m. 5 (compare the bass voice in m. 9 with the soprano in m. 5) it sounds like the passage is trying the run-up to the cadence again to achieve something stronger than the potential IAC at m. 8. We indicate that the cadence in m. 8 is <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-subversion-of-a-cadence">subverted</a> by crossing the label out on the score.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391423/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0031">Example 6. </a>Avoiding a cadence in <a href="https://open.spotify.com/track/1ZULnG1rUN3PrrG6cpIzVg?si=0kxsSo1uTjKBo4L6sv9ftw" target="_blank" rel="noopener noreferrer" class="external" aria-label="Beethoven's Piano Sonata Op. 2, no. 3, I, mm. 1–13（外部網站，另開分頁）">Beethoven's Piano Sonata Op. 2, no. 3, I, mm. 1–13</a>. </span></p><p>With so many possibilities, how can we determine what counts as a true IAC? The next section ("Hearing Cadences") offers some help.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0034"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-6" class="section-header"><a id="zh-omt-intro-to-harmony-hearing-cadences"></a>聽辨終止式</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0035"><p>聽出終止式固然有直覺成分，但也是可以逐漸磨練的能力。建議依以下步驟練習：</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0036"><div class="textbox textbox--sidebar textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">聽辨終止式的步驟</p></header><div class="textbox__content"><ul><li>標出可能的終止位置。</li><li>分析相關和聲。</li><li>聽聽每個可能的終止位置<em>之後</em>，是否有重新開始的感覺。</li></ul></div></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0037"><ul><li><strong>先聆聽，標出<em>可能</em>的停頓、目標或收束位置。</strong><ul><li>初學者一開始常把太多位置標成終止。有個簡單原則：除非片段速度相當慢，兩小節長的樂句並不常見。</li></ul></li><li><strong>接著，檢查這些可能終止位置的和聲：</strong><ul><li><em>x</em>–V：可能的半終止。</li><li>V–I：可能的正格終止。<ul><li>若 I 上方的最高聲部是 <em>do</em> [latex](\hat{1})[/latex]，而且兩個和弦都是原位，便可能是 PAC。</li><li>若 I 上方的最高聲部是其他音，例如 <em>mi</em> [latex](\hat{3})[/latex] 或 <em>sol</em> [latex](\hat{5})[/latex]，便可能是 IAC。</li><li>若 V、I，或兩者採轉位，便可能是 IAC。</li></ul></li><li>若不包含以上兩種進行，就不是可能的終止式。這不表示它沒有任何結束感，只是說它不構成終止式。<a class="footnote" title="旋律與和聲共同支持樂句結束，才形成終止式，詳見腳註。" id="zh-omt-intro-to-harmony-return-footnote-2809-1" href="../omt/omt-intro-to-harmony.html#zh-omt-intro-to-harmony-footnote-2809-1"><sup class="footnote">[1]</sup></a></li></ul></li><li><strong>最後，聽聽每個可能的終止位置之後發生什麼。</strong><ul><li>真正的終止標示樂句的<em>結尾</em>，所以後面很常有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-beginning">開始</a>的感覺。這個「開始」可能重複剛結束樂句的開頭，也可能用新材料展開新樂句。若在候選終止位置之後聽到開始感，就能有力地支持那裡確實是終止。</li><li>若聽到的是前一樂句<em>中段</em>材料的重複，候選位置可能並非真正的終止，而是原本可能出現的終止被<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-subversion-of-a-cadence">化解</a>了。</li></ul></li></ul></div><aside class="translator-note">譯註：此處的判定限於本章聚焦的正格終止與半終止。前面圖式章所用的假終止、迴避終止等標籤另有分析用途；本節特別強調樂句是否真正結束。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-6" class="section-header"><a id="en-omt-intro-to-harmony-hearing-cadences"></a>Hearing Cadences</h2><p>While there is certainly a degree of intuition involved with hearing cadences, it's also a skill that can be honed over time. We recommend listening for cadences following this process:</p><div class="textbox textbox--sidebar textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Summary: steps for hearing cadences</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>Mark potential cadence points</li>
+<li>Analyze the harmonies involved</li>
+<li>Listen for a sense of beginning <em>after</em> each potential cadence point</li>
+</ul>
+</div>
+</div><ul>
+<li><strong>At first, listen and mark <em>potential</em> points of rest, goal, or closure.</strong>
+<ul>
+<li>It's common for students to initially mark too many cadences. One rule of thumb is that unless an excerpt's tempo is quite slow, it's not common for phrases to be two measures long.</li>
+</ul>
+</li>
+<li><strong>Next, check the harmonies involved in these potential cadence points:</strong>
+<ul>
+<li><em>x</em>–V = potential HC</li>
+<li>V–I = potential AC
+<ul>
+<li>If <em>do</em> [latex](\hat{1})[/latex] is in the soprano over I and both harmonies are in root position, it's a potential PAC.</li>
+<li>If something else like <em>mi</em> [latex](\hat{3})[/latex] or <em>sol</em> [latex](\hat{5})[/latex] is in the soprano over I, it's a potential IAC.</li>
+<li>If V, I, or both harmonies are inverted, it's a potential IAC.</li>
+</ul>
+</li>
+<li>If it doesn't involve one of the above two progressions, then it's not a potential cadence. (Note that this doesn't mean it doesn't represent some kind of ending. It just means it's not a cadence.<a class="footnote" title="Sometimes, for example, the melody suggests an ending, but the harmony doesn't participate. Or, sometimes the harmony suggests an end, but the melody refuses to close. Cadences are special goal points because they represent places where both the melody and harmony agree on a phrase ending." id="en-omt-intro-to-harmony-return-footnote-2809-1" href="../omt/omt-intro-to-harmony.html#en-omt-intro-to-harmony-footnote-2809-1"><sup class="footnote">[1]</sup></a>)</li>
+</ul>
+</li>
+<li><strong>Finally, listen for what happens after each potential cadence point.</strong>
+<ul>
+<li>Since true cadences mark the <em>end</em> of a phrase, it's very common for cadences to be followed by a sense of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-beginning">beginning</a>. This "beginning" may be a repetition of the beginning of the phrase that just ended, or it may be new material that starts a new phrase. Hearing a sense of beginning following a cadence point is a great way to help verify that what you've marked as a potential cadence is indeed a true cadence point.</li>
+<li>If, instead, you hear repetition of material from the <em>middle</em> of the previous phrase, your potential cadence may not be a true cadence. Instead, it likely represents a potential cadence point that has been <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-subversion-of-a-cadence">subverted</a>.</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0038"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-7" class="section-header"><a id="zh-omt-intro-to-harmony-writing-authentic-cadences-triads-only"></a>寫作正格終止：只用三和弦</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0039"><p>下方方框彙整 PAC 與 IAC 的寫作步驟，<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0041">範例 7–</a><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0046">10</a> 加以示範。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0040"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">寫作 PAC 或 IAC</p></header><div class="textbox__content"><ol><li>確定調性。</li><li>先寫完整的低音：<em>sol–do</em> [latex](\hat5-\hat1)[/latex]。</li><li>再寫完整的最高聲部：<ol><li>PAC：<em>re–do</em> 或 <em>ti–do</em> [latex](\hat2-\hat1[/latex] 或 [latex]\hat7-\hat1)[/latex]。</li><li>IAC：<em>re–mi</em> 或 <em>sol–sol</em> [latex](\hat2-\hat3[/latex] 或 [latex]\hat5-\hat5)[/latex]。</li></ol></li><li>補入內聲部，逐一思考：<ol><li>低音與最高聲部已經有哪些音？</li><li>還需要哪些音，才能補齊和弦？</li><li>要重複哪個音？原位和弦通常重複低音。</li></ol></li><li>若是小調，記得在 V 中使用導音 <em>ti</em> [latex](\uparrow\hat7)[/latex]，使它成為大三和弦，而非小三和弦，藉此產生走向主和弦的動力。</li></ol></div></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0041"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772942/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作大調完全正格終止：譜例（外部網站，另開分頁）">寫作大調完全正格終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside><br><span class="example-caption-text"><span class="example-caption-name">範例 7。</span>寫作大調完全正格終止。</span></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0042"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772904/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作小調完全正格終止：譜例（外部網站，另開分頁）">寫作小調完全正格終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0043"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0042">範例 8。</a>寫作小調完全正格終止。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0044"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772922/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作大調不完全正格終止：譜例（外部網站，另開分頁）">寫作大調不完全正格終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0045"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0044">範例 9。</a>寫作大調不完全正格終止。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0046"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772955/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作小調不完全正格終止：譜例（外部網站，另開分頁）">寫作小調不完全正格終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0047"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0046">範例 10。</a>寫作小調不完全正格終止。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-7" class="section-header"><a id="en-omt-intro-to-harmony-writing-authentic-cadences-triads-only"></a>Writing Authentic Cadences (with triads only)</h2><p>The steps for writing a PAC or IAC are summarized in the box below and illustrated in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0041">Examples 7–</a><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0046">10</a>.</p><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Writing a PAC or IAC</p>
+</header>
+<div class="textbox__content">
+<ol>
+<li>Determine the key</li>
+<li>Write the entire bass: <em>sol</em>–<em>do</em> [latex](\hat5-\hat1)[/latex]</li>
+<li>Write the entire soprano:
+<ol>
+<li>PAC: <em>re</em>–<em>do </em>or <em>ti</em>–<em>do </em>[latex](\hat2-\hat1[/latex] or [latex]\hat7-\hat1)[/latex]</li>
+<li>IAC: <em>re</em>–<em>mi</em> or <em>sol</em>–<em>sol </em>[latex](\hat2-\hat3[/latex] or [latex]\hat5-\hat5)[/latex]</li>
+</ol>
+</li>
+<li>Fill in the inner voices by asking:
+<ol>
+<li>What notes do I already have in the bass and soprano?</li>
+<li>What notes do I need to complete the chord?</li>
+<li>What note will I double? (Remember, in root position chords, it's common to double the bass.)</li>
+</ol>
+</li>
+<li>If you're writing in minor, remember that you need to use the leading-tone, <em>ti</em> [latex](\uparrow\hat7)[/latex], in your V chord (making it a major triad, not minor) to give it momentum toward the tonic.</li>
+</ol>
+</div>
+</div><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772942/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><br>
+<span class="example-caption-text"><span class="example-caption-name">Example 7. </span>Writing a PAC in a major key.</span></div><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772904/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0042">Example 8. </a>Writing a PAC in a minor key.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772922/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0044">Example 9. </a>Writing an IAC in a major key.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772955/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0046">Example 10. </a>Writing an IAC in a minor key.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intro-to-harmony-u0048"><h2 id="zh-omt-intro-to-harmony-chapter-2809-section-8" class="section-header"><a id="zh-omt-intro-to-harmony-writing-half-cadences-using-i-and-v-only"></a>寫作半終止：只用 I 與 V</h2></div><div class="translation-unit" id="omt-intro-to-harmony-u0049"><p>下方方框彙整半終止的寫作步驟，<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0051">範例 11</a> 與<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0053">範例 12</a> 加以示範。</p></div><div class="translation-unit" id="omt-intro-to-harmony-u0050"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">寫作半終止</p></header><div class="textbox__content"><ol><li>確定調性。</li><li>先寫完整的低音：<em>do–sol</em> [latex](\hat1-\hat5)[/latex]。目前只用 I 與 V；稍後會看到，V 前面更常使用其他和弦。</li><li>再寫完整的最高聲部：<em>do–ti</em> 或 <em>mi–re</em> [latex](\hat1-\hat7[/latex] 或 [latex]\hat3-\hat2)[/latex]。<em>sol–sol</em> [ [latex]\hat5-\hat5[/latex] ] 也可能，但不常見。</li><li>補入內聲部，逐一思考：<ol><li>已經有哪些音？</li><li>還需要哪些音，才能補齊和弦？</li><li>要重複哪個音？原位和弦通常重複低音。</li></ol></li><li>若是小調，記得在 V 中使用導音 <em>ti</em> [latex](\uparrow\hat{7})[/latex]，使它成為大三和弦，而非小三和弦。</li></ol></div></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0051"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772954/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作大調半終止：譜例（外部網站，另開分頁）">寫作大調半終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0052"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0051">範例 11。</a>寫作大調半終止。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0053"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772897/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="寫作小調半終止：譜例（外部網站，另開分頁）">寫作小調半終止：譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0054"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0053">範例 12。</a>寫作小調半終止。</span></p></div><div class="translation-unit" id="omt-intro-to-harmony-u0055"><div class="textbox shaded"><a id="zh-omt-intro-to-harmony-assignments"></a>作業</div></div><div class="translation-unit" id="omt-intro-to-harmony-u0056"><ol><li>和聲、終止式與樂句結尾入門（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="Word 檔 .docx（外部網站，另開分頁）">Word 檔 .docx</a>）：只用大、小調中的 I（或 i）與 V，練習聲部寫作並辨識終止式。</li><li>和聲、終止式與樂句結尾入門——不含四部和聲寫作（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings-2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings-2.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MuseScore 檔 .mscz（外部網站，另開分頁）">MuseScore 檔 .mscz</a>）：只用大、小調中的 I（或 i）與 V，寫作並辨識終止式。</li></ol></div><div class="translation-unit" id="omt-intro-to-harmony-u0057"><div class="media-attributions clear"><h2>媒體來源與授權</h2><ul><li>〈Phrase_Model〉© John Peterson，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA 姓名標示—相同方式分享（外部網站，另開分頁）">CC BY-SA 姓名標示—相同方式分享</a>授權。</li><li>〈Example_3_Cadence_Strength_Spectrum〉。</li></ul></div></div><div class="translation-unit" id="omt-intro-to-harmony-u0058"><div class="footnotes"><ol><li id="zh-omt-intro-to-harmony-footnote-2809-1">例如，有時旋律暗示結尾，和聲卻沒有配合；有時和聲暗示結束，旋律卻不願收束。終止式是特別的目標位置，因為旋律與和聲都在這裡同意樂句應當結束。<a href="../omt/omt-intro-to-harmony.html#zh-omt-intro-to-harmony-return-footnote-2809-1" class="return-footnote">↵</a></li></ol></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intro-to-harmony-chapter-2809-section-8" class="section-header"><a id="en-omt-intro-to-harmony-writing-half-cadences-using-i-and-v-only"></a>Writing Half Cadences (using I and V only)</h2><p>The steps for writing a HC are summarized in the box below and illustrated in <a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0051">Examples 11 </a>and<a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0053"> 12</a>.</p><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Writing a HC:</p>
+</header>
+<div class="textbox__content">
+<ol>
+<li>Determine the key</li>
+<li>Write the entire bass: <em>do</em>–<em>sol</em> [latex](\hat1-\hat5)[/latex] (note: for now, we'll use only I and V chords, although we'll see later that other chords more commonly precede V)</li>
+<li>Write the entire soprano: <em>do</em>–<em>ti</em> or <em>mi–re</em> [latex](\hat1-\hat7[/latex] or [latex]\hat3-\hat2)[/latex] (note: <em>sol–sol</em> [ [latex]\hat5-\hat5[/latex] ] is possible, but not common)</li>
+<li>Fill in the inner voices by asking:
+<ol>
+<li>What notes do I already have?</li>
+<li>What notes do I need to complete the chord?</li>
+<li>What note will I double? (Remember, in root position chords, it's common to double the bass.)</li>
+</ol>
+</li>
+<li>If you're writing in minor, remember to use the leading-tone, <em>ti</em> [latex](\uparrow\hat{7})[/latex], in your V chord, making it a major triad, not minor.</li>
+</ol>
+</div>
+</div><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772954/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0051">Example 11.</a> Writing a HC in a major key.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5772897/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intro-to-harmony.html#omt-intro-to-harmony-u0053">Example 12. </a>Writing a HC in a minor key.</span></p><div class="textbox shaded"><a id="en-omt-intro-to-harmony-assignments"></a>Assignments</div><ol>
+<li>Introduction to harmony, cadences, and phrase endings (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Asks students to part-write and identify cadences using only I (or i) and V chords in major and minor.</li>
+<li>Introduction to harmony, cadences, and phrase endings—no four-part writing (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings-2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Introduction-to-Harmon-Cadences-and-Phrase-Endings-2.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="mscz（外部網站，另開分頁）">mscz</a>). Asks students to write and identify cadences using only I (or i) and V chords in major and minor.</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Phrase_Model  ©  John Peterson    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Example_3_Cadence_Strength_Spectrum       </li></ul></div><div class="footnotes"><ol><li id="en-omt-intro-to-harmony-footnote-2809-1">Sometimes, for example, the melody suggests an ending, but the harmony doesn't participate. Or, sometimes the harmony suggests an end, but the melody refuses to close. Cadences are special goal points because they represent places where both the melody and harmony agree on a phrase ending. <a href="../omt/omt-intro-to-harmony.html#en-omt-intro-to-harmony-return-footnote-2809-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-diatonic-harmony.html">上一節：III. 西方古典音樂的自然音和聲、主音化與轉調</a><a href="../omt/omt-strengthening-endings-with-v7.html">下一節：以 V⁷ 加強結尾</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/intro-to-harmony/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

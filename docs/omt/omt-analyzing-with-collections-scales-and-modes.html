@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>以調式、音階與音集分析 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-analyzing-with-collections-scales-and-modes.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group" open=""><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a aria-current="page" href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-analyzing-with-collections-scales-and-modes" data-book="omt" data-page-url="/omt/omt-analyzing-with-collections-scales-and-modes.html" data-next-url="/omt/omt-twelve-tone-music.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">以調式、音階與音集分析</h1><p class="authors">Mark Gotham</p><section class="bilingual-section"><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><p>到目前為止，我們主要在定義調式、音集及其特性。但要用這些材料分析音樂，不能只知道術語；本章提供一些從理論走向實作的方向。</p><p><em>本書從多種角度討論調式，也可參閱〈<a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音「音階」入門</a>〉的一般介紹、爵士篇〈<a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a>〉、流行音樂篇〈<a href="../omt/omt-modal-schemas.html">調式圖式</a>〉，以及20、21世紀音樂篇〈<a href="../omt/omt-diatonic-modes.html">自然音調式</a>〉。</em></p></div></div></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/5rU9CDbA7A7LlbMMDGIYXz?si=0e2de3091e1c43fb" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<p>So far, most of our discussion has focused on defining modes, collections, and their properties. As always, there is much more to analyzing with these materials than simply knowing terms. This chapter provides some guidance on how to go from theory to practice.</p>
+<p><em>Please note that this book covers modes from many different angles. For more information on modes, check <a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">Introduction to Diatonic Modes (general)</a>, <a href="../omt/omt-chord-scale-theory.html">Chord-Scale Theory (jazz)</a>, <a href="../omt/omt-modal-schemas.html">Modal Schemas (pop)</a>, and <a href="../omt/omt-diatonic-modes.html">Diatonic Modes (20th/21st-c.)</a>.</em></p>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/5rU9CDbA7A7LlbMMDGIYXz?si=0e2de3091e1c43fb" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0003"><h2 id="zh-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-1" class="section-header">理論上的考量</h2></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0004"><p>面對一首新作品，你感覺它值得從調式角度分析：它顯然不是共通寫作時期意義下的「調性」音樂，卻也不像「無調性」、「序列」等類型。該如何辨認所用調式，再據此提出分析觀察？20世紀音樂的調式選擇更多，樂譜也可能沒有調號或其他能快速辨認調式的線索，因此尤其需要從音樂本身的特徵來判斷。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0005"><p>先回顧定義調式時，可以考慮的幾個面向：</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0006"><ol><li>具有特定音程關係的一組音，例如C、D、E、F、G、A、B。</li><li>作為主要參照點的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tonic">主音</a>或終止音，例如C。</li><li>其他重要性的階序，例如屬音、下屬音。</li><li>旋律形態與音域。</li></ol></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0007"><p>第1項提醒我們，調式可以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-transposition">移位</a>。介紹早期調式時，常使用白鍵位置，例如以D為主音的多利安；但在20世紀音樂中，也很容易遇到E多利安、D弗里吉安等其他位置。因此才會有「D調式移到G上」這種令人困惑的說法。也別忘了，調式音樂可以含有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-chromatic">半音變化音</a>，不必每個音都在該音階內。問題是：出現多少例外，才算多到需要重新考慮這個調式解讀？</p></div><aside class="translator-note">譯註：「D mode on G」是把以白鍵D為起點的多利安音程模式移到G上，意思是G多利安，不是同時有D、G兩個主音。原文最後的提問沒有固定數量門檻，須依音樂語境判斷。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0008"><p>第2項有助於區分第1項帶來的各種可能。若只使用白鍵音，哪個白鍵才是調式的終止音？任何音樂參數都可能支持某個音作為主音；可先採用常見的提示：「最先、最後、最響、最長」（Cohn 2012，47頁，承自Harrison 1994，75頁起）。在這些面向占優勢的音，往往更突出。樂句是否常從某個音開始、在它結束，或以其他方式強調它，例如置於強拍，或保留給旋律輪廓的最高點？</p></div><aside class="translator-note">譯註：最先、最後、最響、最長是尋找突出音的線索，不是主音的充分條件。下一段特別提醒，長時值或高頻率也可能屬於另一個重要音。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0009"><p>第3項也涉及這個難題。例如在調性音樂中，<em>sol</em>[latex](\hat5)[/latex]可能比<em>do</em>[latex](\hat1)[/latex]更常出現，因為它同時屬於主和弦與屬和弦。20世紀調式中，可能具有階序重要性的音更多，讓問題變複雜，卻也能幫助我們區分角色：「最先」和「最後」的可能是主音，「最響」和「最長」的則可能是屬音。此處也可以採用比「屬音」較少帶有調性預設的名稱；例如<a href="../omt/omt-diatonic-modes.html">前章的教會調式</a>，就有發揮類似作用的「吟誦音」（tenor／reciting tone）。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0010"><p>如此強調特定音高有許多理由。與20世紀音樂有關的一項是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-color-note">特徵音</a>，例如利底安的<em>fi</em>[latex](\uparrow\hat4)[/latex]，或弗里吉安的<em>ra</em>[latex](\downarrow\hat2)[/latex]；另一項則是建立音高類中心。對習慣共通寫作時期調性的聽者而言，利底安的升高第四級——例如以C為中心時的F♯——很容易被聽成屬調G大調的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-leading-tone">導音</a>。其他寫法近似調性、卻標為「利底安調式」的作品，可能因此顯得模糊。可以聽聽<a href="https://open.spotify.com/track/4xkmXGOx4SQx34h5nePhZu?si=a7f65bab5ef94bfa" target="_blank" rel="noopener noreferrer" class="external" aria-label="貝多芬弦樂四重奏Op.132中的〈神聖感恩之歌〉（1825）（外部網站，另開分頁）">貝多芬弦樂四重奏Op.132中的〈神聖感恩之歌〉（1825）</a>，以及<a href="https://open.spotify.com/track/5y41AyXVAt68eHyY2Z75sP?si=58857015dd4541c5" target="_blank" rel="noopener noreferrer" class="external" aria-label="布魯克納《Os Justi》（義人的口，1879）（外部網站，另開分頁）">布魯克納《<em>Os Justi</em>》（義人的口，1879）</a>，思考自己的判斷。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0011"><p>音域是區分教會調式正格與變格的基本依據；在許多其他音樂中，音域與旋律形態也同樣是界定調式的重要面向。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-1" class="section-header">In Theory</h2><p>So, you’re faced with a new piece of music, and you get the sense that it might be worth considering a modal view. It sure isn’t "tonal" in the common-practice sense, but neither does it seem "atonal," "serial," or the like. How do you go about identifying the modes used, and making analytical observations on that basis? <span>20<sup>th</sup>-century music has a wider range of possible modes and may not have a key signature or any other notational shortcut for identifying the mode. </span>As such, it’s especially important to be able to identify modes from musical cues.</p><p>Firstly, let’s review some of the different considerations that can go into the definition of a mode:</p><ol>
+<li>A collection of pitches in a particular intervallic relationship (e.g., C, D, E, F, G, A, B)</li>
+<li>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tonic">tonic</a> or final that acts as a primary or referential point (e.g., C)</li>
+<li>Further hierarchical levels of importance (such as the dominant/subdominant)</li>
+<li>Melodic shapes and ranges</li>
+</ol><p>No. 1 reminds us that modes can be <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-transposition">transposed</a>. While we often present the early modes in their "white-note" transposition (with dorian on D, for instance), in 20<sup>th</sup>-century music, you can just as easily have them on other pitches such as dorian on E and phrygian on D. This leads to the frankly confusing terminology "D mode on G." Don’t forget that you can also have <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-chromatic">chromatic</a> notes in modal music—not every pitch used needs to be in the scale. So the question is, how many exceptions are too many?</p><p>No. 2 helps to separate all the possibilities that No. 1 throws into the mix. If you only have white notes, which of those white notes is the modal final? Any and all musical parameters might contribute to the case for one of those pitches as tonic; for a useful starting point, try the widely applicable "first, last, loudest, longest" maxim (Cohn 2012, 47, after Harrison 1994, 75ff.). Pitches that dominate in those ways tend to be more salient. Do phrases tend to start and/or end on a certain pitch, or do they emphasize that pitch in other ways, perhaps with strong metrical positions or by reserving it for the top of the melodic contour?</p><p>No. 3 also speaks to this difficulty. For instance, in tonal music, you may find more instances of <em>sol</em> [latex](\hat5)[/latex] than <em>do</em> [latex](\hat1)[/latex], since it fits in both the tonic and dominant chords. 20<sup>th</sup>-century modes complicate this with a more diverse set of candidates for hierarchical importance, but this can also help us to unpick the different roles. "First" and "last" might be your tonic, while the dominant may be "loudest" and "longest." We might also use a less loaded term than "dominant" here. For instance, the church modes (<a href="../omt/omt-diatonic-modes.html">discussed in a previous chapter</a>) had a "tenor" or "reciting tone" in an analogous role.</p><p>There are many reasons for emphasizing specific pitches in this way. One reason relevant to 20<sup>th</sup>-century music is the notion of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-color-note">color notes</a>, like <em>fi </em>[latex](\uparrow\hat4)[/latex] in lydian or <em>ra </em>[latex](\downarrow\hat2)[/latex] in phrygian. Another reason is to establish a pitch class center. For listeners accustomed to common-practice tonality, the lydian fourth (e.g., F♯ in C major) can very easily become a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-leading-tone">leading tone</a> in the dominant (G major). Otherwise tonal works written "in the lydian mode" can be highly ambiguous in this respect. Consider what you make of <a href="https://open.spotify.com/track/4xkmXGOx4SQx34h5nePhZu?si=a7f65bab5ef94bfa" target="_blank" rel="noopener noreferrer" class="external" aria-label='Ludwig van Beethoven’s "Heiliger Dankgesang" from the Op. 132 quartet (1825)（外部網站，另開分頁）'>Ludwig van Beethoven’s "Heiliger Dankgesang" from the Op. 132 quartet (1825)</a> and <a href="https://open.spotify.com/track/5y41AyXVAt68eHyY2Z75sP?si=58857015dd4541c5" target="_blank" rel="noopener noreferrer" class="external" aria-label="Anton Bruckner’s Os Justi (1879)（外部網站，另開分頁）">Anton Bruckner’s <em>Os Justi </em>(1879)</a> to this effect.</p><p>Range considerations were fundamental to the definition of church modes in terms of authentic vs. plagal forms, and this has been a key consideration for defining modes in many other types of music, as have melodic shapes.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0012"><h2 id="zh-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-2" class="section-header">實際分析</h2></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0013"><p>上述考量有助於辨認主要調式，但分析者如何利用這些資訊，提出有說服力的作品詮釋？辨認調式時遇到的難題，本身就可能成為詮釋的一部分。以下幾點，可以幫助我們從辨認走向理解：</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0014"><ul><li>首先，要提出調性解讀有多容易？作品的結構是明白呈現，還是隱藏得很深？這對作品的情緒傾向可能意味著什麼？</li><li>你能描述這個調式的一般性格，以及它在本曲的用法嗎？升高的利底安第四級是否令人「振奮」，甚至帶有「嚮往」？弗里吉安的降低第二級是否可能像在「哀嘆」？</li><li>各調式呈現得有多清楚、彼此有多分明？從一個轉到另一個時，是否保有共同音，甚至相同終止音？如同調性音樂，調式之間的「轉調」也可部分依此判斷遠近。</li><li>調式的特性與分布如何連到更大的音樂安排？調式改變的時刻，是否也因其他因素而像是段落邊界？</li></ul></div><aside class="translator-note">譯註：興奮、嚮往、哀嘆等是本章提出的詮釋問題，並非任何文化、任何作品中固定不變的調式意義。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0015"><p>看看下面三個片段，取自巴爾托克〈<em>來自峇里島</em>〉。全曲一直使用同一調式，還是有所改變？哪些音在調式內、哪些在外？是否出現明確的調式終止音？有沒有同時結合兩種調式的時刻？圖片之後提供一些想法；先形成自己的判斷，再往下對照。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0016"><figure id="zh-omt-analyzing-with-collections-scales-and-modes-attachment_1742" aria-describedby="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1742" class="wp-caption alignnone"><img class="wp-image-1742 size-full zoomable" src="../assets/omt/be6b578b01be8754.png" alt="巴爾托克〈來自峇里島〉開頭，6/8拍；左右手各用一組四音音集，合起來構成八音音集。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok1.png" loading="lazy" tabindex="0" role="button" width="854" height="243"><figcaption id="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1742" class="wp-caption-text">巴爾托克〈來自峇里島〉：片段1。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Andante＝行板；</li><li>八分音符＝134；</li><li>p＝弱，dolce＝柔美地。</li></ul><p>1、2、4等小數字是指法。</p><ul class="label-terms"><li>6/8拍中，右手使用B、C、F、G♭，左手使用D、E♭、G♯、A；</li><li>兩手各有1:5交替的音程結構，原譜的連結線與分句保持原樣。</li></ul></section></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0017"><figure id="zh-omt-analyzing-with-collections-scales-and-modes-attachment_1743" aria-describedby="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1743" class="wp-caption alignnone"><img class="wp-image-1743 size-full zoomable" src="../assets/omt/740b8b4980e99c6e.png" alt="片段2標示Risoluto，轉為4/4拍；G♭形成中心，後段出現A𝄫上鄰音。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok2.png" loading="lazy" tabindex="0" role="button" width="974" height="260"><figcaption id="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1743" class="wp-caption-text">巴爾托克〈來自峇里島〉：片段2。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Risoluto＝堅決地；</li><li>四分音符＝96；</li><li>f＝強；</li><li>上方8與虛線表示右手升高八度演奏。</li></ul><p>1、5等數字是指法。</p><p>兩手圍繞B、C、F、G♭，後段有A𝄫（重降A，與G同音），是G♭上方半音。</p><p>不要把兩個降記號或八度線當成另換一個音集的充分證據。</p></section></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0018"><figure id="zh-omt-analyzing-with-collections-scales-and-modes-attachment_1744" aria-describedby="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1744" class="wp-caption alignnone"><img class="wp-image-1744 size-full zoomable" src="../assets/omt/3566f5e46b13fba4.png" alt="片段3以A、B♭、D、E♭構成音型，在強音與反覆和弦中產生E♭中心的解讀。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok3.png" loading="lazy" tabindex="0" role="button" width="533" height="191"><figcaption id="zh-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1744" class="wp-caption-text">巴爾托克〈來自峇里島〉：片段3。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>ff＝很強；</li><li>音符上的短橫線為保持音（tenuto）記號；</li><li>1、5等數字是指法。</li></ul><p>此段使用A、B♭、D、E♭，與開頭左手相比，保留A、D、E♭，將G♯換成B♭。</p><p>原圖左側承接前文而未重畫全部譜號，需連同本章前兩圖與分析閱讀。</p></section></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0019"><p>第一個片段的調式與終止音，都帶有巧妙的模糊性。若把兩手的音合在一起，正好形成八音音集；若分開看，則各自是經常與巴爾托克相聯繫的1:5<a href="../omt/omt-collections.html#zh-omt-collections-distance-model-modes">距離模型調式</a>，也就是原型為(0167)的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-set-class">集合類</a>。這些關係具有鮮明的巴爾托克式對稱，卻很難感到某個單一調式終止音逐漸浮現。</p></div><aside class="translator-note">譯註：以音高類核對原譜：右手{B,C,F,G♭}={11,0,5,6}，左手{D,E♭,G♯,A}={2,3,8,9}；兩者各是1:5交替的(0167)集合類，合併為OCT₂,₃={0,2,3,5,6,8,9,11}。把兩手分開或合併分析，回答的是不同層次的問題。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0020"><p>後兩個片段在段落首個強拍上，都有強烈的主音抵達感，分別暗示G♭與E♭是中心。不過，請注意它們的音與開頭有多接近：先是[B, C, F, G♭]，恰好與開頭右手相同。你有發現這種解讀中的那個「半音變化音」嗎？A𝄫可以解釋為半音<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-neighbor-tones-nts">上鄰音</a>，不真正屬於該調式音集。</p></div><aside class="translator-note">譯註：A𝄫與G同音異名，音高類為7，是G♭（6）上方半音的鄰音。不能把A𝄫誤讀為A♭；它不在本段基本的{11,0,5,6}音集中。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0021"><p>稍後則出現[A, B♭, D, E♭]，是開頭左手音集的近似變體。這項變化讓作品從開頭的模糊感，走向頗有E♭大調意味的段落；但這種感受很快又被消解，作品回到起初的技法與情緒狀態。</p></div><aside class="translator-note">譯註：「有E♭大調意味」是對中心與和聲感的詮釋，不表示[A,B♭,D,E♭]就是完整E♭大音階，也不表示其中每個音都屬E♭大調。相較開頭左手{G♯,A,D,E♭}，此處以B♭取代G♯，保留A、D、E♭。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0022"><p>於是，我們既看見統一與變化之間的平衡，也看見全曲發展的方向。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-2" class="section-header">In Practice</h2><p>The above considerations have to do with identifying a prevailing mode, but how does an analyst use this information to create a compelling interpretation of the piece? Well, the challenge of coming up with a modal reading can become part of that interpretation. Here are some starting points for pivoting from identification to interpretation:</p><ul>
+<li>Firstly, how easy was it to come up with a tonal reading? Is this a piece with its structure on display or deeply hidden? What might that say about the emotional valence of the work?</li>
+<li>Can you characterize the mode in general and its use in this piece? Is the raised lydian fourth "exciting" or even "aspirational"; is the phrygian second perhaps "lamenting"?</li>
+<li>How clearly and separately are these modes set out? When we move from one mode to another, are there common tones, or even a common final? Just like in tonality, "modulations" among modes can be regarded as close or remote, partly on this basis.</li>
+<li>How are the properties and distribution of modes related to wider considerations? Do mode changes align with moments that seem like section boundaries for other reasons?</li>
+</ul><p>Consider the three moments below, which come from Béla Bartók’s <em>From the Island of Bali</em>. Is the same mode in operation throughout, or does it change? What pitches are in/out of the mode(s)? Does a modal final present itself? Are there any moments where two modes are combined? Some suggestions follow the images, so decide on what you think before scrolling down to compare notes.</p><figure id="en-omt-analyzing-with-collections-scales-and-modes-attachment_1742" aria-describedby="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1742" class="wp-caption alignnone"><img class="wp-image-1742 size-full zoomable" src="../assets/omt/be6b578b01be8754.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok1.png" loading="lazy" tabindex="0" role="button" width="854" height="243"><figcaption id="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1742" class="wp-caption-text">Bartók’s From the Island of Bali: Extract 1</figcaption></figure><figure id="en-omt-analyzing-with-collections-scales-and-modes-attachment_1743" aria-describedby="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1743" class="wp-caption alignnone"><img class="wp-image-1743 size-full zoomable" src="../assets/omt/740b8b4980e99c6e.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok2.png" loading="lazy" tabindex="0" role="button" width="974" height="260"><figcaption id="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1743" class="wp-caption-text">Bartók’s From the Island of Bali: Extract 2</figcaption></figure><figure id="en-omt-analyzing-with-collections-scales-and-modes-attachment_1744" aria-describedby="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1744" class="wp-caption alignnone"><img class="wp-image-1744 size-full zoomable" src="../assets/omt/3566f5e46b13fba4.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/Bartok3.png" loading="lazy" tabindex="0" role="button" width="533" height="191"><figcaption id="en-omt-analyzing-with-collections-scales-and-modes-caption-attachment-1744" class="wp-caption-text">Bartók’s From the Island of Bali: Extract 3</figcaption></figure><p>The first case is wonderfully ambiguous in relation to both mode and final. If you put the hands together, the pitches constitute a neat octatonic mode, but if you keep them apart, then it’s the 1:5 <a href="../omt/omt-collections.html#en-omt-collections-distance-model-modes">distance model mode</a> often associated with Bartók, also known as <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-set-class">set class</a> (0167). There’s good Bartókian symmetry in all of this, and very little sense of a single modal final emerging.</p><p>In the latter two cases, there is a strong tonic arrival on the first downbeat, suggesting G♭ and E♭ as the respective tonics for these sections. However, notice how closely the pitches relate to the opening. First we have [B, C, F, G♭], which were the exact pitches of the right hand at the start. (Do you spot the one "chromatic" note in this reading? A𝄫 could be interpreted as a chromatic <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-neighbor-tones-nts">upper neighbor</a> that doesn’t really fit the mode.)</p><p>Later we have [A, B♭, D, E♭], which are a close variant on those of the left hand. This change indicates a move from that opening ambiguity to a passage quite neatly redolent of E♭ major, which is swiftly undone as the piece goes back to the technical and emotional place where it started.</p><p>So we have a balance between unity and variety, as well as trajectory for the piece overall.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0023"><h2 id="zh-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-3" class="section-header">調式、音集與音樂意義</h2></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0024"><p>這些調式也都可能引起音樂以外的詮釋聯想。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0025"><p>例如，本章雖著重20世紀的調式寫作，但調式也出現在共通寫作時期的調性音樂中，常讓人回想它們所源出的、更早的前調性音樂。貝多芬《莊嚴彌撒》（1824）〈<a href="https://open.spotify.com/track/1A0CdUA0lMGmTtKk6b4pby?si=bbdbe5a1fa0540dc" target="_blank" rel="noopener noreferrer" class="external" aria-label="信經（外部網站，另開分頁）">信經</a>〉中使用多利安，便是一例。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0026"><p>作曲家不只回顧歷史，也向外探索，刻意透過調式，在音樂廳中喚起民間或異國音樂。這可能表現文化欣賞，也可能是文化挪用。20世紀之交對異國情調、西班牙—阿拉伯題材的熱衷，往往只是使用弗里吉安的<em>ra</em>[latex](\downarrow\hat{2})[/latex]，缺少更深入的處理；本章作者認為這比較偏向後者。同樣可以觀察幾位作曲家所寫、名義上的匈牙利音樂：<a href="https://open.spotify.com/track/2oLjhx7w8Hyd3gry9cCXr7?si=0a65891415ff43bc" target="_blank" rel="noopener noreferrer" class="external" aria-label="布拉姆斯（外部網站，另開分頁）">布拉姆斯</a>從外部觀看這個文化；<a href="https://open.spotify.com/track/7CIoJE0JfVFcmmUY3fFojH?si=b31ca68d7bee46e5" target="_blank" rel="noopener noreferrer" class="external" aria-label="李斯特（外部網站，另開分頁）">李斯特</a>熱衷於強調匈牙利根源，作為個人形象的一部分；<a href="https://open.spotify.com/track/1A1hXivNLAWyNf6pVysqzm?si=cb493d6c35a84a68" target="_blank" rel="noopener noreferrer" class="external" aria-label="李給替（外部網站，另開分頁）">李給替</a>則取材自自己的文化。</p></div><aside class="translator-note">譯註：這段保留本章作者對文化欣賞／挪用的批判立場，並以「作者認為」區分其評價與可直接從譜面讀出的音高事實；不同作曲家的位置也不應僅憑國籍就一概而論。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0027"><p>特定調式也會因其結構特性，形成某些意義聯想。我們已看過<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-whole-tone-collection">全音音集</a>缺少明確根基的特性，這很適合引發特定的音樂以外聯想，例如德布西〈<a href="https://open.spotify.com/track/0FsuNMabFBpf6ZQIyXLAoh?si=2ac923d8e4b04abd" target="_blank" rel="noopener noreferrer" class="external" aria-label="Voiles（外部網站，另開分頁）">Voiles</a>〉（1909）。八音音集則常被用來表現異國、超越時間或魔法般的題材，例如柴可夫斯基《<em>胡桃鉗</em>》（1892）〈<a href="https://open.spotify.com/track/4QTFU7BukoyDtyyemGPNCX?si=bd2bac7938904365" target="_blank" rel="noopener noreferrer" class="external" aria-label="糖梅仙子之舞（外部網站，另開分頁）">糖梅仙子之舞</a>〉中的鋼片琴琶音。</p></div><aside class="translator-note">譯註：Voiles一詞可有帆或面紗的聯想，譯文保留原題，避免固定成單一意象。這些聲響的文化聯想仍須放在具體作品與聽者經驗中理解。</aside><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0028"><p>最後，像所有意義問題一樣，除了音樂材料本身與作曲家意圖，詮釋終究還涉及你自己的聯想與推論。</p></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0029"><div class="textbox shaded"><a id="zh-omt-analyzing-with-collections-scales-and-modes-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0030"><ul><li>Cohn, Richard。2012。《<i>Audacious Euphony: Chromaticism and the Consonant Triad’s Second Nature</i>》（大膽的悅耳聲響：半音化與協和三和弦的第二天性）。紐約：Oxford University Press。</li><li>Harrison, Daniel。1994。《<i>Harmonic Function in Tonal Music</i>》（調性音樂中的和聲功能）。芝加哥：University of Chicago Press。</li><li>Persichetti, Vincent。1961。《<em>Twentieth-Century Harmony</em>》（二十世紀和聲）。紐約：W. W. Norton。</li></ul></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0031"><div class="textbox shaded"><a id="zh-omt-analyzing-with-collections-scales-and-modes-assignments"></a>作業</div></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0032"><ol><li>分析莉莉・布朗惹光彩燦爛的《<em>Hymne au Soleil</em>》（太陽頌）。辨認所用的<a href="../omt/omt-diatonic-modes.html">調式</a>、音集，以及相關技法與素材；在你認為適當之處，把這些觀察連到作品可能的「意義」。樂譜見<a href="https://imslp.org/wiki/Hymne_au_soleil_(Boulanger%2C_Lili)" target="_blank" rel="noopener noreferrer" class="external" aria-label="IMSLP（外部網站，另開分頁）">IMSLP</a>與<a href="https://musescore.com/markpearse/hymn-au-soleil" target="_blank" rel="noopener noreferrer" class="external" aria-label="MuseScore（外部網站，另開分頁）">MuseScore</a>，兩份的歌詞配置都含法文原文與英文翻譯。</li></ol></div><div class="translation-unit" id="omt-analyzing-with-collections-scales-and-modes-u0033"><div class="media-attributions clear"><h2>媒體來源與授權資訊</h2><ul><li>Bartok1：巴爾托克譜例片段1。</li><li>Bartok2：巴爾托克譜例片段2。</li><li>Bartok3：巴爾托克譜例片段3。</li></ul></div></div><aside class="translator-note">譯註：原書這份媒體資訊只列Bartok1、Bartok2、Bartok3，沒有在此填入個別作者或授權欄位；此處照實保留，不自行補寫未提供的授權聲明。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-analyzing-with-collections-scales-and-modes-chapter-1700-section-3" class="section-header">Modes, Collections and Musical Meaning</h2><p>All of these modes come with extramusical interpretive associations.</p><p>For instance, we’ve been focusing on 20<sup>th</sup>-century instances of modal writing, but they do appear in common-practice tonal music, often with associations back to the pre-tonal music from which those modes came: for example, Beethoven’s use of dorian in the <a href="https://open.spotify.com/track/1A0CdUA0lMGmTtKk6b4pby?si=bbdbe5a1fa0540dc" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Credo" of his Missa Solemnis (1824)（外部網站，另開分頁）'>"Credo" of his Missa Solemnis (1824)</a>.</p><p>In addition to looking back, composers have also looked out, deliberately invoking folk and/or foreign musics in the concert hall by the use of their mode. As always, this can be indicative of cultural appreciation or appropriation. The mania for the exotic, Hispano-Arabic topic around the turn of the 20<sup>th</sup> century (rarely more sophisticated than the use of the phrygian<em> ra</em> [latex](\downarrow\hat{2})[/latex] errs on the side of the latter. Likewise, we can observe the nominally Hungarian music by composers like <a href="https://open.spotify.com/track/2oLjhx7w8Hyd3gry9cCXr7?si=0a65891415ff43bc" target="_blank" rel="noopener noreferrer" class="external" aria-label="Brahms（外部網站，另開分頁）">Brahms</a> (looking at that culture from outside), <a href="https://open.spotify.com/track/7CIoJE0JfVFcmmUY3fFojH?si=b31ca68d7bee46e5" target="_blank" rel="noopener noreferrer" class="external" aria-label="Liszt（外部網站，另開分頁）">Liszt</a> (keen to emphasize his own Hungarian roots as part of his brand), and <a href="https://open.spotify.com/track/1A1hXivNLAWyNf6pVysqzm?si=cb493d6c35a84a68" target="_blank" rel="noopener noreferrer" class="external" aria-label="Ligeti（外部網站，另開分頁）">Ligeti</a> (drawing on his own culture).</p><p>Specific modes also attract meanings from their inherent properties. We have already <span>seen</span><span> the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-whole-tone-collection">whole-tone</a> modes' un-rootedness, which lends itself most naturally to certain extramusical associations, as showcased in <a href="https://open.spotify.com/track/0FsuNMabFBpf6ZQIyXLAoh?si=2ac923d8e4b04abd" target="_blank" rel="noopener noreferrer" class="external" aria-label='Claude Debussy’s "Voiles" (1909)（外部網站，另開分頁）'>Claude Debussy’s "Voiles" (1909)</a>. Likewise the octatonic is often invoked as some kind of exotic, timeless, magical topic, as in the celesta arpeggios of <a href="https://open.spotify.com/track/4QTFU7BukoyDtyyemGPNCX?si=bd2bac7938904365" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Dance of the Sugar Plum Fairy"（外部網站，另開分頁）'>"Dance of the Sugar Plum Fairy"</a> from Pyotr Ilyich Tchaikovsky's <em>The Nutcracker </em>(1892).</span></p><p>Finally, and as always with meaning, apart from the materials itself and the composers’ intentions, it ultimately comes down to your associations and inferences.</p><div class="textbox shaded"><a id="en-omt-analyzing-with-collections-scales-and-modes-further-reading"></a>Further Reading</div><ul>
+<li>Cohn, Richard. 2012. <i>Audacious Euphony: Chromaticism and the Consonant Triad’s Second Nature</i>. New York: Oxford University Press.</li>
+<li>Harrison, Daniel. 1994. <i>Harmonic Function in Tonal Music</i>. Chicago: University of Chicago Press.</li>
+<li>Persichetti, Vincent. 1961. <em>Twentieth-Century Harmony</em>. New York: W. W. Norton.</li>
+</ul><div class="textbox shaded"><a id="en-omt-analyzing-with-collections-scales-and-modes-assignments"></a>Assignments</div><ol>
+<li>Analyze Lili Boulanger's resplendent <em>Hymne au Soleil</em>. Identify <a href="../omt/omt-diatonic-modes.html">modes</a> and collections used, along with related techniques and materials, and linking these (where you consider it appropriate) to possible "meanings" of the work. Scores can be found on <a href="https://imslp.org/wiki/Hymne_au_soleil_(Boulanger%2C_Lili)" target="_blank" rel="noopener noreferrer" class="external" aria-label="IMSLP（外部網站，另開分頁）">IMSLP</a> and <a href="https://musescore.com/markpearse/hymn-au-soleil" target="_blank" rel="noopener noreferrer" class="external" aria-label="MuseScore（外部網站，另開分頁）">MuseScore</a>. Both include the original French text and an English translation in the underlay.</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Bartok1       </li><li>Bartok2       </li><li>Bartok3       </li></ul></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-collections.html">上一節：音集</a><a href="../omt/omt-twelve-tone-music.html">下一節：十二音音樂</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/analyzing-with-collections-scales-and-modes/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>以四六和弦延長和聲 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-64-chords-as-prolongations.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group" open=""><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a aria-current="page" href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-64-chords-as-prolongations" data-book="omt" data-page-url="/omt/omt-64-chords-as-prolongations.html" data-next-url="/omt/omt-plagal-motion.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">以四六和弦延長和聲</h1><p class="authors">John Peterson</p><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><p>本章介紹<a href="../omt/omt-cadential-64.html">終止 [latex]^6_4[/latex]</a> 以外的另外三種 [latex]^6_4[/latex] 和弦。</p><ul><li>經過（passing，簡寫 pass.）[latex]^6_4[/latex]：以 [latex]^6_4[/latex] 和弦為低音中的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-passing">經過音</a>配置和聲。通常用於延長主和聲或屬前和聲，且總是位於兩個功能相同的和弦之間。</li><li>鄰音（neighbor，簡寫 n.）[latex]^6_4[/latex]：低音保持不動，上方兩個聲部作<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-neighboring">上鄰音進行</a>。通常用於延長主和聲或屬和聲，前後兩個和弦一定都是原位。</li><li>琶音（arpeggiating，簡寫 arp.）[latex]^6_4[/latex]：低音以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-arpeggio">琶音進行</a>經過和弦五音，上方聲部則以某種方式維持該和弦。它可以延長任何和聲，分析時通常不必特別標示。</li></ul><p><a href="../omt/omt-64-chords-as-prolongations.html#zh-omt-64-chords-as-prolongations-summary">下方</a><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">例 6</a> 的表格，彙整我們建議在分析中標示的三種 [latex]^6_4[/latex] 的特徵。</p></div></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/75asL58TBVx6tO01Nnu5py?si=59da5c1c8aa24790" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0003"><p>目前我們已看到，主和聲（T）區域最常以屬功能和弦延長，尤其常用轉位的 [latex]\mathrm{V^7}[/latex]。本章將介紹另外幾種較少見的方法，不只可以延長主和弦，也能延長屬和弦與屬前和弦。前面說過，[latex]^6_4[/latex] 和弦含有與低音不協和的四度，因此需要特殊處理。我們已學過<a href="../omt/omt-cadential-64.html">終止四六 [latex]\mathrm{cad.^6_4}[/latex]</a>；這裡轉而討論 [latex]^6_4[/latex] 和弦的另外三種用法：經過 [latex]^6_4[/latex]、鄰音 [latex]^6_4[/latex] 與琶音 [latex]^6_4[/latex]。分析時，每遇到 [latex]^6_4[/latex] 和弦，都應先停下來辨認它的類型（<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadential-64">終止</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-passing-64">經過</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-neighboring-64">鄰音</a>或<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-arpeggiating-64">琶音</a>），因為 [latex]^6_4[/latex] 的類型決定了它的標記。對於 [latex]^6_4[/latex] 和弦，只標羅馬數字並不足夠，還必須標明類型。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<p>        This chapter introduces three additional [latex]^6_4[/latex] chords beyond <a href="../omt/omt-cadential-64.html">cadential [latex]^6_4[/latex]</a>.</p>
+<ul>
+<li>Passing (pass.) [latex]^6_4[/latex] involves a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-passing">passing tone</a> in the bass that has been harmonized by a [latex]^6_4[/latex] chord. It typically prolongs tonic or predominant harmonies, and it always occurs between two chords of the same function.</li>
+<li>Neighbor (n.) [latex]^6_4[/latex] involves a static bass above which two of the upper voices perform upper <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-neighboring">neighbor motion</a>. It typically prolongs tonic or dominant harmonies, and the chords on both sides of it are always in root position.</li>
+<li>Arpeggiating (arp.) [latex]^6_4[/latex] involves a bass that <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-arpeggio">arpeggiates</a> through the fifth of the chord while the upper voices sustain the chord in some way. It may prolong any harmony, and we don't typically bother recognizing it in analysis.</li>
+</ul>
+<p>The table in <a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">Example 6</a> <a href="../omt/omt-64-chords-as-prolongations.html#en-omt-64-chords-as-prolongations-summary">below</a> summarizes the characteristics of each of the three types of [latex]^6_4[/latex] that we advocate labeling in analysis.</p>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/75asL58TBVx6tO01Nnu5py?si=59da5c1c8aa24790" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>So far, we've seen that the tonic (T) area is most commonly prolonged using dominant-function chords, especially inverted [latex]\mathrm{V^7}[/latex]s. In this chapter, we look at some additional, less common ways to prolong not only tonic chords, but also dominant and predominant chords. Earlier, we saw how [latex]^6_4[/latex] chords are treated in special ways because they contain a dissonance with the bass (the fourth). We've already learned about <a href="../omt/omt-cadential-64.html">[latex]\mathrm{cad.^6_4}[/latex]</a>; here, we turn to the three other ways [latex]^6_4[/latex] chords can be used: passing [latex]^6_4[/latex], neighboring [latex]^6_4[/latex], and arpeggiating [latex]^6_4[/latex]. Note that in analysis, whenever you encounter a [latex]^6_4[/latex] chord, you should stop and identify which kind it is (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadential-64">cadential</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-passing-64">passing</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-neighboring-64">neighboring</a>, or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-arpeggiating-64">arpeggiating</a>) because the kind of [latex]^6_4[/latex] determines the label. For [latex]^6_4[/latex] chords, the Roman numeral by itself isn’t a sufficient label—the type also needs to be included.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0004"><h2>經過 [latex]^6_4[/latex]</h2></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0005"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-passing-64">經過（pass.）[latex]^6_4[/latex]</a> 是建立在低音<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-passing">經過音</a>上的 [latex]^6_4[/latex] 和弦（<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0006">例 1</a>），最常用於延長主和聲或屬前和聲。請留意，[latex]\mathrm{pass.^6_4}[/latex] 前後的和弦，功能一定相同（例如 [latex]\mathrm{IV^6-pass.^6_4-ii^6}[/latex]），不能是不同功能（例如 [latex]\mathrm{IV^6-pass.^6_4-I}[/latex]）。</p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0006"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250658/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="貝多芬 Op. 14 第1號鋼琴奏鳴曲中的經過四六（外部網站，另開分頁）">貝多芬 Op. 14 第1號鋼琴奏鳴曲中的經過四六</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0007"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0006">例 1。</a>貝多芬 Op. 14 第1號鋼琴奏鳴曲，第一樂章第 50–57 小節中的 [latex]\mathrm{pass.^6_4}[/latex]（<a href="https://open.spotify.com/track/1TATwZjqU3I73RoGvWsVXA?si=c851bab266cd4f5b" target="_blank" rel="noopener noreferrer" class="external" aria-label="1:28–1:42（外部網站，另開分頁）">1:28–1:42</a>）。</span></p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0008"><p><strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">例 2a</a></strong> 示範以 [latex]\mathrm{pass.^6_4}[/latex] 延長主和聲的寫作步驟，<strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">例 2b</a></strong> 與<strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">例 2c</a></strong> 則展示以 [latex]\mathrm{pass.^6_4}[/latex] 延長屬前區域的幾種方式。請注意，這些進行也都可以反向使用（例如 [latex]\mathrm{I^6-pass.^6_4-I}[/latex] 也成立）。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Passing [latex]^6_4[/latex]</h2><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-passing-64">passing (pass.) [latex]^6_4[/latex]</a> is a [latex]^6_4[/latex] chord built on a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-passing">passing tone</a> in the bass (<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0006">Example 1</a>). It's most commonly found prolonging tonic or predominant harmonies. Importantly, the chords on both sides of the [latex]\mathrm{pass.^6_4}[/latex] are always the same function (e.g., [latex]\mathrm{IV^6-pass.^6_4-ii^6}[/latex]), not of different function (e.g., [latex]\mathrm{IV^6-pass.^6_4-I}[/latex]).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250658/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0006">Example 1.</a> [latex]\mathrm{pass.^6_4}[/latex] in Beethoven, Piano Sonata Op. 14, no. 1, I, mm. 50–57 (<a href="https://open.spotify.com/track/1TATwZjqU3I73RoGvWsVXA?si=c851bab266cd4f5b" target="_blank" rel="noopener noreferrer" class="external" aria-label="1:28-1:42（外部網站，另開分頁）">1:28-1:42</a>).</span></p><p><strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">Example 2a</a></strong> demonstrates the steps for writing [latex]\mathrm{pass.^6_4}[/latex] to expand tonic, and <strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">Examples 2b </a></strong>and<strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011"> 2c</a></strong> show several ways [latex]\mathrm{pass.^6_4}[/latex] can prolong the predominant area. Note that each of these progressions can also work backward (e.g., [latex]\mathrm{I^6-pass.^6_4-I}[/latex] also works).</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0009"><h3>經過 pass[latex]^6_4[/latex] 的寫作步驟：</h3></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0010"><ol><li><strong>寫出完整低音。</strong>低音應為三個級進的音，第一個與最後一個音屬於相同的功能區域（T 或 PD）；中間的音就是經過音。</li><li><strong>拼出 pass.[latex]\mathbf{^6_4}[/latex]。</strong>和 [latex]\mathrm{cad.^6_4}[/latex] 一樣，拼出 [latex]\mathrm{pass.^6_4}[/latex] 時，要找出低音上方四度與六度的音。另外要有一個聲部重複低音，也和 [latex]\mathrm{cad.^6_4}[/latex] 一樣。</li><li><strong>寫出完整女高音。</strong>女高音應採用級進的旋律線，不要採用保持不動的聲部線。</li><li><strong>填入內聲部，讓它們盡量少移動。</strong></li></ol></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0011"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250667/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="經過四六延長主和聲與屬前和聲的寫作步驟（外部網站，另開分頁）">經過四六延長主和聲與屬前和聲的寫作步驟</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0012"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">例 2。</a>經過 pass.[latex]\mathit{^6_4}[/latex] 的寫作。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>To write with pass[latex]^6_4[/latex]:</h3><ol>
+<li><strong>Write the entire bass. </strong>You should have three notes in stepwise motion where the first and last notes belong to the same functional area (T or PD). The middle note will be your passing tone.</li>
+<li><strong>Spell the pass.[latex]\mathbf{^6_4}[/latex]. </strong>Just like with [latex]\mathrm{cad.^6_4}[/latex], to spell [latex]\mathrm{pass.^6_4}[/latex], determine what notes are a fourth and sixth above the bass. One voice will double the bass, just like in [latex]\mathrm{cad.^6_4}[/latex].</li>
+<li><strong>Write the entire soprano. </strong>The soprano should be a line that moves by step, not the static line.</li>
+<li><strong>Fill in inner voices, making them move as little as possible.</strong></li>
+</ol><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250667/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0011">Example 2.</a> Writing with pass.[latex]\mathit{^6_4}[/latex].</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0013"><h2>鄰音 [latex]^6_4[/latex]</h2></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0014"><p>鄰音（n.）[latex]^6_4[/latex] 的低音保持不動，上方兩個聲部則作<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-neighboring">上鄰音進行</a>（<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">例 3</a>）。[latex]\mathrm{n.^6_4}[/latex] 有時也稱為持續低音 [latex]^6_4[/latex]（pedal six-four），這個名稱反映低音維持在同一音的特徵。它最常用於延長 I 或 V。<strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">例 4a</a></strong> 示範以 [latex]\mathrm{n.^6_4}[/latex] 延長主和聲的寫作步驟，<strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">例 4b</a></strong> 則展示延長 V 的聲部進行。</p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0015"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250673/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Josephine Lang〈Dem Königs-Sohn〉中的鄰音與琶音四六（外部網站，另開分頁）">Josephine Lang〈Dem Königs-Sohn〉中的鄰音與琶音四六</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0016"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">例 3。</a>Josephine Lang〈Dem Königs-Sohn〉中的鄰音與琶音 [latex]\mathit{^6_4}[/latex]。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Neighbor [latex]^6_4[/latex]</h2><p>The neighbor (n.) [latex]^6_4[/latex] consists of a static bass over top of which two voices have <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-neighboring">upper-neighbor motion</a> (<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">Example 3</a>). Sometimes [latex]\mathrm{n.^6_4}[/latex] is called pedal [latex]^6_4[/latex], a name that reflects the static pedal in the bass. It's most commonly found prolonging I or V. <strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">Example 4a</a></strong> demonstrates the steps for writing [latex]\mathrm{n.^6_4}[/latex] to prolong tonic, and <strong><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">Example 4b</a></strong> shows the voice leading to prolong V.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250673/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">Example 3.</a> Neighbor and arpeggiating [latex]\mathit{^6_4}[/latex] in Josephine Lang, "Dem Königs-Sohn."</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0017"><h3>[latex]\mathrm{n.^6_4}[/latex] 的寫作步驟：</h3></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0018"><ol><li><strong>寫出完整低音。</strong>低音為三個相同的音，通常是 <em>do</em>–<em>do</em>–<em>do</em> 或 <em>sol</em>–<em>sol</em>–<em>sol</em>（[latex]\hat1-\hat1-\hat1[/latex] 或 [latex]\hat5-\hat5-\hat5[/latex]）。</li><li><strong>拼出 n.[latex]\mathbf{^6_4}[/latex]。</strong>[latex]\mathrm{n.^6_4}[/latex] 配置在中間那個低音上。和 [latex]\mathrm{cad.}[/latex] 與 [latex]\mathrm{pass.^6_4}[/latex] 一樣，找出中間低音上方六度與四度的音，並以一個聲部重複低音。</li><li><strong>寫出完整女高音。</strong>女高音可選擇作上鄰音進行，也可保持不動。與 [latex]\mathrm{cad.}[/latex] 或 [latex]\mathrm{pass.^6_4}[/latex] 相較，[latex]\mathrm{n.^6_4}[/latex] 更常採用保持不動的女高音。</li><li><strong>填入內聲部，讓它們盡量少移動。</strong></li></ol></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0019"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250679/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="鄰音四六延長主和弦與屬和弦的寫作步驟（外部網站，另開分頁）">鄰音四六延長主和弦與屬和弦的寫作步驟</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0020"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">例 4。</a>[latex]\mathit{n.^6_4}[/latex] 的寫作。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>To write with [latex]\mathrm{n.^6_4}[/latex]:</h3><ol>
+<li><strong>Write the entire bass. </strong>The bass will be three of the same note, typically <em>do</em>–<em>do</em>–<em>do</em> or <em>sol</em>–<em>sol</em>–<em>sol</em> ([latex]\hat1-\hat1-\hat1[/latex] or [latex]\hat5-\hat5-\hat5[/latex])</li>
+<li><strong>Spell n.[latex]\mathbf{^6_4}[/latex]. </strong>The [latex]\mathrm{n.^6_4}[/latex] will be over the middle bass note. As with [latex]\mathrm{cad.}[/latex] and [latex]\mathrm{pass.^6_4}[/latex], determine a sixth and fourth above the middle bass note. One voice will double the bass.</li>
+<li><strong>Write the entire soprano.</strong> For the soprano, choose either an upper-neighbor line or the static line. Unlike with [latex]\mathrm{cad.}[/latex] or [latex]\mathrm{pass.^6_4}[/latex], [latex]\mathrm{n.^6_4}[/latex] will more frequently have a static line in the soprano.</li>
+<li><strong>Fill in the inner voices, making them move as little as possible.</strong></li>
+</ol><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250679/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0019">Example 4.</a> Writing with [latex]\mathit{n.^6_4}[/latex].</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0021"><h2>琶音 [latex]^6_4[/latex]</h2></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0022"><p>琶音（arp.）[latex]^6_4[/latex] 通常由低音跳進到和弦五音、上方聲部繼續維持該和弦而形成。常見於結尾的低音<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-arpeggio">琶音進行</a>（<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">例 3</a>），或圓舞曲風格的伴奏（<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">例 5</a>）。與其他類型不同，[latex]\mathrm{arp.^6_4}[/latex] 在分析時通常不必另外標示。<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">例 5</a> 雖然用數字標出了它，但並非一定要這麼做；每個小節都可以直接標為 I。</p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0023"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250685/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Sophie de Auguste Weyrauch《六首舞曲》第3首中的琶音四六（外部網站，另開分頁）">Sophie de Auguste Weyrauch《六首舞曲》第3首中的琶音四六</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0024"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">例 5。</a>Sophie de Auguste Weyrauch《六首舞曲》（Six Danses）第3首中的琶音 [latex]\mathit{^6_4}[/latex]。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Arpeggiating [latex]^6_4[/latex]</h2><p>Arpeggiating (arp.) [latex]^6_4[/latex] is typically created when the bass leaps to the fifth of a chord while the upper voices sustain the chord. It's commonly found in, for example, ending bass <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-arpeggio">arpeggiations</a> (<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0015">Example 3</a>) or waltz-style accompaniments (<a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">Example 5</a>). Unlike the other types, [latex]\mathrm{arp.^6_4}[/latex] typically doesn’t need to be labeled in analysis. <a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">Example 5</a> identifies it using figures, but it’s not necessary to do so—each measure could simply be labeled as I.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6250685/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0023">Example 5.</a> Arpeggiating [latex]\mathit{^6_4}[/latex] in Sophie de Auguste Weyrauch, Six Danses No. 3.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-64-chords-as-prolongations-u0025"><h2 id="zh-omt-64-chords-as-prolongations-chapter-5933-section-1" class="section-header"><a id="zh-omt-64-chords-as-prolongations-summary"></a>彙整：四六和弦的類型</h2></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0026"><p><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">例 6</a> 的表格彙整了分析時應標示的三種 [latex]^6_4[/latex] 和弦類型及其特徵。分析時遇到 [latex]^6_4[/latex] 和弦，記得先辨認它是哪一類（經過、鄰音或終止），再採用適當的標記。</p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0027"><table id="zh-omt-64-chords-as-prolongations-tablepress-45" class="tablepress tablepress-id-45 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">四六和弦</th>
+<th class="column-2">標記</th>
+<th class="column-3">特徵</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">經過</td>
+<td class="column-2">[latex]\mathrm{pass.^6_4}[/latex]</td>
+<td class="column-3">
+<ul>
+<li>低音為經過音</li>
+<div class="wp-nocaption "></div>
+<li>前後兩個和弦的功能相同</li>
+<p>
+</p></ul>
+</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">鄰音</td>
+<td class="column-2">[latex]x^{5-6-5}_{3-4-3}[/latex]</td>
+<td class="column-3">
+<ul>
+<li>低音保持不動</li>
+<div class="wp-nocaption "></div>
+<li>上方兩個聲部作上鄰音進行</li>
+<div class="wp-nocaption "></div>
+<li>前後為相同和弦</li>
+<p>
+</p></ul>
+<p>
+</p></td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">終止</td>
+<td class="column-2">[latex]\mathrm{V}\begin{smallmatrix}(8-7)\\6-5\\4-3\end{smallmatrix}[/latex]</td>
+<td class="column-3">
+<ul>
+<li>低音為 <i>sol</i> [latex](\hat{5})[/latex]</li>
+<div class="wp-nocaption "></div>
+<li>[latex]^6_4[/latex] 位於較強拍</li>
+<p>
+</p></ul>
+<p>
+</p></td>
+</tr>
+</tbody>
+</table></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0028"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">例 6。</a>[latex]\mathit{^6_4}[/latex] 和弦類型彙整。</span></p></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0029"><div class="textbox shaded"><a id="zh-omt-64-chords-as-prolongations-assignments"></a>作業</div></div><div class="translation-unit" id="omt-64-chords-as-prolongations-u0030"><ol><li>以 [latex]^6_4[/latex] 和弦延長和聲（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-64-Chords-as-Forms-of-Prolongation.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-64-Chords-as-Forms-of-Prolongation.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>）。請學生複習先前的概念、依羅馬數字寫出和聲、依數字低音寫作，並分析音樂摘錄。</li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-64-chords-as-prolongations-chapter-5933-section-1" class="section-header"><a id="en-omt-64-chords-as-prolongations-summary"></a>Summary: 6/4 chord types</h2><p>The table in <a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">Example 6</a> summarizes the characteristics of the three [latex]^6_4[/latex] chord types that should be labeled in analysis. When you come across a [latex]^6_4[/latex] chord in analysis, remember to stop and ask yourself what type it is (passing, neighboring, or cadential) and label it appropriately.</p><table id="en-omt-64-chords-as-prolongations-tablepress-45" class="tablepress tablepress-id-45 score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">6/4 chord</th>
+<th class="column-2">Label</th>
+<th class="column-3">Characteristics</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Passing</td>
+<td class="column-2">[latex]\mathrm{pass.^6_4}[/latex]</td>
+<td class="column-3">
+<ul>
+<li>Passing tone in bass</li>
+<div class="wp-nocaption "></div>
+<li>Outer chords are same function``</li>
+<p>
+</p></ul>
+</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Neighboring</td>
+<td class="column-2">[latex]x^{5-6-5}_{3-4-3}[/latex]</td>
+<td class="column-3">
+<ul>
+<li>Static bass</li>
+<div class="wp-nocaption "></div>
+<li>Upper neighbor motion in two upper voices</li>
+<div class="wp-nocaption "></div>
+<li>Outer chords are the same</li>
+<p>
+</p></ul>
+<p>
+</p></td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Cadential</td>
+<td class="column-2">[latex]\mathrm{V}\begin{smallmatrix}(8-7)\\6-5\\4-3\end{smallmatrix}[/latex]</td>
+<td class="column-3">
+<ul>
+<li><i>Sol</i> [latex](\hat{5})[/latex] in bass</li>
+<div class="wp-nocaption "></div>
+<li>[latex]^6_4[/latex] on stronger beat</li>
+<p>
+</p></ul>
+<p>
+</p></td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-64-chords-as-prolongations.html#omt-64-chords-as-prolongations-u0027">Example 6.</a> Summary of [latex]\mathit{^6_4}[/latex] chord types.</span></p><div class="textbox shaded"><a id="en-omt-64-chords-as-prolongations-assignments"></a>Assignments</div><ol>
+<li>[latex]^6_4[/latex] chords as forms of prolongation (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-64-Chords-as-Forms-of-Prolongation.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/WK-64-Chords-as-Forms-of-Prolongation.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label=".docx（外部網站，另開分頁）">.docx</a>). Asks students to review previous concepts, write from Roman numerals, write from figures, and analyze excerpts.</li>
+</ol></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-leading-tone-chord.html">上一節：以導音和弦在樂句開頭延長主和聲</a><a href="../omt/omt-plagal-motion.html">下一節：以變格進行延長和聲</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/64-chords-as-prolongations/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,273 @@
+#title-block-header{display:none}
+.reading td.standalone-music-symbol,.reading th.standalone-music-symbol{font-family:'Segoe UI Symbol','Noto Music',serif;font-size:2em;line-height:1.2;text-align:center;min-width:2.5em}
+.image-labels{font-size:.8em;color:var(--muted);line-height:1.65}
+#omt-ground-bass-u0036 table :is(th,td),.reading:has(#omt-ground-bass-u0036) details.english table:has(th:nth-child(10)) :is(th,td){white-space:nowrap}
+#omt-ground-bass-u0037 table :is(th,td):first-child{min-width:18em}
+#omt-ground-bass-u0037 table :is(th,td):not(:first-child){white-space:nowrap}
+.interactive-example-entry{display:block;font-size:.85em;margin:.35em 0}
+.reading a.interactive-image-link.external::after{content:none}
+.reading a.external.missing-linked-score::after{content:attr(data-resource-status)}
+/* Keep vocal part names on one line while their original bracket tables scroll. */
+.reading:has(#rk-section-108-u0001) table td,
+.reading:has(#rk-section-115-u0001) table td,
+.reading:has(#rk-section-116-u0001) table td,
+:is(#rk-section-117-u0003,#rk-section-117-u0005,#rk-section-117-u0007,#rk-section-117-u0009) table td{white-space:nowrap}
+.score-attachment{margin:1.2rem 0;border:1px solid var(--line);padding:.65rem 1rem}
+.score-attachment>summary{cursor:pointer;color:var(--link);font-weight:bold}
+/* Preserve mode names and pitch rows inside locally scrollable comparison tables. */
+.reading:has(#omt-diatonic-modes-u0001) .church-modes :is(th,td){white-space:nowrap}
+.reading:has(#omt-diatonic-modes-u0001) .tablepress-id-30 :is(th,td):first-child{min-width:7em}
+.reading:has(#omt-diatonic-modes-u0001) .tablepress-id-30 :is(th,td):nth-child(2){min-width:7em}
+.reading:has(#omt-diatonic-modes-u0001) .tablepress-id-30 :is(th,td):nth-child(3){min-width:10em}
+.reading:has(#omt-diatonic-modes-u0001) .tablepress-id-30 :is(th,td):nth-child(n+4){white-space:nowrap}
+.reading:has(#omt-collections-u0001) .tablepress-id-80 :is(th,td):first-child{min-width:5em}
+.reading:has(#omt-collections-u0001) .tablepress-id-80 :is(th,td):nth-child(2){white-space:nowrap}
+.reading:has(#omt-collections-u0001) .tablepress-id-80 :is(th,td):nth-child(n+3){min-width:8em}
+.reading:has(#omt-basics-of-twelve-tone-theory-u0001) table.grid td{white-space:nowrap;min-width:2.5em;text-align:center}
+.reading:has(#omt-naming-conventions-for-rows-u0001) table.grid td{white-space:nowrap;min-width:2.5em;text-align:center}
+:root{--paper:#ffffff;--ink:#252b32;--link:#245785;--line:#d9dfe5;--muted:#596575;--panel:#f3f5f7;--reading-size:19px;color-scheme:light}
+:root[data-theme=dark]{--paper:#20252b;--ink:#ecebe5;--link:#a1c8ed;--line:#484f56;--muted:#bec1c6;--panel:#2b323b;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:7rem}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Microsoft JhengHei','PingFang TC',system-ui,sans-serif;line-height:1.8}a{color:var(--link);text-underline-offset:.2em}a:hover{text-decoration-thickness:2px}button,input,summary{font:inherit}button{cursor:pointer;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:.25rem .65rem}button:hover{background:var(--panel)}:focus-visible{outline:3px solid var(--link);outline-offset:3px}h1,h2,h3,h4{line-height:1.45;text-wrap:balance}h1,h2{font-family:'Noto Serif TC','PMingLiU','Songti TC',serif}h1{font-size:2.2em;margin:.2em 0 .8em}h2{font-size:1.55em;margin:1.8em 0 .7em}h3{font-size:1.18em;margin-top:1.7em}h4{font-size:1em}p{margin:1em 0}li{margin:.35em 0}
+.library-header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:2rem;padding:.8rem 2rem;font-size:15px}.library-name{font-weight:bold;font-size:20px;text-decoration:none;white-space:nowrap}.library-header nav{display:flex;gap:1.3rem}.library-header nav a{text-decoration:none}.reader-controls{display:flex;gap:.3rem;margin-left:auto;white-space:nowrap}.reader-layout{display:grid;grid-template-columns:280px minmax(0,1fr);max-width:1400px;margin:auto}.book-sidebar{position:sticky;top:5rem;height:calc(100vh - 6rem);overflow:auto;padding:1.6rem 1.2rem 4rem;border-right:1px solid var(--line);font-size:14px}.book-sidebar>details>summary{font-weight:bold;font-size:17px}.toc-group{margin:.8rem 0}.toc-group summary{cursor:pointer}.toc-group ul{list-style:none;margin:.4rem 0;padding:0 .3rem 0 1rem}.toc-group a{display:block;text-decoration:none;padding:.25rem .3rem}.toc-group a[aria-current]{background:var(--panel);border-left:3px solid var(--link);font-weight:bold}.reading{min-width:0;width:100%;max-width:890px;padding:2.5rem 3.5rem 6rem;font-size:var(--reading-size)}.book-label,.authors,.source{color:var(--muted);font-size:.78em}.book-label{margin-bottom:.7rem}.translation-status,.pending,.missing-score{background:var(--panel);padding:.65em 1em;border-left:3px solid #94742c;font-size:.85em}.pending{color:var(--muted)}.translation-unit:target{outline:2px solid var(--link);outline-offset:6px}.english{margin:1.8rem 0 2.5rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.6rem 0}.english>summary{cursor:pointer;color:var(--link);font-size:.86em}.english>div{font-size:.94em;line-height:1.7;padding-top:.8em}.english h2{font-family:Georgia,serif}.textbox{background:var(--panel);padding:.4em 1.2em;margin:1.5em 0}.textbox__title{font-weight:bold}.textbox.shaded{font-weight:bold}.textbox__content ul{padding-left:1.5em}.external-resource{background:var(--panel);padding:.5em 1em;margin:1em 0}.external::after{content:'（需連網）';font-size:.76em;color:var(--muted)}.external-resource .external::after{content:''}.translator-note{font-size:.85em;border-left:3px solid var(--link);padding:.4em 1em}.reading figure{margin:1.7rem 0;max-width:100%}.reading img{display:block;max-width:100%;height:auto;margin:.8em auto;background:white;cursor:zoom-in}.reading figcaption,.example-caption-text{font-size:.86em;color:var(--muted)}.reading table{border-collapse:collapse;font-size:.87em;max-width:100%;display:block;overflow-x:auto;margin:1.3rem 0}.reading td,.reading th{padding:.4em .6em;border:1px solid var(--line);vertical-align:top}.reading th{background:var(--panel)}.reading .score-table img{max-width:none}.reading sub,.reading sup{line-height:0}.super,.super2{vertical-align:super;font-size:.75em}.pagenum{font-size:.7em;color:var(--muted)}.center,.centertp,.centerbp{text-align:center}.right{text-align:right}.footnotes,.media-attributions{font-size:.8em}.footnotes ol{padding-left:1.5em}.page-nav{border-top:1px solid var(--line);padding-top:1rem;margin-top:3rem;display:flex;gap:1.5rem;justify-content:space-between;font-size:.8em}.page-nav a{max-width:48%}.source{margin-top:2rem}.glossary-entry{margin:1.2em 0}.glossary-entry dt{font-weight:bold}.glossary-entry dd{margin:.3em 0 0 1.3em}
+.library-home{max-width:1050px;margin:auto;padding:4.5rem 2rem;font-size:19px}.library-home h1{font-size:3.5rem}.home-intro{color:var(--muted);font-size:1.25rem}.book-shelf{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin:3rem 0}.book-shelf section{border-top:4px solid var(--link);padding-top:.5rem}.book-shelf h2{font-size:2rem;margin:.8rem 0}.book-shelf h2 a{text-decoration:none}.book-subtitle{color:var(--muted);font-size:.86em}.begin-reading{display:inline-block;margin:1rem 0;font-weight:bold}.home-note{font-size:.82em;color:var(--muted);margin-top:4rem}
+dialog{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:1.5rem;max-width:90vw;max-height:90vh}dialog::backdrop{background:#0009}.dialog-close{float:right}#search-dialog{width:760px}#search-dialog label{display:block;margin:2.5rem 0 .5rem;font-size:1.3rem}#book-search{width:100%;padding:.7rem;background:var(--paper);color:var(--ink);border:1px solid var(--line)}#search-results{padding-left:1.5rem}#search-results li{margin:1.3em 0}#search-results p{font-size:.85rem;color:var(--muted);margin:.2em 0}#image-dialog{width:95vw;max-width:95vw}.image-scroll{overflow:auto;max-height:74vh;clear:both;padding-top:1rem}#enlarged-image{display:block;max-width:none;width:auto;height:auto;background:white;margin:0 auto}#image-caption{font-size:.85rem;color:var(--muted)}
+@media(min-width:901px){#book-menu>summary{display:none}}@media(max-width:900px){.library-header{padding:.7rem 1rem;gap:.8rem;flex-wrap:wrap}.library-header nav{font-size:13px;gap:.8rem}.reader-controls{font-size:13px}.reader-layout{display:block}.book-sidebar{position:relative;top:0;width:100%;height:auto;max-height:60vh;border-right:0;border-bottom:1px solid var(--line);padding:.7rem 1.2rem}.reading{max-width:800px;margin:auto;padding:2rem 1.4rem 4rem}.book-shelf{gap:2rem}}@media(max-width:520px){.library-header nav{order:3;width:100%}.library-name{font-size:18px}.reader-controls{gap:.2rem}.reader-controls button{padding:.25rem .4rem}.reading{padding:1.6rem 1.1rem 4rem}.reading h1{font-size:1.75em}.book-shelf{grid-template-columns:1fr;gap:2rem}.library-home{padding:2.5rem 1.3rem}.library-home h1{font-size:2.6rem}.book-shelf h2{font-size:1.7rem}.page-nav{flex-direction:column}.page-nav a{max-width:100%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Long citations must wrap without widening the reading column. */
+.reading a,.reading p,.reading li{overflow-wrap:anywhere}
+.reading h1,.reading h2,.reading h3,.reading h4{overflow-wrap:anywhere}
+.reading table.nowrap th,.reading table.nowrap td{white-space:nowrap}
+.english:not([open])>div{display:none}
+.reading table{position:relative}
+#omt-intervals-u0096 th{white-space:nowrap}
+#omt-embellishing-tones-u0040 th{white-space:nowrap}
+#omt-gradus-ad-parnassum-exercises-u0021 th,
+#omt-gradus-ad-parnassum-exercises-u0025 th,
+#omt-gradus-ad-parnassum-exercises-u0029 th{white-space:nowrap}
+/* Keep the six-four comparison's prose readable inside its scrollable table. */
+#omt-64-chords-as-prolongations-u0027 th{white-space:nowrap}
+#omt-64-chords-as-prolongations-u0027 td:nth-child(3){min-width:14em}
+#omt-64-chords-as-prolongations-u0027 td ul{padding-left:1.15em}
+/* The hybrid-form comparison needs readable labels and prose on narrow screens. */
+#omt-hybrid-phrase-level-forms-u0017 th,
+#omt-hybrid-phrase-level-forms-u0029 th,
+#omt-hybrid-phrase-level-forms-u0017 td:first-child,
+#omt-hybrid-phrase-level-forms-u0029 td:first-child{white-space:nowrap}
+#omt-hybrid-phrase-level-forms-u0029 td:nth-child(2){min-width:8em}
+#omt-hybrid-phrase-level-forms-u0029 td:nth-child(3),
+#omt-hybrid-phrase-level-forms-u0029 td:nth-child(4){min-width:12em}
+/* Match the supplied heading's black backing across transparent connector areas. */
+.reading img[src$="dfb2f284f49f38df.png"],
+#enlarged-image[src$="dfb2f284f49f38df.png"]{background:#111}
+.reading .media-attributions{overflow-wrap:anywhere}
+#omt-expansion-and-contraction-u0039 th,
+#omt-expansion-and-contraction-u0039 td:nth-child(2),
+#omt-expansion-and-contraction-u0039 td:nth-child(5){white-space:nowrap}
+#omt-expansion-and-contraction-u0039 td:first-child{min-width:9em}
+#omt-expansion-and-contraction-u0039 td:nth-child(3){min-width:17em}
+#omt-expansion-and-contraction-u0039 td:nth-child(4){min-width:10em}
+#omt-expansion-and-contraction-u0039 td ul{padding-left:1.1em}
+/* Preserve the original ternary diagrams' group boundaries in both languages. */
+.reading:has(#omt-ternary-form-u0001) .form-diagram td{white-space:nowrap;text-align:center;padding:.4em .45em}
+.reading:has(#omt-ternary-form-u0001) .form-diagram:has(tr:nth-child(2)) tr:first-child td:nth-child(3),
+.reading:has(#omt-ternary-form-u0001) .form-diagram:has(tr:nth-child(2)) tr:nth-child(2) td:nth-child(4),
+.reading:has(#omt-ternary-form-u0001) .form-diagram:has(tr:nth-child(2)>td:nth-child(12)) tr:first-child td:nth-child(6),
+.reading:has(#omt-ternary-form-u0001) .form-diagram:has(tr:nth-child(2)>td:nth-child(12)) tr:nth-child(2) td:nth-child(8){border-right:2px dotted var(--muted)}
+/* Imported PDF layout wrappers must not halve the sonata introduction twice. */
+.reading:has(#omt-sonata-form-u0003) .layoutArea>.column{display:block;width:auto;float:none}
+/* Keep the augmented-sixth comparison readable in both language versions. */
+.reading:has(#omt-augmented-sixth-chords-u0005) .tablepress-id-35 th,
+.reading:has(#omt-augmented-sixth-chords-u0005) .tablepress-id-35 td:first-child{white-space:nowrap}
+.reading:has(#omt-augmented-sixth-chords-u0005) .tablepress-id-35 td:nth-child(2){min-width:19em}
+.reading:has(#omt-augmented-sixth-chords-u0005) .tablepress-id-35 td:nth-child(3){min-width:8em}
+/* Keep the German/Neo-Riemannian comparison legible in both language versions. */
+.reading:has(#omt-mediants-u0019) .tablepress-id-89 th:not(:nth-child(3)){white-space:nowrap}
+.reading:has(#omt-mediants-u0019) .tablepress-id-89 td:nth-child(1){min-width:5em;white-space:nowrap}
+.reading:has(#omt-mediants-u0019) .tablepress-id-89 td:nth-child(2){min-width:9em}
+.reading:has(#omt-mediants-u0019) .tablepress-id-89 td:nth-child(3){min-width:19em}
+.reading:has(#omt-mediants-u0019) .tablepress-id-89 td:nth-child(4){min-width:8em;white-space:nowrap}
+/* Keep mode names and chord-scale pairs together; narrow screens scroll the table. */
+.reading:has(#omt-chord-scale-theory-u0001) :is(.tablepress-id-49,.tablepress-id-50,.tablepress-id-51) th{white-space:nowrap}
+.reading:has(#omt-chord-scale-theory-u0001) :is(.tablepress-id-49,.tablepress-id-50) td:first-child{min-width:7em}
+.reading:has(#omt-chord-scale-theory-u0001) :is(.tablepress-id-49,.tablepress-id-50) td:nth-child(2){min-width:7em;white-space:nowrap}
+.reading:has(#omt-chord-scale-theory-u0001) :is(.tablepress-id-49,.tablepress-id-50) td:nth-child(3){min-width:12em;white-space:nowrap}
+.reading:has(#omt-chord-scale-theory-u0001) .tablepress-id-51 td:first-child{min-width:8em}
+.reading:has(#omt-chord-scale-theory-u0001) .tablepress-id-51 td:nth-child(2){min-width:18em}
+/* Keep the short AAB structure label intact beside translated lyrics. */
+.reading:has(#omt-blues-melodies-and-the-blues-scale-u0001) .tablepress-id-26 th:first-child{white-space:nowrap}
+/* Override Pandoc's equal thirds: instrument numbers need little space, descriptions need more. */
+.reading .english .drum-set col{width:auto!important}
+.reading .english .drum-set :is(th,td):first-child{min-width:2em;white-space:nowrap}
+.reading .english .drum-set :is(th,td):nth-child(2){min-width:11em}
+.reading .english .drum-set :is(th,td):nth-child(3){min-width:24em}
+/* Give lyric lines more room than their short phrase labels. */
+.reading:has(#omt-melody-and-phrasing-u0001) :is(.tablepress-id-27,.tablepress-id-28) col:first-child{width:85%!important}
+.reading:has(#omt-melody-and-phrasing-u0001) :is(.tablepress-id-27,.tablepress-id-28) col:last-child{width:15%!important}
+.reading:has(#omt-melody-and-phrasing-u0001) .tablepress-id-29 col:first-child{width:70%!important}
+.reading:has(#omt-melody-and-phrasing-u0001) .tablepress-id-29 col:last-child{width:30%!important}
+.reading:has(#omt-melody-and-phrasing-u0001) :is(.tablepress-id-27,.tablepress-id-28,.tablepress-id-29) th:last-child{white-space:nowrap}
+/* Keep the schema formulas intact and give their explanations readable space. */
+.reading:has(#omt-intro-to-pop-schemas-u0001) .tablepress-id-54 col{width:auto!important}
+.reading:has(#omt-intro-to-pop-schemas-u0001) .tablepress-id-54 :is(th,td):first-child{min-width:8em;max-width:12em;overflow-wrap:anywhere}
+.reading:has(#omt-intro-to-pop-schemas-u0001) .tablepress-id-54 td:is(:nth-child(2),:nth-child(3)){min-width:10em;white-space:nowrap}
+.reading:has(#omt-intro-to-pop-schemas-u0001) .tablepress-id-54 :is(th,td):nth-child(4){min-width:18em}
+/* Time, section, harmony and key must remain distinct in this song analysis. */
+.reading:has(#omt-4-chord-schemas-u0001) .tablepress-id-6 col{width:auto!important}
+.reading:has(#omt-4-chord-schemas-u0001) .tablepress-id-6 :is(th,td):first-child{min-width:3em;white-space:nowrap}
+.reading:has(#omt-4-chord-schemas-u0001) .tablepress-id-6 :is(th,td):nth-child(2){min-width:6em}
+.reading:has(#omt-4-chord-schemas-u0001) .tablepress-id-6 td:is(:nth-child(3),:nth-child(4)){min-width:12em;white-space:nowrap}
+.reading:has(#omt-4-chord-schemas-u0001) .tablepress-id-6 :is(th,td):nth-child(5){min-width:11em}
+/* Preserve lyric/chord column groupings without squeezing lyrics into single characters. */
+.reading:has(#omt-puff-schemas-u0001) .tablepress col{width:auto!important}
+.reading:has(#omt-puff-schemas-u0001) .tablepress td:first-child{min-width:6em;white-space:nowrap}
+.reading:has(#omt-puff-schemas-u0001) .tablepress td:not(:first-child){min-width:8em}
+.reading:has(#omt-puff-schemas-u0001) :is(.tablepress-id-20,.tablepress-id-25) td:not(:first-child){min-width:12em}
+.reading:has(#omt-puff-schemas-u0001) :is(.tablepress-id-19,.tablepress-id-20,.tablepress-id-21,.tablepress-id-24) tr:is(:first-child,:last-child) td:not(:first-child){white-space:nowrap}
+.reading:has(#omt-puff-schemas-u0001) .tablepress-id-25 tr:is(:nth-child(2),:last-child) td:not(:first-child){white-space:nowrap}
+/* Use source column classes because rowspans change the physical cell indices. */
+.reading:has(#omt-fragile-absent-and-emergent-tonics-u0001) .tablepress-id-7 .column-1{min-width:6em;white-space:nowrap}
+.reading:has(#omt-fragile-absent-and-emergent-tonics-u0001) .tablepress-id-7 .column-2{min-width:5em}
+.reading:has(#omt-fragile-absent-and-emergent-tonics-u0001) .tablepress-id-7 .column-3{min-width:12em;white-space:nowrap}
+.reading:has(#omt-fragile-absent-and-emergent-tonics-u0001) .tablepress-id-7 .column-4{min-width:18em;max-width:30em}
+/* Keep set labels and vectors intact; the table itself scrolls on narrow screens. */
+.reading .set-classes td{white-space:nowrap}
+.reading:has(#omt-pc-sets-normal-order-and-transformations-u0001) .no-borders td{border:0}
+.reading:has(#omt-pc-sets-normal-order-and-transformations-u0001) .no-borders img{max-width:100%}
+@media(max-width:700px){
+ .reading:has(#omt-pc-sets-normal-order-and-transformations-u0001) .no-borders :is(tbody,tr,td){display:block;width:100%}
+.reading:has(#omt-pc-sets-normal-order-and-transformations-u0001) .no-borders td{padding:0}
+}
+/* RK's source uses .xxlg at250% for brackets joining stacked instrument parts. */
+.reading:has(.translation-unit[id^="rk-"]) table .xxlg{font-size:250%;line-height:1}
+.reading:has(.translation-unit[id^="rk-"]) table:has(.xxlg) td[rowspan]{vertical-align:middle}
+/* Keep octave diagrams in horizontal voice rows; the table provides local scrolling. */
+.reading:has(:is(#rk-section-031-u0001,#rk-section-032-u0001,#rk-section-033-u0001,#rk-section-034-u0001,#rk-section-037-u0001,#rk-section-038-u0001,#rk-section-039-u0001,#rk-section-040-u0001,#rk-section-042-u0001)) table td{white-space:nowrap}
+.reading:has(.translation-unit[id^="rk-"]) table .mlg{font-size:150%}
+.reading:has(.translation-unit[id^="rk-"]) table .lg{font-size:125%}
+/* Stacked octave brackets sit between adjacent voice rows, not below the last voice. */
+.reading:has(#rk-section-033-u0001) table .mlg{line-height:1}
+.reading:has(#rk-section-033-u0001) table td:not(:first-child){vertical-align:middle}
+.reading:has(#rk-section-038-u0001) table .mlg{line-height:1}
+.reading:has(#rk-section-038-u0001) table td:has(.mlg){vertical-align:middle}
+.reading:has(:is(#rk-section-045-u0001,#rk-section-046-u0001)) table:not(:has(img)) td{white-space:nowrap}
+.reading:has(#rk-section-046-u0001) table .mlg{line-height:1}
+.reading:has(#rk-section-046-u0001) table td:has(.mlg){vertical-align:middle}
+.reading:has(#rk-section-047-u0001) table td{white-space:nowrap}
+.reading:has(#rk-section-047-u0001) table .mlg{line-height:1}
+.reading:has(#rk-section-047-u0001) table td:has(.mlg){vertical-align:middle}
+.reading:has(#rk-section-118-u0018) table:has(.xxlg) td{white-space:nowrap}
+.reading:has(:is(#rk-section-048-u0001,#rk-section-049-u0001)) table td{white-space:nowrap}
+.reading:has(#rk-section-049-u0001) table .mlg{line-height:1}
+.reading:has(#rk-section-049-u0001) table td:has(.mlg){vertical-align:middle}
+.reading:has(#rk-section-054-u0001) table:not(:has(img)) td{white-space:nowrap;vertical-align:middle}
+.reading:has(:is(#rk-section-052-u0001,#rk-section-053-u0001)) table td:not(:has(img)){white-space:nowrap}
+.reading:has(:is(#rk-section-056-u0001,#rk-section-057-u0001,#rk-section-058-u0001)) table td:not(:has(img)){white-space:nowrap}
+.reading:has(#rk-section-066-u0001) table td:not(:has(img)) { white-space: nowrap; vertical-align: middle; }
+.reading:has(#rk-section-067-u0001) table td { white-space: nowrap; vertical-align: middle; }
+.reading:has(#rk-section-071-u0001) table td { white-space: nowrap; vertical-align: middle; }
+.reading:has(#rk-section-071-u0001) table .xxxlg { font-size: 300%; line-height: 1; }
+.reading:has(#rk-section-076-u0001) table td { white-space: nowrap; vertical-align: middle; }
+.reading:has(#rk-section-076-u0001) table .xxxlg { font-size: 300%; line-height: 1; }
+
+/* Keep analytical symbols and key names intact while anthology tables scroll. */
+.reading:has(#omt-anthology-harmony-u0001) table:has(thead) :is(th,td:nth-child(n+4)){white-space:nowrap}
+
+/* Meter anthology: keep numerical fields intact and bilingual names readable. */
+.reading:has(#omt-anthology-meter-u0001) table :is(th,td:nth-child(3),td:nth-child(4),td:nth-child(7),td:nth-child(8)){white-space:nowrap}
+.reading:has(#omt-anthology-meter-u0001) table td:first-child{min-width:10em}
+.reading:has(#omt-anthology-meter-u0001) table td:is(:nth-child(2),:nth-child(5),:nth-child(9)){min-width:14em}
+.reading:has(#omt-anthology-meter-u0001) table td:last-child{min-width:18em}
+.reading:has(#omt-anthology-meter-u0001) .source-cell-label{font-size:.86em;color:var(--muted)}
+
+/* Twelve-tone anthology: readable bilingual metadata and intact pitch classes. */
+.reading:has(#omt-anthology-twelve-tone-u0001) table th{white-space:nowrap}
+.reading:has(#omt-anthology-twelve-tone-u0001) table td:first-child{min-width:11em}
+.reading:has(#omt-anthology-twelve-tone-u0001) table td:nth-child(2){min-width:24em}
+.reading:has(#omt-anthology-twelve-tone-u0001) table td:nth-child(3){min-width:8em}
+.reading:has(#omt-anthology-twelve-tone-u0001) table td:nth-child(n+4){white-space:nowrap;text-align:center;min-width:2em}
+
+/* Reader feedback: restrained type hierarchy and usable reference material. */
+html{background:var(--paper);overflow-y:scroll}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.library-header{padding:.65rem 1.4rem;gap:1rem;min-height:3.5rem}
+.library-name{font-size:18px}
+.reader-layout{grid-template-columns:245px minmax(0,1fr)}
+.reading-stack{min-width:0}
+.reading{max-width:1040px;padding:2rem 2.5rem 4rem}
+.reading h1{font-size:1.85em}
+.reading h2{font-size:1.35em}
+.reading .english{margin:1.2rem 0 1.8rem;padding:.35rem 0}
+.compact-section{margin:1rem 0 1.4rem}
+.compact-section h2,.compact-section h3{font:600 1em/1.6 'Microsoft JhengHei','PingFang TC',sans-serif;margin:0 0 .25rem;text-align:left}
+.compact-section p{margin:.3rem 0 .6rem}
+.compact-section .english{margin:.5rem 0 0;border:0}
+.compact-section+.bilingual-section> .translation-unit:first-child h2{margin-top:1.4rem}
+.external::after,.external-resource .external::after{content:' ↗';font-family:system-ui,sans-serif;font-size:.9em;color:var(--link);white-space:nowrap}
+.reading a.external.missing-linked-score::after{content:' ↗ ' attr(data-resource-status)}
+.external-resource{background:transparent;border-left:2px solid var(--line);padding:.25em .8em;margin:.7em 0}
+.external-resource a{font-size:.94em}
+.external-resource .missing-score{margin:.5em 0}
+.chapter-contents{margin:1.2rem 0 2rem;padding:0 0 1rem;border-bottom:1px solid var(--line)}
+.chapter-contents h2{font:600 1em/1.6 'Microsoft JhengHei','PingFang TC',sans-serif;margin:.6rem 0}
+.chapter-contents>ul{columns:2;column-gap:2rem;padding-left:1.2em}
+.chapter-contents li{break-inside:avoid;margin:.45em 0}
+.chapter-contents a{font-size:.95em}
+.example-range{margin:.75em 0}
+.example-range>summary{font-weight:600;cursor:pointer}
+.example-range ul{columns:2;padding-left:1.2em}
+.original-heading,.backlinks{margin:1.2rem 0;font-size:.9em}
+.original-heading>summary,.backlinks>summary{cursor:pointer;color:var(--muted)}
+.repeated-page-title{display:none}
+.book-titlepage{margin:1.5rem 0;padding:1.5rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.book-titlepage .titlepage-line{font:inherit;margin:.8em 0;line-height:1.8;text-align:left}
+.book-titlepage i{font-style:normal}
+.book-titlepage .centerbp{text-align:left;font-size:.92em}
+.reading .notes{padding:0;margin:0;line-height:1.9}
+.reading .notes .center{text-align:left}
+.lettered-part{padding:.6rem 0 .8rem 1.1rem;margin:1.4rem 0;border-left:2px solid var(--line)}
+.lettered-part .part-label{font:600 1.05em/1.4 'Microsoft JhengHei','PingFang TC',sans-serif;margin:0 0 .5rem;color:var(--ink)}
+.lettered-part .translation-unit>p:first-of-type{margin-top:0}
+.lettered-part .translator-note{margin-top:1rem}
+.reading .structured-labels{font-size:.93em;color:var(--ink);line-height:1.85;margin:.8rem 0 1.5rem}
+.label-section+.label-section{border-top:1px solid var(--line);margin-top:1.2rem;padding-top:.6rem}
+.label-section p{margin:.5em 0}
+.label-terms{columns:2;column-gap:2rem;padding-left:1.2em;margin:.6rem 0}
+.label-terms li{break-inside:avoid;margin:.25em 0}
+.score-page{padding-bottom:1.5rem;margin-bottom:2rem;border-bottom:1px solid var(--line)}
+.score-page figure{margin:1.5rem 0 .8rem}
+.score-page img{max-height:none;width:100%;max-width:44rem;object-fit:contain}
+.score-page figcaption{font-weight:600;font-size:1em;color:var(--ink)}
+.drum-reference{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:1.2rem;align-items:start;margin:1.5rem 0}
+.drum-reference .reference-figure{position:sticky;top:4.8rem}
+.drum-reference figure{margin:0}
+.drum-reference img{max-height:52vh;width:100%;object-fit:contain}
+.drum-reference .structured-labels{font-size:.82em}
+.drum-reference .drum-set{display:block;margin:0;font-size:.94em;overflow:visible}
+.drum-reference .drum-set thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.drum-reference .drum-set tbody{display:block}
+.drum-reference .drum-set tr{display:grid;grid-template-columns:1.8em minmax(0,1fr);gap:.15em;margin:0 0 1.1rem;border-bottom:1px solid var(--line);padding-bottom:1rem}
+.drum-reference .drum-set td{display:block;padding:0;border:0;min-width:0}
+.drum-reference .drum-set td:first-child{font-weight:700}
+.drum-reference .drum-set td:nth-child(2){font-weight:600}
+.drum-reference .drum-set td:nth-child(3){grid-column:1/-1;margin-top:.5em}
+.drum-reference .drum-set aside{font-weight:400;margin:.4em 0}
+.volume-links{display:flex;gap:2rem;flex-wrap:wrap;margin:1.5rem 0}
+.book-index-link{display:block;margin:.25rem 0 1rem}
+.legacy-anchor{display:none}.legacy-anchor:target{display:block}
+.moved-source{font-size:.85em;color:var(--muted)}
+.continuation{padding:1rem 2.5rem 3rem;color:var(--muted);text-align:center}
+.reading-stack>.reading+.reading{border-top:3px solid var(--line);padding-top:2.5rem}
+#continuous-toggle[aria-pressed=true]{background:var(--link);color:var(--paper);border-color:var(--link)}
+.library-home h1{font-size:2.4rem}.home-intro{font-size:1.05rem}
+@media(max-width:900px){.reader-layout{display:block}.reading{padding:1.7rem 1.5rem 3rem}.chapter-contents>ul{columns:1}.book-sidebar{top:0}}
+@media(max-width:600px){
+ .library-header{padding:.6rem .75rem;gap:.6rem}.reader-controls{flex-wrap:wrap;justify-content:flex-end;gap:.25rem}
+ .library-name{font-size:17px}.reader-controls button{font-size:12px}.reading{padding:1.4rem 1rem 3rem}
+ .drum-reference{display:block}.drum-reference .reference-figure{position:sticky;top:4.3rem;background:var(--paper);z-index:2;padding-bottom:.5rem;border-bottom:1px solid var(--line)}
+ .drum-reference img{max-height:27vh;margin:0 auto}.drum-reference figcaption{display:none}.drum-reference .structured-labels{font-size:.75em;margin:.2rem 0;line-height:1.5}
+ .drum-reference .drum-set{margin-top:1rem}.label-terms,.example-range ul{columns:1}
+ .volume-links{gap:1rem}.continuation{padding:1rem}
+}
+.reading:has(#omt-anthology-twelve-tone-u0001) .source-cell-label{font-size:.86em;color:var(--muted)}
+
+.publication-note{font-size:.85rem;color:var(--muted);margin:2rem 0;padding:1rem 0;border-top:1px solid var(--border)}.publication-external-media{display:block;padding:1rem 0}.publication-license{max-width:52rem;margin:auto;padding:2rem 1.5rem;line-height:1.8}

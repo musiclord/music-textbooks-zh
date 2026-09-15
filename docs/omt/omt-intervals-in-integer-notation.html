@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>整數記譜法中的音程 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-intervals-in-integer-notation.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group" open=""><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a aria-current="page" href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-intervals-in-integer-notation" data-book="omt" data-page-url="/omt/omt-intervals-in-integer-notation.html" data-next-url="/omt/omt-pc-sets-normal-order-and-transformations.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">整數記譜法中的音程</h1><p class="authors">Megan Lavengood and Brian Moseley</p><section class="bilingual-section"><div class="translation-unit" id="omt-intervals-in-integer-notation-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>分析<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-atonal">無調性</a>音樂時，直接以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-half-step-semitone">半音</a>數理解音程，可能比使用調性音程名稱更合適。</li><li>有四種音程概念：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-pitch-interval">有序音高音程</a>：計算兩個音高相距幾個半音，並用正負號（＋／−）表示方向。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-unordered-pitch-intervals">無序音高音程</a>：計算兩個音高相距幾個半音，但不表示方向，不加正負號。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-pitch-class-interval">有序音高類音程</a>：在鐘面般的音高類空間中，一律順時針、向上計算距離。就像十二小時制時鐘，從9點走到5點是8小時，而不是4小時。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-interval-class-ic">音程類</a>，也就是無序音高類音程：取兩個音高類之間最短的半音距離，因此數值不超過6。</li></ul></li><li>有序音高音程最具體：指定音高所在的八度，也指出進行方向。</li><li>音程類最抽象：只保留兩個音高類之間可能的最短距離。</li></ul></div></div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0002"><p>在<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tonal">調性</a>音樂中，音程的意義取決於構成它的音高；其協和、不協和的判斷，與<em>調性脈絡本身</em>密切相關。想像G與B♭形成的小三度：在G小調中，它是協和音程。若改寫為G與A♯，例如放在B小調中，就成為不協和的增二度。因此，從調性角度看，即使鋼琴上按的是同一組琴鍵，這兩種音程在不同調性脈絡中仍不相同（<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0003">例1</a>）。</p></div><aside class="translator-note">譯註：這裡的協和／不協和，指調性理論中的拼寫、和聲功能與聲部進行判斷；在十二平均律鋼琴上，同一組琴鍵的物理頻率不會因拼寫而改變。</aside><div class="translation-unit" id="omt-intervals-in-integer-notation-u0003"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="同音異名音程譜例（外部網站，另開分頁）">同音異名音程譜例</a><p class="score-source">原章嵌入譜的完整單頁原圖，已保存供離線閱讀，附中文圖例。 <a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>例1，同音異名音程的完整單頁原譜。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><ul class="label-terms"><li>consonant mi3＝協和的小三度；</li><li>Same pitches—different notes!＝相同音高，卻是不同拼寫的音符；</li><li>dissonant A2＝不協和的增二度。</li></ul><ul class="label-terms"><li>左邊Gmi表示G小調，i–ii°⁶–V–i；</li><li>右邊Bmi表示B小調，vii°四三–i⁶–vii°六五–i。</li></ul><p>藍色標記分別突出G–B♭與G–A♯，以和聲脈絡說明同音異名的不同功能。</p></section></div></div></div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0004"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0003">例1。</a>B♭與A♯雖然是同一個琴鍵，小三度與增二度在調性理論中仍有區別。</span></p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0005"><p>對照無調性音樂：當分析不以調性為依據時，B♭與A♯的拼寫差別便可不予區分，G–B♭與G–A♯也就視為相同音程。因此，本章不用「小三度」這類調性音程名稱，而改用兩個音高或音高類之間的半音數來衡量。</p></div><aside class="translator-note">譯註：本章為音高類集合分析而採同音異名等價；不表示所有無調性或後調性作品都必須忽略拼寫。前章註腳已提醒，分析方式須依作品決定。</aside><div class="translation-unit" id="omt-intervals-in-integer-notation-u0006"><p>描述音程時，可以考慮兩組資訊：<strong>音高或音高類</strong>，以及<strong>有序或無序</strong>。兩者組合後，形成四種音程概念，整理於<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0007">例2</a>，下文會逐一說明。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0007"><table id="zh-omt-intervals-in-integer-notation-tablepress-18" class="tablepress tablepress-id-18 header-column score-table"><thead><tr class="row-1 odd"><th class="column-1"> </th><th class="column-2">音高音程</th><th class="column-3">音高類音程</th></tr></thead><tbody><tr class="row-2 even"><td class="column-1">有序</td><td class="column-2">有序音高音程</td><td class="column-3">有序音高類音程</td></tr><tr class="row-3 odd"><td class="column-1">無序</td><td class="column-2">無序音高音程</td><td class="column-3">無序音高類音程／音程類（IC）</td></tr></tbody></table></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0008"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0007">例2。</a>無調性理論中的四種音程概念。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>When analyzing <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-atonal">atonal</a> music, intervals may be better understood as a number of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-half-step-semitone">semitones</a>, rather than using tonal interval names.</li>
+<li>There are four types of interval:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-pitch-interval">Ordered pitch intervals</a> measure the number of semitones between pitches, and indicate direction with a plus or minus sign (+/−).</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-unordered-pitch-intervals">Unordered pitch intervals</a> measure the number of semitones between pitches, but do not indicate direction (no +/−).</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-pitch-class-interval">Ordered pitch class intervals</a> measure the distance between two pitches in pitch class space (the clock face), always moving clockwise (ascending). This is similar to measuring time on a 12-hour clock: 9–5 is 8 hours, never 4.</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-interval-class-ic">Interval classes</a> (unordered pitch class intervals) represent the smallest possible distance in semitones between two pitch classes; therefore, an interval class is always ≤6.</li>
+</ul>
+</li>
+<li>Ordered pitch intervals are as specific as possible: they measure specific pitches (in specific octaves) and represent the directionality of the interval.</li>
+<li>Interval classes are the most abstract type of interval: they represent the smallest possible distance between two pitch classes.</li>
+</ul>
+</div>
+</div><p>In <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tonal">tonal</a> music, because intervals are dependent upon the pitches that create them, the consonance and dissonance of intervals is determined <em>by tonality itself</em>. Imagine the interval created by G and B♭, a minor third. In the context of G minor, this is a consonant interval. Respelled as G and A♯, perhaps in the context of B minor, it creates a dissonant augmented second. From a tonal perspective, then, the two intervals are different in these different tonal contexts, even though they are the same keys on a piano keyboard (<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0003">Example 1</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete single-page original from the chapter embed, saved for offline reading. <a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/5706820/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>Example 1, complete original single-page score of enharmonically equivalent intervals.</figcaption></figure></div></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0003">Example 1</a>. Even though B♭ and A♯ are the same key on the keyboard, the intervals of a minor third and an augmented second are distinct in tonal theory.</span></p><p>Contrast this with atonal music. Because atonal music has no tonality, the distinction between B♭ and A♯ no longer matters. In this context, the intervals G–B♭ and G–A♯ <em>are</em> the same. For this reason, we will not use tonal interval names like "minor third." Instead, we will measure the intervals by the number of semitones between the pitches or pitch classes.</p><p>We can describe intervals according to two types of information: <strong>pitches vs. pitch classes, </strong>and <strong>ordered vs. unordered </strong>intervals. Combined, this makes four types of intervals, summarized in <a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0007">Example 2</a>. Each of these interval types is explained below.</p><table id="en-omt-intervals-in-integer-notation-tablepress-18" class="tablepress tablepress-id-18 header-column score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1"> </th>
+<th class="column-2">pitch intervals</th>
+<th class="column-3">pitch-class intervals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-2 even">
+<td class="column-1">ordered intervals</td>
+<td class="column-2">ordered pitch intervals</td>
+<td class="column-3">ordered pitch-class intervals</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">unordered intervals</td>
+<td class="column-2">unordered pitch intervals</td>
+<td class="column-3">unordered pitch-class intervals / interval classes (IC)</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0007">Example 2</a>. Four interval types in atonal theory.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intervals-in-integer-notation-u0009"><h2 id="zh-omt-intervals-in-integer-notation-chapter-509-section-1" class="section-header"><a id="zh-omt-intervals-in-integer-notation-pitch-intervals-pi"></a>音高音程：有序與無序</h2></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0010"><figure id="zh-omt-intervals-in-integer-notation-attachment_2818" aria-describedby="zh-omt-intervals-in-integer-notation-caption-attachment-2818" class="wp-caption alignright"><a href="../assets/omt/2976bdc09f292e78.png"><img class="size-medium wp-image-2818 zoomable" src="../assets/omt/2976bdc09f292e78.png" alt="兩組音高比較：C♯₄到A♭₅為有序＋19、無序19；A₅到D♯₅為有序−6、無序6。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/ordered-vs-unordered-pitch-interval.png" loading="lazy" tabindex="0" role="button" width="995" height="583"></a><figcaption id="zh-omt-intervals-in-integer-notation-caption-attachment-2818" class="wp-caption-text"><span class="example-caption-name">例3。</span>上排是有序音高音程：半音數加上正負號，以表示方向。下排是無序音高音程：不考慮方向，因此不加正負號。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>ordered pitch interval＝有序音高音程；</li><li>unordered pitch interval＝無序音高音程。</li></ul><ul class="label-terms"><li>左側C♯₄→A♭₅上行19個半音；</li><li>右側A₅→D♯₅下行6個半音。</li></ul><p>上排保留＋19／−6的方向，下排只保留19／6的距離。</p></section></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0011"><p>音高音程以半音數衡量兩個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch">音高</a>的距離，會考慮所在八度。因此，C<sub>4</sub>–E<sub>4</sub>的距離為4個半音；若E升高八度，成為C<sub>4</sub>–E<sub>5</sub>，距離就變成16：原本C到E的4個半音，再加上低E到高E的一個八度，即12個半音。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0012"><p>音高音程分有序與無序。<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-pitch-interval">有序音高音程</a>加上正負號，分別表示上行與下行；<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-unordered-pitch-intervals">無序音高音程</a>則不表示音高移動的方向，因此較適合描述同時發聲的和聲音程。<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0010">例3</a>整理了兩者的差別。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intervals-in-integer-notation-chapter-509-section-1" class="section-header"><a id="en-omt-intervals-in-integer-notation-pitch-intervals-pi"></a>Pitch Intervals (ordered and unordered)</h2><figure id="en-omt-intervals-in-integer-notation-attachment_2818" aria-describedby="en-omt-intervals-in-integer-notation-caption-attachment-2818" class="wp-caption alignright"><a href="../assets/omt/2976bdc09f292e78.png"><img class="size-medium wp-image-2818 zoomable" src="../assets/omt/2976bdc09f292e78.png" alt="Notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/ordered-vs-unordered-pitch-interval.png" loading="lazy" tabindex="0" role="button" width="995" height="583"></a><figcaption id="en-omt-intervals-in-integer-notation-caption-attachment-2818" class="wp-caption-text"><span class="example-caption-name">Example 3.</span> The top row of examples shows ordered pitch intervals: the number of semitones between the pitches, with a plus or minus sign to indicate direction. The bottom row shows unordered intervals, which simply disregard the direction and thus drop the plus or minus sign.</figcaption></figure><p>Pitch intervals are the distance between <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch">pitches</a> as measured in semitones, which is to say that octave is taken into consideration. Thus, the interval C<sub>4</sub>–E<sub>4</sub> is 4: four semitones are between these notes. But if that E is moved up an octave (C<sub>4</sub>–E<sub>5</sub>), the interval becomes 16: four semitones between C and E, plus an octave (twelve semitones) between the lower E and the higher E.</p><p>Within pitch intervals, there are ordered and unordered variants. To create an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-pitch-interval">ordered pitch interval</a>, simply add a plus or minus sign to indicate whether the interval is ascending or descending. <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-unordered-pitch-intervals">Unordered pitch intervals</a>, by contrast, do not indicate which direction the pitches move in—they are thus more suitable for harmonic intervals. The differences between ordered and unordered pitch intervals are summarized in <a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0010">Example 3</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intervals-in-integer-notation-u0013"><h2 id="zh-omt-intervals-in-integer-notation-chapter-509-section-2" class="section-header  pitch-class-intervals"><a id="zh-omt-intervals-in-integer-notation-pitch-class-intervals"></a>有序音高類音程</h2></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0014"><p>音高類音程，是在鐘面般的音高類空間中，以半音數衡量兩個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class">音高類</a>的距離。回到C<sub>4</sub>–E<sub>5</sub>的例子，現在只關心C與E這兩個音高類，不再指定八度。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0015"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-pitch-class-interval">有序音高類音程</a>一律向上計算音高類之間的距離。想像十二個音圍成鐘面，然後順時針繞行，就很容易理解。因此，C到E為4，E到C卻是8（<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0016">例4</a>）。這與十二小時制時鐘的計時方式相似：上午9點上班，到下午5點下班，共8小時；A（音高類9）到F（音高類5）的有序音高類音程，同樣是8。</p></div><aside class="translator-note">譯註：本文以C與E另舉4／8的例子；例4實圖使用的卻是C♯與A♭（音高類1→8，得7），以及A與D♯（9→3，得6）。它們示範相同計算原則，並非圖中文字的4與8漏印。所謂向上，是音高類鐘面的約定方向，不是要求原旋律實際上行。</aside><div class="translation-unit" id="omt-intervals-in-integer-notation-u0016"><figure id="zh-omt-intervals-in-integer-notation-attachment_2821" aria-describedby="zh-omt-intervals-in-integer-notation-caption-attachment-2821" class="wp-caption aligncenter"><a href="../assets/omt/a10bb35b36315de6.png"><img class="wp-image-2821 size-medium zoomable" src="../assets/omt/a10bb35b36315de6.png" alt="有序音高類音程：左側C♯到A♭，1順時針到8為7；右側A到D♯，9順時針到3為6。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2019-09-10-at-12.27.55-PM.png" loading="lazy" tabindex="0" role="button" width="1001" height="679"></a><figcaption id="zh-omt-intervals-in-integer-notation-caption-attachment-2821" class="wp-caption-text"><span class="example-caption-name">例4。</span>有序音高類音程一律沿鐘面順時針計算。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>ordered pitch-class interval＝有序音高類音程；</li><li>7 semitones＝7個半音；</li><li>6 semitones＝6個半音。</li></ul><ul class="label-terms"><li>左鐘面1→8繞行7格；</li><li>右鐘面9→3跨過0，共6格。</li></ul><ul class="label-terms"><li>圖中T代表10、E代表11；</li><li>這裡的E是eleven的代號，不是音名E（音高類4）。</li></ul></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intervals-in-integer-notation-chapter-509-section-2" class="section-header  pitch-class-intervals"><a id="en-omt-intervals-in-integer-notation-pitch-class-intervals"></a>Ordered Pitch-Class Intervals</h2><p>Pitch-class intervals are the distance between <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class">pitch classes</a> as measured in semitones in pitch class space—that is, around the clock face. Returning to our C<sub>4</sub>–E<sub>5</sub> interval, we are now interested just in the pitch classes C and E, without reference to a specific octave.</p><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-pitch-class-interval">Ordered pitch-class intervals</a> measure the distance between pitch classes, always ascending. This is visualized most easily by picturing the twelve tones around a clock face, then measuring the interval by going around the circle clockwise. Thus, from C to E = 4, but E to C = 8 (<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0016">Example 4</a>). In everyday life, this is similar to measuring time on a twelve-hour clock, or calculating the duration of a shift at work: if you arrive at work at 9:00 am and work until 5:00 pm, that's 8 hours; the ordered pitch class interval from A (pc 9) to F (pc 5) is also 8.</p><figure id="en-omt-intervals-in-integer-notation-attachment_2821" aria-describedby="en-omt-intervals-in-integer-notation-caption-attachment-2821" class="wp-caption aligncenter"><a href="../assets/omt/a10bb35b36315de6.png"><img class="wp-image-2821 size-medium zoomable" src="../assets/omt/a10bb35b36315de6.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2019-09-10-at-12.27.55-PM.png" loading="lazy" tabindex="0" role="button" width="1001" height="679"></a><figcaption id="en-omt-intervals-in-integer-notation-caption-attachment-2821" class="wp-caption-text"><span class="example-caption-name">Example 4</span>. Ordered pitch class intervals always travel clockwise around the clock face.</figcaption></figure></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intervals-in-integer-notation-u0017"><h2 id="zh-omt-intervals-in-integer-notation-chapter-509-section-3" class="section-header"><a id="zh-omt-intervals-in-integer-notation-interval-class"></a>音程類（IC）</h2></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0018"><p>無序音高類音程通常稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-interval-class-ic">音程類</a>，也就是兩個音高類之間可能的最短距離。在鐘面上，可以順時針，也可以逆時針，取路徑較短的一邊。這個概念將某音程、它的轉位，以及它們的各種複音程形式聯繫起來。你可以類比音高與音高類的關係：一個音高類包含某音高、它的同音異名拼寫，以及這些拼寫移動任意八度後的音高。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0019"><p>因此，不同音高類之間只有六種非零音程類：1、2、3、4、5、6。順時針音程若達7，逆時針就較短，因此歸為5；同理，8歸為4、9歸為3，依此類推。C–E與E–C都屬於音程類4（<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0020">例5</a>）。</p></div><aside class="translator-note">譯註：原文「只有六種」指不同音高類之間的非零音程類1至6。同一音高類之間的距離為0，例如同音或八度，可記IC0。本文C–E的IC4是另舉的例子；例5實圖則是C♯／A♭的IC5，以及A／D♯的IC6。</aside><div class="translation-unit" id="omt-intervals-in-integer-notation-u0020"><figure id="zh-omt-intervals-in-integer-notation-attachment_2824" aria-describedby="zh-omt-intervals-in-integer-notation-caption-attachment-2824" class="wp-caption aligncenter"><a href="../assets/omt/826b8d97fe59c23c.png"><img class="wp-image-2824 size-medium zoomable" src="../assets/omt/826b8d97fe59c23c.png" alt="無序音高類音程：C♯與A♭取最短5個半音；A與D♯無論方向都相距6個半音。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2019-09-10-at-12.36.47-PM.png" loading="lazy" tabindex="0" role="button" width="1046" height="673"></a><figcaption id="zh-omt-intervals-in-integer-notation-caption-attachment-2824" class="wp-caption-text"><span class="example-caption-name">例5。</span>無序音高類音程又稱音程類，衡量兩個音高類之間可能的最短距離。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>unordered pitch-class interval＝無序音高類音程，即音程類。</p><p>5 semitones＝5個半音，6 semitones＝6個半音。</p><ul class="label-terms"><li>左圖的1與8之間，取較短的5格；</li><li>右圖的9與3位於鐘面兩端，兩個方向都是6格。</li></ul><p>T＝10、E＝11，不是音名。</p></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intervals-in-integer-notation-chapter-509-section-3" class="section-header"><a id="en-omt-intervals-in-integer-notation-interval-class"></a>Interval Classes (IC)</h2><p>Unordered pitch-class intervals are usually called interval classes. <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-interval-class-ic">Interval class</a> is the smallest possible distance between two pitch classes. On the clock face, this means traveling either clockwise or counter-clockwise, whichever is shortest. Interval class is a useful concept because it relates intervals, their inversions, and any compound versions of those intervals. You should be able to connect this concept to the concept of pitch vs. pitch class: a pitch class is a pitch, its enharmonic respelling(s), and any octave displacements of those spellings.</p><p>This means that there are only six interval classes: 1, 2, 3, 4, 5, and 6. If you reach the pitch class interval of 7, it becomes shorter to move counter-clockwise, and 7 becomes 5. For the same reason, 8 becomes 4, 9 becomes 3, and so on. Both C–E and E–C are interval class 4 (<a class="example-caption-name" href="../omt/omt-intervals-in-integer-notation.html#omt-intervals-in-integer-notation-u0020">Example 5</a>).</p><figure id="en-omt-intervals-in-integer-notation-attachment_2824" aria-describedby="en-omt-intervals-in-integer-notation-caption-attachment-2824" class="wp-caption aligncenter"><a href="../assets/omt/826b8d97fe59c23c.png"><img class="wp-image-2824 size-medium zoomable" src="../assets/omt/826b8d97fe59c23c.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2019-09-10-at-12.36.47-PM.png" loading="lazy" tabindex="0" role="button" width="1046" height="673"></a><figcaption id="en-omt-intervals-in-integer-notation-caption-attachment-2824" class="wp-caption-text"><span class="example-caption-name">Example 5.</span> Unordered pitch class intervals are also known as interval classes. Interval classes measure the smallest possible distance between pitch classes.</figcaption></figure></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-intervals-in-integer-notation-u0021"><h2 id="zh-omt-intervals-in-integer-notation-chapter-509-section-4" class="section-header  summary"><a id="zh-omt-intervals-in-integer-notation-summary"></a>整理</h2></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0022"><p>把音高音程／音高類音程，與有序／無序這兩組條件組合，就得到四種音程概念。要理解各自的分析用途，可以把它們放在一條從最具體到最抽象的尺度上：一端是有序音高音程，另一端是無序音高類音程。〈<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="集合論速查表（外部網站，另開分頁）">集合論速查表</a>〉也整理了它們與其他概念的關係。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0023"><p>在調性音樂中，有時區分十三度與六度很有用，有時則不必。同樣地，分析無調性音樂時，你會發現不同音程概念，適合描述不同現象。</p></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0024"><div class="textbox shaded further-reading">延伸閱讀</div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0025"><div class="csl-bib-body"><ul><li class="csl-entry">Straus, Joseph N。2016。《<i>Introduction to Post-Tonal Theory</i>》（後調性理論導論），第4版。紐澤西州Upper Saddle River：Prentice Hall。</li></ul></div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0026"><div class="textbox shaded"><a id="zh-omt-intervals-in-integer-notation-resources"></a>資源</div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0027"><ul><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-integers.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="空白鐘面（整數記譜）（外部網站，另開分頁）">空白鐘面（整數記譜）</a></li><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-letters.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="空白鐘面（字母音名）（外部網站，另開分頁）">空白鐘面（字母音名）</a></li><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="集合論速查表（外部網站，另開分頁）">集合論速查表</a>：整理音高與音高類、音程與音程類、集合與集合類的定義。</li></ul></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0028"><div class="textbox shaded"><a id="zh-omt-intervals-in-integer-notation-assignments"></a>作業</div></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0029"><ol><li>音程（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-intervals.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-intervals.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="DOCX文件（外部網站，另開分頁）">DOCX文件</a>）。練習以整數記譜法辨認樂曲中的音程類型。<a class="little-button external" href="https://open.spotify.com/playlist/0eyE798Pe63OxdxKpgBVAr?si=GDUMiZP5Toaa_kA9_2AttQ" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a></li></ol></div><div class="translation-unit" id="omt-intervals-in-integer-notation-u0030"><div class="media-attributions clear"><h2>媒體來源與授權</h2><ul><li>有序與無序音高音程圖，© Bryn Hughes，Megan Lavengood改編，採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>有序音高類音程圖，© Bryn Hughes，Megan Lavengood改編，採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>音高類圖，© Bryn Hughes，Megan Lavengood改編，採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li></ul></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-intervals-in-integer-notation-chapter-509-section-4" class="section-header  summary"><a id="en-omt-intervals-in-integer-notation-summary"></a>Summary</h2><p>Using various combinations of pitch interval, pitch-class interval, ordered, and unordered, we arrive at four different conceptions of interval.To wrap your mind around each of these and begin to understand their various analytical uses, think of them on a sliding scale of most concrete (the ordered pitch interval) to most abstract (the unordered pitch-class interval). You can find this related to other concepts in the <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Set Theory Quick Reference Sheet（外部網站，另開分頁）">Set Theory Quick Reference Sheet</a>.</p><p>In tonal music, it’s useful to distinguish between a thirteenth and a sixth in some situations, but not others. In the same way, as you analyze atonal music, you will find that different types of intervals are useful for describing different types of phenomena.</p><div class="textbox shaded further-reading">Further reading</div><div class="csl-bib-body">
+<ul>
+<li class="csl-entry">Straus, Joseph N. 2016. <i>Introduction to Post-Tonal Theory</i>. 4<sup>th</sup> ed. Upper Saddle River, NJ: Prentice Hall.</li>
+</ul>
+</div><div class="textbox shaded"><a id="en-omt-intervals-in-integer-notation-resources"></a>Resources</div><ul>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-integers.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Blank clock faces (integer notation)（外部網站，另開分頁）">Blank clock faces (integer notation)</a></li>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-letters.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Blank clock faces (letter names)（外部網站，另開分頁）">Blank clock faces (letter names)</a></li>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Set Theory Quick Reference Sheet（外部網站，另開分頁）">Set Theory Quick Reference Sheet</a>: summarizes the definitions of pitch vs. pitch class, intervals vs. interval classes, and sets vs. set classes.</li>
+</ul><div class="textbox shaded"><a id="en-omt-intervals-in-integer-notation-assignments"></a>Assignments</div><ol>
+<li>Intervals (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-intervals.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-intervals.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Asks students to identify interval types (integer notation) within pieces of music. <a class="little-button external" href="https://open.spotify.com/playlist/0eyE798Pe63OxdxKpgBVAr?si=GDUMiZP5Toaa_kA9_2AttQ" target="_blank" rel="noopener noreferrer" aria-label="Worksheet playlist（外部網站，另開分頁）">Worksheet playlist</a></li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Ordered vs unordered pitch interval  ©  Bryn Hughes  adapted by  Megan Lavengood  is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Ordered pitch class intervals  ©  Bryn Hughes  adapted by  Megan Lavengood  is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Pitch classes  ©  Bryn Hughes  adapted by  Megan Lavengood  is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li></ul></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-pitch-and-pitch-class.html">上一節：音高與音高類</a><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">下一節：音高類集合、標準排序與變換</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/intervals-in-integer-notation/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note">本頁部分譜例以原來源連結提供。<a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

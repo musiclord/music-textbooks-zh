@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>和聲省略 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-harmonic-elision.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group" open=""><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a aria-current="page" href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-harmonic-elision" data-book="omt" data-page-url="/omt/omt-harmonic-elision.html" data-next-url="/omt/omt-reinterpreting-augmented-sixth-chords.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">和聲省略</h1><p class="authors">Brian Jarvis</p><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-elision">和聲省略</a>是將預期的和弦<em>省去</em>，與和弦替代有所不同。</li><li>導音型省略：<ul><li>預期的三和弦被同根音的屬七和弦取代，或被與該屬七和弦功能相同的減七和弦取代。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-leading-tone">導音</a>或<a href="../omt/omt-tonicization.html">副導音</a>不按預期上行小二度解決，而被降低為<em>te</em> [latex](\downarrow\hat7)[/latex]。</li><li>低音通常維持原本預期的音，除非前一個和弦的低音就是導音或副導音。</li></ul></li><li>升根音型省略：<ul><li>預期和弦的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-root">根音</a>被升高，成為導音或副導音。</li><li>新和弦通常可以是V、V<sup>7</sup>或vii<sup>o7</sup>。</li><li>低音應盡可能接近原本預期的低音。</li></ul></li></ul></div></div></div><div class="translation-unit" id="omt-harmonic-elision-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/6L0azYPopVuGiX68f9V6g1?si=331370beb5564ac1" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><div class="translation-unit" id="omt-harmonic-elision-u0003"><p>和聲省略（harmonic elision）是指和聲進行彷彿將一個預期的和弦省去，改以相似但功能不同的和弦取代，聽來常像兩個和聲事件同時結合在一起。這與和弦替代不同：和弦替代聽來通常只是一個出乎預期的事件。不過，有人會以較廣的意義使用「和弦替代」一詞，將本章所述的和聲省略也包含在內。本章介紹兩種省略：導音型省略與升根音型省略。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-elision">Harmonic elision</a> is the <em>suppression</em> of an expected chord (distinct from chord substitution).</li>
+<li>Leading-tone elision:
+<ul>
+<li>The expected triad is replaced by the dominant seventh chord with the same root or by a functionally equivalent diminished seventh chord.</li>
+<li>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-leading-tone">leading tone</a> (or <a href="../omt/omt-tonicization.html">applied leading tone</a>) is altered to become <em>te </em>[latex](\downarrow\hat7)[/latex] instead of resolving up by minor second.</li>
+<li>The same bass note is maintained unless the bass had the leading tone (or applied leading tone).</li>
+</ul>
+</li>
+<li>Raised-root elision:
+<ul>
+<li>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-root">root</a> of the expected chord is raised to become a leading tone (or applied leading tone).</li>
+<li>The new chord can typically be V, V<sup>7</sup>, or vii<sup>o7</sup>.</li>
+<li>The bass should be as close to the expected bass note as possible.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/6L0azYPopVuGiX68f9V6g1?si=331370beb5564ac1" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p><p>Harmonic elision occurs when a harmonic progression seems to suppress or remove an expected chord for one that is similar but functionally distinct from the chord it replaced. It often feels like the combination of two simultaneous harmonic events. This is different from chord substitution, where the replacement of an expected chord just seems like a single unexpected event. However, some use the term "chord substitution" in a broader sense that would also include harmonic elision as described here. This chapter covers two types of elision: leading-tone elision and raised-root elision.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0004"><h2 id="zh-omt-harmonic-elision-chapter-5597-section-1" class="section-header"><a id="zh-omt-harmonic-elision-context"></a>使用情境</h2></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-harmonic-elision-chapter-5597-section-1" class="section-header"><a id="en-omt-harmonic-elision-context"></a>Context</h2></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0005"><h2>使用屬七和弦的導音型省略</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0006"><p>當和弦中的導音或副導音沒有按預期上行小二度解決，而改為自身降低後的音，例如B變成B♭，或C♯變成C♮，就會出現導音型省略。具有屬功能的和弦若不解決到預期的三和弦，而改接與該三和弦同根音的屬七和弦，便可能發生這種情況，如<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">例1</a>。請注意，根據這個和聲情境的預期，我們可以清楚辨認被省去的是哪個和弦。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0007"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225476/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="以同根音屬七和弦省略預期三和弦的譜例（外部網站，另開分頁）">以同根音屬七和弦省略預期三和弦的譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0008"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">例1。</a>和聲省略：預期和弦被省去，改以同根音的屬七和弦取代。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Leading-tone elision with a dominant seventh chord</h2><p>A leading-tone elision occurs when a chord has a leading tone (or an applied leading tone) that doesn't resolve as expected (up by minor second) and instead becomes the lowered version of itself (e.g., B becomes B♭ or C♯ becomes C♮). This can happen when a dominant-functioning chord resolves not to the expected triad but to a dominant seventh with the same root as the expected triad, as in <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">Example 1</a>. Note that the suppressed chord can be clearly identified given what we expect to happen in this harmonic context.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225476/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">Example 1.</a> A harmonic elision where the expected chord is suppressed and replaced with a dominant seventh with the same root.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0009"><h2>使用全減七和弦的導音型省略</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0010"><p>預期的三和弦也可以被全減七和弦取代，形成導音型省略。這個全減七和弦，必須與原本可用來取代該三和弦的屬七和弦具有相同功能，並保持相同低音；前提是存在這樣的對應和弦。<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0011">例2</a>列出V<sup>7</sup>的各種轉位，以及可取代它們、功能相同的vii<sup>o7</sup>。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0011"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225477/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="功能相同的屬七與減七和弦對照譜例（外部網站，另開分頁）">功能相同的屬七與減七和弦對照譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0012"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0011">例2。</a>功能相同的V<sup>7</sup>與vii<sup>o7</sup>。</span></p></div><div class="translation-unit" id="omt-harmonic-elision-u0013"><p><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">例3</a>示範這種導音型省略。請注意，<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">例1</a>與<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">例3</a>幾乎相同，差別只在<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">例3</a>改用功能相同的全減七和弦（以vii<sup>o7</sup>取代[latex]\mathrm{V^6_5}).[/latex]</p></div><div class="translation-unit" id="omt-harmonic-elision-u0014"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225479/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="以全減七和弦造成導音型省略的譜例（外部網站，另開分頁）">以全減七和弦造成導音型省略的譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0015"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">例3。</a>和聲省略：預期和弦被省去，改接與<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">例1</a>中屬七和弦功能相同的全減七和弦。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Leading-tone elision with a fully diminished seventh chord</h2><p>Leading-tone elision can also occur when an expected triad is replaced by a fully diminished seventh chord that is functionally equivalent to the dominant seventh chord that could have replaced it (if there is one) and has the same bass note. <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0011">Example 2</a> shows each inversion of a V<sup>7</sup> chord and the functionally equivalent vii<sup>o7</sup> chord that can be used instead.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225477/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0011">Example 2.</a> Functionally equivalent V<sup>7</sup> and vii<sup>o7</sup> chords.</span></p><p><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">Example 3</a> contains an example of this type of leading-tone elision. Notice that <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">Examples 1 </a>and<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014"> 3</a> are nearly identical except that <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">Example 3</a> is using the functionally equivalent fully diminished seventh chord instead (vii<sup>o7</sup> instead of [latex]\mathrm{V^6_5}).[/latex]</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225479/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0014">Example 3.</a> A harmonic elision where the expected chord is suppressed and replaced with a fully diminished seventh chord that has an equivalent function to the dominant seventh in <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0007">Example 1</a>.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0016"><h2>導音型省略的聲部連接</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0017"><p>使用省略時，聲部連接不會改變太多。唯一的差別，是導音不再如常上行小二度、解決到下一個和弦的根音，而是降為自身較低的版本。聲部連接的比較見<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0018">例4</a>。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0018"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225480/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="一般解決與導音型省略的聲部連接比較譜例（外部網站，另開分頁）">一般解決與導音型省略的聲部連接比較譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0019"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0018">例4。</a>比較一般解決與省略後解決的聲部連接。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Voice leading with leading-tone elision</h2><p>When dealing with elision, the voice leading doesn’t change much; the only difference is that the leading tone becomes the lowered version of itself instead of resolving up by minor second to the root of the next chord as it normally would. See the voice-leading comparison in <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0018">Example 4.</a></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225480/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0018">Example 4.</a> Voice-leading comparison between a regular resolution and an elided one.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0020"><h2>導音位於低音時</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0021"><p>請記得，如果導音型省略之前的導音位於低音，低音就會偏離原本預期的解決，使接下來的和弦採用不同轉位。V6、V65與viio7，以及採用相同羅馬數字的副和弦，都可能出現這種情況，因為它們的低音都是導音。常見進行包括[latex]\mathrm{V^6_5-V^4_2/IV}[/latex]及[latex]\mathrm{V^6_5/V-V^4_2}[/latex]，如下方<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0022">例5</a>。其他情況中，低音會和原本預期的解決相同。</p></div><aside class="translator-note">譯註：本章所說低音「相同」或「改變」，是比較實際和弦與原本預期的解決。例如原本V到I的低音可以移動；若I被同根音的V7/IV取代，實際低音仍與原本預期的I相同，不是要求前後兩個和弦低音都保持同音。</aside><div class="translation-unit" id="omt-harmonic-elision-u0022"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225481/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="導音在低音時改變預期低音的省略譜例（外部網站，另開分頁）">導音在低音時改變預期低音的省略譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0023"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0022">例5。</a>導音位於低音、又發生導音型省略時，預期低音的改變。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>When the leading tone is in the bass</h2><p>It is important to remember that if the leading tone before a leading-tone elision is in the bass, this means the bass will change, putting the upcoming chord in a different inversion. This is expected to happen with V6, V65, and viio7 (and any applied chords with the same Roman numerals) because they all have the leading tone in the bass. Common progressions for this occurrence are [latex]\mathrm{V^6_5-V^4_2/IV}[/latex] and [latex]\mathrm{V^6_5/V-V^4_2}[/latex], as in <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0022">Example 5</a> below. In other situations, the bass note will stay the same.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225481/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0022">Example 5.</a> Change of expected bass when the leading tone is in the bass and a leading-tone elision occurs.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0024"><h2 id="zh-omt-harmonic-elision-chapter-5597-section-2" class="section-header"><a id="zh-omt-harmonic-elision-raised-root-elision"></a>升根音型省略</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0025"><p>升根音型省略是指預期和弦的根音以升高後的版本出現，例如B♭變成B♮，或C變成C♯，進而成為副和弦中的導音。例如，預期以C為根音的和弦被省去，改接一個以C♯作為導音的和弦，就是升根音型省略。任何包含C♯導音的和弦都可能使用：A、A<sup>7</sup>、C♯<sup>o</sup>、C♯<sup>o7</sup>或C♯<sup>∅7</sup>，但半減七的選擇較少見。整體和聲效果，是讓進行推向音階上更高的位置。<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0026">例6</a>依照這種風格的常規，原本預期的進行是[latex]\mathrm{I^6-V^4_3-I}[/latex]；但最後的I被升根音型省略略過，改由[latex]\mathrm{V^6_5/ii}[/latex]，也就是A<sup>7</sup>/C♯取代。這個和弦接著解決到ii。因此，原本朝I前進的和聲，最後透過升根音型省略解決到ii，比預期目標高一個音階級。</p></div><aside class="translator-note">譯註：「升根音」指被省去之預期和弦的根音，不一定是新和弦的根音。此例原本預期C和弦，C升成C♯後成為A7/C♯的三音與副導音；實際新和弦的根音仍是A。</aside><div class="translation-unit" id="omt-harmonic-elision-u0026"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225482/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="升根音型和聲省略譜例（外部網站，另開分頁）">升根音型和聲省略譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0027"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0026">例6。</a>升根音型省略。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-harmonic-elision-chapter-5597-section-2" class="section-header"><a id="en-omt-harmonic-elision-raised-root-elision"></a>Raised-Root Elision</h2><p>Raised-root elision occurs when the root of the expected chord arrives in its raised version (e.g., B♭ becomes B♮ or C becomes C♯) to become the leading tone in an applied chord. For example, a raised-root elision would occur if an expected chord with C as the root was suppressed and a chord with C♯ as a leading tone appeared instead. This could be any of the chords that use C♯ as a leading tone: A, A<sup>7</sup>, C♯<sup>o</sup>, C♯<sup>o7</sup> and C♯<sup>∅7</sup> (though the half-diminished option is not very common). The overall harmonic result is that the progression is pushed higher up the scale. In <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0026">Example 6</a>, the expected progression (based upon norms in this style) would be [latex]\mathrm{I^6-V^4_3-I}[/latex]. Instead, the final I chord is elided with a raised-root elision, because [latex]\mathrm{V^6_5/ii}[/latex] (A<sup>7</sup>/C♯) takes its place. That chord then resolves to ii, so while the expected progression was heading toward I, the end result of the raised-root elision is that the progression resolves to ii, one step higher in the scale.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225482/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0026">Example 6.</a> Raised-root elision.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0028"><h2>包含[latex]\mathrm{cad.^6_4}[/latex]的版本</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0029"><p>含有[latex]\mathrm{cad.^6_4}[/latex]的進行，也可以出現略有不同的升根音型省略：預期根音在[latex]\mathrm{cad.^6_4}[/latex]抵達時其實已經出現，但當[latex]^6_4[/latex]解決到[latex]\begin{smallmatrix}(7)\\5\\3\end{smallmatrix}[/latex]時，這個音才轉為升高後的版本。<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0030">例7</a>示範這種情況。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0030"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225483/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="終止四六中的升根音型省略譜例（外部網站，另開分頁）">終止四六中的升根音型省略譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0031"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0030">例7。</a>涉及[latex]\mathit{cad.^6_4}[/latex]的升根音型省略。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>The [latex]\mathrm{cad.^6_4}[/latex] version</h2><p>Progressions with [latex]\mathrm{cad.^6_4}[/latex] can contain raised-root elision that is a little different because the expected root does appear with the arrival of the [latex]\mathrm{cad.^6_4}[/latex] but transforms into its raised version when the [latex]^6_4[/latex] resolves to the [latex]\begin{smallmatrix}(7)\\5\\3\end{smallmatrix}[/latex]. <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0030">Example 7</a> illustrates this situation.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6225483/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0030">Example 7.</a> Raised root elision involving [latex]\mathit{cad.^6_4}[/latex].</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0032"><h2 id="zh-omt-harmonic-elision-chapter-5597-section-4" class="section-header"><a id="zh-omt-harmonic-elision-finding-harmonic-elision"></a>辨認和聲省略</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0033"><p>和聲省略在羅馬數字分析中相當容易察覺，因為符號的排列會出現不合預期之處。例如，看到[latex]\mathrm{V^6_5}[/latex]時，通常預期後面接I；但發生導音型省略時，可能看到[latex]\mathrm{V^6_5}[/latex]直接接[latex]\mathrm{V^4_2/IV}[/latex]，提醒你出現了預期之外的情況。檢視進行後，可以判斷這裡發生了和聲省略：和弦分析本身沒有錯，只是原本預期的和弦被省去了。升根音型省略也一樣；如果[latex]\mathrm{V^6_5/V}[/latex]後面直接接[latex]\mathrm{V^6_5/vi}[/latex]，而不是預期的V，進一步檢視便可發現V被省去，其根音升高成了vi的導音。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0034"><p><strong>記譜方式：</strong>遇到省略時，建議先寫出原本預期的羅馬數字，再將它劃掉，並標上實際出現的和弦符號。下方<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">例8</a>展示這種標記方式。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-harmonic-elision-chapter-5597-section-4" class="section-header"><a id="en-omt-harmonic-elision-finding-harmonic-elision"></a>Finding Harmonic Elision</h2><p>Harmonic elision is fairly easy to spot in Roman numeral analysis because you will notice incongruities in the sequence of symbols. For example, if you see the Roman numeral [latex]\mathrm{V^6_5}[/latex], you would expect I to follow, but with a leading-tone elision, you could see [latex]\mathrm{V^6_5}[/latex] followed directly by [latex]\mathrm{V^4_2/IV}[/latex], which should alert you to the fact that something unexpected has occurred. After looking at the progression, you can conclude that harmonic elision has taken place—you analyzed the chord correctly, but the chord you expected has been elided. The same is true for raised-root elision: if you saw [latex]\mathrm{V^6_5/V}[/latex] followed directly by [latex]\mathrm{V^6_5/vi}[/latex]instead of the expected V, you could investigate further and conclude that the V chord has been elided, with its root raised to become the leading tone of vi.</p><p><strong>Notation:</strong> When an elision occurs, it's good practice to write the expected Roman numeral in your analysis but then cross it out and place the symbol for the chord that actually occurred. <a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">Example 8</a> below shows an example of this style of notation.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-harmonic-elision-u0035"><h2 id="zh-omt-harmonic-elision-chapter-5597-section-5" class="section-header"><a id="zh-omt-harmonic-elision-musical-example"></a>作品範例</h2></div><div class="translation-unit" id="omt-harmonic-elision-u0036"><p>理查・史特勞斯的歌曲〈奉獻〉（Zueignung，<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">例8</a>），第一個樂句就包含三次和聲省略。第一次在第6小節第4拍：原本預期第3拍的 G 大調和弦後面會接 C 大調和弦，但 C 大調和弦被省去，改接包含C♯的和弦。這是升根音型省略，因為原本預期的根音是C，實際出現的和弦卻包含C♯，並讓C♯具有副導音的功能。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0037"><p>第二次和聲省略在第8小節：一個近似[latex]\mathrm{cad.^6_4}[/latex]的和弦，沒有解決到預期的[latex]^5_3[/latex]版本。這個近似終止四六的和弦少了原本預期的4–3部分，其餘方面則相當類似。預期根音G被省去，改為G♯，作為vi的副導音，因此又是一個升根音型省略。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0038"><p>第9小節再次出現這個近似[latex]\mathrm{cad.^6_4}[/latex]的和弦。這次雖然解決到以C為根音的和弦，仍不是預期的原位主三和弦，而是導音型省略：屬和弦的導音向下解決，使C和弦成為屬七和弦，也就是V<sup>7</sup>/IV。</p></div><div class="translation-unit" id="omt-harmonic-elision-u0039"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8395434/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="史特勞斯〈奉獻〉中多次和聲省略的譜例（外部網站，另開分頁）">史特勞斯〈奉獻〉中多次和聲省略的譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-harmonic-elision-u0040"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">例8。</a>理查・史特勞斯，〈<a href="https://open.spotify.com/track/7JrhfQSYMLDInj8x2X4IkF" target="_blank" rel="noopener noreferrer" class="external" aria-label="奉獻（外部網站，另開分頁）">奉獻</a>〉（Zueignung），Op. 10第1號，第1–10小節：同一樂句中的多次和聲省略。</span></p></div><div class="translation-unit" id="omt-harmonic-elision-u0041"><div class="textbox shaded"><a id="zh-omt-harmonic-elision-assignments"></a>作業</div></div><div class="translation-unit" id="omt-harmonic-elision-u0042"><ol><li>和聲省略（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/08/WK-Harmonic-Elision.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/08/WK-Harmonic-Elision.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>）：練習拼寫和弦、實現數字低音、依羅馬數字寫作四聲部連接，以及分析樂曲片段。</li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-harmonic-elision-chapter-5597-section-5" class="section-header"><a id="en-omt-harmonic-elision-musical-example"></a>Musical Example</h2><p>The first phrase of Richard Strauss's song "Zueignung" (<a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">Example 8</a>) includes three harmonic elisions. The first occurs on beat 4 of measure 6. It is expected that the G major chord on beat 3 will be followed by a C major chord, but the C major chord has been suppressed, and in its place, a chord with a C♯ is used instead. This is a raised-root elision because the expected root was C and a chord with C♯ occurred instead, with the C♯ functioning as an applied leading tone.</p><p>The second harmonic elision occurs in m. 8, where a quasi [latex]\mathrm{cad.^6_4}[/latex]  (without the expected 4–3 part of the chord, but otherwise quite similar) never resolves to its [latex]^5_3[/latex] version. Instead, the expected root, G, is suppressed and a G♯ appears in its place (as an applied leading tone to vi), making this another instance of a raised-root elision.</p><p>Measure 9 repeats the quasi [latex]\mathrm{cad.^6_4}[/latex] chord again. This time, it resolves to a chord with C as the root, but it still isn’t the root-position tonic triad we expect. Instead, we find a leading-tone elision: the dominant’s leading tone resolves down, making the C chord a dominant seventh (V<sup>7</sup>/IV).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8395434/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-harmonic-elision.html#omt-harmonic-elision-u0039">Example 8.</a> Richard Strauss, "<a href="https://open.spotify.com/track/7JrhfQSYMLDInj8x2X4IkF" target="_blank" rel="noopener noreferrer" class="external" aria-label="Zueignung（外部網站，另開分頁）">Zueignung</a>", Op. 10, no. 1, mm. 1–10 - Multiple harmonic elisions in a single phrase.</span></p><div class="textbox shaded"><a id="en-omt-harmonic-elision-assignments"></a>Assignments</div><ol>
+<li>Harmonic Elision (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/08/WK-Harmonic-Elision.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/08/WK-Harmonic-Elision.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>.) Asks students to spell chords, realize figured bass, write 4-part voice leading with Roman numerals, and analyze a musical excerpt.</li>
+</ol></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-common-tone-chords.html">上一節：共同音和弦</a><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">下一節：半音轉調</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/harmonic-elision/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

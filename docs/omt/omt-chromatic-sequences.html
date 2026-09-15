@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>半音模進 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-chromatic-sequences.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group" open=""><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a aria-current="page" href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-chromatic-sequences" data-book="omt" data-page-url="/omt/omt-chromatic-sequences.html" data-next-url="/omt/omt-the-omnibus-progression.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">半音模進</h1><p class="authors">Bryn Hughes</p><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>自然音模進在同一調內，依規律移調並重複音樂片段。</li><li>經半音化的自然音模進，可以加入半音裝飾或半音和弦，例如副屬和弦；但它不會嚴格保持移調音程的度數與性質兩者都相同。</li><li>半音模進與自然音模進不同：整段模進都保持相同的移調音程度數與性質。自然音模進則保持度數，卻容許性質改變，以便留在同一個調內。</li><li>無論哪一種模進，各聲部的連接方式都必須前後一致；每次反覆中相互對應的和弦，其聲部配置也應相符。</li></ul></div></div></div><aside class="translator-note">譯註：這裡「音程度數」與「音程性質」分開看，例如大二度與小二度都是二度，卻不是相同距離。真正的半音模進要求每次原型移調的度數與性質一致，不是看到升降記號就成立。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">KEY TAKEAWAYS</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>Diatonic sequences repeat musical segments and are transposed in a regular pattern within a key.</li>
+<li>Chromaticized diatonic sequences can include chromatic embellishments or chromatic chords, such as applied (secondary) dominants. These sequences avoid strict transposition of both interval size and quality.</li>
+<li>Chromatic sequences differ from diatonic sequences in that both the size and quality of the interval of transposition is maintained throughout the sequence. Diatonic sequences preserve the interval size, but not the quality, to ensure that they stay within a single key.</li>
+<li>Remember, with all sequences, the voice leading must be consistent within every voice. Chord voicings should match between all corresponding components.</li>
+</ul>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0002"><h2 id="zh-omt-chromatic-sequences-chapter-3924-section-1" class="section-header"><a id="zh-omt-chromatic-sequences-descending-fifths-sequence"></a>下行五度模進</h2></div><div class="translation-unit" id="omt-chromatic-sequences-u0003"><p>先看下面常稱為「下行五度模進」的<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">例1</a>。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0004"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937554/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="自然音下行五度模進譜例（外部網站，另開分頁）">自然音下行五度模進譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0005"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">例1。</a>自然音下行五度模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0006"><p>這個模進原型包含一次根音下行五度的進行；後續每次重複，都把整個原型下移二度。由於所有和弦都來自 G 大調，根音移動的音程不會從頭到尾完全相同。例如，IV 與 vii° 之間的根音移動是增四度，其餘相鄰和弦之間則是完全五度或完全四度。我們用這種稍作調整的方式，讓音樂留在同一個調。如果相鄰根音之間始終保持完全五度或完全四度，根音就會依序走 G–C–F–B♭–E♭–A♭–D♭……。模進很快便會離開 G 大調，進入新的半音化領域，成為半音模進。<br>半音模進與自然音模進有幾個重要差異：</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0007"><ul><li>模進原型與後續各次重複的起始和弦，會涉及變化音級。</li><li>每次重複中，相互對應的和弦都維持相同的性質與類型。</li><li>這些模進與等分八度的進行有關。</li></ul></div><div class="translation-unit" id="omt-chromatic-sequences-u0008"><p>要注意，半音模進並不只是「含有半音變化音的模進」。<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0009">例2</a>仍是同一個下行五度模進，只是隔一個和弦就加入副屬和弦。它雖然包含副屬這類半音和弦，卻不算真正的半音模進，因為整體走向仍沿著單一調的音階級移動。請留意，連續各小節第一拍的和弦根音，仍與<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">例1</a>的純自然音版本相同：G–F♯–E–D。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0009"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937594/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="加入副屬七和弦的自然音下行五度模進（外部網站，另開分頁）">加入副屬七和弦的自然音下行五度模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0010"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0009">例2。</a>隔一個和弦加入副屬七和弦的自然音下行五度模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0011"><p>反過來，只要確保根音進行從頭到尾都保持一致的音程模式，就能做出真正的半音模進。一個簡單方法，是把模進原型的第二個和弦改成屬七和弦，使它成為下一次原型起始和弦的屬七。在<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">例3</a>中，原型的第二個和弦改成 F<sup>7</sup>，不再是自然音 IV 和弦。我們將它解讀為下一個和弦的 V<sup>7</sup>，而接下來的和弦又是另一個屬七和弦。</p></div><aside class="translator-note">譯註：前兩例的文字以 G 大調說明，但此段改寫第二和弦為 F7，並稱原先是自然音 IV；若仍在 G 大調，IV 的根音應為 C。這表示此處不能把 F7 直接當成前述 G 大調 IV 的同根音改寫。例3可能另換了起始調，仍須取得原譜核對；譯文保留原文 F7 與 IV，不猜改音名。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0012"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937629/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="屬七和弦連鎖的半音下行五度模進（外部網站，另開分頁）">屬七和弦連鎖的半音下行五度模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0013"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">例3。</a>副屬七和弦環環相接的半音下行五度模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0014"><p>上例的聲部連接需要特別留意。每個和弦都被解讀為下一個和弦的屬七，因此不可能同時讓導音與和弦七音都按慣例解決。連接根音相距五度的七和弦時，聲部連接會涉及<a href="../omt/omt-harmonic-elision.html"><em>省略式解決</em></a>：原本預期接在屬七和弦後的和弦，被另一個同根音的屬七和弦取代。例如，G<sup>7</sup> 之後原本預期出現 C 大三和弦或 C 小三和弦；省略式解決卻改接 C<sup>7</sup>，見<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0015">例4</a>。譜中以括號標出原本預期的 C 和弦。這種解決實際上將預期和弦與後續的 C<sup>7</sup> 合併省略，彷彿在聽覺上跳過預期和弦，直接前往下一個屬七。結果是：第一個屬七和弦的導音 B，向下半音解決，成為新和弦的七音；同時，原和弦的七音 F 向下半音解決，成為新的導音。這種導音與七音的角色交換，是上例這類七和弦連鎖進行的重要聲部連接方式。它也是爵士和聲的重要基礎，本書其他部分還會談到。</p></div><aside class="translator-note">譯註：本段所說的省略，具體指屬七接另一個屬七，例如 G7→C7：B→B♭ 成為新七音，F→E 成為新導音。不是任何兩個根音相距五度的七和弦，都必須把導音降低；要依和弦性質與功能判斷。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0015"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937661/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="屬七和弦的省略式解決譜例（外部網站，另開分頁）">屬七和弦的省略式解決譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0016"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0015">例4。</a>屬七和弦的省略式解決。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0017"><p>回到<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">例3</a>，請注意每個連續強拍上的根音，以大二度將八度等分。這使調性變得模糊，羅馬數字分析也難以穩固成立；尤其譜中以星號標出的和弦，只是為了分析標記的一致性，才如此標示。分析高度半音化的音樂時，常常很難為和弦指定羅馬數字，而這種調性模糊本來就是此類音樂的美感之一。遇到這種情況，搭配使用和弦代號（lead-sheet symbols）往往更方便，本章譜例也提供了這些代號。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chromatic-sequences-chapter-3924-section-1" class="section-header"><a id="en-omt-chromatic-sequences-descending-fifths-sequence"></a>Descending-Fifths Sequence</h2><p>Consider the following example (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">Example 1</a>), often referred to as the "descending-fifths sequence."</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937554/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">Example 1.</a> A diatonic descending-fifths sequence.</span></p><p>The sequence model, a root progression by descending fifth, is transposed down by second in each subsequent copy of the model. Because the sequence uses chords entirely from the key of G major, the root motion doesn't match exactly throughout the sequence. For example, the root motion between the IV and viio chords is an augmented fourth, whereas the root motion between every other pair of chords is either a perfect fifth or perfect fourth. We "cheat" in the sequence in this way in order to keep the music within a single key. If the interval between successive chord roots was consistently a perfect fifth/fourth, the root progression would be as follows: G–C–F–B♭–E♭–A♭–D♭… and so on. The sequence would rather quickly bring the music outside of the key of G major, and into new chromatic territory. It would become a chromatic sequence.<br>
+Chromatic sequences differ from their diatonic counterparts in a few important ways:</p><ul>
+<li>The chords that initiate the sequence model and each successive copy contain altered scale degrees.</li>
+<li>The chords within the pattern are of the same quality and type as those within each successive copy of that pattern.</li>
+<li>The sequences derive from those that divide the octave equally.</li>
+</ul><p>Importantly, chromatic sequences are not merely sequences that contain chromatic pitches. <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0009">Example 2</a> shows the same descending-fifths sequence, this time with alternating secondary dominant chords. While the sequence contains chromatic chords (the secondary dominants), it is not a truly chromatic sequence because the overall trajectory of the sequence is still one that traverses the scale steps of a single key. Notice that the progression of chord roots on successive downbeats still matches the purely diatonic sequence shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0004">Example 1</a>: G–F♯–E–D.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937594/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0009">Example 2.</a> A diatonic descending-fifths sequence with alternating secondary dominant-seventh chords.</span></p><p>Conversely, we can create a truly chromatic sequence if we ensure that the progression of chord roots maintains a consistent pattern of intervals throughout the sequence. An easy way to do this is to make the second chord of the sequence model into a dominant-seventh chord that can be applied to the first chord of the subsequent copy of the model. In <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">Example 3</a>, the second chord of the model is now F<sup>7</sup> instead of a diatonic IV chord. We interpret this as V<sup>7</sup> of the chord that follows, which is, in turn, another dominant-seventh chord.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937629/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">Example 3.</a> A chromatic descending-fifths sequence with interlocking secondary dominant-seventh chords.</span></p><p>The voice leading in the above sequence requires some attention. Because every chord is interpreted as a dominant-seventh of the chord that follows, it is not possible to resolve both the leading tone and the chordal seventh as normal. As is the case whenever you connect seventh chords with roots a fifth apart, the voice leading requires an <em><a href="../omt/omt-harmonic-elision.html">elided resolution</a>.</em> Instead of the chord you expect to hear following a dominant-seventh chord, you get a dominant-seventh chord with the same chord root. For example, we expect to hear either a C or Cm chord following a G<sup>7</sup> chord. An elided resolution would result in a C<sup>7</sup> chord in place of the expected chord. An example of an elided resolution is shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0015">Example 4</a>. The example shows the expected C resolution in parentheses. The elided resolution essentially "elides" the chord we expect with the following chord, C<sup>7</sup>. In a sense, we mentally skip over the expected chord to get to the next dominant-seventh chord. An important result of the elision is that the leading tone of the first dominant-seventh chord, B, resolves down by half step to become the new chordal seventh. Likewise, when the chordal seventh in the first dominant-seventh chord, F, resolves down by half step, it becomes the new leading tone. This leading tone/chordal seventh exchange is essential for proper voice leading in chord progressions that use interlocking seventh chords, such as the sequence above. Furthermore, this kind of voice leading is integral to the study of jazz harmony, as you will find in other parts of this textbook.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937661/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0015">Example 4.</a> An elided resolution of a dominant-seventh chord.</span></p><p>Returning to <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0012">Example 3</a>, notice that the progression of chord roots on each successive strong beat divides the octave equally into major seconds. This results in a sense of tonal ambiguity, making the Roman numeral analysis of these chords tenuous, at best. In particular, the chords identified with asterisks in the example are only labeled as such for consistency. In many cases, when analyzing highly chromatic music, it is often quite difficult to assign Roman numerals to chords; this tonal ambiguity is part of the aesthetic of this kind of music. In cases like this, it is often convenient to also analyze the music using lead-sheet symbols. These have been included in the examples in this chapter.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0018"><h2 id="zh-omt-chromatic-sequences-chapter-3924-section-2" class="section-header"><a id="zh-omt-chromatic-sequences-ascending-5–6-sequence"></a>上行 5–6 模進</h2></div><div class="translation-unit" id="omt-chromatic-sequences-u0019"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937751/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="自然音上行 5–6 模進譜例（外部網站，另開分頁）">自然音上行 5–6 模進譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0020"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0019">例5。</a>自然音上行 5–6 模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0021"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937755/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="加入副屬和弦的自然音上行 5–6 模進（外部網站，另開分頁）">加入副屬和弦的自然音上行 5–6 模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0022"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0021">例6。</a>經半音化的自然音上行 5–6 模進，包含副屬和弦。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0023"><p>上面分別是自然音上行 5–6 模進（<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0019">例5</a>）與經半音化的變體（<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0021">例6</a>）。兩者到第二小節時，根音之間的音程模式都出現了不一致：此前是下行小三度，再上行完全四度；第二小節第一拍到第二拍的根音卻是 D 到 B♭，相距大三度。要成為真正的半音模進，就必須調整這個音程，使它與其他位置相同。因此，將 B♭<sup>7</sup> 改為 B<sup>7</sup>；接在 B<sup>7</sup> 後面的和弦，也改以 E 為根音，而非 E♭，以保持上行完全四度的根音關係，見<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">例7</a>。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0024"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937772/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="保持固定音程的半音上行模進（外部網站，另開分頁）">保持固定音程的半音上行模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0025"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">例7。</a>包含副屬和弦的半音上行級進模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0026"><p>各次原型起始和弦的性質，也有類似問題。模進的第一個和弦是大三和弦，因此要成為半音模進，後面每次反覆的起始和弦也都必須改為大三和弦。結果是每個強拍都出現大三和弦，根音相距大二度；若走完整個八度，就會以大二度等分八度。不過，<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">例7</a>在抵達 E 大三和弦後便停止模進，把它當作屬和弦，轉入 A 大調，比起始調低半音。能夠這樣轉入遠系調，正是半音模進有力之處。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chromatic-sequences-chapter-3924-section-2" class="section-header"><a id="en-omt-chromatic-sequences-ascending-5–6-sequence"></a>Ascending 5–6 Sequence</h2><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937751/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0019">Example 5.</a> A diatonic ascending 5–6 sequence.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937755/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0021">Example 6.</a> A chromaticized diatonic ascending 5–6 sequence, featuring secondary dominant chords.</span></p><p>The above examples present the diatonic ascending 5–6 sequence (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0019">Example 5</a>) and its chromaticized variant (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0021">Example 6</a>). Note that both of these include an inconsistent pattern of intervals between chord roots in the second measure. To that point, the pattern of chord roots was a descending minor third followed by an ascending perfect fourth. From beat 1 to beat 2 in m. 2, the chord roots are D to B♭—a major third. To make this a truly chromatic sequence, this interval must be corrected to match the others. Thus, we would change the B♭<sup>7</sup> to a B<sup>7</sup>. Likewise, we would then change the chord that follows the B<sup>7</sup> to a chord with a root of E (rather than E♭), to preserve the root progression by perfect fourth (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">Example 7</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937772/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">Example 7.</a> A chromatic ascending step sequence, featuring secondary dominant chords.</span></p><p>A similar problem arises with the chord qualities used at the beginning of each subsequent copy of the sequence model. The first chord of the sequence is major, so for it to be a chromatic sequence, we must change the remaining first chords of each iteration to be major as well. The final result is a sequence in which the chord on every strong beat is a major triad with roots a major second apart. If it were to traverse the entire octave, the sequence would divide the octave into major seconds. In <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0024">Example 7</a>, though, the sequence stops once it reaches the E major triad, treats that triad as a dominant chord, and modulates into A major. The modulation brings the music down a half step from its starting key. Distant modulations such as these are one of the reasons that chromatic sequences can be powerful tools.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0027"><h2 id="zh-omt-chromatic-sequences-chapter-3924-section-3" class="section-header"><a id="zh-omt-chromatic-sequences-descending-5–6-sequence"></a>下行 5–6 模進</h2></div><div class="translation-unit" id="omt-chromatic-sequences-u0028"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/21507970/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="自然音下行三度模進譜例（外部網站，另開分頁）">自然音下行三度模進譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0029"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0028">例8。</a><a href="https://musescore.com/user/32728834/scores/21507970/s/qIX9qG" target="_blank" rel="noopener noreferrer" class="external" aria-label="自然音下行三度模進。（外部網站，另開分頁）">自然音下行三度模進。</a></span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0030"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937785/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="由 D 大調轉至 C 大調的半音下行 5–6 模進（外部網站，另開分頁）">由 D 大調轉至 C 大調的半音下行 5–6 模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0031"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0030">例9。</a><a href="https://musescore.com/user/32728834/scores/5937785/s/K3tHIa" target="_blank" rel="noopener noreferrer" class="external" aria-label="由 D 大調轉入 C 大調的半音下行 5–6 模進。（外部網站，另開分頁）">由 D 大調轉入 C 大調的半音下行 5–6 模進。</a></span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0032"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937812/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="弱拍採轉位和弦的半音下行 5–6 模進（外部網站，另開分頁）">弱拍採轉位和弦的半音下行 5–6 模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0033"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0032">例10。</a>每個弱拍都採轉位和弦的半音下行 5–6 模進；各強拍根音勾勒出全音音階。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0034"><p>熟悉的「帕海貝爾」模進（<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0028">例8</a>），可以透過幾種方式衍生半音模進。自然音版本交替使用完全四度與大二度或小二度的根音移動；完全半音化的版本，則把二度的根音移動改成小三度，見<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0030">例9</a>。這個版本以大二度走過八度，勾勒全音音階，到結尾時已帶來強烈的和聲模糊感。聆聽<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0032">例10</a>時，你會發現最後的 D 大三和弦雖然名義上是主和弦，聽來卻已不太像主和弦。這個版本也在每個弱拍使用轉位和弦，讓低音沿半音音階下行。下方<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0035">例11</a>則展示舒伯特如何用這種模進延長主和聲。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0035"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20999587/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="舒伯特以半音下行 5–6 模進延長主和聲（外部網站，另開分頁）">舒伯特以半音下行 5–6 模進延長主和聲</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0036"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0035">例11。</a>半音下行 5–6 模進。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chromatic-sequences-chapter-3924-section-3" class="section-header"><a id="en-omt-chromatic-sequences-descending-5–6-sequence"></a>Descending 5–6 Sequence</h2><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/21507970/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0028">Example 8.</a> <a href="https://musescore.com/user/32728834/scores/21507970/s/qIX9qG" target="_blank" rel="noopener noreferrer" class="external" aria-label="A diatonic descending thirds sequence.（外部網站，另開分頁）">A diatonic descending thirds sequence.</a></span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937785/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0030">Example 9.</a> <a href="https://musescore.com/user/32728834/scores/5937785/s/K3tHIa" target="_blank" rel="noopener noreferrer" class="external" aria-label="A chromatic descending 5–6 sequence that modulates from D major to C major.（外部網站，另開分頁）">A chromatic descending 5–6 sequence that modulates from D major to C major.</a></span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/5937812/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0032">Example 10.</a> A chromatic descending 5–6 sequence using inverted chords on every weak beat. The sequence outlines the whole-tone scale on every strong beat.</span></p><p>The familiar "Pachelbel" sequence (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0028">Example 8</a>) can derive a chromatic sequence in a couple of ways. The diatonic version of this sequence alternates root motion by perfect fourth with either major or minor seconds. The fully chromatic version of this sequence replaces the root motion by second with root motion by minor third (<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0030">Example 9</a>). This version of the sequence traverses the octave by major seconds, outlining the whole-tone scale and creating a strong sense of harmonic ambiguity by its end. When you listen to <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0032">Example 10</a>, for instance, notice that the D major chord that finishes the sequence hardly sounds like the tonic, even though, nominally, it is. This version of the sequence also uses inverted chords on every weak beat, creating a bass line that descends through the chromatic scale. In <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0035">Example 11</a> below, Schubert uses this sequence as a means of tonic prolongation.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20999587/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0035">Example 11.</a> A chromatic descending 5-6 sequence.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0037"><h2 id="zh-omt-chromatic-sequences-chapter-3924-section-4" class="section-header section-header chapter-3983-section-1">平行 6/3 和弦</h2></div><div class="translation-unit" id="omt-chromatic-sequences-u0038"><p>回想一下，平行 6/3 和弦模進，是由連續的第一轉位三和弦構成。如果寫成四聲部，為避免平行八度，就需要讓其中一個聲部跳動。這是這裡唯一不以兩個和弦作為原型的模進；請注意下方<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0039">例12</a>的男高音聲部。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0039"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559166/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="自然音平行六和弦模進（外部網站，另開分頁）">自然音平行六和弦模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0040"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0039">例12。</a>自然音平行 6/3 模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0041"><p>這類模進常搭配一連串 7–6 掛留，如<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0042">例13</a>。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0042"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559307/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="搭配連鎖 7–6 掛留的自然音六和弦模進（外部網站，另開分頁）">搭配連鎖 7–6 掛留的自然音六和弦模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0043"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0042">例13。</a>搭配連鎖 7–6 掛留的自然音平行 6/3 模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0044"><p>如同前面幾種模進，也可以讓整段模進都保持相同的移調音程與和弦性質，使它半音化。結果雖然較不穩定，仍能達成同樣的目標：延長主和聲，直到樂句進入屬前和聲。<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0045">例14</a>是前面兩個自然音版本的變體。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0045"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559394/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="搭配連鎖 7–6 掛留的半音六和弦模進（外部網站，另開分頁）">搭配連鎖 7–6 掛留的半音六和弦模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0046"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0045">例14。</a>搭配連鎖 7–6 掛留的半音平行 6/3 模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0047"><p><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0048">例15</a>出自蕭邦《A[latex]\flat[/latex] 大調即興曲》，展示完全半音化的平行 6/3 和弦模進。每個和弦都是大三和弦，依次下移半音，直到抵達 ii 和弦，接著導向半終止。</p></div><aside class="translator-note">譯註：「每個和弦都是大三和弦」描述半音模進持續的部分；抵達 ii 後已退出這個固定模式。在 A♭ 大調中，通常的 ii 是 B♭ 小三和弦，不能因此將最後 ii 也一律改讀為大三和弦。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0048"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20560195/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="蕭邦即興曲的半音平行六和弦模進（外部網站，另開分頁）">蕭邦即興曲的半音平行六和弦模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0049"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0048">例15。</a>完全半音化的平行 6/3 和弦模進。</span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chromatic-sequences-chapter-3924-section-4" class="section-header section-header chapter-3983-section-1">Parallel 6/3 Chords</h2><p>Recall the parallel 6/3 chord sequence, which consists of successive triads in first inversion. If you're writing in four voices, To avoid parallel octaves in this sequence, you will need to have one of the voices hop around, as this sequence is the only one in which we don't use a two-chord sequence model (notice the tenor voice in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0039">Example 12</a> below).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559166/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0039">Example 12.</a> A diatonic parallel 6/3 sequence.</span></p><p>These kinds of sequences are often paired with chains of 7-6 suspensions, as shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0042">Example 13</a>.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559307/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0042">Example 13.</a> A diatonic parallel 6/3 sequence with chains of 7-6 suspensions.</span></p><p>And similar to the previous sequence types, these sequences can be chromaticized by using the same transposition and chord qualities throughout the sequence. This results in a less tonally stable passage, but one that achieves the same goal of prolonging the tonic harmony through to the predominant harmony in the phrase. <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0045">Example 14</a> provides an alteration of the two diatonic versions seen above.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20559394/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0045">Example 14.</a> A chromatic parallel 6/3 sequence with chains of 7-6 suspensions.</span></p><p><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0048">Example 15</a>, from Chopin's Impromptu in A[latex]\flat[/latex] Major, shows a fully chromaticizied sequence of parallel 6/3 chords. Each chord is a major triad, and those triads are transposed down a semitone until the ii chord is reached, which then brings the passage to a half cadence.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20560195/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0048">Example 15.</a> A a fully chromaticizied sequence of parallel 6/3 chords.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-chromatic-sequences-u0050"><h2 id="zh-omt-chromatic-sequences-chapter-3924-section-5" class="section-header">半音下行五度模進的進階變化</h2></div><div class="translation-unit" id="omt-chromatic-sequences-u0051"><p>回想例3的半音下行五度模進。若想讓低音更平順，可以每隔一個和弦改用轉位，使原型交替採用 V4/3 與 V7。<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0052">例16</a>示範這個小變化與新的低音線。每個和弦的導音都以紅色標出，因為接下來幾個例子，需要特別追蹤這個音的去向。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0052"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20911636/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="第二轉位與原位交替的半音下行五度模進（外部網站，另開分頁）">第二轉位與原位交替的半音下行五度模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0053"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0052">例16。</a>和弦交替採第二轉位與原位的半音下行五度模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0054"><p>先前已學過，屬七和弦與相對應的減七和弦具有相同功能，許多情況下可以互相替代。原文說明，<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0055">例17</a>把前例的屬七和弦全部換成相同低音的減七和弦（此說法的限制見譯註）。替代後的和弦仍擔任相同功能；請注意，各和弦的導音與前例相同。</p></div><aside class="translator-note">譯註：「全部換成相同低音」不能直接套用到前例每個原位 V7。以 G7 與同功能的 B°7 為例，前者為 G–B–D–F，後者為 B–D–F–A♭：導音 B 相同，但 B°7 並不含原位 G7 的低音 G。V4/3 的低音 D 則可保留。原文的同低音說法與原位／第二轉位交替之間有待核對；例17原譜尚待取得，不猜寫實際低音，也不把功能相同誤當音集合完全相同。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0055"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20911720/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="以同功能減七和弦替換屬七和弦的模進（外部網站，另開分頁）">以同功能減七和弦替換屬七和弦的模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0056"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0055">例17。</a>將屬七和弦換成功能相當的減七和弦，形成半音下行五度模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0057"><p><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0058">例18</a>展示巴赫如何運用這個手法。確立 F 小調後，他寫出一串減七和弦，交替採用副導音 vii°4/2 與 vii°6/5 和弦。由於全減七和弦具有對稱性，這串模進與一連串下行的原位減七和弦等音；換成其他轉位來理解，也有相同情形。如譜中的簡要分析所示，這些和弦中的任何一個，都可以被解讀為轉入新調 G 小調的共同和弦；幾小節後，片段就在 G 小調以半終止結束。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0058"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20914981/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="巴赫以減七和弦模進轉調的譜例（外部網站，另開分頁）">巴赫以減七和弦模進轉調的譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0059"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0058">例18。</a>以減七和弦的半音模進作為轉調途徑。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0060"><p>回到最初的半音下行五度模進，還可以做另一種變化：將每個和弦的五音降低。若把原型的第一個和弦改用轉位，如<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0061">例19</a>，就會得到逐半音下行的低音線，與採用減七和弦的變體相似。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0061"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20917744/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="降低五音的屬七和弦模進譜例（外部網站，另開分頁）">降低五音的屬七和弦模進譜例</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0062"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0061">例19。</a>以減七和弦的半音模進作為轉調途徑。（原圖說如此，與正文的和弦類型不一致，見譯註。）</span></p></div><aside class="translator-note">譯註：原圖說與例18相同，稱此處是減七和弦；但緊接的正文與例20、例21都明確討論「五音降低的屬七和弦」。兩者不同：例如 C7♭5 為 C–E–G♭–B♭，並非 C°7 的 C–E♭–G♭–B𝄫。因此保留原圖說並標出疑似沿用錯誤；仍待取得例19譜面確認。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0063"><p><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0064">例20</a>出自阿爾班・貝爾格的〈睡夢中，人們將我抬起〉（Schlafend trägt man mich）。這是此手法的精彩用例，不只呈現進行本身，也展示這類半音化如何將調性推到極限。歌曲雖有調號，卻很難從頭到尾聽出清楚的主音。鋼琴在開頭與結尾，都明顯呈現半音下行五度的和聲進行；它推動音樂向前，為歌詞中對故鄉的思念——「in mein Heimatland」，意為「回到我的故鄉」——配上和聲。請注意，貝爾格並沒有把這串和弦寫成嚴格模進：鋼琴沒有始終遵循同一個模式。它保留的是前例所示、五音降低的屬七和弦進行，而且和弦採原位。由於調性不明確，譜中只用和弦代號分析，沒有使用羅馬數字。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0064"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20917912/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="貝爾格歌曲中五音降低的屬七和弦進行（外部網站，另開分頁）">貝爾格歌曲中五音降低的屬七和弦進行</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0065"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0064">例20。</a>五音降低的屬七和弦序列。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0066"><p>還可以換一個角度觀察上述模進：把原型中的每一對和弦，視為某個調性區域內的一個整體，也就是增六和弦接屬七和弦。例如，原先把起始和弦分析為 F 的 V°4/3；也可以把它解讀為 B♭ 調中的法式增六和弦，接到 V，如<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0067">例21</a>。這種讀法之所以成立，是因為法式增六和弦與五音降低的屬七和弦具有等音關係。</p></div><aside class="translator-note">譯註：原文寫作 Vo4/3。依前後文，這裡的 o 指屬七和弦五音降低所形成的減五度，不是把整個和弦改成全減七。以 F 的屬七為例，C7♭5 的第二轉位是 G♭–B♭–C–E，正可按 B♭ 調的法式增六和弦解讀；這是依正文和弦構成作出的等音對照，未冒充對原譜的視讀。</aside><div class="translation-unit" id="omt-chromatic-sequences-u0067"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20919328/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="將降低五音的屬七和弦改讀為法式增六的模進（外部網站，另開分頁）">將降低五音的屬七和弦改讀為法式增六的模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0068"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0067">例21。</a>將五音降低的屬七和弦序列，作等音重新詮釋，讀成一連串法式增六和弦接屬七和弦的組合。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0069"><p>再進一步，可以將法式增六和弦換成德式增六和弦，如<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0070">例22</a>。這樣就得到一串與逐半音下行屬七和弦等音的進行。同時，每兩個相鄰和弦之間也會產生平行五度；蕭邦在運用這個進行時，似乎並不介意，請聽<a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0072">例23</a>。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0070"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/21000682/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="德式增六和弦與屬七和弦交替的模進（外部網站，另開分頁）">德式增六和弦與屬七和弦交替的模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0071"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0070">例22。</a>德式增六和弦接屬七和弦的模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0072"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20999047/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="蕭邦馬祖卡舞曲的德式增六與屬七模進（外部網站，另開分頁）">蕭邦馬祖卡舞曲的德式增六與屬七模進</a><p class="missing-score">靜態樂譜尚待補齊；原始資源含有本章必要的音樂範例。</p></aside></div></div><div class="translation-unit" id="omt-chromatic-sequences-u0073"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0072">例23。</a>蕭邦《C♯ 小調馬祖卡舞曲》Op. 30 第4號，第124–139小節：德式增六和弦接屬七和弦的模進。</span></p></div><div class="translation-unit" id="omt-chromatic-sequences-u0074"><p>半音模進當然還有無數種變化，本章只展示其中一些選擇。這些模進都會讓聽眾暫時遠離調性中心，可能只是短暫打破穩定，也可能轉入遠系調。十九世紀的作曲家廣泛使用這些手法；接近二十世紀之際，它們也成為把調性推向邊界的一股力量。</p></div><div class="translation-unit" id="omt-chromatic-sequences-u0075"><div class="textbox shaded"><a id="zh-omt-chromatic-sequences-assignments"></a>作業</div></div><div class="translation-unit" id="omt-chromatic-sequences-u0076"><ol><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2024/10/OMT-Chromatic-Sequences.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="半音模進作業：聲部寫作與分析。（外部網站，另開分頁）">半音模進作業：聲部寫作與分析。</a></li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-chromatic-sequences-chapter-3924-section-5" class="section-header">Advanced Variations on the Chromatic Descending-Fifths Sequence</h2><p>Recall the chromatic descending-fifths sequence from Example 3. One way to give this sequence a smoother bass line would be to invert every other chord, so that there is an alternation between V4/3 chords and V7 chords in the sequence model. <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0052">Example 16</a> shows this subtle variation with a new bass line. The leading tone of each chord has been highlighted in red, as it will be come very important to trace this pitch throughout the next several examples.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20911636/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0052">Example 16.</a> A chromatic descending-fifths sequence with chords alternating between second inversion and root position.</span></p><p>As we learned a long time ago, dominant-seventh chords and diminished-seventh chords have the same function, and in many cases one can be used in place of the other. In <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0055">Example 17</a>, we have replaced all of the dominant-seventh chords from the previous example with diminished-seventh chords with the same bass note. These chords serve the same function as their dominant-seventh counterparts--note that the leading tone in each chord is the same as the ones found in the previous example.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20911720/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0055">Example 17. </a>A chromatic descending-fifths sequence that replaces the dominant-seventh chords with equivalent diminished-seventh chords. </span></p><p>In <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0058">Example 18, </a>J.S. Bach shows this technique in action. After establishing the key of F minor, Bach presents a sequence of diminished-seventh chords, alternating between applied viio4/2 and viio6/5 chords. Since diminished-seventh chords are symmetrical, this sequence sounds enharmonically equivalent to a descending series of root-position diminished-seventh chords (or any other inversion, for that matter). As is shown in the brief analysis, any one of these chords could be interpreted as a pivot chord into the new key of g minor, where it ultimately ends up with a half cadence a few measures later.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20914981/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0058">Example 18. </a>A chromatic sequence of diminished-seventh chords that provides a vehicle for modulation.</span></p><p>Returning to our first example of a chromatic descending-fifths sequence, we can vary it again, this time by using a flattened fifth in each chord. When we invert the first chord in the sequence model, as shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0061">Example 19, </a>we get a chromatic bass line descending in semitones, much like the variation that uses diminished-seventh chords.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20917744/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0061">Example 19. </a>A chromatic sequence of diminished-seventh chords that provides a vehicle for modulation.</span></p><p>Alban Berg's "Schlafend trägt man mich," shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0064">Example 20</a>, offers a wonderful example of this technique that not only shows off the sequence itself, but the way in which this kind of chromaticism pushes the boundaries of tonality to its limits. While this song uses a key signature, it is quite difficult to hear a tonic throughout. The chromatic descending-fifths sequences is laid out clearly in the piano, both in the opening and at the end of the piece. The forward motion driven by this sequence harmonizes the singer's text in which they year for their homeland ("in mein Heimatland"). Note that Berg is using this chord progression non-sequentially; the piano does not follow a strict pattern throughout. Rather, the chord progression follows the pattern of dominant seventh chords with flattened fifths laid out in the previous example. Furthermore, the chords are presented in root position. Because of the lack of tonal clarity in this piece, the chords have been analyzed simply with lead sheet symbols, rather than Roman numerals.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20917912/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0064">Example 20. </a>A sequence of dominant-seventh chords with flattened fifths.</span></p><p>Another way to scrutinize the sequence above is to consider each pair of chords in the sequence model to be a singular unit consisting of an augmented-sixth chord and a dominant-seventh chord in a given key area. For example, while we first identified the initiating chord in the sequence to be Vo4/3 of F, we could also consider it to be a French augmented-sixth leading to V in the key of B♭, as is shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0067">Example 21</a>. This works because of the enharmonic equivalence between the French augmented-sixth chord and the dominant-seventh chord with a diminished fifth.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20919328/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0067">Example 21. </a>A sequence of dominant-seventh chords with flattened fifths enharmonically reinterpreted as a succession of French augmented-sixth chords followed by dominant-seventh chords. </span></p><p>Taking this sequence one step further, we can substitute German augmented-sixth chords for the French augmented-sixth chords, as shown in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0070">Example 22</a>. Note that when we do this, we get what is enharmonically equivalent to a succession of dominant-seventh chords descending by semitone. We also produce parallel fifths between each successive chord, which Chopin did not seem to mind in his application of this sequence which you can listen to in <a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0072">Example 23</a>.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/21000682/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0070">Example 22. </a>A sequence of German augmented-sixth chords followed by dominant-seventh chords. </span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/20999047/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-chromatic-sequences.html#omt-chromatic-sequences-u0072">Example 23. </a>A sequence of German augmented-sixth chords followed by dominant-seventh chords in Chopin's Mazurka in C♯ Minor Op. 30 No. 4, mm. 124-39.</span></p><p>There are, of course, myriad ways in which we may vary a chromatic sequence. The examples listed throughout this chapter merely represent some of these options. Importantly, all of these chromatic sequences transport the listener away from the tonal center, for the purposes of either a temporary disruption of stability, or to modulate into a distantly-related key. These techniques were used by composers throughout the nineteenth century, and were part of what contributed to pushing tonality to its fringes as we moved closer to the turn of the twentieth century.</p><div class="textbox shaded"><a id="en-omt-chromatic-sequences-assignments"></a>Assignments</div><ol>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2024/10/OMT-Chromatic-Sequences.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Chromatic Sequences Assignment (Part-writing and analysis)（外部網站，另開分頁）">Chromatic Sequences Assignment (Part-writing and analysis)</a></li>
+</ol></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-equal-divisions-of-the-octave.html">上一節：八度的等分</a><a href="../omt/omt-the-omnibus-progression.html">下一節：Omnibus 進行</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/chromatic-sequences/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

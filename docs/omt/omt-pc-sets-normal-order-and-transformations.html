@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>音高類集合、標準排序與變換 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-pc-sets-normal-order-and-transformations.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group" open=""><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a aria-current="page" href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-pc-sets-normal-order-and-transformations" data-book="omt" data-page-url="/omt/omt-pc-sets-normal-order-and-transformations.html" data-next-url="/omt/omt-set-class-and-prime-form.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">音高類集合、標準排序與變換</h1><p class="authors">Megan Lavengood and Brian Moseley</p><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class-set">音高類集合</a>（pc set）是一組<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class">音高類</a>。</li><li>命名音高類集合的標準方式，是使用其<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-normal-order">標準排序</a>：讓音高類依上行方向排列，並使整體跨度儘可能小。</li><li>對集合做移位T<sub>n</sub>，就是讓每個整數都加上<em>n</em>。</li><li>對集合做倒影I<sub>n</sub>，先求各整數的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-complement-mod-12">模12補數</a>，再移位<em>n</em>；也可以直接用<em>n</em>減去各整數，即<em>n−x＝y</em>。</li><li>這些操作都可以借助鐘面來理解。</li></ul></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class-set">pitch-class set</a> (pc set) is a group of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class">pitch classes</a>.</li>
+<li>The standard way of naming a pitch class set is by its <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-normal-order">normal order</a>: the smallest possible arrangement of pitch classes, in ascending order.</li>
+<li>To transpose a set (T<sub>n</sub>), add <em>n </em>to each integer of the set.</li>
+<li>To invert a set (I<sub>n</sub>), first invert the set (take each integer's <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-complement-mod-12">complement mod 12</a>), then transpose by <em>n. </em>Alternately, subtract each integer of the set from <em>n </em>(<em>n–x=y</em>).</li>
+<li>The clock face may help you perform any of these tasks.</li>
+</ul>
+</div>
+</div></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0002"><h2 id="zh-omt-pc-sets-normal-order-and-transformations-chapter-559-section-1" class="section-header"><a id="zh-omt-pc-sets-normal-order-and-transformations-pitch-class-sets"></a>音高類集合</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0003"><p>把一組音高類視為一個單位時，就稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class-set">音高類集合</a>，常縮寫為pc set。任何一組音高類，都可以構成音高類集合。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-pc-sets-normal-order-and-transformations-chapter-559-section-1" class="section-header"><a id="en-omt-pc-sets-normal-order-and-transformations-pitch-class-sets"></a>Pitch-Class Sets</h2><p>When we talk about a group of pitch classes as a unit, we call that group a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class-set">pitch-class set</a>, often abbreviated "pc set." Any group of pitch classes can be a pitch-class set.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0004"><h2 id="zh-omt-pc-sets-normal-order-and-transformations-chapter-559-section-2" class="section-header"><a id="zh-omt-pc-sets-normal-order-and-transformations-normal-order"></a>標準排序</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0005"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-normal-order">標準排序</a>是將一組音高類依上行方向，排列得最緊密的方式。這個概念與和弦<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-root-position">原位</a>有相似之處：原位是排列三和弦及七和弦音高類的標準方式，方便分類與比較。標準排序也有相同用途，但更一般化，能用於包含各種音與音程的和弦。</p></div><aside class="translator-note">譯註：本章將normal order與normal form交替使用，繁中統一稱「標準排序」；它不是後章的prime form（原型）。此排序保留原有音高類，只調整循環起點；不必從0開始，也不表示第一個音就是和弦根音。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0006"><p>以下分別介紹求標準排序的計算方法與視覺方法。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-pc-sets-normal-order-and-transformations-chapter-559-section-2" class="section-header"><a id="en-omt-pc-sets-normal-order-and-transformations-normal-order"></a>Normal Order</h2><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-normal-order">Normal order</a> is the most compressed way to write a given collection of pitch classes, in ascending order. Normal order has a lot in common with the concept of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-root-position">root position</a>. Root position is a standard way to order the pitch classes of triads and seventh chords so that we can classify and compare them easily. Normal order does the same, but in a more generalized way so as to apply to chords containing a variety of notes and intervals.</p><p>Following are a mathematical and a visual method for determining normal order.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0007"><h2>計算方法</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0008"><table class=" score-table"><tbody><tr><th>步驟</th><th>範例集合：<br>G♯<sub>4</sub>、A<sub>2</sub>、D♯<sub>3</sub>、A<sub>4</sub></th></tr><tr><td>1. 改寫為音高類，刪除重複音，並排成若依上行方向演奏，能容納於一個八度內的次序。可能的起點不只一種。</td><td>8,9,3</td></tr><tr><td>2. 在尾端再寫一次第一個音高類。</td><td>8,9,3,8</td></tr><tr><td>3. 找出相鄰音高類之間，最大的有序音高類音程。</td><td>8到9：1<br>9到3：6<br>3到8：5<br><strong>9到3的間距最大。</strong></td></tr><tr><td>4. 從最大間距右側的音高類開始重排，並以方括號寫出答案。</td><td>[3,8,9]</td></tr></tbody></table></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0009"><p>第三步的最大間距有時會並列。這時要比較候選排序在一側的緊密程度；原文接著說，若仍並列，就選低音端較緊密的排序。實際採用哪一套並列判準，請見下方譯註。</p></div><aside class="translator-note">譯註：原文「某一側較緊密／低音端較緊密」沒有寫清楚並列判準。配合下一章集合表的Rahn／Straus慣例，可先比首末跨度；相同時，比第一音到倒數第二音的距離，再依序向內比。仍完全相同，選起始整數較小者。Forte慣例則由第一音到第二音、第三音向外比，少數結果不同。</aside><p class="image-labels">譯註來源：<a href="https://mta.ca/pc-set/pages/pc-table/packed.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Mount Allison University：Normal form, prime form, and packing（外部網站，另開分頁）">Mount Allison University：Normal form, prime form, and packing</a>、<a href="https://musictheory.pugetsound.edu/mt21c/NormalForm.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Music Theory for the 21st-Century Classroom：Normal Form（外部網站，另開分頁）">Music Theory for the 21st-Century Classroom：Normal Form</a></p><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Mathematical method</h2><table class=" score-table">
+<tbody>
+<tr>
+<th>Process</th>
+<th>Example set:<br>
+G♯<sub>4</sub>, A<sub>2</sub>, D♯<sub>3</sub>, A<sub>4</sub></th>
+</tr>
+<tr>
+<td>1. Write as a collection of pitch classes (eliminating duplicates) such that they would fit within a single octave if played in ascending order. There are multiple possible options.</td>
+<td>8,9,3</td>
+</tr>
+<tr>
+<td>2.Duplicate the first pitch class at the end.</td>
+<td>8,9,3,8</td>
+</tr>
+<tr>
+<td>3. Find the largest ordered pitch-class interval between adjacent pitch classes.</td>
+<td>8 to 9: 1<br>
+9 to 3: 6<br>
+3 to 8: 5<br>
+<strong>9 to 3 is the biggest interval.</strong></td>
+</tr>
+<tr>
+<td>4. Rewrite the collection beginning with the pitch class to the right of the largest interval and write your answer in square brackets.</td>
+<td>[3,8,9]</td>
+</tr>
+</tbody>
+</table><p>Occasionally you’ll have a a tie for largest interval in step 3. In these cases, the ordering that is most closely packed to one side or the other is the normal form. If there is still a tie, choose the set most closely packed to the bottom.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0010"><h2>視覺方法：鐘面法</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0011"><p>如果不喜歡上面的計算流程，<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0012">例1</a>的影片會清楚示範，如何利用鐘面快速找出標準排序。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0012"><div><aside class="external-resource"><a href="https://coursemedia.gmu.edu/embed/secure/iframe/entryId/1_axkf6ow8/uiConfId/+44431031/st/0" target="_blank" rel="noopener noreferrer" class="external" aria-label="使用鐘面找標準排序（外部網站，另開分頁）">使用鐘面找標準排序</a></aside></div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0013"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0012">例1。</a>使用鐘面找標準排序。<a href="https://coursemedia.gmu.edu/media/Using+the+Clock+Face+to+Find+Normal+Form/1_axkf6ow8" target="_blank" rel="noopener noreferrer" class="external" aria-label="在GMU CourseMedia開啟（外部網站，另開分頁）">在GMU CourseMedia開啟</a></span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Visual method (clock face method)</h2><p>If you don't like the process described above, the video in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0012">Example 1</a> clearly explains how to use the clock face to quickly find normal order.</p><div><aside class="external-resource"><a href="https://coursemedia.gmu.edu/embed/secure/iframe/entryId/1_axkf6ow8/uiConfId/+44431031/st/0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Using the Clock Face to Find Normal Form（外部網站，另開分頁）">Using the Clock Face to Find Normal Form</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0012">Example 1.</a> Using the clock face to find normal form. <a href="https://coursemedia.gmu.edu/media/Using+the+Clock+Face+to+Find+Normal+Form/1_axkf6ow8" target="_blank" rel="noopener noreferrer" class="external" aria-label="Open on GMU CourseMedia（外部網站，另開分頁）">Open on GMU CourseMedia</a></span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0014"><h2 id="zh-omt-pc-sets-normal-order-and-transformations-chapter-559-section-3" class="section-header"><a id="zh-omt-pc-sets-normal-order-and-transformations-transposition"></a>移位</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0015"><p>後調性音樂中的移位，常帶有移動的聽感：一個和弦、動機或旋律被移位時，就像朝某個方向<em>移動</em>。在德布西《<em>沉沒的教堂</em>》兩個不相連的片段中，開頭動機〈D, E, B〉，即〈2, 4, 11〉，於第18小節上移四個半音，成為〈F♯, G♯, D♯〉，即〈6, 8, 3〉；兩者在<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">例2</a>中以藍色標示，表現教堂緩緩升出水面的景象。聽到第18小節時，我們能辨認它與第1小節的關係，因為相同的有序音程重新出現，只是從另一個音高開始。移位既保留音程內容，也保留音程的具體排列。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0016"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="德布西《沉沒的教堂》移位譜例（外部網站，另開分頁）">德布西《沉沒的教堂》移位譜例</a><p class="score-source">原章嵌入譜的完整單頁原圖，已保存供離線閱讀，附中文圖例。 <a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>例2，德布西《沉沒的教堂》移位完整單頁原譜。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><ul class="label-terms"><li>藍色開頭〈2,4,11〉的標準排序為[11,2,4]；</li><li>兩條T₄箭頭分別指向第18小節藍色〈6,8,3〉及紅色〈8,6,3〉，兩者標準排序同為[3,6,8]。</li></ul><p>尖括號保留出現順序，方括號表示標準排序。</p><ul class="label-terms"><li>8va＝高八度演奏；</li><li>pp很弱、p弱；</li><li>marqué＝突出、強調。</li></ul><p>上方與下方是第1小節及第18小節起的非連續摘錄。</p></section></div></div></div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0017"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">例2。</a>動機的移位：保留順序與不保留順序的情況。</span></p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0018"><p>從第18小節到第19小節，同一動機以較不明顯的方式延續，在<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">例2</a>中以紅色標示。這裡被移位的是無序的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-pitch-class-set">音高類集合</a>，不是先前那個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ordered-set">有序集合</a>。它看起來可能不像前兩個動機那麼明顯地移位，但只要把音高類改排為標準排序，移位的音程關係就清楚了。</p></div><aside class="translator-note">譯註：原譜藍色有序動機〈6,8,3〉與紅色〈8,6,3〉，都具有標準排序[3,6,8]，相對開頭均為T₄。藍、紅兩集合彼此是T₀關係，只是音的先後順序不同；不能把紅色動機說成藍色動機的保序T₄移位。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0019"><p>移位常記為T<sub>n</sub>；其中<em>n</em>稱為變換的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-index-number">索引數</a>，表示兩個集合之間的有序音高類移位距離。移位可以是一種操作，也就是對音高、音高類或其集合<em>做某件事</em>；也可以是一種<em>量測</em>，表示它們之間的距離。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-pc-sets-normal-order-and-transformations-chapter-559-section-3" class="section-header"><a id="en-omt-pc-sets-normal-order-and-transformations-transposition"></a>Transposition</h2><p>In post-tonal music, transposition is often associated with motion: take a chord, motive, melody, and when it is transposed, the aural effect is of <em>moving</em> that chord, motive, or melody in some direction. In two disconnected passages from Claude Debussy’s <em>La cathédrale engloutie,</em> the opening motive &lt;D, E, B&gt; or &lt;2, 4, 11&gt; is transposed four semitones higher to &lt;F♯, G♯, D♯&gt; or &lt;6, 8, 3&gt; in m. 18 (both in blue in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">Example 2</a>), representing the cathedral’s slow ascent above the water. When we hear the passage at m. 18, we recognize its relationship to the passage in m. 1 because the same set of ordered intervals return, but starting on a different pitch. Transposition preserves intervallic content, and not only that, it preserves the specific arrangement of the intervals.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete single-page original from the chapter embed, saved for offline reading. <a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>Example 2, Debussy transposition, complete original single-page score.</figcaption></figure></div></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">Example 2.</a> Transposition of a motive, ordered and unordered.</span></p><p>The same motive is preserved in a more obscured fashion going from m. 18 into m. 19 (in red in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">Example 2</a>). Here, the unordered <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-pitch-class-set">pitch class set</a> is transposed, but not the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ordered-set">ordered set</a> from before. This may not look as much like a transposition as the first two sets of motives, but if the pitches are put into normal order, the transposed intervallic relationship becomes clear.</p><p>Transposition is often abbreviated T<sub>n</sub>, where <em>n</em>, the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-index-number">index number</a> of a transformation, represents the ordered pitch-class interval between the two sets. Transposition is an operation—something that is <em>done</em> to a pitch, pitch class, or collection of these things. Alternatively, transposition can also be a <em>measurement</em>—representing the distance between things.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0020"><h2>將集合移位</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0021"><p>對集合做T<sub>n</sub>移位，就是讓每個整數都加上<em>n</em>，再取<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-mod-12">模12</a>；也就是像鐘面一樣，到12便回到0。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0022"><p>以先前第1小節的音高類集合為例，做T<sub>4</sub>移位：</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0023"><p>[latex]\begin{alignat*}{2}&amp;&amp; [11, 2, 4]  \\ {}+ &amp;&amp; 4\ 4\ 4\ \\ \hline &amp;&amp; [3, 6, 8] \\ \end{alignat*}[/latex]</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0024"><p>結果就是第18小節的音高類：<br><strong>T<sub>4</sub> [11, 2, 4]＝[3, 6, 8]</strong></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Transposing a set</h2><p>To transpose a set by T<sub>n</sub>, add <em>n</em> to every integer in that set (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-mod-12">mod 12</a>, meaning numbers wrap around after reaching 12, like on a clock face).</p><p>Given the collection of pitch classes in m. 1 above and transposition by T<sub>4</sub>:</p><p>[latex]\begin{alignat*}{2}&amp;&amp; [11, 2, 4]  \\ {}+ &amp;&amp; 4\ 4\ 4\ \\ \hline &amp;&amp; [3, 6, 8] \\ \end{alignat*}[/latex]</p><p>The result is the pitch classes in m. 18.<br>
+<strong>T<sub>4</sub> [11, 2, 4] = [3, 6, 8]</strong></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0025"><h2>辨認移位關係與計算索引數</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0026"><p>判斷兩個集合<em>之間</em>的移位關係時，用第二個集合的對應整數減去第一個。若模12後的差全部相同，就可用該T<sub>n</sub>表示兩者的關係。例如，要標示<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">例2</a>中的箭頭，可以用第18小節的音高類整數，減去第1小節的對應整數。注意，兩個集合都應先排為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-normal-order">標準排序</a>。</p></div><aside class="translator-note">譯註：原文此處誤指例1的箭頭；移位箭頭實際在例2，已改連該譜。對稱集合可能具有不只一個成立的Tₙ；若正規化後的對應不明確，可直接逐一測試n＝0至11，不能只靠某次排列的相減失敗就否定關係。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0027"><p>[latex]\begin{alignat*}{2} &amp;&amp; [3, 6, 8] \\ {}- &amp;&amp; [11, 2, 4] \\ \hline &amp;&amp; 4\ 4\ 4\ \\ \end{alignat*}[/latex]</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0028"><p><strong>[3, 6, 8]與[11, 2, 4]之間具有T<sub>4</sub>關係。</strong></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Identifying transpositions and calculating the index number</h2><p>To determine the transpositional relationship <em>between</em> two sets, subtract the first set from the second. If the numbers that result are all the same, the two sets are related by that T<sub>n</sub>. For example, to label the arrows in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0016">Example 1</a>, an analyst would “subtract” the pitch class integers of m. 1 from the pitch-class integers in m. 18. Note that both sets should be in <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-normal-order">normal order</a>.</p><p>[latex]\begin{alignat*}{2} &amp;&amp; [3, 6, 8] \\ {}- &amp;&amp; [11, 2, 4] \\ \hline &amp;&amp; 4\ 4\ 4\ \\ \end{alignat*}[/latex]</p><p><strong>[3, 6, 8] and [11, 2, 4] are related by T<sub>4</sub>.</strong></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0029"><h2 id="zh-omt-pc-sets-normal-order-and-transformations-chapter-559-section-4" class="section-header"><a id="zh-omt-pc-sets-normal-order-and-transformations-inversion"></a>倒影</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0030"><p>倒影與移位一樣，常使相似材料產生相互連結的移動感。<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">例3</a>摘自陳怡的《<em>多耶</em>》（1984）：如同具有移位關係的片段，這兩個音型擁有相同音程內容，因此聽來很相似。不過，倒影不會像移位那樣保留音程的<em>排列方式</em>：兩者雖有相同音程，[1, 4, 6]中的3個半音卻在下方，而不是上方（<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0033">例4</a>）。</p></div><aside class="translator-note">譯註：原文標示2000；鋼琴獨奏《多耶》在PianoInspires的2025年音樂會節目中列為1984。此處依作品年份訂正；沒有將2000逕自認定為作曲年。</aside><p class="image-labels">譯註來源：<a href="https://pianoinspires.com/wp-content/uploads/2025/07/Thursday-July-24-Lunchtime-Concert.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PianoInspires：2025年7月24日午間音樂會節目，Duo Ye for Piano (1984)（外部網站，另開分頁）">PianoInspires：2025年7月24日午間音樂會節目，Duo Ye for Piano (1984)</a></p><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0031"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="陳怡《多耶》倒影譜例（外部網站，另開分頁）">陳怡《多耶》倒影譜例</a><p class="score-source">原章嵌入譜的完整單頁原圖，已保存供離線閱讀，附中文圖例。 <a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>例3，陳怡《多耶》倒影完整單頁原譜。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><p>藍色[2,4,7]經I₈映至紅色[1,4,6]：2↔6、4↔4、7↔1，各對相加皆8。</p><ul class="label-terms"><li>Largo＝廣板（四分音符＝40）；</li><li>Allegro＝快板（四分音符＝120）；</li><li>ad lib.＝可自由處理；</li><li>f強、pp很弱。</li></ul><p>譜中由3/4轉2/4，再回3/4。</p></section></div></div></div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0032"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">例3。</a>[2, 4, 7]經倒影成為[1, 4, 6]。</span></p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0033"><figure id="zh-omt-pc-sets-normal-order-and-transformations-attachment_5908" aria-describedby="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-5908" class="wp-caption aligncenter"><a href="../assets/omt/57caf013ffe46d56.png"><img class="wp-image-5908 size-medium zoomable" src="../assets/omt/57caf013ffe46d56.png" alt="左為D–E–G，下方2個半音、上方3個；右為C♯–E–F♯，下方3個半音、上方2個；兩者總跨度皆5。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/inversion-2-1.png" loading="lazy" tabindex="0" role="button" width="809" height="540"></a><figcaption id="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-5908" class="wp-caption-text"><span class="example-caption-name">例4。</span>兩個集合都有相同的音程：2、3與5個半音，但排列方式不同。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>左邊由低到高D、E、G，即[2,4,7]，相鄰半音數2、3；</li><li>右邊C♯、E、F♯，即[1,4,6]，相鄰半音數3、2。</li></ul><p>外側弧線都標5個半音。</p></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-pc-sets-normal-order-and-transformations-chapter-559-section-4" class="section-header"><a id="en-omt-pc-sets-normal-order-and-transformations-inversion"></a>Inversion</h2><p>Inversion, like transposition, is often associated with motion that connects similar objects. The passage in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">Example 3</a> from Chen Yi's <em>Duo Ye </em>(2000) is an example: just as in the transpositionally related passages, these two gestures have the same intervallic content, so our ears recognize them as very similar. Unlike transposition, however, the interval content of these two gestures is not <em>arranged</em> in the same way: both have the same intervals, but the [1, 4, 6] set has the interval 3 on the bottom instead of on the top (<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0033">Example 4</a>).</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete single-page original from the chapter embed, saved for offline reading. <a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/32728834/scores/8391513/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>Example 3, Chen Yi inversion, complete original single-page score.</figcaption></figure></div></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">Example 3. </a>[2, 4, 7] is inverted to become [1, 4, 6].</span></p><figure id="en-omt-pc-sets-normal-order-and-transformations-attachment_5908" aria-describedby="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-5908" class="wp-caption aligncenter"><a href="../assets/omt/57caf013ffe46d56.png"><img class="wp-image-5908 size-medium zoomable" src="../assets/omt/57caf013ffe46d56.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/inversion-2-1.png" loading="lazy" tabindex="0" role="button" width="809" height="540"></a><figcaption id="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-5908" class="wp-caption-text"><span class="example-caption-name">Example 4.</span> These two sets both have the same intervals (a 2, a 3, and a 5), but the intervals are arranged differently.</figcaption></figure></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0034"><h2>一般倒影</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0035"><p>若題目只要求倒影、未給索引數，就採<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-mod-12">模12</a>的基本倒影，求每個數字在模12下的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-complement-mod-12">補數</a>。整數<em>x</em>的補數<em>y</em>，可用12減<em>x</em>再取模12得到。例如4的補數是8，因為4＋8＝12；6的補數是6，因為6＋6＝12；0的補數是0，因為0＋0＝0，而12取模12也等於0。</p></div><aside class="translator-note">譯註：這裡的補數是數字的模12加法補數：y＝(−x) mod 12，亦即I₀。它不同於下一章的集合補集；後者是十二音中尚未包含的音高類。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0036"><p>[2, 4, 7]經過這種倒影，再排為標準排序，就得到[5, 8, 10]。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>General inversion</h2><p>If you are asked to invert a set and are not given an index number, assume you are inverting the set <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-mod-12">mod 12</a>. This means taking the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-complement-mod-12">complement</a> of each number mod 12. The complement of each integer <em>x</em> mod 12 is the number <em>y</em> that is the difference between <em>x </em>and 12. For example, the complement of 4 is 8: 4+8=12. The complement of 6 is 6: 6+6=12. The complement of 0 is 0: 0+0=0, which is 12 mod 12.</p><p>Inverting [2, 4, 7] in this way would yield [5, 8, 10].</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0037"><h2>I<sub>n</sub>：先倒影、再移位</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0038"><p>有時集合會先倒影再移位，如<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">例3</a>，縮寫為I<sub>n</sub>。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0039"><p><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">例3</a>把第一個集合[2, 4, 7]做I<sub>8</sub>倒影。請依下列順序操作：</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0040"><ol><li><strong>倒影：</strong>[2, 4, 7]變成[5, 8, 10]。</li><li><strong>移位：</strong>將[5, 8, 10]每個數加8，再取模12，得到[1, 4, 6]。</li></ol></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>I<sub>n</sub>: Invert-then-transpose method</h2><p>Sometimes, sets are inverted and then transposed, as in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">Example 3</a>. The abbreviation for this is I<sub>n</sub>.</p><p>In <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0031">Example 3</a>, the first set [2, 4, 7] is inverted by I<sub>8</sub>. To invert a set by I<sub>8</sub>, follow this process, in this order:</p><ol>
+<li><strong>Invert: </strong>[2, 4, 7] becomes [5, 8, 10].</li>
+<li><strong>Transpose: </strong>adding 8 to every number in [5, 8, 10] yields [1, 4, 6].</li>
+</ol></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0041"><h2>I<sub>n</sub>：減法</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0042"><p>也可以直接用<em>n</em>減去原集合中的每個音高類，再取模12，算出I<sub>n</sub>產生的新集合。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0043"><p><strong>[2, 4, 7]做I<sub>8</sub>倒影，會得到什麼？</strong></p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0044"><p>[latex]\begin{alignat*}{2} &amp;&amp; 8\ 8\ 8\ \\ {}- &amp;&amp; [2, 4, 7] \\ \hline &amp;&amp; [6, 4, 1] \\ \end{alignat*}[/latex]</p></div><aside class="translator-note">譯註：逐項相減的結果[6,4,1]保留原對應順序；改成標準排序後才寫作[1,4,6]，不是計算結果自動由小到大排列。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0045"><p><strong>I<sub>8</sub> [2, 4, 7]＝[1, 4, 6]。</strong></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>I<sub>n</sub>: Subtraction method</h2><p>You can calculate the new set created by I<sub>n</sub> by subtracting all the pitch classes of your first set from <em>n.</em></p><p><strong>What is I<sub>8</sub> of [2, 4, 7]?</strong></p><p>[latex]\begin{alignat*}{2} &amp;&amp; 8\ 8\ 8\ \\ {}- &amp;&amp; [2, 4, 7] \\ \hline &amp;&amp; [6, 4, 1] \\ \end{alignat*}[/latex]</p><p><strong>I<sub>8</sub> [2, 4, 7] = [1, 4, 6].</strong></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0046"><h2>辨認倒影關係與索引數</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0047"><p>互為倒影對應的一對音高類，相加並取模12，就得到<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-index-number">索引數</a>。這是前述減法的自然推論：若倒影後的音高類<em>y</em>等於<em>n−x</em>，那麼<em>n＝x＋y</em>也成立，運算皆採模12。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0048"><p>也可以用鐘面理解。若兩個集合都已排為標準排序，且具有倒影關係，就能像下方<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0049">例5</a>那樣，反向配對各音。將兩個集合上下寫出，再依<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0049">例6</a>將相對位置的整數交叉相加，便能求得I關係的索引數。若和為12或更大，就減去12，使<em>n</em>落在<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-mod-12">模12</a>的0至11範圍。</p></div><aside class="translator-note">譯註：本例的標準排序可以直接反向配對。一般判定時，仍須確認每個對應和都相同；對稱或並列排序可能需要輪換配對。可靠的檢查是驗證每個x映至(n−x) mod 12後，是否恰好得到整個目標集合。</aside><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0049"><table class="no-borders score-table"><tbody><tr><td><figure id="zh-omt-pc-sets-normal-order-and-transformations-attachment_4002" aria-describedby="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-4002" class="wp-caption alignnone"><a href="../assets/omt/e505348fdf018fa0.png"><img class="wp-image-4002 size-medium zoomable" src="../assets/omt/e505348fdf018fa0.png" alt="倒影配對鐘面：藍色7、8、11對紅色6、5、2，每一對相加13，取模12皆為1。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Inversional-pairs.png" loading="lazy" tabindex="0" role="button" width="1206" height="1000"></a><figcaption id="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-4002" class="wp-caption-text"><span class="example-caption-name">例5。</span>互為倒影的兩個集合，以相反順序配對整數，形成鏡像關係。每一對音高類整數相加並取模12，都得到相同的倒影索引數。</figcaption></figure></td><td><figure id="zh-omt-pc-sets-normal-order-and-transformations-attachment_4001" aria-describedby="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-4001" class="wp-caption alignright"><a href="../assets/omt/be1a990dedcbeb15.png"><img class="wp-image-4001 size-medium zoomable" src="../assets/omt/be1a990dedcbeb15.png" alt="交叉加法：上排[7,8,11]與下排[2,5,6]反向配對，三個和皆13，模12後皆1。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Cross-addition-for-inversion.png" loading="lazy" tabindex="0" role="button" width="822" height="794"></a><figcaption id="zh-omt-pc-sets-normal-order-and-transformations-caption-attachment-4001" class="wp-caption-text"><span class="example-caption-name">例6。</span>兩個三音集合上下排列：第一組最左音加第二組最右音，中間兩音相加，第一組最右音加第二組最左音。這就是找倒影索引數的交叉加法。</figcaption></figure></td></tr></tbody></table></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>例5：藍色集合[7,8,11]與紅色[2,5,6]，配對7↔6、8↔5、11↔2。</p><p>例6：交叉相加得13、13、13，各減12得1、1、1，所以是I₁。</p><ul class="label-terms"><li>鐘面t＝10、e＝11；</li><li>不是音名字母。</li></ul><p>這兩圖另用I₁示例，並非前面《多耶》的I₈。</p></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Identifying inversions and their index numbers</h2><p>Any two pitches related by inversion can be added together to form the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-index-number">index number</a>. This makes sense as a logical extension of the subtraction method above: if the inverted pitch <em>y </em>is the result of <em>n–x, </em>then it is also true that <em>n = x + y</em>.</p><p>Another way to visualize this is on the clock face. If you have two sets that are 1) both in normal order and 2) related by inversion, the notes within each set will map onto one another in reverse order, as shown in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0049">Example 5</a> below. Write the two sets in normal form on top of one another, then add the opposing integers of each set together as illustrated in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0049">Example 6</a> to yield the index number of the I relation. If the sum of each number pair is 12 or more, subtract 12 so that your <em>n </em>is in <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-mod-12">mod 12</a>.</p><table class="no-borders score-table">
+<tbody>
+<tr>
+<td>
+<figure id="en-omt-pc-sets-normal-order-and-transformations-attachment_4002" aria-describedby="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-4002" class="wp-caption alignnone"><a href="../assets/omt/e505348fdf018fa0.png"><img class="wp-image-4002 size-medium zoomable" src="../assets/omt/e505348fdf018fa0.png" alt="clock face illustration of paired integers adding to the same index number" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Inversional-pairs.png" loading="lazy" tabindex="0" role="button" width="1206" height="1000"></a><figcaption id="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-4002" class="wp-caption-text"><span class="example-caption-name">Example 5. </span>Two inversionally related sets have integers that pair together in reverse order to form a mirror-like relationship. These paired intervals always sum to the same number, which is the index number of the inversion.</figcaption></figure>
+</td>
+<td>
+<figure id="en-omt-pc-sets-normal-order-and-transformations-attachment_4001" aria-describedby="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-4001" class="wp-caption alignright"><a href="../assets/omt/be1a990dedcbeb15.png"><img class="wp-image-4001 size-medium zoomable" src="../assets/omt/be1a990dedcbeb15.png" alt="Illustration of crosswise addition" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Cross-addition-for-inversion.png" loading="lazy" tabindex="0" role="button" width="822" height="794"></a><figcaption id="en-omt-pc-sets-normal-order-and-transformations-caption-attachment-4001" class="wp-caption-text"><span class="example-caption-name">Example 6. </span>For two 3-note sets, the leftmost integer in one set is added to the rightmost of the second, the middle numbers are added together, and the rightmost element of the first set is added to the leftmost of the second. This is the cross-addition method for finding the index number of inversions.</figcaption></figure>
+</td>
+</tr>
+</tbody>
+</table></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0050"><h2 id="zh-omt-pc-sets-normal-order-and-transformations-chapter-559-section-5" class="section-header"><a id="zh-omt-pc-sets-normal-order-and-transformations-using-the-clock-face-to-transpose-and-invert"></a>用鐘面進行移位與倒影</h2></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0051"><p>如果偏好用視覺方式進行移位與倒影，請看<a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0052">例7</a>的教學影片。</p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0052"><div><aside class="external-resource"><a href="https://coursemedia.gmu.edu/embed/secure/iframe/entryId/1_wuclkc6h/uiConfId/+44431031/st/0" target="_blank" rel="noopener noreferrer" class="external" aria-label="音高類集合的變換（外部網站，另開分頁）">音高類集合的變換</a></aside></div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0053"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0052">例7。</a>用鐘面進行音高類集合的移位與倒影。<a href="https://coursemedia.gmu.edu/media/Transformations/1_wuclkc6h" target="_blank" rel="noopener noreferrer" class="external" aria-label="在GMU CourseMedia開啟（外部網站，另開分頁）">在GMU CourseMedia開啟</a></span></p></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0054"><div class="textbox shaded"><a id="zh-omt-pc-sets-normal-order-and-transformations-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0055"><div class="csl-bib-body"><ul><li class="csl-entry">Straus, Joseph N。2016。《<i>Introduction to Post-Tonal Theory</i>》（後調性理論導論），第4版。紐澤西州Upper Saddle River：Prentice Hall。</li></ul></div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0056"><div class="textbox shaded"><a id="zh-omt-pc-sets-normal-order-and-transformations-resources"></a>資源</div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0057"><ul><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-integers.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="空白鐘面（整數記譜）（外部網站，另開分頁）">空白鐘面（整數記譜）</a></li><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-letters.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="空白鐘面（字母音名）（外部網站，另開分頁）">空白鐘面（字母音名）</a></li><li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="集合論速查表（外部網站，另開分頁）">集合論速查表</a>：整理音高與音高類、音程與音程類、集合與集合類的定義。</li><li><a href="https://brianedwardjarvis.com/MusicTheoryWebApps/clock_master/clock_master_container.html?cm_bej=true&amp;bej_cm_subject=Clock_Types&amp;bej_cm_exercise_name=Integers_Chromatic" target="_blank" rel="noopener noreferrer" class="external" aria-label="Clock Master（外部網站，另開分頁）">Clock Master</a>：將集合標在鐘面上，呈現移位與倒影的視覺工具。</li></ul></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0058"><div class="textbox shaded"><a id="zh-omt-pc-sets-normal-order-and-transformations-assignments"></a>作業</div></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0059"><ol><li>標準排序與變換（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-normal-form.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-normal-form.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="DOCX文件（外部網站，另開分頁）">DOCX文件</a>）。求各集合的標準排序、計算集合變換，並辨認荀貝格〈Nacht〉中的T<sub>n</sub>／I<sub>n</sub>關係。</li><li>作曲準備學習單（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/COMP-Worksheet-for-prep.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/COMP-Worksheet-for-prep.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="DOCX文件（外部網站，另開分頁）">DOCX文件</a>）。透過尋找集合及變換，為<a href="../omt/omt-set-class-and-prime-form.html#zh-omt-set-class-and-prime-form-assignments">集合類作曲</a>作準備。</li></ol></div><div class="translation-unit" id="omt-pc-sets-normal-order-and-transformations-u0060"><div class="media-attributions clear"><h2>媒體來源與授權</h2><ul><li>倒影比較圖（inversion-2），© Megan Lavengood，採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>倒影配對圖（Inversional pairs），© Megan Lavengood。</li><li>倒影交叉加法圖（Cross-addition for inversion），© Megan Lavengood，採<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li></ul></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-pc-sets-normal-order-and-transformations-chapter-559-section-5" class="section-header"><a id="en-omt-pc-sets-normal-order-and-transformations-using-the-clock-face-to-transpose-and-invert"></a>Using the Clock Face to Transpose and Invert</h2><p>If you prefer a more visual method for transposing and inverting, watch the video lesson in <a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0052">Example 7</a>.</p><div><aside class="external-resource"><a href="https://coursemedia.gmu.edu/embed/secure/iframe/entryId/1_wuclkc6h/uiConfId/+44431031/st/0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Transformations（外部網站，另開分頁）">Transformations</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-pc-sets-normal-order-and-transformations.html#omt-pc-sets-normal-order-and-transformations-u0052">Example 7.</a> Using the clock face for transposition and inversion of pitch class sets. <a href="https://coursemedia.gmu.edu/media/Transformations/1_wuclkc6h" target="_blank" rel="noopener noreferrer" class="external" aria-label="Open on GMU CourseMedia（外部網站，另開分頁）">Open on GMU CourseMedia</a></span></p><div class="textbox shaded"><a id="en-omt-pc-sets-normal-order-and-transformations-further-reading"></a>Further reading</div><div class="csl-bib-body">
+<ul>
+<li class="csl-entry">Straus, Joseph N. 2016. <i>Introduction to Post-Tonal Theory</i>. 4th ed. Upper Saddle River, NJ: Prentice Hall.</li>
+</ul>
+</div><div class="textbox shaded"><a id="en-omt-pc-sets-normal-order-and-transformations-resources"></a>Resources</div><ul>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-integers.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Blank clock faces (integer notation)（外部網站，另開分頁）">Blank clock faces (integer notation)</a></li>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Clock-Faces-letters.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Blank clock faces (letter names)（外部網站，另開分頁）">Blank clock faces (letter names)</a></li>
+<li><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/INFO-set-theory-quick-reference-sheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Set Theory Quick Reference Sheet（外部網站，另開分頁）">Set Theory Quick Reference Sheet</a>: summarizes the definitions of pitch vs. pitch class, intervals vs. interval classes, and sets vs. set classes.</li>
+<li><a href="https://brianedwardjarvis.com/MusicTheoryWebApps/clock_master/clock_master_container.html?cm_bej=true&amp;bej_cm_subject=Clock_Types&amp;bej_cm_exercise_name=Integers_Chromatic" target="_blank" rel="noopener noreferrer" class="external" aria-label="Clock Master（外部網站，另開分頁）">Clock Master</a>: visualizer that maps sets onto a clock face. Visualizes transposition and inversion.</li>
+</ul><div class="textbox shaded"><a id="en-omt-pc-sets-normal-order-and-transformations-assignments"></a>Assignments</div><ol>
+<li>Normal form and transformations (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-normal-form.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/WK-normal-form.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Asks students to find normal form of various sets, calculate transformations of sets, and identify T<sub>n</sub>/I<sub>n</sub> relationships in "Nacht" by Arnold Schoenberg.</li>
+<li>Composition prep worksheet (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/COMP-Worksheet-for-prep.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/COMP-Worksheet-for-prep.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Prepares students for the <a href="../omt/omt-set-class-and-prime-form.html#en-omt-set-class-and-prime-form-assignments">set class composition</a> by asking them to find sets and transformations.</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>inversion-2  ©  Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Inversional pairs  ©  Megan Lavengood     </li><li>Cross-addition for inversion  ©  Megan Lavengood    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li></ul></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-intervals-in-integer-notation.html">上一節：整數記譜法中的音程</a><a href="../omt/omt-set-class-and-prime-form.html">下一節：集合類與原型</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/pc-sets-normal-order-and-transformations/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note">本頁部分譜例以原來源連結提供。<a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>用十二音作曲 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-composing-with-twelve-tones.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group" open=""><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a aria-current="page" href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-composing-with-twelve-tones" data-book="omt" data-page-url="/omt/omt-composing-with-twelve-tones.html" data-next-url="/omt/omt-history-and-context-of-serialism.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">用十二音作曲</h1><p class="authors">Mark Gotham</p><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content">本章帶你走過一段創作新十二音音樂的過程。仔細跟隨別人的創作步驟，往往能有所收穫；親自做一次類似的嘗試，就更有幫助了。</div></div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0002"><p>到目前為止，我們看過音列與序列特性的抽象概念，也看過它們在既有作品中的用法。現在，換我們寫一首新曲，補上實作的一面。要再強調一次：和任何音樂風格或技法一樣，用十二音音列作曲有無限多種途徑，所以這只能是一個例子，不能代表所有可能，正如單一分析也無法代表全部分析。不過，實際用音列寫作，仍能清楚示範如何往返於理論與實踐。我們可以把巴爾托克精彩的《<em>小宇宙</em>》當作理想：篇幅短、創作課題明確，同時又是饒有趣味的真正樂曲。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0003"><p>這裡先選擇並檢視音列，再開始寫一些段落，至少寫出各段的開頭。我們會用不同方式處理同一材料，尤其比較序列操作相對「自由」與「嚴格」的做法。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">This chapter goes through the composition of some new twelve-tone music. It can be useful to follow someone else's process closely in this way. It is certainly useful to try something similar yourself.</div>
+</div><p>So far, we’ve seen some rows and serial properties in the abstract, and their usage in some existing pieces. Now let’s complement that by writing a new piece. It’s worth reiterating that (like any other musical style or technique) there are infinitely many ways of approaching composition with twelve-tone rows, and so this can only be an example and not representative—indeed no more than a single analysis can be. All the same, an example of writing with rows will be a helpful illustration of how we can navigate between theory and practice. We can aspire to something like Béla Bartók’s marvelous <em>Mikrokosmos</em> collection: short pieces with a clear compositional "brief" that are also rather interesting as "real" pieces.</p><p>Here, we’ll start by choosing and examining rows, then go on to write at least the start of some passages that vary in how they approach the same material, especially in terms of how relatively "free" or "strict" they are in their use of serial processes.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0004"><h2 id="zh-omt-composing-with-twelve-tones-chapter-7289-section-1" class="section-header">選擇音列</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0005"><p>先挑幾個音列來用。選擇音列可以有很多動機；我比較想找的是：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0006"><ul><li>內部具有「有趣」特性……</li><li>……而且這些特性能引出某些作曲策略；</li><li>同時，在既有作品中還相對少被探索的音列。</li></ul></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0007"><p>對我而言，「全三音組音列」很符合這些條件。Alan Marsden（2012，162頁）的定義是：「把十二音序列視為環狀時，十二組連續三個音高類所構成的集合，包含全部十二種三音集合類。」<a class="footnote" title="此處為首尾相接的全三音組環。Morris另將全三音組音列定義為不含(036)與(048)的十種三音組音列，詳見腳註。" id="zh-omt-composing-with-twelve-tones-return-footnote-7289-1" href="../omt/omt-composing-with-twelve-tones.html#zh-omt-composing-with-twelve-tones-footnote-7289-1"><sup class="footnote">[1]</sup></a><br>Marsden指出，這樣的環狀音列共有四種類型，以下各列一個代表：</p></div><aside class="translator-note">譯註：本章採首尾相接的「全三音組環」定義；每個起點取連續三音，共十二組，並非只看四個互不重疊的三音組。「四種」是四個代表類型，不是說字面上只有四條數字排列；移位、倒影、逆行或改變環的起點，仍能產生其他寫法。Marsden原論文的四個代表數字已核對；本機另核算這四列各自的十二個循環三音組，確實涵蓋全部十二種T/I集合類。</aside><p class="image-labels">譯註來源：<a href="https://www.lancaster.ac.uk/staff/marsdena/publications/MarsdenJMM2012D.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Alan Marsden：Final response，作者公開預印本，第4–5個PDF頁（外部網站，另開分頁）">Alan Marsden：Final response，作者公開預印本，第4–5個PDF頁</a></p><div class="translation-unit" id="omt-composing-with-twelve-tones-u0008"><ol>
+<li>[0, 2, 6, 10, 5, 3, 8, 9, 11, 7, 4, 1],</li>
+<li>[0, 2, 6, 10, 11, 9, 8, 3, 5, 1, 4, 7],</li>
+<li>[0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1],</li>
+<li>[0, 2, 6, 10, 1, 4, 5, 3, 8, 9, 11, 7]</li>
+</ol></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0009"><p>以下將它們寫成從C開始的十二音音列，並在下方列出、標示對應的三音組：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0010"><div><aside class="external-resource"><a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="全三音組音列原譜（外部網站，另開分頁）">全三音組音列原譜</a><p class="score-source">原章完整單頁音列圖，已保存在本機，附中文說明與標籤校正。 <a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="原章線上譜例（外部網站，另開分頁）">原章線上譜例</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>全三音組音列，完整單頁原圖；原標籤的兩處錯誤見下方校註。</figcaption></figure><div class="image-labels structured-labels" aria-label="譜面標示與中文說明"><section class="label-section"><p>All-Trichord Rows＝全三音組音列。</p><ul class="label-terms"><li>說明：上譜表是音列，下譜表是三音組；</li><li>每個三音組由正上方的音與其後兩音組成，例如第一組C、D、F♯。</li></ul><p>音列首尾相接，末尾兩組由開頭音補齊。</p><p>下方文字先列集合原型，例如026，再列Forte集合類編號，例如3-8。</p><ul class="label-terms"><li>原圖第1列最後一組誤標013／3-2，應為012／3-1；</li><li>第2列最後一組誤標025／3-7，應為027／3-9。</li></ul><p>第4列第8組的3-5B，在本章合併移位與倒影的集合類層級歸為3-5。</p><p>以下是依原音列核算的完整標籤對照：第1列依序：026（3-8）、048（3-12）、015（3-4）、027（3-9）、025（3-7）、016（3-5）、013（3-2）、024（3-6）、037（3-11）、036（3-10）、014（3-3）、012（3-1）。</p><p>第2列依序：026（3-8）、048（3-12）、015（3-4）、012（3-1）、013（3-2）、016（3-5）、025（3-7）、024（3-6）、014（3-3）、036（3-10）、037（3-11）、027（3-9）。</p><p>第3列依序：026（3-8）、048（3-12）、014（3-3）、036（3-10）、037（3-11）、027（3-9）、013（3-2）、016（3-5）、025（3-7）、024（3-6）、015（3-4）、012（3-1）。</p><p>第4列依序：026（3-8）、048（3-12）、037（3-11）、036（3-10）、014（3-3）、012（3-1）、025（3-7）、016（3-5）、013（3-2）、024（3-6）、015（3-4）、027（3-9）。</p></section></div></div><br><a href="https://musescore.com/user/30425053/scores/6793408/s/CovNzk" target="_blank" rel="noopener noreferrer" class="external" aria-label="全三音組音列（外部網站，另開分頁）">全三音組音列</a>，<a href="https://musescore.com/fourscoreandmore" target="_blank" rel="noopener noreferrer" class="external" aria-label="FourScoreAndMore（外部網站，另開分頁）">FourScoreAndMore</a>製作。</div></div><aside class="translator-note">譯註：原圖的前兩列最後一個三音組標籤有誤。第一列末尾[1,0,2]屬012，第二列末尾[7,0,2]屬027；原圖分別重複標成013、025，與各列應涵蓋十二種集合類的定義矛盾。原圖保持原貌，中文圖例列出48組核算結果，不能照抄錯誤標籤後宣稱全三音組性質已驗證。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0011"><p>標準十二音音列包含全部十二個音高類，而包含全部十一種有序音高類音程的「全音程音列」也已是熟悉、常見的類型。循此思路，全三音組音列可以視為這些音列特性的進一步延伸。如果十二音創作的目標，是盡可能拓展材料的多樣性，它們確實很有用。</p></div><aside class="translator-note">譯註：「全部十一種音程」指1到11的有序音高類音程，不能寫成音程類1到11；無序音程類只有0到6。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0012"><p>或許最引人躍躍欲試的是，Marsden最後說，他「始終未能找到令人信服的方法，把它用於作曲」（2012，163頁）。對某些作曲家而言，這種話實在很難抗拒。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-composing-with-twelve-tones-chapter-7289-section-1" class="section-header">Choosing Rows</h2><p>Let’s start by choosing some rows to work with. Among the many possible motivations for choosing rows, I’m inclined to seek out those that:</p><ul>
+<li>Have "interesting" internal properties …</li>
+<li><span>… that are suggestive of some compositional strategies</span></li>
+<li><span>And have been relatively under-explored in previous pieces.</span></li>
+</ul><p>For me, the "all-trichord" rows are a great fit for these criteria. Alan Marsden (2012, 162) defines these as "12-note series which, when treated as circular, [contain] in the 12 sets of 3 consecutive pitch classes all the 12 possible classes of trichord."<a class="footnote" title='Note that the term "all-trichord rings" is sometimes used for this topic, with "all-trichord row" referring instead to rows without wrapping around (and therefore omitting two of the trichords). See Robert Morris’s "Elementary Twelve-Tone Theory," for instance, and note the definition (after Babbitt) of an all-trichord row as "A ten-trichord row that excludes SC 3-10[036] and 3- 12[048]."' id="en-omt-composing-with-twelve-tones-return-footnote-7289-1" href="../omt/omt-composing-with-twelve-tones.html#en-omt-composing-with-twelve-tones-footnote-7289-1"><sup class="footnote">[1]</sup></a><br>
+Marsden has demonstrated that there are exactly four distinct forms of this row:</p><ol>
+<li>[0, 2, 6, 10, 5, 3, 8, 9, 11, 7, 4, 1],</li>
+<li>[0, 2, 6, 10, 11, 9, 8, 3, 5, 1, 4, 7],</li>
+<li>[0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1],</li>
+<li>[0, 2, 6, 10, 1, 4, 5, 3, 8, 9, 11, 7]</li>
+</ol><p><span>Here they are as twelve-tone rows starting on C, and also with the corresponding trichords given and labeled below:</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="score-source">Complete original single-page row chart saved locally; source labels retained. <a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Original chapter score（外部網站，另開分頁）">Original chapter score</a></p></aside><div class="recovered-score"><figure><span class="publication-external-media"><a href="https://musescore.com/user/30425053/scores/403299860346169/embed" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span><figcaption>All-trichord rows, complete original one-page chart.</figcaption></figure></div><br>
+<a href="https://musescore.com/user/30425053/scores/6793408/s/CovNzk" target="_blank" rel="noopener noreferrer" class="external" aria-label="All-trichord rows（外部網站，另開分頁）">All-trichord rows</a> by <a href="https://musescore.com/fourscoreandmore" target="_blank" rel="noopener noreferrer" class="external" aria-label="FourScoreAndMore（外部網站，另開分頁）">FourScoreAndMore</a></div><p>Given that all standard tone rows feature all twelve pitches and the "all-interval" rows featuring all eleven intervals are also familiar and common, you could view the all-trichord rows as a logical extension of these familiar row properties. They are certainly useful insofar as our goal in composing with twelve tones is to pursue maximal variance.</p><p>Perhaps most compellingly of all, Marsden concludes that he "never did find a convincing way to make use of this in composition" (2012, 163). To some composers, that kind of comment is irresistible.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0013"><h2 id="zh-omt-composing-with-twelve-tones-chapter-7289-section-2" class="section-header">創作範例</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0014"><p>以下透過幾個創作範例與討論，展示如何由音列產生樂曲的音高材料。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-composing-with-twelve-tones-chapter-7289-section-2" class="section-header">Example Compositions</h2><p>Following are several example compositions and discussions of how a row can be used to generate the pitch material for a musical composition.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0015"><h2>一段相對自由的幻想曲</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0016"><p>先從最不嚴格的做法開始。我們把使用這些音列、強調彼此重疊的三音組，視為足夠的限制；其他事項留給自由創作，包括：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0017"><ul><li>重複單音或<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-trichord">三音組</a>，但也許不重複二音組、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-tetrachord">四音組</a>等其他分組。</li><li>具體的節奏與分句，只要大致凸顯三音分組即可。</li><li>透過音域與音色的變化，拓展表情幅度。</li></ul></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0018"><p>這些起始條件可以用許多方式實現。以下是一段中提琴獨奏的開頭，從第一個三音組移向第二個；這兩組正是前列四個音列開頭共同具有的材料：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0019"><p><img class="alignnone size-full wp-image-7291 zoomable" src="../assets/omt/925bd96836d13eaa.png" alt="中提琴獨奏開頭，以中音譜號呈現重疊三音組，拍號由4/4改為5/8，再回4/4。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Solo.png" loading="lazy" tabindex="0" role="button" width="1782" height="294"></p></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Very slow and free＝非常緩慢、自由地；</li><li>pp, echo＝極弱，如回聲；</li><li>f＝強；</li><li>p＝弱。</li></ul><ul class="label-terms"><li>開頭音高C、D、F♯形成第一個三音組，稍後移向D、F♯、B♭；</li><li>重複、音域、奏法與節奏仍自由處理。</li></ul></section></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0020"><p>許多作曲家，不論是否使用序列技法，都覺得先設下這類限制很有幫助，部分原因正是它讓你能自由處理更細部的問題。限制之內，仍有廣闊的發展可能。例如，可以塑造逐漸上升至高點、再下降的整體輪廓；也可以偏好一段靜止、明顯受到約束的音樂。選擇仍然很開放。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>A (relatively) free fantasia</h2><p>Let’s begin with the least strict approach. Here we’ll consider the use of these rows and the emphasis on overlapping trichords as enough of a constraint, leaving to free creative choice all other matters including:</p><ul>
+<li>Repetition of a note or a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-trichord">trichord </a>(but perhaps not other groupings like dyads and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-tetrachord">tetrachords</a>).</li>
+<li><span>The specific rhythms and phrasings (as long as they typically emphasize grouping in threes).</span></li>
+<li><span>Registral and timbral variety for expressive range.</span></li>
+</ul><p>That starting premise could be realized in any number of different ways. Here’s an example opening for solo viola that moves from the first trichord to the second (the two that are common to the start of all four rows as set out above):</p><p><img class="alignnone size-full wp-image-7291 zoomable" src="../assets/omt/925bd96836d13eaa.png" alt="A short viola solo" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Solo.png" loading="lazy" tabindex="0" role="button" width="1782" height="294"></p><p>Many composers—serial and otherwise—find it helpful to set initial constraints in this way, partly because it can give you license to approach the more detailed matters freely. The restrictions leave open a wide range of possibilities for how to proceed. For instance, we might like to create an overall contour that works up to a high point and then comes back down from there. Alternatively, we might prefer a static and demonstrably constrained passage. It’s wide open.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0021"><h2>以程序推進的「無窮動」</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0022"><p>也可以用更活潑、節奏感更強的方式，處理這些重疊三音組。例如，採取某種極簡主義式的無窮動（moto perpetuo）：持續反覆一個三音組許多次，再進到下一組。先讓音符連續流動，依序反覆三音組，也就是第1、2、3、1、2、3……音。要移到下一組，只需把第2音當作新循環的開頭，改為第2、3、4音。因此，在持續反覆1–2–3時，某次演奏到1–2–3–1，接下來的2便開啟2–3–4的新循環。</p></div><aside class="translator-note">譯註：這裡1、2、3、4代表音列中的第幾個音，不是C＝0的音高類數字。切換點前多奏第一音，才能讓下一音恰好成為下一組的開頭。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0023"><p>完成任意次三音循環，再多奏一音，就能作這種切換：例如4音（一輪加1音）、7音（兩輪加1音）、10、13、16音，依此類推。這也引出節奏與拍節的考量。假設把主要以三音分組的音型，放進[latex]\mathbf{^2_2}[/latex]這類二拍子，便會形成熟悉而有吸引力的三對四拍節衝突。選什麼拍號，都可能需要因應循環長度作調整：有些長度符合拍節，有些則打斷它。例如，以八分音符為單位，在[latex]\mathbf{^2_2}[/latex]中，4音剛好是一個二分音符拍；16音則是兩小節，也就是四個拍、每拍四個八分音符。相較之下，10音可能需要改變拍節，例如寫成[latex]\mathbf{^5_4}[/latex]；7音則需要在更細的拍節層級安排，例如[latex]\mathbf{^7_8}[/latex]。</p></div><aside class="translator-note">譯註：原文把7音括註為「兩輪」，應為兩輪再加1音。此處循環長度一律以八分音符數計算：4、7、10、13、16均為3n+1。在2/2中，16個八分音符等於四個二分音符拍，即兩小節；原文4×4是四拍乘每拍四個八分音符，不是16個拍。下方實際譜例也使用2/4等局部拍號，並不逐字照搬正文列出的所有候選拍號。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0024"><p>以下是一段弦樂四重奏，實現了其中一些想法。每次循環都由中提琴與大提琴的撥奏清楚標示，音型也在兩部小提琴之間交接，順便讓演奏者喘口氣！大部分循環長16音，但也有較短的循環，用來打破流動，或讓某些三音組比其他組停留更久。選擇哪些組，也仍是自由的。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0025"><p><span class="publication-external-media"><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Moto-perpetuo.png" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span></p></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Moto perpetuo＝無窮動；</li><li>二分音符＝120；</li><li>pizz.＝撥奏；</li><li>New cycle begins (piece continues)＝新的循環開始（樂曲繼續）。</li></ul><ul class="label-terms"><li>譜面依序可見二二拍、二四拍、五四拍、七八拍等配置；</li><li>f與p為強、弱，漸強線表示逐步增強。</li></ul></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>A process-driven "moto perpetuo"</h2><p>We could also approach these overlapping trichords in a more vigorous, rhythmic way. For instance, we could have a kind of minimalist moto perpetuo style, insistently repeating each trichord numerous times before moving on to the next one. Let’s start with a continuous stream of notes, repeating our trichord in order (so with pitches 1-2-3-1-2-3- …). To move on to the next trichord, we can simply take the second pitch as the start of a new cycle for pitches 2-3-4. So if we’re repeating pitches 1-2-3-, then at some point we have a 1-2-3-1- and the following 2 marks the beginning of a 2-3-4- cycle.</p><p>We can make this change after completing any number of 3-note cycles plus 1 note: that is, after 4 notes (one cycle +1), or 7 (two cycles), 10, 13, 16, and so on. This should get us thinking about rhythm and meter. Say we put this predominantly 3-grouping pattern into a duple meter like [latex]\mathbf{^2_2}[/latex]. That would lend the music an attractive and familiar 3-against-4 metrical dissonance. Whatever meter we choose, we’ll have to make adjustments for some of the cycle lengths: some will "fit" with the meter, and others will disrupt it. For instance, in our duple meter, the 4 cycle could be "one beat" (e.g., four eighth notes as one beat in [latex]\mathbf{^2_2}[/latex]) and 16 could be 2 measures (4 x 4 beats). By contrast, the 10 cycle means breaking up the meter a bit (e.g., with a [latex]\mathbf{^5_4}[/latex]), and the 7 stretches down to another, lower metrical level ([latex]\mathbf{^7_8}[/latex]).</p><p>Here’s a short passage realizing some of these ideas for string quartet, with each cycle now clearly marked both by viola and cello pizzicato, and by moving the pattern from one violin to the other (which also gives each player a welcome break!). Most of the cycles are 16 notes long, but there are some shorter ones too to break up the flow, and to dwell on some of the trichords more than others. Again, the choice of which is free.</p><p><span class="publication-external-media"><a href="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Moto-perpetuo.png" target="_blank" rel="noopener noreferrer" class="external">至原來源查看譜例／圖片 ↗</a></span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0026"><h2>一段嚴格安排的賦格</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0027"><p>最後試試較嚴格的做法：不重複音高，並同時使用不只一條音列。我們把它放進經典的嚴格複音曲式——賦格——之中。<a class="footnote" title="不熟悉賦格寫作，可先閱讀〈巴洛克盛期的賦格呈示段〉。" id="zh-omt-composing-with-twelve-tones-return-footnote-7289-2" href="../omt/omt-composing-with-twelve-tones.html#zh-omt-composing-with-twelve-tones-footnote-7289-2"><sup class="footnote">[2]</sup></a>可以直接把一條音列寫成十二音主題，再取一條與主題具有六音組互補組合性的音列作為對題。主題與對題要一起演奏，因此六音組的互補組合性，可以確保每半個音列循環內，兩者合起來不重複任何音高類。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0028"><p>也可以進一步確保第三、第四聲部加入後，在三音組這個層級上，仍不重複音高類。這幾條音列本身沒有我們所需的三音組互補組合性，但既然已有一對六音組互補的音列，就能調整每條音列中的三音組，產生新的一對，與原先兩條結合，使每一組並列的三音材料都涵蓋十二個音高類。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0029"><p>更精確地說，直接交換三音組會破壞原音列次序，失去其「全三音組」特性；不過，還有一種方式能達到相同的集合分配效果，同時維持與原音列一致的環狀結構。「交換每個半部的兩個三音組」，會把1、2、3、4變成2、1、4、3。若要保留原有的環狀鄰接關係，可以先將整條音列逆行，再循環移動半條音列；這時每個三音組內部的次序也會反向。以上行半音音階音列作示意，結果如下：</p></div><aside class="translator-note">譯註：逆行加循環移動6音，會得到第二三音組的逆行、第一組的逆行、第四組的逆行、第三組的逆行。它保留環上的鄰接關係至逆行等價，但不是維持原本向前的逐音次序；若只把四個區塊換位卻不倒轉組內次序，通常會破壞全三音組性質。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0030"><table class="grid score-table">
+<tbody>
+<tr>
+<td>音列</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>逆行後循環移動6音</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：兩張示意表中的1到12，是十二個不同音的抽象標號，不是本書C＝0到B＝11的記法，也不是說所有互補音列都恰好依原列第7–12音的順序排列。表格展示不重複的分組邏輯；實際音列見後面的循環與配對表。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0031"><p>把這個程序分別套用到原音列及其六音組互補配對，就能得到下列配置：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0032"><table class="grid score-table">
+<tbody>
+<tr>
+<td>1.原音列（同上）</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>2.六音組互補音列</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3.第1列逆行後循環移動（同上）</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4.第2列逆行後循環移動</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0033"><p>請注意，以下各範圍內都不會重複音高類：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0034"><ul><li>四條音列各自內部；畢竟它們本來就是十二音音列。</li><li>原音列與互補音列的前半合起來、兩者後半合起來，以及經逆行與循環移動所得那一對的前半或後半。</li><li>各組相對應、互不重疊的三音片段合起來，例如四條音列各自第1–3音的總和。</li></ul></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0035"><p>只要先有一對六音組互補的音列，上述構造就能由分組關係保證這個特性；很值得收進作曲的工具箱。</p></div><aside class="translator-note">譯註：「任意音列」要附帶前提：先選得六音組互補的一對，才可作這個四聲部構造。這並不能證明任意十二音音列都存在非平凡的倒影互補配對，也不保證任意切換起點後仍互補。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>A strict, fixed fugue</h2><p>Finally, let’s explore a stricter approach, without note repetitions, and with more than one row at a time. Let's do this in the context of the classic strict polyphonic form: the fugue.<a class="footnote" title="Readers unfamiliar with fugal writing may want to try the High Baroque Fugal Exposition chapter first." id="en-omt-composing-with-twelve-tones-return-footnote-7289-2" href="../omt/omt-composing-with-twelve-tones.html#en-omt-composing-with-twelve-tones-footnote-7289-2"><sup class="footnote">[2]</sup></a> We could make one of the rows directly into a twelve-tone subject and take a countersubject that’s hexachord-combinatorial with this subject. The subject and countersubject are going to be played together (by definition), so hexachordal combinatoriality will ensure that we don’t repeat a pitch within the half-cycle.</p><p>We could also ensure that pitches aren’t repeated even when third and fourth voices enter—so, at the trichord level. Our rows aren’t trichord-combinatorial, but given our existing hexachord-combinatorial pair, we can get there by swapping the trichords of each row to make a new pair that, combined with the existing two, will see all twelve pitches in each set of trichords.</p><p>More precisely, simply swapping trichords would break the ordering of these row and mean losing the defining "all-trichord" property, though there’s still a way we can achieve the same thing while retaining a structure consistent with the original row. Note that "swapping trichords of each half" means taking trichords 1,2,3,4 and ending up with 2,1,4,3. To get from one to the other while retaining the same ordering, we can retrograde and rotate by a half-cycle. So, for instance, for an ascending chromatic scale row, we’d get this:</p><table class="grid score-table">
+<tbody>
+<tr>
+<td>Row</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Retrograde and rotate by 6</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+</tr>
+</tbody>
+</table><p>So, applying this process to the initial row and a hexachord-combinatorial pair, we can get a solution like the following:</p><table class="grid score-table">
+<tbody>
+<tr>
+<td>1. Initial row (as above)</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>2. Hexachord-combinatorial pair</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3. R-rotation of 1. (as above)</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4. R-rotation of 2.</td>
+<td>12</td>
+<td>11</td>
+<td>10</td>
+<td>9</td>
+<td>8</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table><p>Note that there’s no repetition of a pitch within:</p><ul>
+<li>Any of the four rows by themselves (of course, they're twelve-tone rows).</li>
+<li>The first half of the initial row and the hexachord-combinatorial one, the second halves of those two rows, or the first or second halves of the rotated pair.</li>
+<li>Any of the discrete trichord subsets (e.g., pitches 1–3 of all rows combined).</li>
+</ul><p><span>This property is true by definition for any row, so it’s worth keeping in the compositional box of tricks.</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0036"><h3>把互補組合性用於實作</h3></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0037"><p>決定要用互補音列配對很容易，但必須先知道，所選音列至少有一條真的具有這項特性。事實上，四條都有，只是程度不同：每條音列至少有一些循環起點，能形成倒影的六音組互補組合。別忘了，環狀音列改變起點，仍保有關鍵的全三音組特性。第三、第四條音列符合條件的循環起點，比第一、第二條稍多。以第三條為例，列表如下：</p></div><aside class="translator-note">譯註：十二個循環起點中，第一、第二條各有4個符合倒影六音組互補條件，第三、第四條各有6個。這是本機逐一比較六音集合與補集的結果，不代表所有循環起點都符合。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0038"><table class="grid score-table">
+<tbody>
+<tr>
+<td><strong>循環移動</strong></td>
+<td><strong>音列</strong></td>
+<td><strong>倒影互補配對</strong></td>
+</tr>
+<tr>
+<td>0</td>
+<td>[0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1]</td>
+<td>I3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>[2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1, 0]</td>
+<td>I5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>[6, 10, 7, 4, 11, 9, 8, 3, 5, 1, 0, 2]</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>[10, 7, 4, 11, 9, 8, 3, 5, 1, 0, 2, 6]</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>[7, 4, 11, 9, 8, 3, 5, 1, 0, 2, 6, 10]</td>
+<td>I2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>[4, 11, 9, 8, 3, 5, 1, 0, 2, 6, 10, 7]</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>[11, 9, 8, 3, 5, 1, 0, 2, 6, 10, 7, 4]</td>
+<td>I4</td>
+</tr>
+<tr>
+<td>7</td>
+<td>[9, 8, 3, 5, 1, 0, 2, 6, 10, 7, 4, 11]</td>
+<td>I10</td>
+</tr>
+<tr>
+<td>8</td>
+<td>[8, 3, 5, 1, 0, 2, 6, 10, 7, 4, 11, 9]</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>[3, 5, 1, 0, 2, 6, 10, 7, 4, 11, 9, 8]</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>[5, 1, 0, 2, 6, 10, 7, 4, 11, 9, 8, 3]</td>
+<td>I4</td>
+</tr>
+<tr>
+<td>11</td>
+<td>[1, 0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5]</td>
+<td></td>
+</tr>
+</tbody>
+</table></div><aside class="translator-note">譯註：I3、I5等在本表是以第一音高類命名的倒影音列形式，不是固定運算Iₙ(x)=n−x的下標。第三音列各循環起點0、1、4、6、7、10的倒影運算軸，依序為3、7、9、3、7、9；所得倒影音列首音才是3、5、2、4、10、4。12列原數字與空白格都已驗算；空白代表該起點沒有這種倒影六音組互補配對。</aside><div class="translation-unit" id="omt-composing-with-twelve-tones-u0039"><p>下圖從音列的第二音起讀，示範每次再移動一個三音組，仍可保有倒影互補組合性，也就是上表的循環移動1、4、7、10：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0040"><p><img class="alignnone size-full wp-image-7294 zoomable" src="../assets/omt/56e6ccca6a0c75fc.png" alt="四組四聲部音列表，依序示範選定起點、再循環移動3、6、9音，並調整倒影配對以維持三音組的互補。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Rows_and_rotations.png" loading="lazy" tabindex="0" role="button" width="7440" height="10523"></p></div><aside class="translator-note">譯註：本圖「Initial row (no rotation)」是相對於圖中選定、從D＝2開始的版本；它已是上表第三音列的rotation1。後續+3、±6、+9（−3），所以對應上表rotation4、7、10，不要再把圖中no rotation當成表格rotation0。</aside><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Initial row (no rotation)＝本圖選定的起始音列（尚未再移動）；</li><li>Hexachord-combinatorial pair＝六音組互補配對；</li><li>Both rows in retrograde and rotated by 6＝兩列皆逆行後循環移動6音；</li><li>Rotate +3 (one trichord) and adjust the transpositions for combinatoriality＝循環移動3音（一個三音組），並調整移位以維持互補組合性；</li><li>Now I2＝此時倒影形式為I₂；</li><li>Rotate +/−6＝循環移動6音；</li><li>Rotate +9 (−3)＝循環移動9音，等同反向移動3音。</li></ul><ul class="label-terms"><li>Trichord＝三音組；</li><li>A、B、C、D標四組素材；</li><li>i、r、ri分別表示倒影、逆行、逆行倒影。</li></ul></section></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0041"><p>為了運用這項特性，可以從這些三音組／循環起點中的任何一個開始。這裡選擇第二音，部分是因為它以增三和弦起頭，很適合作為出發點：用一個對稱的三音組，開展主題與對題互為倒影的賦格風段落。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Combinatoriality in practice</h3><p>It’s all very well deciding that we’re going to use combinatorial pairs, but we need to know that at least one of our rows actually has this property. In fact, they all do, though not equally: each row has at least some rotations that are inversion-combinatorial (remember that rotating these rows retains the all-important all-trichord property!), though rows 3 and 4 have slightly more such rotations than 1 and 2. Here’s the list for row 3, for instance:</p><table class="grid score-table">
+<tbody>
+<tr>
+<td><strong>Rotation</strong></td>
+<td><strong>Row</strong></td>
+<td><strong>Combinatoriality</strong></td>
+</tr>
+<tr>
+<td>0</td>
+<td>[0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1]</td>
+<td>I3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>[2, 6, 10, 7, 4, 11, 9, 8, 3, 5, 1, 0]</td>
+<td>I5</td>
+</tr>
+<tr>
+<td>2</td>
+<td>[6, 10, 7, 4, 11, 9, 8, 3, 5, 1, 0, 2]</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>[10, 7, 4, 11, 9, 8, 3, 5, 1, 0, 2, 6]</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>[7, 4, 11, 9, 8, 3, 5, 1, 0, 2, 6, 10]</td>
+<td>I2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>[4, 11, 9, 8, 3, 5, 1, 0, 2, 6, 10, 7]</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>[11, 9, 8, 3, 5, 1, 0, 2, 6, 10, 7, 4]</td>
+<td>I4</td>
+</tr>
+<tr>
+<td>7</td>
+<td>[9, 8, 3, 5, 1, 0, 2, 6, 10, 7, 4, 11]</td>
+<td>I10</td>
+</tr>
+<tr>
+<td>8</td>
+<td>[8, 3, 5, 1, 0, 2, 6, 10, 7, 4, 11, 9]</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>[3, 5, 1, 0, 2, 6, 10, 7, 4, 11, 9, 8]</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>[5, 1, 0, 2, 6, 10, 7, 4, 11, 9, 8, 3]</td>
+<td>I4</td>
+</tr>
+<tr>
+<td>11</td>
+<td>[1, 0, 2, 6, 10, 7, 4, 11, 9, 8, 3, 5]</td>
+<td></td>
+</tr>
+</tbody>
+</table><p>And here’s a demonstration of the rotation starting on the second pitch means we can rotate around the trichords and still have I-combinatoriality (i.e., rotations 1, 4, 7, 10 from the table):</p><p><img class="alignnone size-full wp-image-7294 zoomable" src="../assets/omt/56e6ccca6a0c75fc.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Rows_and_rotations.png" loading="lazy" tabindex="0" role="button" width="7440" height="10523"></p><p>We could start on any one of those trichords/rotations for this property. Of those options, let’s start on the second pitch, partly because it gives us the augmented triad, which seems like a good place from which to launch: a symmetrical trichord for a fugato with inverse-related subject and countersubject.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0042"><h3>真正寫成音樂！</h3></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0043"><p>接下來就是寫音樂了！我們用不同聲部、進入時點與節奏，讓各音列清楚區分。開頭的呈示段（第1–8小節）包含：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0044"><ul><li>將主題分成四個三音組，並使用類似前面無窮動的三對四音型。</li><li>每個聲部都以主題進入，但每次提高一個半音。</li><li>對題以互補的節奏，逐步填滿空隙。</li></ul></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0045"><p>呈示段之後，探索前述三音組循環移動的特性：大提琴持續循環演奏相同四個三音組，每次相鄰的音列陳述重疊一個三音組，帶出其他聲部中相對應的循環版本，如上方音列表所示。此外，由於大提琴維持相同音高，其他聲部就必須移到新的音高位置，才能保有互補組合性；這與上圖固定最上方譜表的音高、調整其他譜表的做法不同。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0046"><p>如賦格風段落常見、甚至幾乎難以避免的發展，織體會逐漸密集。配合這個趨勢，本例也提高變化速度：一方面逐漸加速（poco a poco accelerando），另一方面依下圖反覆刪除休止符，縮短樂句長度：</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0047"><figure id="zh-omt-composing-with-twelve-tones-attachment_7295" aria-describedby="zh-omt-composing-with-twelve-tones-caption-attachment-7295" class="wp-caption alignnone"><img class="size-full wp-image-7295 zoomable" src="../assets/omt/30a06ce17c9d435a.png" alt="兩個聲部的節奏循環逐步刪除X標示休止符，總長由12個四分音符縮為11、10、8，最後是7拍的不完整循環。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Rhythmic-cycles.png" loading="lazy" tabindex="0" role="button" width="1328" height="1158"><figcaption id="zh-omt-composing-with-twelve-tones-caption-attachment-7295" class="wp-caption-text">逐步壓縮的節奏循環。每個X指出下一次陳述將刪去的休止符。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>First part／Second part＝第一／第二聲部；</li><li>Initial version: Cycle length starts @ 12＝初始版本，循環長12個四分音符；</li><li>1st compression: 11＝第一次壓縮，11拍；</li><li>2nd＝10＝第二次，10拍；</li><li>3rd＝8＝第三次，8拍；</li><li>Final incomplete cycle of 7 to rotate back one pitch＝最後以7拍的不完整循環，將起點往回移一音。</li></ul><ul class="label-terms"><li>每個X標下一次刪去的休止符；</li><li>第三次從10拍減至8拍，並不是每次都只減一拍。</li></ul></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Actual music!</h3><p>All that remains is to write the music! Let’s keep the rows separate with different parts, points of entry and rhythms. We begin with an exposition (mm. 1–8) that involves:</p><ul>
+<li>A subject broken up into its four trichords, and with a 3-against-4 pattern similar to the one used in the moto perpetuo.</li>
+<li>Each voice entering with the subject (of course), but transposed up a semitone each time.</li>
+<li>Countersubjects with complementary rhythms progressively filling in the gaps.</li>
+</ul><p>After the exposition, we explore the trichord rotation property discussed above: the cello plays the same four trichords in a loop, with the rows overlapping by one trichord each time. This leads to the equivalent rotations of the row in other parts (as shown in the row chart above). Additionally, because the cello has kept the same pitches, the other parts also have to transpose to new pitch levels to preserve the combinatoriality (unlike in the chart above where the top staff stays on the same pitch level and the others adjust).</p><p>As is typical (indeed almost inevitable) for a fugato, the passage builds in density. Matching that, this realization also increases the rate of change both through a poco a poco accelerando and by iteratively shortening the phrase spans with this scheme for dropping rests:</p><figure id="en-omt-composing-with-twelve-tones-attachment_7295" aria-describedby="en-omt-composing-with-twelve-tones-caption-attachment-7295" class="wp-caption alignnone"><img class="size-full wp-image-7295 zoomable" src="../assets/omt/30a06ce17c9d435a.png" alt="Rhythmic cycles with progressive compression" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/05/Rhythmic-cycles.png" loading="lazy" tabindex="0" role="button" width="1328" height="1158"><figcaption id="en-omt-composing-with-twelve-tones-caption-attachment-7295" class="wp-caption-text">Rhythmic cycles with progressive compression. Each X identifies the rest that is cut from the following statement.</figcaption></figure></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0048"><h3>接下來怎麼走？</h3></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0049"><p>繞過四個三音組之後，最後往回移一個音，回到音列原先的起點，也就是四條音列共同的[0, 2, 6, 10]開頭。這次移動確實改變了局面：此前一直維持同一種分段，因此主要強調十二種三音組中的四種；移動一音，就換成另一組四種。如果這些音列中有任何一條，在連續三個起點都支持所需的六音組互補組合性，也就是第三組四種也能同樣運作，那麼本可讓三組得到同等發展。但它們都沒有這項特性，所以這裡集中處理其中一組，再把改換另一組的時刻，當作段落即將結束的訊號。這也只是許多可能途徑之一。</p></div><aside class="translator-note">譯註：這裡需要的是相應的倒影六音組互補配對，並非泛指所有種類的互補。四個音列的符合起點已枚舉，都沒有連續三個起點同時符合；循環移動仍保有全部十二種三音集合類，但每次固定分成四組時，只會突出其中四種。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Next steps</h3><p>Finally, after rotating around the four trichords, we rotate back one pitch to the original rotation of the row that starts with the [0, 2, 6, 10] pattern common to the "start" of all four rows. This rotation certainly changes things. We’ve been stuck in a particular segmentation of the row up to this point, and thus an emphasis on only four of the twelve trichords. Rotating by one gets us to another set of four. If any of the rows supported hexachordal combinatoriality for all three successive rotations (i.e., the last set of four), then we might have built the passage around the three equally, but none of these rows have that property, so instead we focus on one and use the moment of changing to the other one as a sign that the section is ending. Again, this is simply one approach among many possibilities.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-composing-with-twelve-tones-u0050"><h2>把它們組合起來</h2></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0051"><p>以上展示了運用這些音列的幾種可能方式。下一步，可以挑一種延伸為完整樂曲，也可以把三種做法，或再加上其他段落，組成一套短樂章，也許是一組練習曲。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0052"><p>最後，以下是這首曲子的一種完成版本：以自由幻想曲開始，現在簡稱「獨奏」，接著是賦格風段落與無窮動，最後以較接近開頭輕鬆精神的短段落收尾。從選擇「自由」或「嚴格」的取向，到如何實際寫成音樂，每一步都有廣泛的選擇。</p></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0053"><div><aside class="external-resource"><a href="https://musescore.com/user/8641586/scores/6803044/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="完整作曲範例原譜（外部網站，另開分頁）">完整作曲範例原譜</a><p class="missing-score">靜態譜例待補；原始資源包含本章必要的樂譜。</p></aside><br><a href="https://musescore.com/user/8641586/scores/6803044/s/O60h3c" target="_blank" rel="noopener noreferrer" class="external" aria-label="4×4×4×4（外部網站，另開分頁）">4×4×4×4</a>，<a href="https://musescore.com/user/8641586" target="_blank" rel="noopener noreferrer" class="external" aria-label="Mark.Gotham（外部網站，另開分頁）">Mark.Gotham</a>作曲。</div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0054"><div class="textbox shaded"><a id="zh-omt-composing-with-twelve-tones-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0055"><div><ul><li>Marsden, Alan（2012）。〈Final Response: Ontology, Epistemology, and Some Research Proposals〉（最後回應：本體論、認識論與若干研究提案）。<em>Journal of Mathematics and Music</em>，6（2）：161–167。doi:10.1080/17459737.2012.698157。</li></ul></div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0056"><div class="textbox shaded"><a id="zh-omt-composing-with-twelve-tones-further-reading--2"></a>線上資源</div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0057"><div><ul><li>Robert Morris在<a href="http://ecmc.rochester.edu/rdm/downloads.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="此頁（外部網站，另開分頁）">此頁</a>慷慨提供了大量資源，包括〈<a href="http://ecmc.rochester.edu/rdm/pdflib/el.12ttth.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Elementary Twelve-Tone Theory（外部網站，另開分頁）">Elementary Twelve-Tone Theory</a>〉（十二音理論入門）。</li></ul></div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0058"><div class="textbox shaded"><a id="zh-omt-composing-with-twelve-tones-assignments"></a>作業</div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0059"><ol><li>試著做一個類似的練習：<ul><li>挑選一條或數條吸引你的音列。</li><li>把音列特性放在心上，寫一些音樂。</li><li>思考如何平衡嚴格限制與自由寫作。</li></ul><p>別害羞。不論你是否自認為「作曲家」，從實作中學習總有幫助，作曲就是很好的例子。</p></li></ol></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0060"><div class="media-attributions clear"><h2>媒體來源與授權</h2><ul><li>〈獨奏〉，© Mark Gotham。</li><li>〈無窮動〉，© Mark Gotham；原來源標示為<a href="https://choosealicense.com/no-license/" target="_blank" rel="noopener noreferrer" class="external" aria-label="保留所有權利（外部網站，另開分頁）">保留所有權利</a>。</li><li>〈音列與循環移動〉，© Mark Gotham。</li><li>〈節奏循環〉，© Mark Gotham。</li></ul></div></div><div class="translation-unit" id="omt-composing-with-twelve-tones-u0061"><div class="footnotes"><ol><li id="zh-omt-composing-with-twelve-tones-footnote-7289-1">這個概念有時稱為「全三音組環」（all-trichord rings），而「全三音組音列」則另指不首尾相接、因而少了兩個三音組的音列。例如Robert Morris〈<a href="http://ecmc.rochester.edu/rdm/pdflib/el.12ttth.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="十二音理論入門（外部網站，另開分頁）">十二音理論入門</a>〉沿用Babbitt的定義，將全三音組音列界定為「包含十種三音組，而不含集合類3-10[036]與3-12[048]的音列」。<a href="../omt/omt-composing-with-twelve-tones.html#zh-omt-composing-with-twelve-tones-return-footnote-7289-1" class="return-footnote">↵</a></li><li id="zh-omt-composing-with-twelve-tones-footnote-7289-2">不熟悉賦格寫作的讀者，可以先試試〈<a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期的賦格呈示段</a>〉。<a href="../omt/omt-composing-with-twelve-tones.html#zh-omt-composing-with-twelve-tones-return-footnote-7289-2" class="return-footnote">↵</a></li></ol></div></div><aside class="translator-note">譯註：不首尾相接的十二音排列只有十個連續三音視窗；不同文獻對all-trichord row的限制不盡相同，不能只把本章任一環切開，就斷言切口恰好略去(036)與(048)。Morris原講義第2頁確實另有這兩種集合類的排除條件。</aside><p class="image-labels">譯註來源：<a href="https://ecmc.rochester.edu/rdm/pdflib/el.12ttth.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="Robert Morris：Elementary Twelve-Tone Theory，第2頁（外部網站，另開分頁）">Robert Morris：Elementary Twelve-Tone Theory，第2頁</a></p><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Putting it all together</h2><p>So there you have it: various possible ways of working with these rows. Next steps might involve picking one of these to extend into a full piece, or else combining the three (and perhaps other sections) into a collection of short movements, perhaps etudes.</p><p>To conclude then, here is one realization of this piece. Here we start with the free fantasia (now called simply "solo"), followed by the fugato and moto perpetuo, and end with a short section closer to the the more relaxed spirit of the opening. Again, there is a wide range of options at every turn, from the choice of a "free" or "strict" approach to the actual implementation in practice.</p><div><aside class="external-resource"><a href="https://musescore.com/user/8641586/scores/6803044/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><br>
+<a href="https://musescore.com/user/8641586/scores/6803044/s/O60h3c" target="_blank" rel="noopener noreferrer" class="external" aria-label="4x4x4x4（外部網站，另開分頁）">4x4x4x4</a> by <a href="https://musescore.com/user/8641586" target="_blank" rel="noopener noreferrer" class="external" aria-label="Mark.Gotham（外部網站，另開分頁）">Mark.Gotham</a></div><div class="textbox shaded"><a id="en-omt-composing-with-twelve-tones-further-reading"></a>Further reading</div><div>
+<ul>
+<li><span>Marsden, Alan (2012): “Final Response: Ontology, Epistemology, and Some Research Proposals.” </span><em>Journal of Mathematics and Music</em><span>, 6(2): 161–67. doi:10.1080/17459737.2012.698157</span></li>
+</ul>
+</div><div class="textbox shaded"><a id="en-omt-composing-with-twelve-tones-further-reading--2"></a>Online Resources</div><div>
+<ul>
+<li><span>Robert Morris kindly provides a wealth of resources at </span><a href="http://ecmc.rochester.edu/rdm/downloads.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="this page（外部網站，另開分頁）">this page</a><span>. This includes the </span><a href="http://ecmc.rochester.edu/rdm/pdflib/el.12ttth.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Elementary Twelve-Tone Theory"（外部網站，另開分頁）'>"Elementary Twelve-Tone Theory"</a> <span>document.</span></li>
+</ul>
+</div><div class="textbox shaded"><a id="en-omt-composing-with-twelve-tones-assignments"></a>Assignments</div><ol>
+<li>Try your hand at something similar to the above:
+<ul>
+<li>Pick one or more rows that appeal to you.</li>
+<li>Compose some music with those properties in mind.</li>
+<li>Think about balancing strict constraints with free writing.</li>
+</ul>
+<p>Don't be shy. Whether or not you think of yourself as "a composer," it’s always useful to learn by doing, and composition is a great case in point.</p></li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Solo  ©  Mark Gotham     </li><li>Moto perpetuo  ©  Mark Gotham    is licensed under a  <a href="https://choosealicense.com/no-license/" target="_blank" rel="noopener noreferrer" class="external" aria-label="All Rights Reserved（外部網站，另開分頁）">All Rights Reserved</a> license</li><li>Rows_and_rotations  ©  Mark Gotham     </li><li>Rhythmic cycles  ©  Mark Gotham     </li></ul></div><div class="footnotes"><ol><li id="en-omt-composing-with-twelve-tones-footnote-7289-1">Note that the term "all-trichord rings" is sometimes used for this topic, with "all-trichord row" referring instead to rows without wrapping around (and therefore omitting two of the trichords). See Robert Morris’s <a href="http://ecmc.rochester.edu/rdm/pdflib/el.12ttth.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label='"Elementary Twelve-Tone Theory,"（外部網站，另開分頁）'>"Elementary Twelve-Tone Theory,"</a> for instance, and note the definition (after Babbitt) of an all-trichord row as "A ten-trichord row that excludes SC 3-10[036] and 3- 12[048]." <a href="../omt/omt-composing-with-twelve-tones.html#en-omt-composing-with-twelve-tones-return-footnote-7289-1" class="return-footnote">↵</a></li><li id="en-omt-composing-with-twelve-tones-footnote-7289-2">Readers unfamiliar with fugal writing may want to try <a href="../omt/omt-high-baroque-fugal-exposition.html">the High Baroque Fugal Exposition chapter</a> first. <a href="../omt/omt-composing-with-twelve-tones.html#en-omt-composing-with-twelve-tones-return-footnote-7289-2" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">上一節：十二音分析範例：魏本Op.21與Op.24</a><a href="../omt/omt-history-and-context-of-serialism.html">下一節：序列技法的歷史與脈絡</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/composing-with-twelve-tones/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note">本頁部分譜例以原來源連結提供。<a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

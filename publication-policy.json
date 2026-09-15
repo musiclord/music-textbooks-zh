@@ -1,0 +1,34 @@
+{
+  "site_url": "https://musiclord.github.io/music-textbooks-zh/",
+  "external_only": {
+    "assets/omt/838e3c030fb298e4.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/e19d9866a356f1f2.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/effdd18cd452b686.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/b4678cacf1f9954c.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/7315754c9d9d95e8.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/6fc1aa81b238af82.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/2823efdc8bf63494.png": {
+      "reason": "Original OMT media credit: All Rights Reserved"
+    },
+    "assets/omt/d9c84db0e4f119b6.png": {
+      "reason": "Cover art has separate copyright credit; redistribution permission not confirmed",
+      "source": "https://viva.pressbooks.pub/openmusictheory/front-matter/introduction/"
+    }
+  },
+  "restricted_attribution_units": {
+    "omt-composing-with-twelve-tones-u0060": "f93acbb127b29d108013b0051615b6359e8cec1ad06eb8a2464399243b446137",
+    "omt-graphic-notation-and-scores-u0096": "8145c0afeef05a1dda63bbf23b440c09bcffe17ad494dce13a3b525829b49262"
+  }
+}

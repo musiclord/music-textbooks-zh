@@ -1,0 +1,16 @@
+# Publish an explicit allowlist. Local sources, manuscript drafts, tools and logs
+# remain in this workspace and are never implicitly added to GitHub.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE.md
+!/publication-policy.json
+!/publication-license.html
+!/.github/
+!/.github/**
+!/scripts/
+/scripts/*
+!/scripts/prepare_publication.py
+!/docs/
+!/docs/**

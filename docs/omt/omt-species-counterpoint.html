@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>類種對位法入門 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-species-counterpoint.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group" open=""><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a aria-current="page" href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-species-counterpoint" data-book="omt" data-page-url="/omt/omt-species-counterpoint.html" data-next-url="/omt/omt-first-species-counterpoint.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">類種對位法入門</h1><p class="authors">Mark Gotham and Kris Shaffer</p><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-species-counterpoint">類種對位法</a>是循序漸進學習旋律寫作與旋律組合的方法。</li><li>其中的「規則」與十六世紀音樂略有關聯，但主要目的是訓練基本能力，而非限定某套曲目或風格。</li><li>本章複習〈<a href="../omt/omt-fundamentals.html">基礎樂理</a>〉的重要概念，並介紹後續各章共用的基本規則與術語：<ul><li>協和與不協和：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-perfect-consonance">完全協和音程</a>：完全同度、完全五度與完全八度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-imperfect-consonance">不完全協和音程</a>：大、小三度與大、小六度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dissonance">不協和音程</a>：所有二度、七度，以及增、減音程。</li></ul></li><li>兩聲部進行的類型：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contrary-motion">反向進行</a>：兩聲部往相反方向移動，一個上行、一個下行。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-similar-motion">同向進行</a>：兩聲部往同一方向移動，同時上行或同時下行。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-motion">平行進行</a>：兩聲部往同一方向移動相同度數，起點與終點形成同類音程，例如平行三度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-oblique-motion">斜向進行</a>：一個聲部移動，另一個維持同音。</li></ul></li></ul></li></ul></div></div></div><div class="translation-unit" id="omt-species-counterpoint-u0002"><p>我們先從<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-species-counterpoint">類種對位法</a>這個特定方法開始。「Species」最熟悉的意思可能是動物的「物種」，但也能廣義指將相似事物分類的系統。這裡的類種是依特定順序進行的練習類型，每個階段引入一、兩個新的音樂問題。所以，很抱歉，這裡不會有大象或猴子一起唱複調！</p></div><div class="translation-unit" id="omt-species-counterpoint-u0003"><p>這套方法有許多變體，本書各章主要依據 Johann Joseph Fux 的〈<a href="https://imslp.org/wiki/Gradus_ad_Parnassum_(Fux,_Johann_Joseph)" target="_blank" rel="noopener noreferrer" class="external" aria-label="Gradus ad Parnassum（通往帕納索斯山的階梯，1725）（外部網站，另開分頁）"><em>Gradus ad Parnassum</em>（通往帕納索斯山的階梯，1725）</a>〉。十八至二十一世紀的許多作曲家，都使用過這套方法或其變體。Fux 在書的第一部分，依五種類種練習兩聲部組合，這也是接下來五章的重點。〈<a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a>〉提供書中所有練習的可編輯版本，讓你親自嘗試。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0004"><p>進入五種類種之前，本章先介紹各類旋律寫作都適用的原則。這些原則建立在〈<a href="../omt/omt-fundamentals.html">基礎樂理</a>〉的概念上，例如<a href="../omt/omt-intervals.html">音程</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree">音階級數</a>。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-species-counterpoint">Species counterpoint</a> is a step-by-step method for learning to write melodies and to combine them.</li>
+<li>While the "rules" involved are somewhat linked to music in the 16<sup>th</sup> century, the idea really is to train basic skills, independent of a specific repertoire or style.</li>
+<li>This chapter recaps some key concepts we met in the <a href="../omt/omt-fundamentals.html">Fundamentals</a> section and introduces some basic "rules" that will be relevant for each of the following chapters, including some terms for:
+<ul>
+<li>Consonance and dissonance:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-perfect-consonance">Perfect consonances</a>: perfect unisons, fifths, and octaves</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-imperfect-consonance">Imperfect consonances</a>: major and minor thirds and sixths</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dissonance">Dissonances</a>: all seconds, sevenths, and diminished and augmented intervals</li>
+</ul>
+</li>
+<li>Types of two-part motion:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contrary-motion">Contrary</a>: the two parts move in opposite directions (one up, the other down)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-similar-motion">Similar</a>: the two parts move in the same direction (both up or both down)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-motion">Parallel</a>: the two parts move in the same direction (both up or both down) by the same distance, such that the starting and ending intervals are of the same type (e.g., parallel thirds)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-oblique-motion">Oblique</a>: one part moves, the other stays on the same pitch</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div><p>We begin with a specific method called <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-species-counterpoint">species counterpoint</a>. The term "species" is probably most familiar as a way of categorizing animals, but it is also used in a wider sense to refer to any system of grouping similar elements. Here, the species are types of exercises that are done in a particular order, introducing one or two new musical “problems” at each stage. (So no, we won't have any elephants or monkeys singing polyphony, sorry!)</p><p>While there are many variants on this approach, the chapters here are closely based on Johann Joseph Fux's <a href="https://imslp.org/wiki/Gradus_ad_Parnassum_(Fux,_Johann_Joseph)" target="_blank" rel="noopener noreferrer" class="external" aria-label="Gradus ad Parnassum (Steps to Parnassus, 1725)（外部網站，另開分頁）"><em>Gradus ad Parnassum</em> (<em>Steps to Parnassus</em>, 1725)</a>. Many composers from the 18<sup>th</sup> to the 21<sup>st</sup> centuries have used this method, or some variation on it. In the first part of <em>Gradus ad Parnassum</em>, Fux works through five species for combining two voices, which will be the focus of our next five chapters. The <a href="../omt/omt-gradus-ad-parnassum-exercises.html">“Gradus ad Parnassum” Exercises</a> chapter provides all of the exercises from <em>Gradus ad Parnassum</em> in an editable format so you can try this yourself.</p><p>Before getting into the five species, we begin in this chapter by introducing principles that apply to writing lines in any species. These principles build on concepts from the <a href="../omt/omt-fundamentals.html">Fundamentals</a> section, such as <a href="../omt/omt-intervals.html">intervals</a> and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree">scale degrees</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0005"><h2 id="zh-omt-species-counterpoint-chapter-112-section-1" class="section-header"><a id="zh-omt-species-counterpoint-consonance-and-dissonance"></a>協和與不協和</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0006"><p><a href="../omt/omt-intervals.html">前面的章節已介紹協和與不協和</a>，對位法還會進一步區分：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0007"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-perfect-consonance">完全協和音程</a>：完全同度、完全五度與完全八度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-imperfect-consonance">不完全協和音程</a>：大、小三度與大、小六度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dissonance">不協和音程</a>：所有二度、七度，以及增、減音程。</li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0008"><p>下方<a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0009">譜例 1</a>整理了這些分類。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0009"><figure id="zh-omt-species-counterpoint-attachment_4373" aria-describedby="zh-omt-species-counterpoint-caption-attachment-4373" class="wp-caption aligncenter"><a href="../assets/omt/060390144aadd000.png"><img class="wp-image-4373 size-large zoomable" src="../assets/omt/060390144aadd000.png" alt="以譜面整理完全協和、不完全協和及不協和音程。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Consonance.png" loading="lazy" tabindex="0" role="button" width="2299" height="303"></a><figcaption id="zh-omt-species-counterpoint-caption-attachment-4373" class="wp-caption-text"><span class="example-caption-name">譜例 1。</span>完全協和、不完全協和與不協和音程。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Perfect consonances：完全協和音程；</li><li>Imperfect consonances：不完全協和音程；</li><li>Dissonances：不協和音程。</li></ul><ul class="label-terms"><li>P表示完全、M表示大、m表示小、A表示增、d表示減；</li><li>數字為音程度數。</li></ul></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-species-counterpoint-chapter-112-section-1" class="section-header"><a id="en-omt-species-counterpoint-consonance-and-dissonance"></a>Consonance and dissonance</h2><p><a href="../omt/omt-intervals.html">Consonance and dissonance was introduced in a previous chapter,</a> but in counterpoint, we further distinguish between:</p><ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-perfect-consonance">Perfect consonances</a> (perfect unisons, fifths, and octaves)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-imperfect-consonance">Imperfect consonances</a> (major and minor thirds and sixths)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dissonance">Dissonances</a> (all seconds, sevenths, and diminished and augmented intervals)</li>
+</ul><p>These categories are summarized in <a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0009">Example 1</a> below.</p><figure id="en-omt-species-counterpoint-attachment_4373" aria-describedby="en-omt-species-counterpoint-caption-attachment-4373" class="wp-caption aligncenter"><a href="../assets/omt/060390144aadd000.png"><img class="wp-image-4373 size-large zoomable" src="../assets/omt/060390144aadd000.png" alt="Recap in notation of the information in the list above." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Consonance.png" loading="lazy" tabindex="0" role="button" width="2299" height="303"></a><figcaption id="en-omt-species-counterpoint-caption-attachment-4373" class="wp-caption-text"><span class="example-caption-name">Example 1.</span> Perfect consonances, imperfect consonances, and dissonances.</figcaption></figure></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-species-counterpoint-u0010"><h2>不易一概而論的完全四度</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0011"><p>和許多調性音樂理論一樣，完全四度在類種對位法中有特殊地位，取決於它出現在哪些聲部之間。基本上，只要完全四度涉及最低聲部，就是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dissonance">不協和</a>；若出現在兩個上方聲部之間，則是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-consonance">協和</a>。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0012"><p>本系列的類種對位法只討論兩聲部，因此所有四度都會涉及最低聲部，一律歸為不協和。後續各章會說明如何解決；〈<a href="../omt/omt-diatonic-harmony.html">自然音和聲</a>〉部分的〈<a href="../omt/omt-cadential-64.html">以終止 [latex]^6_4[/latex] 加強結尾</a>〉與〈<a href="../omt/omt-64-chords-as-prolongations.html">作為延長手法的 [latex]^6_4[/latex] 和弦</a>〉也會進一步討論。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>The elusive perfect fourth</h2><p>As in many theories of tonal music, the perfect fourth has a special status in species counterpoint that depends on where it appears in the texture. Basically, the interval of a perfect fourth is <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dissonance">dissonant</a> when it involves the lowest voice in the texture, but it is <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-consonance">consonant</a> when it occurs between two upper voices.</p><p>As this survey of species counterpoint will only cover two-voice textures, all fourths will involve the lowest part and therefore be classed as dissonant. Later chapters in this section will address the resolution of this dissonance, and the <a href="../omt/omt-cadential-64.html">Strengthening Endings with Cadential [latex]^6_4[/latex]</a> and <a href="../omt/omt-64-chords-as-prolongations.html">[latex]^6_4[/latex] Chords as Forms of Prolongation</a> chapters in the <a href="../omt/omt-diatonic-harmony.html">Diatonic Harmony section</a> discuss this topic further.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0013"><h2 id="zh-omt-species-counterpoint-chapter-112-section-2" class="section-header"><a id="zh-omt-species-counterpoint-types-of-motion"></a>聲部進行類型</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0014"><p>類種對位法也關注旋律線條之間的相對進行方式，如<a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0016">譜例 2</a>所示：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0015"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contrary-motion">反向進行</a>：兩聲部往相反方向移動，一個上行、一個下行。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-similar-motion">同向進行</a>：兩聲部往同一方向移動，同時上行或同時下行。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-motion">平行進行</a>：兩聲部往同一方向移動相同度數，起點與終點形成同類音程，例如平行三度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-oblique-motion">斜向進行</a>：一個聲部移動，另一個維持同音。</li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0016"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26285815/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside><br><span class="example-caption-text"><span class="example-caption-name">譜例 2。</span>不同聲部進行方式的例子。</span></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-species-counterpoint-chapter-112-section-2" class="section-header"><a id="en-omt-species-counterpoint-types-of-motion"></a>Types of motion</h2><p>Species counterpoint also concerns the motion between melodic lines (demonstrated in <a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0016">Example 2</a>):</p><ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contrary-motion">Contrary</a>: the two parts move in opposite directions (one up, the other down)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-similar-motion">Similar</a>: the two parts move in the same direction (both up or both down)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-motion">Parallel</a>: the two parts move in the same direction (both up or both down) by the same distance, such that the starting and ending intervals are of the same type (e.g., parallel thirds)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-oblique-motion">Oblique</a>: one part moves, the other stays on the same pitch</li>
+</ul><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/26285815/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><br>
+<span class="example-caption-text"><span class="example-caption-name">Example 2.</span> Examples of different types of motion.</span></div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0017"><h2 class="section-header site-header" id="zh-omt-species-counterpoint-chapter-112-section-3"><a id="zh-omt-species-counterpoint-composing-a-cantus-firmus"></a>創作定旋律</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0018"><p>嚴格聲部進行或類種對位法的練習，從一條組織完整的旋律開始，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cantus-firmus">定旋律（cantus firmus）</a>，意思是「固定的聲部」或「固定的旋律」，複數為 cantus firmi。創作定旋律，可以練習下列基本音樂特質：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0019"><ul><li>流暢性</li><li>旋律線條的獨立性與完整性</li><li>多樣性</li><li>朝向目標的進行</li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0020"><p><a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0021">譜例 3</a>包含 Fux 在《<em>Gradus ad Parnassum</em>》中使用的全部定旋律，每種調式各一條，並分別放在兩聲部的上方與下方。除了複習 Fux 的定旋律類型，也可以用它練習任何類種、任何調式，並分別在上方與下方聲部作曲。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0021"><div><aside class="external-resource"><a href="https://musescore.com/user/30425053/scores/26285584/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-species-counterpoint-u0022"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0021">譜例 3。</a>《<em>Gradus ad Parnassum</em>》中的定旋律。</span></p></div><div class="translation-unit" id="omt-species-counterpoint-u0023"><p>請觀察，流暢性、旋律完整性、多樣性與目標導向，如何在各個例子中化為具體特徵。組織良好的定旋律通常有以下特點：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0024"><ul><li>約 8–16 個音。</li><li>不作節奏長短變化，全部使用全音符。</li><li>從 <em>do</em> [latex](\hat1)[/latex] 開始，也在 <em>do</em> 結束。</li><li>以級進接到最後主音，通常是 <em>re–do</em> [latex](\hat2-\hat1)[/latex]，有時是 <em>ti–do</em> [latex](\hat7-\hat1)[/latex]。</li><li>每一對相鄰音都形成旋律上的協和音程。</li><li>音域，即最低音至最高音的距離，不超過十度，通常小於八度。</li><li>只有一個高潮，即最高點，而且通常在旋律中只出現一次。</li><li>從開頭到高潮，再到結尾，有清楚的邏輯連接與流暢輪廓。</li><li>以級進為主，搭配少量跳進，且多為小跳進。</li><li>不反覆使用「動機」或慣用短句。</li><li>任何四度以上的大跳之後，都接反方向級進。</li><li>連續跳進不超過兩次，也不連續向同一方向跳進；F 調式定旋律是例外，其中相連的下行跳進勾勒出協和的三和弦。</li><li>導音進到主音。</li><li>各種情況都使用導音；具有小調性質的調式，須升高第七級以形成導音。</li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 class="section-header site-header" id="en-omt-species-counterpoint-chapter-112-section-3"><a id="en-omt-species-counterpoint-composing-a-cantus-firmus"></a>Composing a Cantus Firmus</h2><p>Exercises in strict voice leading, or species counterpoint, begin with a single well-formed musical line called the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cantus-firmus">cantus firmus</a> ("fixed voice" or "fixed melody"; plural "cantus firmi"). Cantus firmus composition gives us the opportunity to engage the following fundamental musical traits:</p><ul>
+<li>smoothness</li>
+<li>independence and integrity of melodic lines</li>
+<li>variety</li>
+<li>motion (toward a goal)</li>
+</ul><p><a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0021">Example 3</a> contains all the cantus firmi that Fux uses throughout <em>Gradus at Parnassum</em>: one for each mode, presented here in the upper and lower of two parts. Apart from using this to review the type of cantus firmi Fux composed, you can use this to practice any of the species, on any of the modes, and in both the upper and lower parts.</p><div><aside class="external-resource"><a href="https://musescore.com/user/30425053/scores/26285584/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0021">Example 3.</a> Cantus firmi from <em>Gradus ad Parnassum.</em></span></p><p>Notice how in each case, the general musical characteristics of smoothness, melodic integrity, variety, and motion toward a goal are worked out in specific characteristics. The following characteristics are typical of all well-formed cantus firmi:</p><ul>
+<li>length of about 8–16 notes</li>
+<li>arhythmic (all whole notes; no long or short notes)</li>
+<li>begin and end on <em>do</em> [latex](\hat1)[/latex]</li>
+<li>approach final tonic by step: usually <em>re</em>–<em>do</em> [latex](\hat2-\hat1)[/latex], sometimes <em>ti</em>–<em>do</em> [latex](\hat7-\hat1)[/latex]</li>
+<li>all note-to-note progressions are melodic consonances</li>
+<li>range (interval between lowest and highest notes) of no more than a tenth, usually less than an octave</li>
+<li>a single climax (high point) that usually appears only once in the melody</li>
+<li>clear logical connection and smooth shape from beginning to climax to ending</li>
+<li>mostly stepwise motion, but with some leaps (mostly small leaps)</li>
+<li>no repetition of “motives” or “licks”</li>
+<li>any large leaps (fourth or larger) are followed by step in opposite direction</li>
+<li>no more than two leaps in a row and no consecutive leaps in the same direction (except in the F-mode cantus firmus, where the back-to-back descending leaps outline a consonant triad)</li>
+<li>the leading tone progresses to the tonic</li>
+<li>leading notes in all cases, including in "minor"-type modes for which that seventh degree needs to be raised</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0025"><h2>旋律的傾向</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0026"><p>上列部分特徵屬於嚴格類種對位法的規範；但整體而言，它們也反映許多不同風格中常見的旋律傾向。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0027"><p>David Huron（2006）提出西方音樂旋律的五種一般特性，與前述知覺及認知原則有關，但在不同音樂風格中會呈現略有差異的形式：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0028"><ul><li><strong>音高鄰近性（pitch proximity）</strong>：旋律傾向於多級進、少跳進，多小跳、少大跳，呈現流暢性與旋律完整性。</li><li><strong>級進下行傾向（step declination）</strong>：旋律的下行級進往往多於上行級進。這可能與目標導向有關，因為我們常把向下移動感受為能量減少，也就是趨向休止。</li><li><strong>級進慣性（step inertia）</strong>：旋律持續同一方向的次數，往往多於改變方向；也就是多數音與音之間的進行，延續前一步的方向。這呈現流暢性，有時也呈現目標導向。</li><li><strong>旋律回歸（melodic regression）</strong>：位於極高或極低音域的音，傾向回到中間音域。若將較不極端的音視為休止，這便是向休止位置移動的表現。它也反映音高分布的統計現象：音越高，下方可供作曲家選擇的音越多，上方則越少。</li><li><strong>拱形旋律（melodic arch）</strong>：旋律傾向在樂句前半上行，達到高潮，再於後半下行。這呈現目標導向與「休止—運動—休止」的模式，也是前述原則在樂句中的綜合結果。</li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Melodic tendencies</h2><p>Some of the characteristics listed above are specific to strict species counterpoint; however, taken together, they express some general tendencies of melodies found in a variety of styles.</p><p>David Huron (2006) identifies five general properties of melodies in Western music that connect to the basic principles of perception and cognition listed above, but play out in slightly different ways in specific musical styles. They are:</p><ul>
+<li><strong>Pitch proximity</strong>: The tendency for melodies to progress by steps more than leaps and by small leaps more than large leaps. An expression of smoothness and melodic integrity.</li>
+<li><strong>Step declination</strong>: The tendency for melodies to move by descending step more than ascending. Possibly an expression of goal-oriented motion, as we tend to perceive a move down as a decrease in energy (movement toward a state of rest).</li>
+<li><strong>Step inertia</strong>: The tendency for melodies to change direction less frequently than they continue in the same direction. (That is, the majority of melodic progressions are in the same direction as the previous one.) An expression of smoothness and, at times, goal-oriented motion.</li>
+<li><strong>Melodic regression: </strong>The tendency for melodic notes in extreme registers to progress back toward the middle. An expression of motion toward a position of rest (with non-extreme notes representing “rest”). Also an expression simply of the statistical distribution of notes in a melody: the higher a note is, the more notes there are below it for a composer to choose from, and the fewer notes there are above it.</li>
+<li><strong>Melodic arch:</strong> The tendency for melodies to ascend in the first half of a phrase, reach a climax, and descend in the second half. An expression of goal orientation and the rest–motion–rest pattern. Also a combination of the above rules in the context of a musical phrase.</li>
+</ul></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-species-counterpoint-u0029"><h2 id="zh-omt-species-counterpoint-chapter-112-section-4" class="section-header"><a id="zh-omt-species-counterpoint-rules"></a>旋律與和聲寫作規則</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0030"><p>類種對位法既要寫出旋律線，也要將它們結合。下列各類種共用的規則，先整理前面討論的旋律事項，再列出後續各章要著重的和聲考量。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-species-counterpoint-chapter-112-section-4" class="section-header"><a id="en-omt-species-counterpoint-rules"></a>Rules for melodic and harmonic writing</h2><p>In species counterpoint, we both write and combine such melodic lines. The following set of rules invoked in all the species begins with the melodic matters discussed already, then presents some harmonic considerations that we will focus on in the following chapters.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0031"><h2>旋律寫作：水平音程</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0032"><ul><li>每個練習都以級進接到最後的八度或同度，形成 clausula vera 終止式。</li><li>限制下列情況的數量：<ul><li>連續同音：同一音高接連出現。</li><li>非連續的同音重複：同一音高在整個練習中出現多次。</li><li>連續<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-leap">跳進</a>：接連出現三度以上音程；應以級進分隔。</li><li>非連續跳進：短時間內跳進的總數，即使它們並不相連。</li><li>連續重複同一<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-generic-interval">音程度數</a>：即使性質不同，也要注意，例如接連使用二度，而非一定都是小二度。</li></ul></li><li>控制旋律高潮，也就是最高音：</li><li>每個旋律聲部力求只有一個獨特的高潮。</li><li>避免在高潮音上結束。</li><li>最好以跳進到達高潮。</li><li>避免兩聲部同時到達各自的最高音。</li><li>避免以下旋律跳進：<ul><li>增音程。</li><li>減音程。</li><li>任何七度。</li><li>任何六度，但上行小六度或可例外。</li><li>任何超過八度的音程。</li></ul></li><li>也要避免連續旋律勾勒出下列音程（<a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0033">譜例 4</a>）：<ul><li>增音程。</li><li>減音程。</li><li>任何七度。</li></ul></li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0033"><figure id="zh-omt-species-counterpoint-attachment_4454" aria-describedby="zh-omt-species-counterpoint-caption-attachment-4454" class="wp-caption aligncenter"><img class="wp-image-4454 size-full zoomable" src="../assets/omt/79d409e0e30c7b79.png" alt="兩組旋律對照：上組在三全音處轉向的錯誤寫法，改為繼續走到五度；下組在七度處轉向的錯誤寫法，改為繼續走到八度。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Outlining-1.png" loading="lazy" tabindex="0" role="button" width="2772" height="942"><figcaption id="zh-omt-species-counterpoint-caption-attachment-4454" class="wp-caption-text"><span class="example-caption-name">譜例 4。</span>旋律勾勒出的音程。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>Melodic Outlinings：旋律勾勒的音程。</p><ul class="label-terms"><li>Avoid changing direction at the tritone：避免走到三全音處就改變方向；</li><li>Continue instead to the 5th：繼續走到五度再轉向。</li></ul><ul class="label-terms"><li>Avoid changing direction at the 7th：避免走到七度處就改變方向；</li><li>Continue instead to the 8ve：繼續走到八度再轉向。</li></ul><p>X標示不建議的寫法。</p></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Melodic writing (horizontal intervals)</h2><ul>
+<li>Approach the final octave/unison of each exercise by step (this creates the clausula vera).</li>
+<li>Limit the number of:
+<ul>
+<li>consecutive, repeated notes: the same pitch more than once in a row</li>
+<li>non-consecutive repeated notes: the same pitch more than once across the whole exercise</li>
+<li>consecutive <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-leap">leaps</a>: multiple intervals of a third or greater in a row (separate them with stepwise motion)</li>
+<li>non-consecutive leaps: the total number of leaps within a short span, even if they're not successive</li>
+<li>consecutive repeated <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-generic-interval">generic intervals</a>: the same interval size (e.g., second) even if not the same specific interval (minor second)</li>
+</ul>
+</li>
+<li>Control the melodic climax (highest note):</li>
+<li>Aim for exactly one unique climax in each melodic part</li>
+<li>Avoid ending on that climax</li>
+<li>Preferably leap to that climax</li>
+<li>Avoid the two parts reaching their respective climax pitches at the same time</li>
+<li>Avoid melodic leaps of:
+<ul>
+<li>an augmented interval</li>
+<li>a diminished interval</li>
+<li>any seventh</li>
+<li>any sixth, except perhaps the ascending minor sixth</li>
+<li>any interval larger than an octave</li>
+</ul>
+</li>
+<li>Also avoid outlining (<a class="example-caption-name" href="../omt/omt-species-counterpoint.html#omt-species-counterpoint-u0033">Example 4</a>):
+<ul>
+<li>an augmented interval</li>
+<li>a diminished interval</li>
+<li>any seventh</li>
+</ul>
+</li>
+</ul><figure id="en-omt-species-counterpoint-attachment_4454" aria-describedby="en-omt-species-counterpoint-caption-attachment-4454" class="wp-caption aligncenter"><img class="wp-image-4454 size-full zoomable" src="../assets/omt/79d409e0e30c7b79.png" alt="" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Outlining-1.png" loading="lazy" tabindex="0" role="button" width="2772" height="942"><figcaption id="en-omt-species-counterpoint-caption-attachment-4454" class="wp-caption-text"><span class="example-caption-name">Example 4.</span> Melodic outlinings.</figcaption></figure></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0034"><h2>和聲寫作：垂直音程與聲部組合</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0035"><ul><li>第一個音程應為完全同度、完全五度或完全八度；最後一個則應為完全同度或完全八度，不能是五度。</li><li>兩聲部間距最多為十二度，也就是複五度；大部分時間應維持在八度內。</li><li>避免聲部「重疊」，也就是名義上的上方聲部跑到下方聲部之下。</li><li>務必避免：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-motion">平行</a>八度：兩聲部原本相隔八度，再同向移動相同度數，最後仍相隔八度。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-motion">平行</a>五度：兩聲部原本相隔完全五度，再同向移動相同度數，最後仍相隔完全五度。</li></ul></li><li>也應盡量避免：<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-direct-fifths-or-octaves">直接五度與直接八度</a>：兩聲部由任何音程出發，同向進入完全五度或完全八度。</li><li>除開頭與結尾之外，在練習中使用同度。</li></ul></li></ul></div><aside class="translator-note">譯註：原文此處以overlapping描述上方聲部低於下方聲部，實際定義的是聲部交叉。較嚴格的術語用法會另區分交叉與前後時點的聲部超越；此處保留底本文字並說明差異。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Harmonic writing (vertical intervals and the combination of parts)</h2><ul>
+<li>The first interval should be a perfect unison, fifth, or octave, and the last interval should be a perfect unison or octave (not fifth).</li>
+<li>Restrict the gap between parts to a twelfth (compound fifth) maximum, and to an octave for the most part.</li>
+<li>Avoid "overlapping" parts (where the nominally "upper" part goes below the "lower" one).</li>
+<li>Make sure to avoid:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-motion">parallel</a> octaves: when two parts start an octave apart and both move in the same direction by the same interval to also end an octave apart</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-motion">parallel</a> fifths: when two parts start an perfect fifth apart and both move in the same direction by the same interval to also end a perfect fifth apart</li>
+</ul>
+</li>
+<li>Also try to avoid:
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-direct-fifths-or-octaves">direct fifths and octaves</a>: when two parts begin any interval apart and move in the same direction to a perfect fifth or octave</li>
+<li>unisons at any point in the exercise other than the first and last intervals</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-species-counterpoint-u0036"><h2 id="zh-omt-species-counterpoint-chapter-112-section-5" class="section-header"><a id="zh-omt-species-counterpoint-the-psychology-of-counterpoint"></a>對位法的心理學</h2></div><div class="translation-unit" id="omt-species-counterpoint-u0037"><p>類種對位法各章不以某個特定風格為目標，例如古典、巴洛克、浪漫、流行或搖滾。練習會暫時擱置配器、旋律動機、曲式，甚至許多和聲與節奏要素，專注於少數基本音樂問題。這些問題與聽覺知覺及認知原則密切相關，也就是大腦如何感知並理解聲音，以及這些原則如何呈現在西方音樂結構中。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0038"><p>例如，大腦傾向將音高或音色相似的聲音，視為出自同一來源。我們也會聆聽規律；新聲音若延續或完成先前聽到的模式，通常會被歸為同一組。這與人類經驗中根深蒂固的部分，乃至演化經驗有關。規律的聲音通常意味著環境可預測且安全；變化則可能暗示危險，使我們更加注意聲音來源。這套將注意力與腎上腺素反應導向最可能需要之處的機制，對人類生存至關重要。二十一世紀聆聽音樂，通常不必提防掠食動物，但作者認為，這些演化經驗仍有部分深植於聽覺心理，參與音樂情緒效果的形成，即使身處安全環境也如此。</p></div><aside class="translator-note">譯註：本節是作者用知覺與演化觀點說明對位練習的概括性論述；不表示每位聽者對特定音程都會產生相同的生理或情緒反應。</aside><div class="translation-unit" id="omt-species-counterpoint-u0039"><p>對西方聽者而言，若音樂只讓大腦輕易分辨與處理聲音，就可能顯得無聊：不需要特別注意，也不會讓心跳加快、後頸汗毛豎起，或帶來一點多巴胺刺激。另一方面，持續觸發本能危險感的音樂，對多數聽者也很難稱得上愉快。因此，張力與放鬆、運動與休止之間的平衡，是本書所研究的大多數音樂的重要基礎。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0040"><p>對位法學習讓我們在嚴格限制的情境中處理幾個重要音樂問題，逐步培養能廣泛運用的作曲與分析能力。這些問題來自我們希望同時兼顧以下特質：</p></div><div class="translation-unit" id="omt-species-counterpoint-u0041"><ul><li>流暢而獨立的<span>旋律線條</span>。</li><li>聲音融合：希望同時發聲的音形成協和的整體。</li><li>多樣性。</li><li>朝向目標的進行。</li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0042"><p>這些特質根植於人類知覺與認知，但在具體音樂時刻往往彼此衝突，需要放到較長段落或完整作品中取得平衡。對位法能幫助我們開始練習這種取捨。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0043"><p>最後，雖然練習經過抽象化，仍最好把它們視為小型作品並實際演出：用人聲或樂器，能與夥伴合奏更好。如此，耳朵、手指、喉嚨，乃至心智，才能內化旋律線條如何運作與結合的聲音、譜面與身體感受。</p></div><div class="translation-unit" id="omt-species-counterpoint-u0044"><div class="textbox shaded">延伸閱讀</div></div><div class="translation-unit" id="omt-species-counterpoint-u0045"><ul><li>Huron, David。2006。<em>Sweet Anticipation: Music and the Psychology of Expectation</em>（甜美的期待：音樂與期待心理學）。麻薩諸塞州劍橋：MIT Press。</li></ul></div><div class="translation-unit" id="omt-species-counterpoint-u0046"><div class="textbox shaded"><a id="zh-omt-species-counterpoint-assignments"></a>作業</div></div><div class="translation-unit" id="omt-species-counterpoint-u0047"><ol><li>定旋律 A（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）：找出一條定旋律中的錯誤，並自行創作一條。</li><li>定旋律 B（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）：找出一條定旋律中的錯誤，並自行創作一條。</li><li>完整 Fux 練習集，請參閱〈<a href="../omt/omt-gradus-ad-parnassum-exercises.html">Gradus ad Parnassum</a>〉。</li></ol></div><div class="translation-unit" id="omt-species-counterpoint-u0048"><div class="media-attributions clear"><h2>媒體出處與授權</h2><ul><li>〈協和音程〉</li><li>〈旋律輪廓音程〉© Mark Gotham，採用 <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC0（公眾領域貢獻宣告）（外部網站，另開分頁）">CC0（公眾領域貢獻宣告）</a>。</li></ul></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-species-counterpoint-chapter-112-section-5" class="section-header"><a id="en-omt-species-counterpoint-the-psychology-of-counterpoint"></a>The Psychology of Counterpoint</h2><p>The chapters on species counterpoint will not involve a specific style (classical, baroque, romantic, pop/rock, etc.). Instead, these exercises will set aside important musical elements like orchestration, melodic motives, formal structure, and even many elements of harmony and rhythm, in order to focus very specifically on a small set of fundamental musical problems. These fundamental problems are closely related to how some basic principles of auditory perception and cognition (i.e., how the brain perceives and conceptualizes sound) play out in Western musical structure.</p><p>For example, our brains tend to assume that sounds similar in pitch or timbre come from the same source. Our brains also listen for patterns, and when a new sound continues or completes a previously heard pattern, we typically assume that the new sound belongs together with those others. This is related to some of the most deep-seated, fundamental parts of our human experience, and even evolution. Hearing a regular pattern typically indicates a predictable (and safe) environment, while any change can signal danger and will tend to heighten our attention to the source. This system for directing attention (and adrenaline) where it is most likely to be needed has been essential to the survival of the human species. While listening to music in the 21st century does not (usually!) require us to listen out for animal predators, some part of that evolutionary experience is "hard-wired" into the psychology of human listening, and it has a role in what gives music its emotional effect—even in a safe environment.</p><p>For Western listeners, music that simply makes it easy for the brain to parse and process sound is boring—it calls for no heightened attention; it doesn’t increase our heart rate, make the hair on the back of our neck stand up, or give us a little jolt of dopamine. On the other hand, music that constantly activates our innate sense of danger is hardly pleasant for most listeners. That being the case, a balance between tension and relaxation, motion and rest, is fundamental to most of the music we will study.</p><p>The study of counterpoint helps us to engage several important musical “problems” in a strictly limited context, so that we can develop composition and analytical skills that can then be applied widely. Those problems arise as we seek to bring the following traits together:</p><ul>
+<li>smooth, independent<span> melodic lines</span></li>
+<li>tonal fusion (the preference for simultaneous notes to form a consonant unity)</li>
+<li>variety</li>
+<li>motion (towards a goal)</li>
+</ul><p>These traits are based in human perception and cognition, but they are often in conflict in specific musical moments and need to be balanced over the course of larger passages and complete works. Counterpoint will help us begin to practice working with that balance.</p><p>Finally, despite abstractions, it's still best to treat counterpoint exercises as miniature compositions and to perform them—vocally and instrumentally, and with a partner where possible—so that the ear, the fingers, the throat, and ultimately the mind can internalize the sound, sight, and feel of how musical lines work and combine.</p><div class="textbox shaded">Further Reading</div><ul>
+<li>Huron, David. 2006. <em>Sweet Anticipation: Music and the Psychology of Expectation</em>. Cambridge, MA: MIT Press.</li>
+</ul><div class="textbox shaded"><a id="en-omt-species-counterpoint-assignments"></a>Assignments</div><ol>
+<li>Cantus firmus A (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>). Asks students to do error detection on one cantus firmus and compose one their own.</li>
+<li>Cantus firmus B (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2026/07/WK-Cantus-Firmus-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>). Asks students to do error detection on one cantus firmus and compose one their own.</li>
+<li>For the complete set of Fux exercises, see the <a href="../omt/omt-gradus-ad-parnassum-exercises.html">Gradus ad Parnassum chapter</a>.</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Consonance       </li><li>Outlining  ©  Mark Gotham    is licensed under a  <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC0 (Creative Commons Zero)（外部網站，另開分頁）">CC0 (Creative Commons Zero)</a> license</li></ul></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-counterpoint.html">上一節：II. 對位法與嘉蘭特圖式</a><a href="../omt/omt-first-species-counterpoint.html">下一節：第一類對位法</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/species-counterpoint/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>小音階、音階級數與調號 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-minor-scales.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group" open=""><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a aria-current="page" href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group"><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-minor-scales" data-book="omt" data-page-url="/omt/omt-minor-scales.html" data-next-url="/omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">小音階、音階級數與調號</h1><p class="authors">Chelsey Hamm and Bryn Hughes</p><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>小<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale">音階</a>的第三個音，一定比同主音大音階的第三個音低半音。</li><li>小音階有三種形式：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-natural-minor">自然小音階</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-minor">和聲小音階</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-melodic-minor">旋律小音階</a>。</li><li>各種小音階的半音與全音依下列順序排列：<ul><li>自然小音階：W–H–W–W–H–W–W（上行）。</li><li>和聲小音階：W–H–W–W–H–3Hs–H（上行）。</li><li>旋律小音階：W–H–W–W–W–W–H（上行），W–W–H–W–W–H–W（下行）。</li></ul></li><li>雖然小音階有三種形式，小調及其調號仍只稱為「小調」（例如 A 小調、D 小調），調號以自然小音階為依據。</li><li>小調的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree">音階級數</a>與大調相同；<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-solfege">唱名</a>則增加了 <em>me</em>、<em>le</em>、<em>te</em> 等音節。</li><li>小音階中的各音也有各自的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree-names">音級名稱</a>，大致與大調相同，但多了下主音（<em>te</em>，或 [latex]\hat7[/latex]）。</li><li>大調與小調之間有兩種關係：主音相同的是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-relationship">同主音調</a>；調號相同的是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-relative-relationship">關係調</a>。</li><li>每個大調<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-key-signature">調號</a>都有相對應的關係小調調號；關係小調的主音比關係大調的主音低三個半音。大調與小調的升、降記號排列順序相同。</li></ul></div></div></div><aside class="translator-note">譯註：W 表示全音，H 表示半音，3Hs 表示三個半音。這裡的旋律小音階指本章所介紹的古典樂理形式。</aside><div class="translation-unit" id="omt-minor-scales-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/2wylP85ygXkX1tWtUPqcgm?si=f62d6967860244ce" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>A minor <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale">scale's</a> third note is always a half step lower than the third note of the major scale with the same name.</li>
+<li>There are three variations on the minor scale: <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-natural-minor">natural minor</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-minor">harmonic minor</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-melodic-minor">melodic minor</a>.</li>
+<li>Each minor scale is an ordered collection of half and whole steps, as follows:
+<ul>
+<li>Natural minor: W‑H‑W‑W‑H‑W‑W (ascending)</li>
+<li>Harmonic minor: W‑H‑W‑W‑H‑3Hs‑H (ascending)</li>
+<li>Melodic minor: W‑H‑W‑W‑W‑W‑H (ascending) and W‑W‑H‑W‑W‑H‑W (descending).</li>
+</ul>
+</li>
+<li>While there are three minor scales, minor keys and minor key signatures are always identified as simply "minor" ("A minor," "D minor," etc.) and are based on the natural minor scale.</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree">Scale degrees</a> in minor are the same as those in major. There are a few new <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-solfege">solfège</a> syllables in minor including <em>me</em>, <em>le</em>, and <em>te</em>.</li>
+<li>Each note of a minor scale is also named with <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree-names">scale-degree names</a>. These are largely the same in minor as they are in major, except for the subtonic (<em>te</em> or [latex]\hat7[/latex]).</li>
+<li>Major and minor keys share two different relationships. The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-relationship">parallel relationship</a> is when a major and minor key share a tonic note, while the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-relative-relationship">relative relationship</a> is when a major and minor key share a key signature.</li>
+<li>Each major <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-key-signature">key signature</a> has a corresponding relative minor key signature whose tonic is three half steps below the relative major's tonic. The orders of sharps and flats in major and minor key signatures are the same.</li>
+</ul>
+</div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/2wylP85ygXkX1tWtUPqcgm?si=f62d6967860244ce" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0003"><h2 id="zh-omt-minor-scales-chapter-4921-section-1" class="section-header"><a id="zh-omt-minor-scales-the-minor-scale"></a>小音階</h2></div><div class="translation-unit" id="omt-minor-scales-u0004"><p>小<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale">音階</a>的第三個音，一定比同名大音階的第三個音低半音，例如 B 大音階與 B 小音階。小音階有三種形式：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-natural-minor">自然小音階</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-minor">和聲小音階</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-melodic-minor">旋律小音階</a>。可以把它們想成不同口味的冰淇淋：不論是巧克力、香草還是草莓，仍然是冰淇淋。同樣地，一首作品只會被稱為「小調作品」或「採用小調」；音樂家不會說作品「在」某一種特定的小音階之中（自然、和聲或旋律小音階）。也就是說，雖然小音階有三種形式，小調及其調號仍只稱為「小調」（例如 A 小調、D 小調），調號以自然小音階為依據。</p></div><div class="translation-unit" id="omt-minor-scales-u0005"><p>這三種小音階的分類，主要對器樂演奏者有幫助。在樂器上練習不同形式的小音階，可以熟悉西方古典音樂中最常用的小調音型。和大音階一樣，小音階依第一個音命名（若有變音記號，也要包含在名稱中），最後一個音也與起音同名。</p></div><div class="translation-unit" id="omt-minor-scales-u0006"><p>和大音階一樣，小音階在許多不同類型的音樂中都很常見。披頭四的〈Yesterday〉（1964）就能聽到一例（見下方〈<a href="../omt/omt-minor-scales.html#zh-omt-minor-scales-melodic-minor">旋律小音階</a>〉）。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0007">譜例 1</a><span>節錄這首歌的開頭：</span></p></div><aside class="translator-note">譯註：原文標示1964；披頭四官方歌曲頁列出的英國發行日是1965年8月6日。此處保留底本年份供對照。</aside><p class="image-labels">譯註來源：<a href="https://www.thebeatles.com/yesterday" target="_blank" rel="noopener noreferrer" class="external" aria-label="The Beatles：Yesterday 官方歌曲資料（外部網站，另開分頁）">The Beatles：Yesterday 官方歌曲資料</a></p><div class="translation-unit" id="omt-minor-scales-u0007"><figure id="zh-omt-minor-scales-attachment_14792" aria-describedby="zh-omt-minor-scales-caption-attachment-14792" class="wp-caption alignnone"><img class="wp-image-14792 size-full zoomable" src="../assets/omt/046b5038af882c36.png" alt="披頭四〈Yesterday〉開頭的旋律譜，含 B 還原與 C 升記號，呈現上行小音階片段。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/Yesterday-Beatles.png" loading="lazy" tabindex="0" role="button" width="1152" height="176"><figcaption id="zh-omt-minor-scales-caption-attachment-14792" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">譜例 1。</span>保羅・麥卡尼與約翰・藍儂〈Yesterday〉（1964）的片段。</span></figcaption></figure></div><div class="translation-unit" id="omt-minor-scales-u0008"><p>從<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0009">譜例 2</a>的 0:05 開始，可以聽到<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0007">譜例 1</a>的音樂。請留意人聲中的上行小音階：</p></div><div class="translation-unit" id="omt-minor-scales-u0009"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/TQemQRL_YVQ?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="〈Yesterday〉（2009 年重新母帶製作版，需連線）（外部網站，另開分頁）">〈Yesterday〉（2009 年重新母帶製作版，需連線）</a></aside></div></div><div class="translation-unit" id="omt-minor-scales-u0010"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0009">譜例 2。</a>保羅・麥卡尼與約翰・藍儂〈Yesterday〉；請從 0:05 開始聆聽。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0011"><p>西方音樂常用小調表達悲傷等負面情緒，但並非總是如此！因此，原文認為〈Yesterday〉描寫分手後深受打擊的心情，採用小調十分貼切。</p></div><aside class="translator-note">譯註：原文將整首歌稱作小調，須與局部小音階片段區分：授權發行的原調聲樂譜標為F大調。依本章譜例可見，A–B♮–C♯–D–E–F形成D旋律小音階的局部上行；出現這段音型本身，不能證明全曲是小調。</aside><p class="image-labels">譯註來源：<a href="https://www.musicnotes.com/sheetmusic/the-beatles/yesterday/MN0200169_D5" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musicnotes：Yesterday 原調聲樂譜資料（MN0200169）（外部網站，另開分頁）">Musicnotes：Yesterday 原調聲樂譜資料（MN0200169）</a></p><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-1" class="section-header"><a id="en-omt-minor-scales-the-minor-scale"></a>The Minor Scale</h2><p>A minor <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale">scale's</a> third note is always a half step lower than the third note of the major scale with the same name (e.g., B major and B minor). There are three different types of minor scales: <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-natural-minor">natural minor</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-minor">harmonic minor</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-melodic-minor">melodic minor</a>. These three types of minor scales should be thought of like flavors of ice cream; ice cream is still ice cream regardless of whether it is chocolate, vanilla, strawberry, etc. Likewise, a work is simply "minor" or "in minor;" musicians do not consider music to be "in" a specific type of minor scale (i.e., natural, harmonic, or melodic). In other words, while there are three minor scales, minor keys and minor key signatures are always identified as simply "minor" ("A minor," "D minor," etc.) and are based on the natural minor scale.</p><p>The three different types of minor scales are useful categories primarily for instrumental performers. Learning to play the different types of minor scales on instruments allows performers to become familiar with the minor patterns most commonly used in Western classical music. Just like major scales, minor scales are named for their first note (including the accidental, if any), which is also their last note.</p><p>Like major scales, minor scales are very common in many different genres in music. One example of a minor scale (see <a href="../omt/omt-minor-scales.html#en-omt-minor-scales-melodic-minor">Melodic Minor</a> <span>below) can be heard in the Beatles's “Yesterday” (1964). </span><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0007">Example 1</a><span> shows an excerpt from the beginning of this song:</span></p><figure id="en-omt-minor-scales-attachment_14792" aria-describedby="en-omt-minor-scales-caption-attachment-14792" class="wp-caption alignnone"><img class="wp-image-14792 size-full zoomable" src="../assets/omt/046b5038af882c36.png" alt='An excerpt of "Yesterday" by the Beatles is shown. The text is: "Yesterday all my troubles seemed so far away."' data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/Yesterday-Beatles.png" loading="lazy" tabindex="0" role="button" width="1152" height="176"><figcaption id="en-omt-minor-scales-caption-attachment-14792" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">Example 1.</span> An excerpt from "Yesterday" (1964) by Paul McCartney and John Lennon. </span></figcaption></figure><p>You can listen to the music in <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0007">Example 1</a> starting at 0:05 in <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0009">Example 2</a>. Listen for the ascending minor scale in the voice:</p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/TQemQRL_YVQ?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Yesterday (Remastered 2009)（外部網站，另開分頁）">Yesterday (Remastered 2009)</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0009">Example 2.</a>"Yesterday" by Paul McCartney and John Lennon; listen starting at 0:05.</span></p><p>Minor is often (but not always!) used to depict negative emotions, such as sadness, in Western music. It is therefore appropriate that "Yesterday," which is about a breakup which has left the speaker devastated, is in a minor key.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0012"><h2 id="zh-omt-minor-scales-chapter-4921-section-2" class="section-header"><a id="zh-omt-minor-scales-natural-minor"></a>自然小音階</h2></div><div class="translation-unit" id="omt-minor-scales-u0013"><p>自然小音階的半音與全音，上行依 W–H–W–W–H–W–W 排列，如<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">譜例 3</a>所示。每個全音以方形括線與「W」標示，每個半音則以折角括線與「H」標示。仔細聆聽<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">譜例 3</a>，注意自然小音階上行與下行所使用的半音、全音關係相同。</p></div><aside class="translator-note">譯註：上行與下行使用同一組音高；若按實際行進方向列出全音、半音順序，下行須把上行順序反過來。和聲小音階亦同。</aside><div class="translation-unit" id="omt-minor-scales-u0014"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6825960/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-minor-scales-u0015"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">譜例 3。</a>G 自然小音階。（實際播放的音階為 F 自然小音階。）</span></p></div><div class="translation-unit" id="omt-minor-scales-u0016"><p>以下練習可幫助你辨識自然小音階中的全音與半音：</p></div><div class="translation-unit" id="omt-minor-scales-u0017"><div class="textbox textbox--exercises"><header class="textbox__header"><p class="textbox__title"><a id="zh-omt-minor-scales-practice"></a>練習</p></header><div class="textbox__content"><div id="zh-omt-minor-scales-h5p-50"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-50" target="_blank" rel="noopener noreferrer" class="external" aria-label="辨識小音階的全音與半音（需連線）（外部網站，另開分頁）">辨識小音階的全音與半音（需連線）</a></aside></div></div></div></div></div><div class="translation-unit" id="omt-minor-scales-u0018"><p>以下練習可幫助你辨識自然小音階的名稱：</p></div><div class="translation-unit" id="omt-minor-scales-u0019"><div class="textbox textbox--exercises"><header class="textbox__header"><p class="textbox__title"><a id="zh-omt-minor-scales-practice--2"></a>練習</p></header><div class="textbox__content"><div id="zh-omt-minor-scales-h5p-44"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-44" target="_blank" rel="noopener noreferrer" class="external" aria-label="依音名拼寫辨識自然小音階（需連線）（外部網站，另開分頁）">依音名拼寫辨識自然小音階（需連線）</a></aside></div></div></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-2" class="section-header"><a id="en-omt-minor-scales-natural-minor"></a>Natural Minor</h2><p>The natural minor form of the minor scale consists of an ordered collection of half and whole steps with the ascending succession W‑H‑W‑W‑H‑W‑W, as shown in <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">Example 3</a>. Each whole step is labeled with a square bracket and “W,” and each half step is labeled with an angled bracket and “H.” Listen carefully to <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">Example 3</a> and notice that the half and whole step pattern of the natural minor form of the minor scale is the same ascending and descending.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6825960/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0014">Example 3.</a> A G natural minor scale. (Sounding scale is F natural minor.)</span></p><p>You can practice identifying whole and half steps in a natural minor scale in the following exercise:</p><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<p class="textbox__title"><a id="en-omt-minor-scales-practice"></a>Practice</p>
+</header>
+<div class="textbox__content">
+<div id="en-omt-minor-scales-h5p-50">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-50" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Scale Whole Step-Half Step Identification（外部網站，另開分頁）">Minor Scale Whole Step-Half Step Identification</a></aside></div>
+</div>
+</div>
+</div><p>You can practice identifying the names of natural minor scales in the following exercise:</p><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<p class="textbox__title"><a id="en-omt-minor-scales-practice--2"></a>Practice</p>
+</header>
+<div class="textbox__content">
+<div id="en-omt-minor-scales-h5p-44">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-44" target="_blank" rel="noopener noreferrer" class="external" aria-label="Spelled Natural Minor Scale Identification（外部網站，另開分頁）">Spelled Natural Minor Scale Identification</a></aside></div>
+</div>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0020"><h2 id="zh-omt-minor-scales-chapter-4921-section-3" class="section-header"><a id="zh-omt-minor-scales-harmonic-minor"></a>和聲小音階</h2></div><div class="translation-unit" id="omt-minor-scales-u0021"><p>和聲小音階的音程，上行依 W–H–W–W–H–3Hs–H 排列（「3Hs」表示三個半音），如<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">譜例 4</a>所示。弧形括線表示三個半音的距離，也就是一個全音加上一個半音。仔細聆聽<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">譜例 4</a>，注意和聲小音階上行與下行所使用的音程關係相同。</p></div><div class="translation-unit" id="omt-minor-scales-u0022"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6826003/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-minor-scales-u0023"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">譜例 4。</a>G 和聲小音階。（實際播放的音階為 F 和聲小音階。）<br></span></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-3" class="section-header"><a id="en-omt-minor-scales-harmonic-minor"></a>Harmonic Minor</h2><p>The harmonic minor form of the minor scale consists of an ordered collection of half and whole steps in the ascending succession W‑H‑W‑W‑H‑3Hs‑H (“3Hs” = 3 half steps), as shown in <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">Example 4</a>. The curved bracket represents a distance of three half steps (or a whole step plus a half step). Listen carefully to <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">Example 4</a> and notice that the half and whole step pattern of the harmonic minor form of the minor scale is the same ascending and descending.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/6826003/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0022">Example 4.</a> A G harmonic minor scale. (Sounding scale is F harmonic minor.)<br>
+</span></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0024"><h2 id="zh-omt-minor-scales-chapter-4921-section-4" class="section-header"><a id="zh-omt-minor-scales-melodic-minor"></a>旋律小音階</h2></div><div class="translation-unit" id="omt-minor-scales-u0025"><p>旋律小音階的半音與全音，上行依 W–H–W–W–W–W–H 排列，下行則依 W–W–H–W–W–H–W 排列，如<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">譜例 5</a>所示。聆聽<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">譜例 5</a>時，注意旋律小音階的上行與下行模式不同：上行採用旋律小音階特有的排列，下行則與自然小音階相同。</p></div><div class="translation-unit" id="omt-minor-scales-u0026"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8455586/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-minor-scales-u0027"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">譜例 5。</a>G 旋律小音階。（實際播放的音階為 F 旋律小音階。）<br></span></p></div><div class="translation-unit" id="omt-minor-scales-u0028"><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0029">譜例 6</a>列出四種以 C 為起音的音階：<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-major-scale">大音階</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-natural-minor">自然小音階</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-harmonic-minor">和聲小音階</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-melodic-minor">旋律小音階</a>，並標出音階級數。請仔細聆聽，留意各音階的聽覺差異。</p></div><div class="translation-unit" id="omt-minor-scales-u0029"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8383329/s/WuOIXN/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside><span class="example-caption-text"><span class="example-caption-name">譜例 6。</span>大音階、自然小音階、和聲小音階與旋律小音階，皆以 C 為起音。</span></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-4" class="section-header"><a id="en-omt-minor-scales-melodic-minor"></a>Melodic Minor</h2><p>The melodic minor form of the minor scale consists of an ordered collection of half and whole steps in the ascending succession W‑H‑W‑W‑W‑W‑H and the descending succession W‑W‑H‑W‑W‑H‑W, as shown in <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">Example 5</a>. When you listen to <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">Example 5</a>, notice that the melodic minor form has different ascending and descending patterns: the ascending pattern is unique to the melodic minor form, while the descending pattern is the same as the natural minor form.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8455586/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0026">Example 5.</a> A G melodic minor scale. (Sounding scale is F melodic minor.)<br>
+</span></p><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0029">Example 6</a> shows four versions of a C scale—<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-major-scale">major</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-natural-minor">natural minor</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-harmonic-minor">harmonic minor</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-melodic-minor">melodic minor</a>—with the scale degrees indicated. Listen to this example carefully, noting the aural differences between the scales.</p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8383329/s/WuOIXN/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside><span class="example-caption-text"><span class="example-caption-name">Example 6.</span> Major, natural minor, harmonic minor, and melodic minor scales, all starting on C.</span></div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0030"><h2 id="zh-omt-minor-scales-chapter-4921-section-5" class="section-header"><a id="zh-omt-minor-scales-minor-scale-degrees"></a>小音階的音階級數、唱名與音級名稱</h2></div><div class="translation-unit" id="omt-minor-scales-u0031"><p>小音階的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree">音階級數</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-solfege">唱名</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree-names">音級名稱</a>，與大音階相似，但不完全相同。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">譜例 7</a>整理三種小音階，並標出各自的音階級數與唱名。請注意，音階級數與大音階相同。<span>最下方的唱名有幾處與大音階不同，以反映小音階的全音、半音排列。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0032"><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8383293/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="音樂譜例（需連線）（外部網站，另開分頁）">音樂譜例（需連線）</a><p class="missing-score">靜態樂譜尚待補齊；原始資源包含音樂譜例。</p></aside></div></div><div class="translation-unit" id="omt-minor-scales-u0033"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">譜例 7。</a>三種小音階的音階級數與唱名：（a）自然小音階、（b）和聲小音階、（c）旋律小音階。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0034"><p><span>自然小音階的唱名（<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">譜例 7a</a>）中，</span><em>mi</em><span> 改為 </span><em>me</em><span>（讀音如英語 may），</span><em>la</em><span> 改為 </span><em>le</em><span>（如 lay），</span><em>ti</em><span> 改為 </span><em>te</em><span>（如 tay）。唱或演奏上面的譜例時，你會發現結尾沒有大音階那樣的收束感。大音階的收束感，部分來自 </span><em>ti</em><span>（[latex]\uparrow\hat{7}[/latex]）到 </span><em>do</em><span>（[latex]\hat{1}[/latex]）之間的上行半音。</span></p></div><aside class="translator-note">譯註：本章主要以自然小音階為級數基準，用向上箭頭表示升高第六或第七級。但原文在說明大音階的ti時也加上箭頭，下一段又省略，記法並不一致；大音階本身的第七級無須額外升高。</aside><div class="translation-unit" id="omt-minor-scales-u0035"><p>和聲小音階<span>（<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">譜例 7b</a>）</span>以 <em>ti</em>（[latex]\uparrow\hat7[/latex]）取代 <em>te</em>（[latex]\hat7[/latex]）。<em>ti</em>（[latex]\hat{7}[/latex]）帶來了自然小音階所欠缺的收束感。</p></div><div class="translation-unit" id="omt-minor-scales-u0036"><p>如前所述，旋律小音階的上行與下行模式不同<span>（<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">譜例 7c</a>）</span>。<span>上行時，</span><em>le–te</em><span>（[latex]\hat6-\hat7[/latex]）改為 </span><em>la–ti</em><span>（[latex]\uparrow\hat6-\uparrow\hat7[/latex]），因此旋律小音階的上半部聽起來和大音階相同。下行時恢復自然小音階，所以再度使用 <em>te–le</em>（[latex]\hat7-\hat6[/latex]）</span><span>。因此，上行旋律小音階具有類似大音階的收束感，下行則遵循自然小音階的排列。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0037"><p>以下練習可幫助你標示自然小音階的唱名：</p></div><div class="translation-unit" id="omt-minor-scales-u0038"><div class="textbox textbox--exercises"><header class="textbox__header"><p class="textbox__title"><a id="zh-omt-minor-scales-practice--3"></a>練習</p></header><div class="textbox__content"><div id="zh-omt-minor-scales-h5p-46"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-46" target="_blank" rel="noopener noreferrer" class="external" aria-label="小音階唱名配對（需連線）（外部網站，另開分頁）">小音階唱名配對（需連線）</a></aside></div></div></div></div></div><div class="translation-unit" id="omt-minor-scales-u0039"><p>和大音階一樣，小音階中的各音也有各自的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-scale-degree-names">音級名稱</a>。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0040">譜例 8</a>列出小音階使用的音級名稱，以及相對應的音階級數與唱名。</p></div><div class="translation-unit" id="omt-minor-scales-u0040"><table id="zh-omt-minor-scales-tablepress-39" class="tablepress tablepress-id-39 skinny score-table"><thead><tr class="row-1 odd"><th class="column-1">音階級數</th><th class="column-2">唱名</th><th class="column-3">音級名稱</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">[latex]\hat1[/latex]</td><td class="column-2"><i>do</i></td><td class="column-3">主音</td></tr><tr class="row-3 odd"><td class="column-1">[latex]\hat2[/latex]</td><td class="column-2"><i>re</i></td><td class="column-3">上主音</td></tr><tr class="row-4 even"><td class="column-1">[latex]\hat3[/latex]</td><td class="column-2"><i>me</i></td><td class="column-3">中音</td></tr><tr class="row-5 odd"><td class="column-1">[latex]\hat4[/latex]</td><td class="column-2"><i>fa</i></td><td class="column-3">下屬音</td></tr><tr class="row-6 even"><td class="column-1">[latex]\hat5[/latex]</td><td class="column-2"><i>sol</i></td><td class="column-3">屬音</td></tr><tr class="row-7 odd"><td class="column-1">[latex]\hat6[/latex]</td><td class="column-2"><i>le</i></td><td class="column-3">下中音</td></tr><tr class="row-8 even"><td class="column-1">[latex]\hat7[/latex]</td><td class="column-2"><i>te</i></td><td class="column-3">下主音</td></tr><tr class="row-9 odd"><td class="column-1">[latex]\uparrow\hat7[/latex]</td><td class="column-2"><i>ti</i></td><td class="column-3">導音</td></tr></tbody></table></div><div class="translation-unit" id="omt-minor-scales-u0041"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0040">譜例 8。</a>小音階中的音級名稱。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0042"><p>大音階章曾說明，拉丁文前綴 <em>sub</em> 意為「下方」：下中音位於主音下方三度，下屬音則位於主音下方五度。現在可以再加入一個音級名稱：下主音，指降低的 [latex]\downarrow\hat7[/latex]。上主音比主音高一個全音，下主音則比主音低一個全音。</p></div><aside class="translator-note">譯註：原文此處寫降低的第七級，與前表以自然小音階為基準、直接將第七級稱作下主音的記法不同。辨別重點是它距主音一個全音，而導音距主音半音。</aside><div class="translation-unit" id="omt-minor-scales-u0043"><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0044">譜例 9</a>顯示 B 旋律小音階的上行與下行，並標出音級名稱。如圖所示，旋律小音階上行時使用導音，下行時使用下主音。</p></div><div class="translation-unit" id="omt-minor-scales-u0044"><figure id="zh-omt-minor-scales-attachment_5361" aria-describedby="zh-omt-minor-scales-caption-attachment-5361" class="wp-caption aligncenter"><img class="wp-image-5361 zoomable" src="../assets/omt/f8f64e01637dcbb2.png" alt="低音譜號中的 B 旋律小音階，上行與下行均標出全音、半音及音級名稱。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Screen-Shot-2020-06-11-at-11.20.05-AM.png" loading="lazy" tabindex="0" role="button" width="1654" height="616"><figcaption id="zh-omt-minor-scales-caption-attachment-5361" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">譜例 9。</span>B 旋律小音階。</span></figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>W：全音；</li><li>H：半音。</li></ul><ul class="label-terms"><li>Tonic：主音；</li><li>Supertonic：上主音；</li><li>Mediant：中音；</li><li>Subdominant：下屬音；</li><li>Dominant：屬音；</li><li>Submediant：下中音；</li><li>Leading Tone：導音；</li><li>Subtonic：下主音。</li></ul><ul class="label-terms"><li>raised：升高；</li><li>lowered：降低。</li></ul></section></div><div class="translation-unit" id="omt-minor-scales-u0045"><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0046">譜例 10</a>可幫助你理解三種小音階。表中的順序依據是：與同主音大音階相比，有幾個音階級數降低。</p></div><div class="translation-unit" id="omt-minor-scales-u0046"><table id="zh-omt-minor-scales-tablepress-40" class="tablepress tablepress-id-40 skinny score-table"><thead><tr class="row-1 odd"><th class="column-1">小音階形式</th><th class="column-2">相較於大音階降低的級數</th></tr></thead><tbody class="row-hover"><tr class="row-2 even"><td class="column-1">自然小音階</td><td class="column-2">[latex]\downarrow\hat{3},\downarrow\hat{6}, \downarrow\hat{7}[/latex]</td></tr><tr class="row-3 odd"><td class="column-1">和聲小音階</td><td class="column-2">[latex]\downarrow\hat{3},\downarrow\hat{6}[/latex]</td></tr><tr class="row-4 even"><td class="column-1">旋律小音階（上行）</td><td class="column-2">[latex]\downarrow\hat{3}[/latex]</td></tr></tbody></table></div><div class="translation-unit" id="omt-minor-scales-u0047"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0046">譜例 10。</a>小音階中降低的音階級數。</span></p></div><div class="translation-unit" id="omt-minor-scales-u0048"><p>如表所示，相較於大音階，自然小音階有三個級數降低，和聲小音階有兩個，旋律小音階上行時則有一個。請記住，旋律小音階下行與自然小音階相同，都有三個級數降低。</p></div><div class="translation-unit" id="omt-minor-scales-u0049"><p>以下練習可幫助你標示小音階的音階級數、唱名與音級名稱：</p></div><div class="translation-unit" id="omt-minor-scales-u0050"><div class="textbox textbox--exercises"><header class="textbox__header"><p class="textbox__title"><a id="zh-omt-minor-scales-practice--4"></a>練習</p></header><div class="textbox__content"><div id="zh-omt-minor-scales-h5p-48"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-48" target="_blank" rel="noopener noreferrer" class="external" aria-label="小音階級數與唱名測驗（需連線）（外部網站，另開分頁）">小音階級數與唱名測驗（需連線）</a></aside></div></div></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-5" class="section-header"><a id="en-omt-minor-scales-minor-scale-degrees"></a>Minor Scale Degrees, Solfège, and Scale-Degree Names</h2><p>Minor <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree">scale degrees</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-solfege">solfège</a>, and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree-names">scale-degree names</a> are similar to, but not exactly the same as, their major-scale counterparts. <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">Example 7</a> summarizes the three types of minor scale, and shows the scale degrees and solfège for each. Note that the scale degrees are the same as in a major scale. <span>The bottom line shows the solfège syllables, which differ from the major-scale syllables in several places to reflect the minor scale’s pattern of whole and half steps.</span></p><div><aside class="external-resource"><a href="https://musescore.com/user/32728834/scores/8383293/embed" target="_blank" rel="noopener noreferrer" class="external" aria-label="Musical example（外部網站，另開分頁）">Musical example</a><p class="missing-score">Static score pending; the original resource contains a musical example.</p></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">Example 7. </a>Scale degrees and solfege for all three types of minor scales: a) natural minor; b) harmonic minor, and c) melodic minor.</span></p><p><span>In the solfège for natural minor (<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">Example 7a</a>), </span><em>mi </em><span>becomes </span><em>me </em><span>(pronounced "may"), </span><em>la </em><span>becomes </span><em>le</em><span> (pronounced "lay"), and </span><em>ti</em><span> becomes </span><em>te</em><span> (pronounced "tay"). If you sing or play through the above example, you’ll notice that the ending lacks the same sense of closure you heard in the major scale. In the major scale, this closure is created in part by the ascending semitone between </span><em>ti</em><span> ([latex]\uparrow\hat{7}[/latex]) and </span><em>do </em><span>([latex]\hat{1}[/latex]).</span></p><p>In harmonic minor <span>(<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">Example 7b</a>)</span>, <em>ti</em> ([latex]\uparrow\hat7[/latex]) replaces <em>te</em> ([latex]\hat7[/latex]). Having <em>ti</em> ([latex]\hat{7}[/latex]) creates the sense of closure that is absent in the natural minor scale.</p><p>As noted above, the melodic minor scale has different ascending and descending patterns <span>(<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0032">Example 7c</a>)</span>. <span>In the ascending form of melodic minor, </span><em>le–te </em><span>([latex]\hat6-\hat7[/latex]) becomes </span><em>la-ti </em><span>([latex]\uparrow\hat6-\uparrow\hat7[/latex]), meaning the upper half of the melodic minor scale sounds the same as a major scale. In the descending form of melodic minor, natural minor is restored, so <em>te–le </em>([latex]\hat7-\hat6[/latex]) is used again</span><span>. Therefore, the ascending version of melodic minor has the sense of closure associated with the major scale, while the descending version follows the pattern of the natural minor scale.</span></p><p>You can practice labeling solfège in a natural minor scale in the following exercise:</p><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<p class="textbox__title"><a id="en-omt-minor-scales-practice--3"></a>Practice</p>
+</header>
+<div class="textbox__content">
+<div id="en-omt-minor-scales-h5p-46">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-46" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Scale Solfege Matching（外部網站，另開分頁）">Minor Scale Solfege Matching</a></aside></div>
+</div>
+</div>
+</div><p>As in major scales, each note of a minor scale is also named with <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-scale-degree-names">scale-degree names</a>. <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0040">Example 8</a> shows the scale-degree names used in minor scales alongside the corresponding scale-degree numbers and solfège syllables.</p><table id="en-omt-minor-scales-tablepress-39" class="tablepress tablepress-id-39 skinny score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Scale Degree Number</th>
+<th class="column-2">Solfège</th>
+<th class="column-3">Scale Degree Names</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">[latex]\hat1[/latex]</td>
+<td class="column-2"><i>do</i></td>
+<td class="column-3">Tonic</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">[latex]\hat2[/latex]</td>
+<td class="column-2"><i>re</i></td>
+<td class="column-3">Supertonic</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">[latex]\hat3[/latex]</td>
+<td class="column-2"><i>me</i></td>
+<td class="column-3">Mediant</td>
+</tr>
+<tr class="row-5 odd">
+<td class="column-1">[latex]\hat4[/latex]</td>
+<td class="column-2"><i>fa</i></td>
+<td class="column-3">Subdominant</td>
+</tr>
+<tr class="row-6 even">
+<td class="column-1">[latex]\hat5[/latex]</td>
+<td class="column-2"><i>sol</i></td>
+<td class="column-3">Dominant</td>
+</tr>
+<tr class="row-7 odd">
+<td class="column-1">[latex]\hat6[/latex]</td>
+<td class="column-2"><i>le</i></td>
+<td class="column-3">Submediant</td>
+</tr>
+<tr class="row-8 even">
+<td class="column-1">[latex]\hat7[/latex]</td>
+<td class="column-2"><i>te</i></td>
+<td class="column-3">Subtonic</td>
+</tr>
+<tr class="row-9 odd">
+<td class="column-1">[latex]\uparrow\hat7[/latex]</td>
+<td class="column-2"><i>ti</i></td>
+<td class="column-3">Leading Tone</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0040">Example 8.</a> Scale-degree names in minor scales.</span></p><p>As the chapter on major scales discussed, the Latin prefix <em>sub</em> means “under”—the submediant is a third below the tonic, and the subdominant is a fifth below. To this, we can now add one new scale degree name: the subtonic, for lowered [latex]\downarrow\hat7[/latex]. The supertonic is one whole step above the tonic, while the subtonic is one whole step below the tonic.</p><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0044">Example 9</a> shows a B melodic minor scale, ascending and descending, with scale-degree names labeled. As you can see, the melodic minor scale utilizes the leading tone in its ascending form, and the subtonic in its descending form.</p><figure id="en-omt-minor-scales-attachment_5361" aria-describedby="en-omt-minor-scales-caption-attachment-5361" class="wp-caption aligncenter"><img class="wp-image-5361 zoomable" src="../assets/omt/f8f64e01637dcbb2.png" alt="A B melodic minor scale, ascending and descending in bass clef, with half and whole steps labeled as well as scale-degree names." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Screen-Shot-2020-06-11-at-11.20.05-AM.png" loading="lazy" tabindex="0" role="button" width="1654" height="616"><figcaption id="en-omt-minor-scales-caption-attachment-5361" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">Example 9.</span> A B melodic minor scale.</span></figcaption></figure><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0046">Example 10</a> is a helpful visual for learning about the three forms of the minor scale. The order reflects the number of lowered scale degrees compared to a major scale starting on the same note.</p><table id="en-omt-minor-scales-tablepress-40" class="tablepress tablepress-id-40 skinny score-table">
+<thead>
+<tr class="row-1 odd">
+<th class="column-1">Form of Minor Scale</th>
+<th class="column-2">Lowered Scale Degrees (versus major)</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+<td class="column-1">Natural</td>
+<td class="column-2">[latex]\downarrow\hat{3},\downarrow\hat{6}, \downarrow\hat{7}[/latex]</td>
+</tr>
+<tr class="row-3 odd">
+<td class="column-1">Harmonic</td>
+<td class="column-2">[latex]\downarrow\hat{3},\downarrow\hat{6}[/latex]</td>
+</tr>
+<tr class="row-4 even">
+<td class="column-1">Melodic (ascending)</td>
+<td class="column-2">[latex]\downarrow\hat{3}[/latex]</td>
+</tr>
+</tbody>
+</table><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0046">Example 10.</a> Lowered scale degrees of minor.</span></p><p>As you can see, when compared to major, natural minor scales have three lowered scale degrees, harmonic minor scales have two, and melodic minor scales have one in the ascending version. Remember, the descending version of melodic minor is the same as natural minor, with three lowered scale degrees.</p><p>You can practice labeling minor scale degrees, solfège, and scale-degree names in the following exercise:</p><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<p class="textbox__title"><a id="en-omt-minor-scales-practice--4"></a>Practice</p>
+</header>
+<div class="textbox__content">
+<div id="en-omt-minor-scales-h5p-48">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-48" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Scale Degree and Solfege Quiz（外部網站，另開分頁）">Minor Scale Degree and Solfege Quiz</a></aside></div>
+</div>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0051"><h2 id="zh-omt-minor-scales-chapter-4921-section-6" class="section-header"><a id="zh-omt-minor-scales-the-parallel-and-relative-relationships"></a>同主音調與關係調</h2></div><div class="translation-unit" id="omt-minor-scales-u0052"><p>比較大調與小調時，有兩種重要關係。大調與小調共用同一個主音（<em>do</em>，[latex]\hat{1}[/latex]）時，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-parallel-relationship">同主音調關係</a>。例如，C 大調與 C 小調、A♭ 大調與 A♭ 小調、F♯ 大調與 F♯ 小調，都是同主音調。我們用「同主音小調」與「同主音大調」描述這種關係：C 大調是 C 小調的同主音大調，C 小調則是 C 大調的同主音小調。</p></div><div class="translation-unit" id="omt-minor-scales-u0053"><p>大調與小調共用同一個調號時，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-relative-relationship">關係調</a>。例如，C 大調的調號沒有升、降記號，A 小調也是如此。我們用「關係小調」與「關係大調」描述這種關係：C 大調是 A 小調的關係大調，A 小調是 C 大調的關係小調。小調主音一定比其關係大調的主音低三個半音：從 C 向下數三個半音，就會到 A（C–B、B–B♭、B♭–A）。同樣地，要找出某個小調的關係大調，就從主音向上數三個半音。</p></div><div class="translation-unit" id="omt-minor-scales-u0054"><p>用半音數找關係大調或關係小調時，請記住：關係調必須共用同一個調號。使用升記號的調與使用降記號的調，不能互為關係調；反過來也一樣。因此，必須選擇正確的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-enharmonic-equivalence">等音</a>調名。例如，比 D♭ 低三個半音的音，可以寫成 B♭ 或 A♯，但只有 B♭ 小調（五個降記號）是 D♭ 大調（也是五個降記號）的關係小調；A♯ 小調的調號不同，有七個升記號。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-6" class="section-header"><a id="en-omt-minor-scales-the-parallel-and-relative-relationships"></a>The Parallel and Relative Relationships</h2><p>When comparing major and minor keys, there are two relationships that are important. The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-parallel-relationship">parallel relationship</a> is when a major key shares a tonic <em>(do,</em> [latex]\hat{1}[/latex]) with a minor key. For example, C major and C minor (or A♭ major and A♭ minor, or F♯ major and F♯ minor) are parallel keys. We use the terms "parallel minor" and "parallel major" to describe this relationship: C major is the parallel major of C minor, and C minor is the parallel minor of C major.</p><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-relative-relationship">relative relationship </a> is when a major key shares a key signature with a minor key. For example, C major does not have any sharps or flats in its key signature, and neither does A minor. We use the terms "relative minor" and "relative major" to describe this relationship: C major is the relative major of A minor, and A minor is the relative minor of C major. The tonic of a minor key is always three half steps below the tonic of its relative major: if you count three half steps below C, you will get A (C–B, B–B♭, B♭–A). Likewise, to find the relative major key of a given minor key, count three half steps up.</p><p>When counting half steps to determine the relative major or minor of a given key, keep in mind that relative keys have the same key signature. A sharp key cannot share a relative relationship with a flat key (and vice versa), which means you need to select the correct <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-enharmonic-equivalence">enharmonic</a> key. For example, although the pitch three half steps down from D♭ could be written as either B♭ or A♯, only B♭ minor (five flats) is the relative minor of D♭ major (also five flats), because A♯ minor has a different key signature (seven sharps).</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0055"><h2 id="zh-omt-minor-scales-chapter-4921-section-7" class="section-header"><a id="zh-omt-minor-scales-minor-key-signatures"></a>小調調號</h2></div><div class="translation-unit" id="omt-minor-scales-u0056"><p>小調<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-key-signature">調號</a>和大調調號一樣，寫在譜號之後、拍號之前。每個大調都有對應的關係小調，因此小調調號的升、降記號順序與大調相同，也寫在相同的線與間上。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0057">譜例 11</a>沿用上一章的圖，顯示四種譜號中的升、降記號順序：</p></div><div class="translation-unit" id="omt-minor-scales-u0057"><figure id="zh-omt-minor-scales-attachment_5378" aria-describedby="zh-omt-minor-scales-caption-attachment-5378" class="wp-caption aligncenter"><img class="wp-image-5378 zoomable" src="../assets/omt/20260e3e828cc525.png" alt="高音、低音、中音與次中音譜號中，七個升記號與七個降記號的順序。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Screen-Shot-2020-06-08-at-1.11.04-PM.png" loading="lazy" tabindex="0" role="button" width="1024" height="372"><figcaption id="zh-omt-minor-scales-caption-attachment-5378" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">譜例 11。</span>四種譜號中的升、降記號順序。</span></figcaption></figure></div><div class="translation-unit" id="omt-minor-scales-u0058"><p>如前所述，若知道某個調號對應的大調，從它的主音向下數三個半音，就能找到同一調號的小調。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0059">譜例 12</a>依序列出所有升記號小調調號，<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0059">譜例 13</a>則依序列出所有降記號小調調號。</p></div><div class="translation-unit" id="omt-minor-scales-u0059"><div id="zh-omt-minor-scales-gallery-1" class="gallery galleryid-4921 gallery-columns-2 gallery-size-medium"><dl class="gallery-item"><dt class="gallery-icon landscape"><a href="../assets/omt/a51699c3a64886c7.png"><img src="../assets/omt/a51699c3a64886c7.png" class="attachment-medium size-medium zoomable" alt="A、E、B、F♯、C♯、G♯、D♯、A♯ 小調的調號，依升記號數量排列。" aria-describedby="zh-omt-minor-scales-gallery-1-5226" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2020-06-08-at-1.51.08-PM-2-e1658435801975.png" loading="lazy" tabindex="0" role="button" width="955" height="728"></a></dt><dd class="wp-caption-text gallery-caption" id="zh-omt-minor-scales-gallery-1-5226"><span class="example-caption-name">譜例 12。</span>A、E、B、F♯、C♯、G♯、D♯、A♯ 小調的調號。</dd></dl><dl class="gallery-item"><dt class="gallery-icon landscape"><a href="../assets/omt/960fe6b977b4b603.png"><img src="../assets/omt/960fe6b977b4b603.png" class="attachment-medium size-medium zoomable" alt="A、D、G、C、F、B♭、E♭、A♭ 小調的調號，依降記號數量排列。" aria-describedby="zh-omt-minor-scales-gallery-1-5216" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2020-06-08-at-1.57.09-PM-e1658435818939.png" loading="lazy" tabindex="0" role="button" width="969" height="727"></a></dt><dd class="wp-caption-text gallery-caption" id="zh-omt-minor-scales-gallery-1-5216"><span class="example-caption-name">譜例 13。</span>A、D、G、C、F、B♭、E♭、A♭ 小調的調號。</dd></dl><p><br></p></div></div><div class="translation-unit" id="omt-minor-scales-u0060"><p>和假想大調一樣，小調若需要重升或重降記號，也可以是本書所稱的假想調。</p></div><div class="translation-unit" id="omt-minor-scales-u0061"><p>以下練習可幫助你辨識小調調號：</p></div><div class="translation-unit" id="omt-minor-scales-u0062"><div class="textbox textbox--exercises"><header class="textbox__header"><p class="textbox__title"><a id="zh-omt-minor-scales-practice--5"></a>練習</p></header><div class="textbox__content"><div id="zh-omt-minor-scales-h5p-41"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-41" target="_blank" rel="noopener noreferrer" class="external" aria-label="小調調號辨識（需連線）（外部網站，另開分頁）">小調調號辨識（需連線）</a></aside></div></div></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-7" class="section-header"><a id="en-omt-minor-scales-minor-key-signatures"></a>Minor Key Signatures</h2><p>Minor <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-key-signature">key signatures</a>, like major key signatures, go after a clef but before a time signature. Each major key has a corresponding relative minor key signature; therefore, the orders of the sharps and flats are the same in minor key signatures as they are in major key signatures, placed on the same lines and spaces. <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0057">Example 11</a>, reproduced from the previous chapter, shows the order of sharps and flats in all four clefs:</p><figure id="en-omt-minor-scales-attachment_5378" aria-describedby="en-omt-minor-scales-caption-attachment-5378" class="wp-caption aligncenter"><img class="wp-image-5378 zoomable" src="../assets/omt/20260e3e828cc525.png" alt="The order of the seven sharps and seven flats of key signatures are shown in treble, bass, alto, and tenor clefs." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Screen-Shot-2020-06-08-at-1.11.04-PM.png" loading="lazy" tabindex="0" role="button" width="1024" height="372"><figcaption id="en-omt-minor-scales-caption-attachment-5378" class="wp-caption-text"><span class="example-caption-text"><span class="example-caption-name">Example 11.</span> The order of sharps and flats in all four clefs.</span></figcaption></figure><p>As previously mentioned, if you know the major key associated with a given key signature, you can go down three half steps from the tonic to find the minor key for that key signature. <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0059">Example 12</a> shows all of the sharp minor key signatures in order, and <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0059">Example 13</a> depicts all of the flat minor key signatures in order.</p><div id="en-omt-minor-scales-gallery-1" class="gallery galleryid-4921 gallery-columns-2 gallery-size-medium">
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+                <a href="../assets/omt/a51699c3a64886c7.png"><img src="../assets/omt/a51699c3a64886c7.png" class="attachment-medium size-medium zoomable" alt="" aria-describedby="en-omt-minor-scales-gallery-1-5226" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2020-06-08-at-1.51.08-PM-2-e1658435801975.png" loading="lazy" tabindex="0" role="button" width="955" height="728"></a>
+            </dt>
+<dd class="wp-caption-text gallery-caption" id="en-omt-minor-scales-gallery-1-5226">
+                <span class="example-caption-name">Example 12.</span> The key signatures of A, E, B, F♯, C♯, G♯, D♯, and A♯ minor.
+                </dd>
+</dl>
+<dl class="gallery-item">
+<dt class="gallery-icon landscape">
+                <a href="../assets/omt/960fe6b977b4b603.png"><img src="../assets/omt/960fe6b977b4b603.png" class="attachment-medium size-medium zoomable" alt="" aria-describedby="en-omt-minor-scales-gallery-1-5216" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Screen-Shot-2020-06-08-at-1.57.09-PM-e1658435818939.png" loading="lazy" tabindex="0" role="button" width="969" height="727"></a>
+            </dt>
+<dd class="wp-caption-text gallery-caption" id="en-omt-minor-scales-gallery-1-5216">
+                <span class="example-caption-name">Example 13.</span> The minor key signatures of A, D, G, C, F, B♭, E♭, and A♭ minor.
+                </dd>
+</dl>
+<p><br>
+        </p></div><p>Minor keys can also be imaginary (like imaginary major keys) if they contain double accidentals.</p><p>You can practice identifying minor key signatures in the following exercise:</p><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<p class="textbox__title"><a id="en-omt-minor-scales-practice--5"></a>Practice</p>
+</header>
+<div class="textbox__content">
+<div id="en-omt-minor-scales-h5p-41">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/#h5p-41" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Key Signature Identification（外部網站，另開分頁）">Minor Key Signature Identification</a></aside></div>
+</div>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0063"><h2 id="zh-omt-minor-scales-chapter-4921-section-8" class="section-header"><a id="zh-omt-minor-scales-minor-keys-and-the-circle-of-fifths"></a>小調與五度圈</h2></div><div class="translation-unit" id="omt-minor-scales-u0064"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-circle-of-fifths">五度圈</a>不只可用來呈現大調調號，也可以呈現小調調號。每個調號旁邊會列出對應的大調與小調。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0065">譜例 14</a>是大小調五度圈：</p></div><div class="translation-unit" id="omt-minor-scales-u0065"><figure id="zh-omt-minor-scales-attachment_5466" aria-describedby="zh-omt-minor-scales-caption-attachment-5466" class="wp-caption aligncenter"><a href="../assets/omt/de73fe5975dd3f87.jpg"><img class="wp-image-5466 zoomable" src="../assets/omt/de73fe5975dd3f87.jpg" alt="大小調五度圈，外圈列大調，內圈列對應的小調，沿圓周以五度關係排列。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Circle_of_fifths_deluxe_de.jpg" loading="lazy" tabindex="0" role="button" width="2048" height="1726"></a><figcaption id="zh-omt-minor-scales-caption-attachment-5466" class="wp-caption-text"><span class="example-caption-name">譜例 14。</span>大調與小調的五度圈。</figcaption></figure></div><div class="translation-unit" id="omt-minor-scales-u0066"><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0065">譜例 14</a>以外圈的藍色大寫字母表示大調，內圈的紅色小寫字母表示小調。調號同樣依變音記號數量排列。從頂端（十二點鐘位置）順時針移動，升記號會依序增加；從頂端逆時針移動，降記號會依序增加。底部三個位置的調號可以用升記號或降記號記寫，因此各有一對<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-enharmonic-equivalence">等音調</a>。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-8" class="section-header"><a id="en-omt-minor-scales-minor-keys-and-the-circle-of-fifths"></a>Minor Keys and the Circle of Fifths</h2><p>The <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-circle-of-fifths">circle of fifths</a> can be used as a visual for minor key signatures as well as major key signatures. Each key signature is placed alongside the corresponding major and minor keys. <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0065">Example 14</a> shows the circle of fifths for minor and major keys:</p><figure id="en-omt-minor-scales-attachment_5466" aria-describedby="en-omt-minor-scales-caption-attachment-5466" class="wp-caption aligncenter"><a href="../assets/omt/de73fe5975dd3f87.jpg"><img class="wp-image-5466 zoomable" src="../assets/omt/de73fe5975dd3f87.jpg" alt="keys arranged by fifth: C–G–D–A–E–B–F♯–D♭–A♭–E♭–B♭–F–C (repeating in a circle)." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/Circle_of_fifths_deluxe_de.jpg" loading="lazy" tabindex="0" role="button" width="2048" height="1726"></a><figcaption id="en-omt-minor-scales-caption-attachment-5466" class="wp-caption-text"><span class="example-caption-name">Example 14.</span> The circle of fifths for major and minor keys.</figcaption></figure><p>In <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0065">Example 14</a>, major keys are in blue uppercase letters around the outside of the circle, while minor keys are in red lowercase letters around the inside of the circle. Once again, key signatures appear in order of their number of accidentals. If you start at the top of the circle (12 o'clock) and continue clockwise, key signatures add sharps, while if you start at the top of the circle and continue counterclockwise, they add flats. The bottom three key signatures can be written in sharps or flats, and so are <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-enharmonic-equivalence">enharmonic</a>.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-minor-scales-u0067"><h2 id="zh-omt-minor-scales-chapter-4921-section-9" class="section-header"><a id="zh-omt-minor-scales-major-or-minor"></a>是大調，還是小調？</h2></div><div class="translation-unit" id="omt-minor-scales-u0068"><p>拿到要演奏或演唱的樂譜時，譜上通常會有調號，可將作品的調性範圍縮小為兩種選擇：某個大調，或它的關係小調。<a class="footnote" id="zh-omt-minor-scales-return-footnote-4921-1" href="../omt/omt-minor-scales.html#zh-omt-minor-scales-footnote-4921-1"><sup class="footnote">[1]</sup></a>但要怎麼判斷是哪一種？可以聆聽並觀察前後文的線索，例如作品的第一個音與最後一個音。作品常從主音開始，也常在主音結束，因此這些音能幫助判斷是大調還是小調。</p></div><div class="translation-unit" id="omt-minor-scales-u0069"><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0070">譜例 15</a>是路易絲・賴夏特（Louise Reichardt，1779–1826）的歌曲〈Durch die bunten Rosenhecken〉（穿過繽紛的玫瑰籬）的前三小節：</p></div><div class="translation-unit" id="omt-minor-scales-u0070"><figure id="zh-omt-minor-scales-attachment_11311" aria-describedby="zh-omt-minor-scales-caption-attachment-11311" class="wp-caption aligncenter"><a href="../assets/omt/4f5f285998b4800a.png"><img class="wp-image-11311 zoomable" src="../assets/omt/4f5f285998b4800a.png" alt="歌曲〈Durch die bunten Rosenhecken〉的譜例；聲樂與鋼琴低音聲部的 F 音以圓圈標出。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/reichardt.png" loading="lazy" tabindex="0" role="button" width="2698" height="824"></a><figcaption id="zh-omt-minor-scales-caption-attachment-11311" class="wp-caption-text"><span class="example-caption-name">譜例 15。</span>〈<a href="https://open.spotify.com/track/6VaRf356HZBxo5RIryWiV4?si=9b3f8b4d00ea4660" target="_blank" rel="noopener noreferrer" class="external" aria-label="Durch die bunten Rosenhecken（外部網站，另開分頁）">Durch die bunten Rosenhecken</a>〉的前三小節。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>Unruhig und klagend：不安而哀怨地。</p><p>譜中歌詞意為：蝴蝶穿過繽紛的玫瑰籬，翩翩飛舞。</p></section></div><div class="translation-unit" id="omt-minor-scales-u0071"><p>這個譜例包含聲樂旋律（最上方的一行譜）與鋼琴聲部（聲樂下方的大譜表）。調號有四個降記號，因此可以將調性範圍縮小為 A♭ 大調或 F 小調。<a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0070">譜例 15</a>最高聲部（歌者）圈出的第一個音是 F，最低聲部（鋼琴彈奏的最低音）圈出的第一個音也是 F。因此，這首作品較可能是 F 小調，而非 A♭ 大調。</p></div><div class="translation-unit" id="omt-minor-scales-u0072"><div class="textbox shaded"><a id="zh-omt-minor-scales-online-resources"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-minor-scales-u0073"><ul><li class="csl-entry">Drabkin, William。2001。〈Circle of Fifths〉（五度圈）。<i>Grove Music Online</i>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.05806" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.05806（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.05806</a>。</li><li>同作者。2001。〈Degree〉（音階級數）。<i>Grove Music Online</i>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.07408" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.07408（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.07408</a>。</li><li>同作者。2001。〈Scale〉（音階）。<i>Grove Music Online</i>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.24691" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.24691（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.24691</a>。</li><li>Hyer, Brian。2001。〈Tonality〉（調性）。<i>Grove Music Online</i>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.28102" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.28102（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.28102</a>。</li><li>Jander, Owen。2001。〈Solfeggio〉（視唱）。<i>Grove Music Online</i>。<a href="https://doi.org/10.1093/gmo/9781561592630.article.26144" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.26144（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.26144</a>。</li><li class="csl-entry">McGrain, Mark。1986。<em>Music Notation</em>（音樂記譜法）。波士頓：Berklee Press。</li><li>Palmer, Willard A. 等。1994。<em>The Complete Book of Scales, Chords, Arpeggios &amp; Cadences</em>（音階、和弦、琶音與終止式全書）。加州 Van Nuys：Alfred Publishing。</li><li>Rechberger, Herman。<em>Scales and Modes around the World</em>（世界各地的音階與調式）。2008。芬蘭：Fennica-Gehrman。</li><li>Roemer, Clinton。1985。<em>The Art of Music Copying: The Preparation of Music for Performance</em>（抄譜的藝術：為演出準備樂譜），第 2 版。Sherman Oaks：Roerick Music Company。</li></ul></div><div class="translation-unit" id="omt-minor-scales-u0074"><div class="textbox shaded"><a id="zh-omt-minor-scales-online-resources--2"></a>線上資源</div></div><div class="translation-unit" id="omt-minor-scales-u0075"><ul><li><a href="https://www.musictheory.net/lessons/22" target="_blank" rel="noopener noreferrer" class="external" aria-label="小音階教學（musictheory.net）（外部網站，另開分頁）">小音階教學（musictheory.net）</a></li><li><a href="https://www.youtube.com/watch?v=rxaNn1gXg-E&amp;t=5s" target="_blank" rel="noopener noreferrer" class="external" aria-label="小音階（YouTube）（外部網站，另開分頁）">小音階（YouTube）</a></li><li><a href="https://www.musictheory.net/lessons/23" target="_blank" rel="noopener noreferrer" class="external" aria-label="大調與小調的音級名稱（musictheory.net）（外部網站，另開分頁）">大調與小調的音級名稱（musictheory.net）</a></li><li><a href="http://www.musictheory.net/lessons/24" target="_blank" rel="noopener noreferrer" class="external" aria-label="小調與大調調號（musictheory.net）（外部網站，另開分頁）">小調與大調調號（musictheory.net）</a></li><li><a href="https://www.youtube.com/watch?v=tZNm-aMzYm0" target="_blank" rel="noopener noreferrer" class="external" aria-label="小調調號（YouTube）（外部網站，另開分頁）">小調調號（YouTube）</a></li><li><a href="https://music-theory-practice.com/key-signatures/key-signature-flashcards.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="小調調號字卡（music-theory-practice.com）（外部網站，另開分頁）">小調調號字卡（music-theory-practice.com）</a>（請記得在選單中點選「minor」）</li><li><a href="https://www.youtube.com/watch?v=_UxzDjU3-hM" target="_blank" rel="noopener noreferrer" class="external" aria-label="大小調五度圈（YouTube）（外部網站，另開分頁）">大小調五度圈（YouTube）</a></li><li><a href="https://www.classicfm.com/discover-music/music-theory/what-is-the-circle-of-fifths/" target="_blank" rel="noopener noreferrer" class="external" aria-label="五度圈（Classic FM）（外部網站，另開分頁）">五度圈（Classic FM）</a></li></ul></div><div class="translation-unit" id="omt-minor-scales-u0076"><div class="textbox shaded"><a id="zh-omt-minor-scales-assignments-from-the-internet"></a>網路作業資源</div></div><div class="translation-unit" id="omt-minor-scales-u0077"><ol type="A"><li>自然小音階（<a href="http://static1.1.sqspcdn.com/static/f/801966/23104413/1373760933937/Music-Theory-Worksheet-20-Natural-Minor-Scale.pdf?token=p5u%2FxM6nxDDUwdQRJcyLzXl%2FkE4%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>和聲小音階（<a href="http://static1.1.sqspcdn.com/static/f/801966/23104415/1373760934860/Music-Theory-Worksheet-21-Harmonic-Minor-Scale.pdf?token=4yKed27OpsAexv%2FR8ENxgwx%2FRzY%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>旋律小音階（<a href="http://static1.1.sqspcdn.com/static/f/801966/23104411/1373760932463/Music-Theory-Worksheet-22-Melodic-Minor-Scale.pdf?token=Ee9AnqSriTJqWPX5kQJJKQVtDWc%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫與辨識小音階（<a href="https://www.belmont.edu/cmpa/_files/minorscales-worksheet2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫小音階與大音階（<a href="https://www.scribd.com/doc/176250293/Scales-PDF-Worksheet" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫與辨識小調調號（<a href="https://dsmusic.com.au/wp-content/uploads/2012/01/key_sig_worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://musictheory.pugetsound.edu/hw/MT21C_HW_2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>記寫大調與小調調號（<a href="https://www.scribd.com/document/662908361/MajorandMinorKeySignaturesWorksheets16-1" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>同主音小調與關係小調題目（<a href="https://funmusiccoimages.com/pdf/14-bk2-relative-major-minor-worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li><li>大調與小調的音級名稱（<a href="https://mymusictheory.com/scales-and-keys/technical-names-of-scale-degrees/" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>）</li></ol></div><div class="translation-unit" id="omt-minor-scales-u0078"><div class="textbox shaded"><a id="zh-omt-minor-scales-assignments"></a>作業</div></div><div class="translation-unit" id="omt-minor-scales-u0079"><ol><li>小音階 A：要求學生記寫小音階，並記寫或辨識音階級數。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>小音階 B：要求學生記寫小音階，並記寫或辨識音階級數。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>小調調號 A：要求學生記寫與辨識小調調號，並依指定調號寫出音階。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li><li>小調調號 B：要求學生記寫與辨識小調調號，並依指定調號寫出音階。<ul><li>所有譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li><li>僅高音與低音譜號（<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="PDF（外部網站，另開分頁）">PDF</a>、<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label="MSCZ（外部網站，另開分頁）">MSCZ</a>）</li></ul></li></ol></div><div class="translation-unit" id="omt-minor-scales-u0080"><div class="media-attributions clear"><h2>媒體出處與授權</h2><ul><li>〈披頭四「Yesterday」〉© Paul McCartney 與 John Lennon；原頁標示為 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>〈小音階音級名稱〉© Chelsey Hamm，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>〈不同譜號中的升、降記號〉© Chelsey Hamm，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>〈<a href="https://upload.wikimedia.org/wikipedia/commons/3/33/Circle_of_fifths_deluxe_4.svg" target="_blank" rel="noopener noreferrer" class="external" aria-label="小調五度圈（外部網站，另開分頁）">小調五度圈</a>〉© Wiki Commons，由 Bryn Hughes 改編，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示—相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示—相同方式分享）</a>授權。</li><li>〈<a href="https://imslp.org/wiki/Ausgew%C3%A4hlte_Lieder_(Reichardt%2C_Louise)" target="_blank" rel="noopener noreferrer" class="external" aria-label="Durch die bunten Rosenhecken（外部網站，另開分頁）">Durch die bunten Rosenhecken</a>〉© Louise Reichardt，原頁標示為<a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="公眾領域（外部網站，另開分頁）">公眾領域</a>。</li></ul></div></div><div class="translation-unit" id="omt-minor-scales-u0081"><div class="footnotes"><ol><li id="zh-omt-minor-scales-footnote-4921-1">1700–1900 年間的西方古典音樂作品，絕大多數採用大調或小調。不過，在這個時期與文化脈絡之外，也應考慮作品是否採用某種<a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式</a>；如此一來，同一個調號可能對應的主音就會增加。<a href="../omt/omt-minor-scales.html#zh-omt-minor-scales-return-footnote-4921-1" class="return-footnote">↵</a></li></ol></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-minor-scales-chapter-4921-section-9" class="section-header"><a id="en-omt-minor-scales-major-or-minor"></a>Major or Minor?</h2><p>When you are given a piece of music to play or sing, the notation will often include a key signature, which will help you to narrow down the key of the work to two options: a major key and its relative minor.<a class="footnote" title="The vast majority of Western classical works from 1700–1900 are in either major or minor. But outside of this time period and cultural context, you should also consider if the piece may be in a diatonic mode. This would expand the number of possible tonics indicated by a key signature." id="en-omt-minor-scales-return-footnote-4921-1" href="../omt/omt-minor-scales.html#en-omt-minor-scales-footnote-4921-1"><sup class="footnote">[1]</sup></a> But how can you tell which one the work is in? One thing that can help is to listen to and look at context clues. One type of such clues are the first and last notes of the work—pieces often start and end on the tonic, so this can help you determine whether a work is major or minor.</p><p><a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0070">Example 15</a> shows the first three measures of a song by Louise Reichardt (1779–1826) titled "Durch die bunten Rosenhecken" ("Through the colorful rose hedges"):</p><figure id="en-omt-minor-scales-attachment_11311" aria-describedby="en-omt-minor-scales-caption-attachment-11311" class="wp-caption aligncenter"><a href="../assets/omt/4f5f285998b4800a.png"><img class="wp-image-11311 zoomable" src="../assets/omt/4f5f285998b4800a.png" alt="Fs are circled on the score excerpt." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2020/05/reichardt.png" loading="lazy" tabindex="0" role="button" width="2698" height="824"></a><figcaption id="en-omt-minor-scales-caption-attachment-11311" class="wp-caption-text"><span class="example-caption-name">Example 15.</span> The first three measures of <a href="https://open.spotify.com/track/6VaRf356HZBxo5RIryWiV4?si=9b3f8b4d00ea4660" target="_blank" rel="noopener noreferrer" class="external" aria-label="“Durch die bunten Rosenhecken.”（外部網站，另開分頁）">“Durch die bunten Rosenhecken.”</a></figcaption></figure><p>This example shows a vocal line (the top staff) and a piano part (the grand staff underneath the vocal part). The key signature contains four flats, which means we can narrow down the key of this work to A♭ major or F minor. In <a class="example-caption-name" href="../omt/omt-minor-scales.html#omt-minor-scales-u0070">Example 15</a>, the first note that is circled in the highest part (the vocalist) is is F, as is the first note that is circled in the lowest part (the lowest note played by the piano). Therefore, it is likely that the key of this work is F minor instead of A♭ major.</p><div class="textbox shaded"><a id="en-omt-minor-scales-online-resources"></a>Further Readings</div><ul>
+<li class="csl-entry">Drabkin, William. 2001. “Circle of Fifths.” <i>Grove Music Online</i>.  <a href="https://doi.org/10.1093/gmo/9781561592630.article.05806" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.05806（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.05806</a>.</li>
+<li>——. 2001. “Degree.” <i>Grove Music Online</i>.  <a href="https://doi.org/10.1093/gmo/9781561592630.article.07408" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.07408（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.07408</a>.</li>
+<li>——. 2001. “Scale.” <i>Grove Music Online</i>.  <a href="https://doi.org/10.1093/gmo/9781561592630.article.24691" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.24691（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.24691</a>.</li>
+<li>Hyer, Brian. 2001. “Tonality.” <i>Grove Music Online</i>.  <a href="https://doi.org/10.1093/gmo/9781561592630.article.28102" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.28102（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.28102</a>.</li>
+<li>Jander, Owen. 2001. “Solfeggio.” <i>Grove Music Online</i>.  <a href="https://doi.org/10.1093/gmo/9781561592630.article.26144" target="_blank" rel="noopener noreferrer" class="external" aria-label="https://doi.org/10.1093/gmo/9781561592630.article.26144（外部網站，另開分頁）">https://doi.org/10.1093/gmo/9781561592630.article.26144</a>.</li>
+<li class="csl-entry">McGrain, Mark. 1986. <em>Music Notation</em>. Boston: Berklee Press.</li>
+<li>Palmer, Willard A. et. al. 1994. <em>The Complete Book of Scales, Chords, Arpeggios &amp; Cadences</em>. Van Nuys, CA: Alfred Publishing.</li>
+<li>Rechberger, Herman. <em>Scales and Modes around the World</em>. 2008. Finland: Fennica-Gehrman.</li>
+<li>Roemer, Clinton. 1985. <em>The Art of Music Copying: The Preparation of Music for Performance</em>, 2nd edition. Sherman Oaks: Roerick Music Company.</li>
+</ul><div class="textbox shaded"><a id="en-omt-minor-scales-online-resources--2"></a>Online Resources</div><ul>
+<li><a href="https://www.musictheory.net/lessons/22" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Scales Tutorial (musictheory.net)（外部網站，另開分頁）">Minor Scales Tutorial (musictheory.net)</a></li>
+<li><a href="https://www.youtube.com/watch?v=rxaNn1gXg-E&amp;t=5s" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Scales (YouTube)（外部網站，另開分頁）">Minor Scales (YouTube)</a></li>
+<li><a href="https://www.musictheory.net/lessons/23" target="_blank" rel="noopener noreferrer" class="external" aria-label="Scale Degree Names in Major and Minor (musictheory.net)（外部網站，另開分頁）">Scale Degree Names in Major and Minor (musictheory.net)</a></li>
+<li><a href="http://www.musictheory.net/lessons/24" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor and Major Key Signatures (musictheory.net)（外部網站，另開分頁）">Minor and Major Key Signatures (musictheory.net)</a></li>
+<li><a href="https://www.youtube.com/watch?v=tZNm-aMzYm0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Key Signatures (YouTube)（外部網站，另開分頁）">Minor Key Signatures (YouTube)</a></li>
+<li><a href="https://music-theory-practice.com/key-signatures/key-signature-flashcards.html" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Key Signature Flashcards (music-theory-practice.com)（外部網站，另開分頁）">Minor Key Signature Flashcards (music-theory-practice.com)</a> (be sure to click "minor" in the menu)</li>
+<li><a href="https://www.youtube.com/watch?v=_UxzDjU3-hM" target="_blank" rel="noopener noreferrer" class="external" aria-label="The Circle of Fifths for Minor and Major (YouTube)（外部網站，另開分頁）">The Circle of Fifths for Minor and Major (YouTube)</a></li>
+<li><a href="https://www.classicfm.com/discover-music/music-theory/what-is-the-circle-of-fifths/" target="_blank" rel="noopener noreferrer" class="external" aria-label="The Circle of Fifths (Classic FM)（外部網站，另開分頁）">The Circle of Fifths (Classic FM)</a></li>
+</ul><div class="textbox shaded"><a id="en-omt-minor-scales-assignments-from-the-internet"></a>Assignments from the Internet</div><ol type="A">
+<li>Natural Minor Scales (<a href="http://static1.1.sqspcdn.com/static/f/801966/23104413/1373760933937/Music-Theory-Worksheet-20-Natural-Minor-Scale.pdf?token=p5u%2FxM6nxDDUwdQRJcyLzXl%2FkE4%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Harmonic Minor Scales (<a href="http://static1.1.sqspcdn.com/static/f/801966/23104415/1373760934860/Music-Theory-Worksheet-21-Harmonic-Minor-Scale.pdf?token=4yKed27OpsAexv%2FR8ENxgwx%2FRzY%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Melodic Minor Scales (<a href="http://static1.1.sqspcdn.com/static/f/801966/23104411/1373760932463/Music-Theory-Worksheet-22-Melodic-Minor-Scale.pdf?token=Ee9AnqSriTJqWPX5kQJJKQVtDWc%3D" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing and Identifying Minor Scales (<a href="https://www.belmont.edu/cmpa/_files/minorscales-worksheet2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing Minor and Major Scales (<a href="https://www.scribd.com/doc/176250293/Scales-PDF-Worksheet" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing and Identifying Minor Key Signatures (<a href="https://dsmusic.com.au/wp-content/uploads/2012/01/key_sig_worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://musictheory.pugetsound.edu/hw/MT21C_HW_2.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Writing Major and Minor Key Signatures (<a href="https://www.scribd.com/document/662908361/MajorandMinorKeySignaturesWorksheets16-1" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Parallel and Relative Minor Questions (<a href="https://funmusiccoimages.com/pdf/14-bk2-relative-major-minor-worksheet.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+<li>Scale Degree Names in Major and Minor (<a href="https://mymusictheory.com/scales-and-keys/technical-names-of-scale-degrees/" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>)</li>
+</ol><div class="textbox shaded"><a id="en-omt-minor-scales-assignments"></a>Assignments</div><ol>
+<li>Minor Scales A. Asks students to write minor scales and write/identify scale degrees.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble and bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Minor Scales B. Asks students to write minor scales and write/identify scale degrees.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble and bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/07/WK-Minor-Scales-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Minor Key Signatures A. Asks students to write and identify minor key signatures, and to write scales within a key signature context.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble and bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-A-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+<li>Minor Key Signatures B. Asks students to write and identify minor key signatures, and to write scales within a key signature context.
+<ul>
+<li>All clefs (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+<li>Treble and bass only (<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B-TB.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label=".pdf（外部網站，另開分頁）">.pdf</a>, <a href="https://viva.pressbooks.pub/app/uploads/sites/12/2025/08/WK-Minor-Key-Signatures-B-TB.mscz" target="_blank" rel="noopener noreferrer" class="external" aria-label=".mscz（外部網站，另開分頁）">.mscz</a>)</li>
+</ul>
+</li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Yesterday Beatles  ©  Paul McCartney and John Lennon    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Scale-degree Names Minor  ©  Chelsey Hamm    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Sharps and Flats in Different Clefs  ©  Chelsey Hamm    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li><a href="https://upload.wikimedia.org/wikipedia/commons/3/33/Circle_of_fifths_deluxe_4.svg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Minor Circle of Fifths（外部網站，另開分頁）">Minor Circle of Fifths</a>  ©  Wiki Commons  adapted by  Bryn Hughes  is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li><a href="https://imslp.org/wiki/Ausgew%C3%A4hlte_Lieder_(Reichardt%2C_Louise)" target="_blank" rel="noopener noreferrer" class="external" aria-label="Durch die bunten Rosenhecken（外部網站，另開分頁）">Durch die bunten Rosenhecken</a>  ©  Louise Reichardt    is licensed under a  <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="Public Domain（外部網站，另開分頁）">Public Domain</a> license</li></ul></div><div class="footnotes"><ol><li id="en-omt-minor-scales-footnote-4921-1">The vast majority of Western classical works from 1700–1900 are in either major or minor. But outside of this time period and cultural context, you should also consider if the piece may be in a <a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">diatonic mode</a>. This would expand the number of possible tonics indicated by a key signature. <a href="../omt/omt-minor-scales.html#en-omt-minor-scales-return-footnote-4921-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-major-scales.html">上一節：大音階、音階級數與調號</a><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">下一節：自然音調式與半音階入門</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/minor-scales/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

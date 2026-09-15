@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>樂句層次曲式的基礎概念 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-foundational-concepts.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group" open=""><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a aria-current="page" href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-foundational-concepts" data-book="omt" data-page-url="/omt/omt-foundational-concepts.html" data-next-url="/omt/omt-phrase-archetypes-unique-forms.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">樂句層次曲式的基礎概念</h1><p class="authors">John Peterson</p><section class="bilingual-section"><div class="translation-unit" id="omt-foundational-concepts-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><p>本章介紹音樂曲式的層級、動機與分組分析。</p><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-form">曲式</a>可以理解為不同單位依層級組合而成的結構。</li><li>其中最小的分組是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-motive">動機</a>，也就是經常再現、通常小於一個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-idea">樂思</a>的音樂單位。分析時，將作品中反覆出現並經過變化的動機圈起來，加上標記。不要把很長的旋律或旋律片段都當成動機，動機是短小的！</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-segmentation">分組分析</a>是呈現一段音樂或整首作品如何分組的方法。先找出樂句結尾，這些位置常以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadence">終止式</a>為標誌；再將<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>劃分成較小的單位，用譜面上方的方括線標出樂思層次。</li></ul></div></div></div><div class="translation-unit" id="omt-foundational-concepts-u0002"><p><a class="button external" href="https://open.spotify.com/playlist/12J4DvUW7TpGA900qkPq4U?si=def54c181bab43e3" target="_blank" rel="noopener noreferrer" aria-label="本章播放清單（外部網站，另開分頁）">本章播放清單</a></p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<p>        This chapter describes the hierarchy of musical form, motives, and segmentation analysis.</p>
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-form">Musical form</a> can be understood as a hierarchical grouping of units.</li>
+<li>The smallest of these groupings is a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-motive">motive</a>, which is a regularly recurring unit of music that’s typically smaller than an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-idea">idea</a>. In an analysis, we circle and label motives that recur and are transformed across a work. Avoid identifying large melodies or portions of melodies as motives—motives are short!</li>
+<li>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-segmentation">segmentation analysis</a> is a way to show the grouping units of a passage or whole piece. To do a segmentation analysis, we begin by identifying phrase endings, which are often marked by <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadence">cadences</a>. Then, we divide <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrases</a> into smaller units using square brackets above the score to show the idea level.</li>
+</ul></div>
+</div><p><a class="button external" href="https://open.spotify.com/playlist/12J4DvUW7TpGA900qkPq4U?si=def54c181bab43e3" target="_blank" rel="noopener noreferrer" aria-label="Chapter Playlist（外部網站，另開分頁）">Chapter Playlist</a></p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-foundational-concepts-u0003"><h2 id="zh-omt-foundational-concepts-chapter-1195-section-1" class="section-header"><a id="zh-omt-foundational-concepts-hierarchy"></a>層級</h2></div><div class="translation-unit" id="omt-foundational-concepts-u0004"><figure id="zh-omt-foundational-concepts-attachment_1198" aria-describedby="zh-omt-foundational-concepts-caption-attachment-1198" class="wp-caption alignright"><a href="../assets/omt/b5391538d6fd306d.png"><img class="wp-image-1198 size-medium zoomable" src="../assets/omt/b5391538d6fd306d.png" alt="曲式層級由大到小：作品、樂章、段落、樂句、次樂句、樂思、動機。次樂句不一定出現；圖以括線區分作品與樂句層次，以及是否需要以終止式結束。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Form_Hierarchy.png" loading="lazy" tabindex="0" role="button" width="1596" height="1107"></a><figcaption id="zh-omt-foundational-concepts-caption-attachment-1198" class="wp-caption-text"><span class="example-caption-name">例 1</span>。古典音樂的曲式層級。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>Larger／Smaller：較大／較小。</p><ul class="label-terms"><li>由上至下：Piece＝作品；</li><li>Movement＝樂章；</li><li>Section＝段落；</li><li>Phrase＝樂句；</li><li>Subphrase＝次樂句（Not always present：不一定出現）；</li><li>Idea＝樂思；</li><li>Motive＝動機。</li></ul><ul class="label-terms"><li>Composition-level form＝作品層次的曲式；</li><li>Phrase-level form＝樂句層次的形式。</li></ul><ul class="label-terms"><li>右側上組（作品至樂句）：End with cadences＝以終止式結束；</li><li>下組（次樂句、樂思、動機）：Need not end with cadences＝不必以終止式結束。</li></ul></section></div><div class="translation-unit" id="omt-foundational-concepts-u0005"><p>理解<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-form">曲式</a>的一種方式，是將它視為不同單位依層級組合而成的結構。<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">例 1</a> 說明，一首作品包含樂章、樂章包含段落、段落包含主題、主題包含樂句，依此類推。</p></div><aside class="translator-note">譯註：正文提到段落包含主題、主題包含樂句，但例1圖中未單列主題（theme）這一層。圖與正文的列法有所不同；如下段所述，這張圖是分析上的參考，不是固定不變的層級規則。</aside><div class="translation-unit" id="omt-foundational-concepts-u0006"><p><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">例 1</a> 看起來很簡單，但實際的層級關係更複雜。例如，有時兩個層級會合而為一：一個樂句就可能構成作品中的整個段落，因此不一定每次都有必要區分各個層級。最好把<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">例 1</a> 當成參考，而不是嚴格界定曲式層級的規則。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0007"><p>本章與接下來三章著重於<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase-level-form">樂句層次的形式</a>，也就是<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-motive">動機</a>、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-idea">樂思</a>，有時還有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-subphrase">次樂句</a>，如何以不同方式構成樂句；次樂句將在<a href="../omt/omt-phrase-archetypes-unique-forms.html">後續章節</a>討論。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-foundational-concepts-chapter-1195-section-1" class="section-header"><a id="en-omt-foundational-concepts-hierarchy"></a>Hierarchy</h2><figure id="en-omt-foundational-concepts-attachment_1198" aria-describedby="en-omt-foundational-concepts-caption-attachment-1198" class="wp-caption alignright"><a href="../assets/omt/b5391538d6fd306d.png"><img class="wp-image-1198 size-medium zoomable" src="../assets/omt/b5391538d6fd306d.png" alt="Hierarchy of Formal units in classical music" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Form_Hierarchy.png" loading="lazy" tabindex="0" role="button" width="1596" height="1107"></a><figcaption id="en-omt-foundational-concepts-caption-attachment-1198" class="wp-caption-text"><span class="example-caption-name">Example 1</span>. Hierarchy of form in classical music.</figcaption></figure><p>One way to understand <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-form">musical form</a> is as a hierarchical grouping of units. <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">Example 1</a> shows that a piece contains movements, movements contain sections, sections contain themes, themes contain phrases, and so on.</p><p>Although the diagram in <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">Example 1</a> looks quite simple, the relationships between the levels are a little more complicated in reality. For instance, sometimes two levels are collapsed into one: a single phrase may comprise an entire section of a work, so it may not always be worthwhile to distinguish between each level. It’s best to think of <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">Example 1</a> as a guide and not as something that strictly defines formal levels.</p><p>This chapter, along with the three that follow it, are focused on <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase-level-form">phrase-level form</a>, or the various ways in which a phrase may be constructed of <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-motive">motives</a>, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-idea">ideas</a>, and sometimes <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-subphrase">subphrases</a> (which will be discussed in <a href="../omt/omt-phrase-archetypes-unique-forms.html">later chapters</a>).</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-foundational-concepts-u0008"><h2 id="zh-omt-foundational-concepts-chapter-1195-section-2" class="section-header"><a id="zh-omt-foundational-concepts-motives"></a>動機</h2></div><div class="translation-unit" id="omt-foundational-concepts-u0009"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-motive">動機</a>（motive）像是一小段旋律，是經常再現、通常小於一個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-idea">樂思</a>的音樂單位；樂思是<a href="../omt/omt-foundational-concepts.html#zh-omt-foundational-concepts-the-idea-level">本章下一節</a>的重點。<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0010">例 2–4</a> 的影片各自討論不同作品的動機，基本內容相同。你可以選擇最感興趣的一支，也可以三支都看。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0010"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/SHEcqFSA0Ds?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="動機分析：《侏羅紀公園》〈Journey to the Island〉（外部網站，另開分頁）">動機分析：《侏羅紀公園》〈Journey to the Island〉</a></aside></div></div><div class="translation-unit" id="omt-foundational-concepts-u0011"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0010">例 2。</a><a href="https://open.spotify.com/track/0QCvok3TPhk7JhQF0gYmBw?si=pPSJRx-kTHe7Y6270m334g" target="_blank" rel="noopener noreferrer" class="external" aria-label="約翰・威廉斯〈Journey to the Island〉（1:20–1:46）（外部網站，另開分頁）">約翰・威廉斯〈Journey to the Island〉（1:20–1:46）</a>，以及<a href="https://open.spotify.com/track/2TZbQZXOuR8osP2AK8yYMN?si=vDfAlEcOSpaOvtnytQBdKA" target="_blank" rel="noopener noreferrer" class="external" aria-label="《侏羅紀公園》主題曲（0:48–1:06）（外部網站，另開分頁）">《<em>侏羅紀公園</em>》主題曲（0:48–1:06）</a>的動機分析。</span></p></div><div class="translation-unit" id="omt-foundational-concepts-u0012"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/1CDeaj_c16Y?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="動機分析：貝多芬第五號交響曲第一樂章（外部網站，另開分頁）">動機分析：貝多芬第五號交響曲第一樂章</a></aside></div></div><div class="translation-unit" id="omt-foundational-concepts-u0013"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0012">例 3。</a><a href="https://open.spotify.com/track/1UcsVXabDRUNnSUl65zdBT?si=oCCGd6XkSmqnrm73i4EEjg" target="_blank" rel="noopener noreferrer" class="external" aria-label="貝多芬第五號交響曲第一樂章（0:00–0:27）（外部網站，另開分頁）">貝多芬第五號交響曲第一樂章（0:00–0:27）</a>的動機分析。</span></p></div><div class="translation-unit" id="omt-foundational-concepts-u0014"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/n6vaYX4Rr-I?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="動機分析：《漢密爾頓》〈Aaron Burr, Sir〉（外部網站，另開分頁）">動機分析：《漢密爾頓》〈Aaron Burr, Sir〉</a></aside></div></div><div class="translation-unit" id="omt-foundational-concepts-u0015"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0014">例 4。</a><a href="https://open.spotify.com/track/6dr7ekfhlbquvsVY8D7gyk?si=AvJFQcJNSOad-StOJgJICg" target="_blank" rel="noopener noreferrer" class="external" aria-label="林曼努爾・米蘭達《漢密爾頓》〈Aaron Burr, Sir〉（0:12–0:16）（外部網站，另開分頁）">林曼努爾・米蘭達《<em>漢密爾頓</em>》〈Aaron Burr, Sir〉（0:12–0:16）</a>的動機分析。</span></p></div><div class="translation-unit" id="omt-foundational-concepts-u0016"><p>動機不一定非要重複，但會重複的動機通常最值得討論，因此我們往往著重於在一段音樂中反覆出現的動機。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0017"><p>動機有許多類型，例如節奏、音高、輪廓或音色動機；不過，單獨使用「動機」一詞時，通常是指以音高為基礎的動機。若一個動機主要靠節奏設計讓人辨認，就會明確稱為「節奏動機」。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0018"><p>動機在作品中再現時，往往會有所改變。常見的變化方式包括：</p></div><div class="translation-unit" id="omt-foundational-concepts-u0019"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-motivic-enlargement">時值延長</a>（enlargement）：讓動機的音符時值比原來更長。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contraction-motivic">時值縮短</a>（contraction）：讓動機的音符時值比原來更短。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-melodic-inversion">倒影</a>（inversion）：改變動機的進行方向，例如原本上行改為下行。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-displacement-of-a-motive">節拍位移</a>（displacement）：相較於最初的呈現，改變動機在拍節中的位置。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-retrograde">逆行</a>（retrograde）：將動機最初的音符次序倒過來呈現。</li><li>音程變化：改變構成動機的音程大小，例如小二度（mi2）變成大二度（ma2）。</li><li>裝飾：在動機原有的基本形狀上加入裝飾音。</li></ul></div><div class="translation-unit" id="omt-foundational-concepts-u0020"><p>初次被要求辨認作品中的動機時，人們往往會選擇過大的片段，例如整個主題。<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0021">例 5</a> 展示分析貝多芬第五號交響曲開頭時常見的錯誤：把一段過長、不適合視為動機的音樂當成動機。更有用的分析方式，可參考<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0012">例 3</a> 的影片。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0021"><figure id="zh-omt-foundational-concepts-attachment_8141" aria-describedby="zh-omt-foundational-concepts-caption-attachment-8141" class="wp-caption aligncenter"><a href="../assets/omt/4e020fd34d9bcefc.png"><img class="wp-image-8141 size-large zoomable" src="../assets/omt/4e020fd34d9bcefc.png" alt="貝多芬第五號交響曲第一樂章第1–13小節的弦樂譜摘錄。橘框圈出一段過長的音樂，並標示 Too long，示範不適合當成單一動機的範圍。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Not_a_Motive-1.png" loading="lazy" tabindex="0" role="button" width="2149" height="848"></a><figcaption id="zh-omt-foundational-concepts-caption-attachment-8141" class="wp-caption-text"><span class="example-caption-name">例 5。</span><a href="https://open.spotify.com/track/1UcsVXabDRUNnSUl65zdBT?si=Uw6lKqqTR_uhD18RYsQjAA" target="_blank" rel="noopener noreferrer" class="external" aria-label="貝多芬第五號交響曲，第一樂章第 1–13 小節（0:00–0:17）（外部網站，另開分頁）">貝多芬第五號交響曲，第一樂章第 1–13 小節（0:00–0:17）</a>。框出的片段過長，不適合視為一個動機。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><ul class="label-terms"><li>Too long!：太長了！Violino I／II：第一／第二小提琴；</li><li>Viola：中提琴；</li><li>Violoncello：大提琴；</li><li>Basso：低音聲部。</li></ul><ul class="label-terms"><li>橘框示範將過長片段視為單一動機的問題；</li><li>原譜力度及奏法記號保留。</li></ul></section></div><div class="translation-unit" id="omt-foundational-concepts-u0022"><div class="textbox textbox--exercises"><header class="textbox__header"><h2 class="textbox__title"><span>動手練習！1：動機分析</span></h2></header><div class="textbox__content"><p>這個<strong>動手練習</strong>會引導你分析約翰・威廉斯〈Duel of the Fates〉開頭的動機。請先<a href="https://open.spotify.com/track/1ghlpxVfPbFH2jenrv9vVw?si=3VVyq5hrSsCa5VS1hkG_yg" target="_blank" rel="noopener noreferrer" class="external" aria-label="聆聽開頭（0:15–0:26）（外部網站，另開分頁）">聆聽開頭（0:15–0:26）</a>，再開始測驗。</p><div id="zh-omt-foundational-concepts-h5p-17"><div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/foundational-concepts/#h5p-17" target="_blank" rel="noopener noreferrer" class="external" aria-label="動手練習：動機分析（外部網站，另開分頁）">動手練習：動機分析</a></aside></div></div></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-foundational-concepts-chapter-1195-section-2" class="section-header"><a id="en-omt-foundational-concepts-motives"></a>Motives</h2><p>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-motive">motive</a> is like a little snippet of a melody. It’s a regularly recurring unit of music that’s typically smaller than an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-idea">idea</a> (the focus of <a href="../omt/omt-foundational-concepts.html#en-omt-foundational-concepts-the-idea-level">the next section of this chapter</a>). Each video in <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0010">Examples 2–4</a> discusses a motive from a different work. They all contain the same basic information, so you might choose to watch the one that interests you the most, or you might watch all three.</p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/SHEcqFSA0Ds?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label='Motivic Analysis: "Journey to the Island" from Jurassic Park（外部網站，另開分頁）'>Motivic Analysis: "Journey to the Island" from Jurassic Park</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0010">Example 2.</a> Motivic analysis of <a href="https://open.spotify.com/track/0QCvok3TPhk7JhQF0gYmBw?si=pPSJRx-kTHe7Y6270m334g" target="_blank" rel="noopener noreferrer" class="external" aria-label="John Williams, “Journey to the Island” (1:20–1:46)（外部網站，另開分頁）">John Williams, “Journey to the Island” (1:20–1:46)</a> and <a href="https://open.spotify.com/track/2TZbQZXOuR8osP2AK8yYMN?si=vDfAlEcOSpaOvtnytQBdKA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Main Theme from Jurassic Park (0:48–1:06)（外部網站，另開分頁）">Main Theme from <em>Jurassic Park (0:48–1:06)</em></a>.</span></p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/1CDeaj_c16Y?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Motivic Analysis: Beethoven Symphony 5, I（外部網站，另開分頁）">Motivic Analysis: Beethoven Symphony 5, I</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0012">Example 3.</a> Motivic analysis: <a href="https://open.spotify.com/track/1UcsVXabDRUNnSUl65zdBT?si=oCCGd6XkSmqnrm73i4EEjg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Ludwig van Beethoven, Symphony 5, I (0:00–0:27)（外部網站，另開分頁）">Ludwig van Beethoven, Symphony 5, I (0:00–0:27)</a>.</span></p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/n6vaYX4Rr-I?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Motivic Analysis: Aaron Burr, Sir from Hamilton（外部網站，另開分頁）">Motivic Analysis: Aaron Burr, Sir from Hamilton</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0014">Example 4.</a> Motivic analysis: <a href="https://open.spotify.com/track/6dr7ekfhlbquvsVY8D7gyk?si=AvJFQcJNSOad-StOJgJICg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Lin-Manuel Miranda, “Aaron Burr, Sir” from Hamilton (0:12–0:16)（外部網站，另開分頁）">Lin-Manuel Miranda, “Aaron Burr, Sir” from <em>Hamilton (0:12–0:16)</em></a>.</span></p><p>While a motive does not necessarily have to repeat, those that do are usually the most interesting ones to talk about, so we tend to focus on motives that recur throughout a passage.</p><p>There are many kinds of motives (e.g., rhythmic, pitch, contour, timbre), but the word “motive” by itself most often refers to a pitch-based motive. A motive that’s primarily recognizable from its rhythmic design, for example, would be spoken of as a “rhythmic motive.”</p><p>As a motive recurs throughout a work, it tends to change. Some common transformations are:</p><ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-motivic-enlargement">Enlargement</a>: making the durations of a motive longer than the original</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contraction-motivic">Contraction</a>: making the durations of a motive shorter than the original</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-melodic-inversion">Inversion</a>: changing the direction of the motive (e.g., instead of going up, it goes down)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-displacement-of-a-motive">Displacement</a>: changing the metric position of the motive relative to its original statement</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-retrograde">Retrograde</a>: stating the motive backward in comparison to the initial statement</li>
+<li>Intervallic manipulation: changing the size of the intervals that comprise the motive (e.g., mi2 becomes ma2)</li>
+<li>Embellishment: adding embellishing tones to the underlying basic shape of the motive</li>
+</ul><p>Often when people are first asked to identify motives in a work, they tend to choose something too large, like an entire theme, for instance. <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0021">Example 5</a> shows a common mistake in a motivic analysis of the opening of Ludwig van Beethoven’s Fifth Symphony: identifying a passage that is too long to be considered a motive. For a more useful approach, see the video in <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0012">Example 3.</a></p><figure id="en-omt-foundational-concepts-attachment_8141" aria-describedby="en-omt-foundational-concepts-caption-attachment-8141" class="wp-caption aligncenter"><a href="../assets/omt/4e020fd34d9bcefc.png"><img class="wp-image-8141 size-large zoomable" src="../assets/omt/4e020fd34d9bcefc.png" alt="notation" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2019/05/Not_a_Motive-1.png" loading="lazy" tabindex="0" role="button" width="2149" height="848"></a><figcaption id="en-omt-foundational-concepts-caption-attachment-8141" class="wp-caption-text"><span class="example-caption-name">Example 5.</span> <a href="https://open.spotify.com/track/1UcsVXabDRUNnSUl65zdBT?si=Uw6lKqqTR_uhD18RYsQjAA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Beethoven, Symphony 5, I, mm. 1–13 (0:00–0:17)（外部網站，另開分頁）">Beethoven, Symphony 5, I, mm. 1–13 (0:00–0:17)</a>. The boxed measures indicate something that is too long to be considered a motive.</figcaption></figure><div class="textbox textbox--exercises">
+<header class="textbox__header">
+<h2 class="textbox__title"><span>Practice It! 1: Motivic Analysis</span></h2>
+</header>
+<div class="textbox__content">
+<p>        This <strong>Practice It!</strong> will guide you through a motivic analysis of the opening of John Williams’s “Duel of the Fates.” To begin, <a href="https://open.spotify.com/track/1ghlpxVfPbFH2jenrv9vVw?si=3VVyq5hrSsCa5VS1hkG_yg" target="_blank" rel="noopener noreferrer" class="external" aria-label="listen to the opening (0:15–0:26)（外部網站，另開分頁）">listen to the opening (0:15–0:26)</a>, then start the quiz.</p>
+<div id="en-omt-foundational-concepts-h5p-17">
+<div class="h5p-iframe-wrapper"><aside class="external-resource"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/foundational-concepts/#h5p-17" target="_blank" rel="noopener noreferrer" class="external" aria-label="Practice It: Motivic Analysis（外部網站，另開分頁）">Practice It: Motivic Analysis</a></aside></div>
+</div></div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-foundational-concepts-u0023"><h2 id="zh-omt-foundational-concepts-chapter-1195-section-3" class="section-header"><a id="zh-omt-foundational-concepts-the-idea-level"></a>樂思層次、樂句與分組分析</h2></div><div class="translation-unit" id="omt-foundational-concepts-u0024"><p><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>是一個相對完整的樂思，展現朝向目標的方向，並抵達某種結束感。<a href="../omt/omt-phrase-archetypes-unique-forms.html">下一章</a>會更詳細討論樂句；這裡先說明兩個重點：</p></div><div class="translation-unit" id="omt-foundational-concepts-u0025"><ol><li>「相對完整」是指樂句具有開始、中段與結尾的感覺。</li><li>在許多調性音樂中，結束感最常由<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-cadence">終止式</a>標示；<a href="../omt/omt-phrase-archetypes-unique-forms.html">下一章</a>也會討論其他產生結束感的方式。演奏時，了解樂句以結束感收尾，有助於塑造音樂朝向目標的方向。<a class="footnote" title="有時人們會混淆 phrase（樂句）與 phrasing（樂句處理）。一般說到 phrasing，是指如何塑造一段音樂，例如在哪裡推進或拉緩時間、在哪裡以及如何改變力度；它不一定指一個實際的樂句，也就是以終止式結束的完整樂思。" id="zh-omt-foundational-concepts-return-footnote-1195-1" href="../omt/omt-foundational-concepts.html#zh-omt-foundational-concepts-footnote-1195-1"><sup class="footnote">[1]</sup></a></li></ol></div><div class="translation-unit" id="omt-foundational-concepts-u0026"><p>分析樂句時，我們常從<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-segmentation">分組分析</a>（segmentation analysis）開始，用五線譜上方的方括線標示樂句的各個組成部分。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0027"><p>分組分析的最小層次，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-idea">樂思層次</a>（idea level）。若需要，可回顧<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">例 1</a>，確認樂思在曲式層級中的位置。樂思是包含作品動機材料的短小分組，通常長兩小節，但也可能更長或更短。數個樂思可以組成次樂句或樂句，<a href="../omt/omt-phrase-archetypes-unique-forms.html">下一章</a>將進一步討論。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0028"><p>進行分組分析時，可依以下步驟：</p></div><div class="translation-unit" id="omt-foundational-concepts-u0029"><ol><li>找出可能產生結束感的位置。<ul><li>記得樂句需要有開始、中段與結尾的感覺，因此判斷樂句結尾時，不要把範圍看得太小。</li><li>在調性音樂中，終止式常會告訴我們樂句在哪裡結束。</li></ul></li><li>將每個樂句劃分成較小的單位。<span>辨認這些單位時，可以想想：若你要指導別人練習這個樂句，會如何劃分，讓對方分成小段練習？</span></li><li>在五線譜上方，用方括線標示這些小單位。</li><li>確認並標示出現的終止式。</li></ol></div><div class="translation-unit" id="omt-foundational-concepts-u0030"><p><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0031">例 6</a> 與<a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0033">例 7</a> 的影片，各自示範一個分組分析。兩支影片的說明相近，可以都看，也可以選擇較感興趣的一支。</p></div><div class="translation-unit" id="omt-foundational-concepts-u0031"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/_LuV3GKx5So?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="分組分析：董尼采第〈Me voglio fà 'na casa〉（外部網站，另開分頁）">分組分析：董尼采第〈Me voglio fà 'na casa〉</a></aside></div></div><div class="translation-unit" id="omt-foundational-concepts-u0032"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0031">例 6。</a><a href="https://open.spotify.com/track/5Dywtd3PIIWMu87gJKunNe?si=17fa8a3426b3413f" target="_blank" rel="noopener noreferrer" class="external" aria-label="董尼采第〈Me voglio fà ‘na casa〉（0:00–0:43）（外部網站，另開分頁）">董尼采第〈Me voglio fà ‘na casa〉（0:00–0:43）</a>的分組分析。</span></p></div><div class="translation-unit" id="omt-foundational-concepts-u0033"><div><aside class="external-resource"><a href="https://www.youtube.com/embed/GOJuGtNGxfo?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="分組分析：克拉拉・舒曼鋼琴三重奏 Op. 17 第一樂章（外部網站，另開分頁）">分組分析：克拉拉・舒曼鋼琴三重奏 Op. 17 第一樂章</a></aside></div></div><div class="translation-unit" id="omt-foundational-concepts-u0034"><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0033">例 7。</a><a href="https://open.spotify.com/track/1vNCPTtjGLjLZv1zCkup31?si=6d73b9838956443b" target="_blank" rel="noopener noreferrer" class="external" aria-label="克拉拉・舒曼鋼琴三重奏 Op. 17 第一樂章（0:00–0:32）（外部網站，另開分頁）">克拉拉・舒曼鋼琴三重奏 Op. 17 第一樂章（0:00–0:32）</a>的分組分析。</span></p></div><div class="translation-unit" id="omt-foundational-concepts-u0035"><div class="textbox shaded"><a id="zh-omt-foundational-concepts-assignments"></a>作業</div></div><div class="translation-unit" id="omt-foundational-concepts-u0036"><ol><li>樂句層次曲式的基礎概念（.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Foundational-Concepts-for-Phrase-level-Forms.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>、.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Foundational-Concepts-for-Phrase-level-Forms.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>）。請學生分析三段音樂摘錄的動機：約翰・威廉斯《<em>哈利波特</em>》〈Hedwig’s Theme〉；Omar Thomas 的 <em>A Mother of a Revolution!</em>；以及 Maria Szymanowska《<em>56首不同類型舞曲</em>》（56 Dances of Different Genres）中 E 小調波蘭舞曲的中段（Trio），第 1–8 小節。<a href="https://open.spotify.com/playlist/3njl2fU0DNc6N7PfYS0Umq" class="little-button external" target="_blank" rel="noopener noreferrer" aria-label="學習單播放清單（外部網站，另開分頁）">學習單播放清單</a></li></ol></div><div class="translation-unit" id="omt-foundational-concepts-u0037"><div class="media-attributions clear"><h2>媒體素材署名</h2><ul><li>Form_Hierarchy（曲式層級圖）© John Peterson，採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA（姓名標示－相同方式分享）（外部網站，另開分頁）">CC BY-SA（姓名標示－相同方式分享）</a>授權。</li><li>Not_a_Motive（原素材識別名稱）。</li></ul></div></div><div class="translation-unit" id="omt-foundational-concepts-u0038"><div class="footnotes"><ol><li id="zh-omt-foundational-concepts-footnote-1195-1">有時人們會混淆 phrase（樂句）與 phrasing（樂句處理）。一般說到 phrasing，是指如何塑造一段音樂，例如在哪裡推進或拉緩時間、在哪裡以及如何改變力度；它不一定指一個實際的樂句，也就是以終止式結束的完整樂思。 <a href="../omt/omt-foundational-concepts.html#zh-omt-foundational-concepts-return-footnote-1195-1" class="return-footnote">↵</a></li></ol></div></div><aside class="translator-note">譯註：此腳註括號內以「在終止式結束」概括樂句；本章正文也明確保留以其他方式產生結束感的可能，並指向下一章的討論，因此不宜把括號理解成所有樂句都必須有終止式。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-foundational-concepts-chapter-1195-section-3" class="section-header"><a id="en-omt-foundational-concepts-the-idea-level"></a>The Idea Level, the Phrase, and Segmentation Analysis</h2><p>A <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a> is a relatively complete thought that exhibits trajectory toward a goal, arriving at a sense of closure. While phrases are examined in more detail in <a href="../omt/omt-phrase-archetypes-unique-forms.html">the following chapter</a>, here are two important points:</p><ol>
+<li>“Relatively complete” means that the phrase has a sense of beginning, middle, and end.</li>
+<li>In much tonal music, closure is most often signaled by a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-cadence">cadence</a> (though other ways of achieving closure will be examined in <a href="../omt/omt-phrase-archetypes-unique-forms.html">the following chapter</a>). In performance, knowing that phrases end with closure can help us to shape passages with a sense of trajectory toward their goal.<a class="footnote" title='Sometimes people confuse the terms "phrase" and "phrasing." Usually when people say "phrasing," they are referring to the way a passage might be shaped (where to push and pull time, where and how to change dynamic levels, etc.), and they may or may not be referring to an actual phrase (a complete thought that ends with a cadence).' id="en-omt-foundational-concepts-return-footnote-1195-1" href="../omt/omt-foundational-concepts.html#en-omt-foundational-concepts-footnote-1195-1"><sup class="footnote">[1]</sup></a></li>
+</ol><p>When we analyze a phrase, we often begin with a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-segmentation">segmentation analysis</a>, which uses square brackets above the staff to identify the phrase’s component parts.</p><p>The smallest level of a segmentation analysis is called the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-idea">idea level</a>. (If needed, see <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0004">Example 1</a> for a reminder of where the idea level fits in the hierarchy of form.) Ideas are short grouping units that contain the motivic material for the work. They are often two measures long, but they may be longer or shorter. Ideas may group together to create subphrases or phrases, something that is discussed in more detail in <a href="../omt/omt-phrase-archetypes-unique-forms.html">the next chapter</a>.</p><p>To perform a segmentation analysis, do the following:</p><ol>
+<li>Identify potential points of closure.
+<ul>
+<li>Consider that phrases need a sense of beginning, middle, and end, so be careful that you’re not thinking too small to determine where a phrase ends.</li>
+<li>In tonal music, very often cadences tell us where the ends of phrases are.</li>
+</ul>
+</li>
+<li>Divide each phrase into smaller units. (<span>To identify these units, consider: if you were to coach someone to prepare this phrase, how would you divide it so they could practice it in smaller chunks?)</span></li>
+<li>Use square brackets above the staff to indicate those small units.</li>
+<li>Verify and label any cadences that are present.</li>
+</ol><p>The videos in <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0031">Examples 6</a> and <a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0033">7</a> each demonstrate a segmentation analysis. They contain similar explanations, so you may watch both or choose the one that most interests you.</p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/_LuV3GKx5So?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Segmentation Analysis: Donizetti, Me voglio fà 'na casa&quot;（外部網站，另開分頁）">Segmentation Analysis: Donizetti, Me voglio fà 'na casa"</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0031">Example 6.</a> A segmentation analysis of <a href="https://open.spotify.com/track/5Dywtd3PIIWMu87gJKunNe?si=17fa8a3426b3413f" target="_blank" rel="noopener noreferrer" class="external" aria-label="Donizetti, “Me voglio fà ‘na casa” (0:00–0:43).（外部網站，另開分頁）">Donizetti, “Me voglio fà ‘na casa” (0:00–0:43).</a></span></p><div><aside class="external-resource"><a href="https://www.youtube.com/embed/GOJuGtNGxfo?feature=oembed&amp;rel=0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Segmentation Analysis: Clara Schumann, Piano Trio Op. 17, I（外部網站，另開分頁）">Segmentation Analysis: Clara Schumann, Piano Trio Op. 17, I</a></aside></div><p><span class="example-caption-text"><a class="example-caption-name" href="../omt/omt-foundational-concepts.html#omt-foundational-concepts-u0033">Example 7. </a>A segmentation analysis of <a href="https://open.spotify.com/track/1vNCPTtjGLjLZv1zCkup31?si=6d73b9838956443b" target="_blank" rel="noopener noreferrer" class="external" aria-label="Clara Schumann, Piano Trio Op. 17, I (0:00–0:32).（外部網站，另開分頁）">Clara Schumann, Piano Trio Op. 17, I (0:00–0:32).</a></span></p><div class="textbox shaded"><a id="en-omt-foundational-concepts-assignments"></a>Assignments</div><ol>
+<li>Foundational Concepts for Phrase-Level Forms (.<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Foundational-Concepts-for-Phrase-level-Forms.pdf" target="_blank" rel="noopener noreferrer" class="external" aria-label="pdf（外部網站，另開分頁）">pdf</a>, .<a href="https://viva.pressbooks.pub/app/uploads/sites/12/2023/08/WK-Foundational-Concepts-for-Phrase-level-Forms.docx" target="_blank" rel="noopener noreferrer" class="external" aria-label="docx（外部網站，另開分頁）">docx</a>). Asks students to perform motivic analyses on three excerpts: John Williams, “Hedwig’s Theme” from <em>Harry Potter</em>; Omar Thomas, <em>A Mother of a Revolution!</em>; and Maria Szymanowska, <em>56 Dances of Different Genres</em>, Polonaise in E minor, Trio, mm. 1–8. <a href="https://open.spotify.com/playlist/3njl2fU0DNc6N7PfYS0Umq" class="little-button external" target="_blank" rel="noopener noreferrer" aria-label="Worksheet Playlist（外部網站，另開分頁）">Worksheet Playlist</a></li>
+</ol><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>Form_Hierarchy  ©  John Peterson    is licensed under a  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="external" aria-label="CC BY-SA (Attribution ShareAlike)（外部網站，另開分頁）">CC BY-SA (Attribution ShareAlike)</a> license</li><li>Not_a_Motive       </li></ul></div><div class="footnotes"><ol><li id="en-omt-foundational-concepts-footnote-1195-1">Sometimes people confuse the terms "phrase" and "phrasing." Usually when people say "phrasing," they are referring to the way a passage might be shaped (where to push and pull time, where and how to change dynamic levels, etc.), and they may or may not be referring to an actual phrase (a complete thought that ends with a cadence). <a href="../omt/omt-foundational-concepts.html#en-omt-foundational-concepts-return-footnote-1195-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-form.html">上一節：IV. 曲式</a><a href="../omt/omt-phrase-archetypes-unique-forms.html">下一節：樂句、典型結構與獨特形式</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/foundational-concepts/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>

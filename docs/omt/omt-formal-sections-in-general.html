@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>曲式段落概論 – 音樂教材</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-640605f58ae58ee79329c070719e555b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="color-scheme" content="light dark"><style>html{background:#fff;color-scheme:light}html[data-theme=dark]{background:#20252b;color-scheme:dark}</style><script>try{var t=localStorage.getItem('readings-theme');document.documentElement.dataset.theme=t==='dark'?'dark':'light';document.documentElement.style.colorScheme=t==='dark'?'dark':'light';}catch(e){}</script><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-src 'none'; font-src 'self' data:;">
+
+<link rel="stylesheet" href="../assets/katex/katex.min.css">
+
+<link rel="stylesheet" href="../reader.css?v=f08fdaba82e2">
+
+<script src="../assets/katex/katex.min.js" defer></script>
+
+<script src="../reader.js?v=1d517e3a36bf" defer></script>
+
+
+
+<link rel="canonical" href="https://musiclord.github.io/music-textbooks-zh/omt/omt-formal-sections-in-general.html"></head>
+
+<body>
+
+
+
+
+
+<!--| quarto-html-table-processing: none -->
+<header class="library-header"><a class="library-name" href="../index.html" aria-label="音樂教材，回首頁">音樂教材</a><div class="reader-controls"><button id="continuous-toggle" aria-pressed="false" title="捲至底部時接續載入下一節">連續閱讀</button><button id="font-smaller" aria-label="縮小字級">A−</button><button id="font-larger" aria-label="放大字級">A＋</button><button id="theme-toggle" aria-label="切換深色模式">深色</button><button id="search-open">搜尋</button></div></header><main id="reader-content"><div class="reader-layout"><aside class="book-sidebar"><details id="book-menu"><summary>章節目錄</summary><a class="book-index-link" href="../omt/index.html">全書目錄</a><nav aria-label="章節目錄"><details class="toc-group"><summary>前言與使用說明</summary><ul><li><a href="../omt/omt-introduction.html">導言</a></li><li><a href="../omt/omt-acknowledgments.html">致謝</a></li><li><a href="../omt/omt-statement-on-spotify-usage.html">關於使用 Spotify 的說明</a></li><li><a href="../omt/omt-instructor-resources.html">教師資源</a></li><li><a href="../omt/omt-changelog.html">修訂紀錄</a></li><li><a href="../omt/omt-fuer-deutschsprachige.html">給德語使用者的說明</a></li><li><a href="../omt/omt-pour-les-francophones.html">給法語使用者的說明</a></li></ul></details><details class="toc-group"><summary>I. 基礎樂理</summary><ul><li><a href="../omt/omt-fundamentals.html">I. 基礎樂理</a></li><li><a href="../omt/omt-introduction-to-western-musical-notation.html">西方記譜法入門</a></li><li><a href="../omt/omt-notation-of-notes-clefs-and-ledger-lines.html">音符、譜號與加線的記寫</a></li><li><a href="../omt/omt-clefs.html">譜號的判讀</a></li><li><a href="../omt/omt-the-keyboard-and-grand-staff.html">鍵盤與大譜表</a></li><li><a href="../omt/omt-half-and-whole-steps.html">半音、全音與變音記號</a></li><li><a href="../omt/omt-aspn.html">美國標準音高記法（ASPN）</a></li><li><a href="../omt/omt-other-aspects-of-notation.html">其他記譜要素</a></li><li><a href="../omt/omt-texture.html">織度</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-major-scales.html">大音階、音階級數與調號</a></li><li><a href="../omt/omt-minor-scales.html">小音階、音階級數與調號</a></li><li><a href="../omt/omt-intro-to-diatonic-modes-and-the-chromatic-scale.html">自然音調式與半音階入門</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-intervals.html">音程</a></li><li><a href="../omt/omt-triads.html">三和弦</a></li><li><a href="../omt/omt-seventh-chords.html">七和弦</a></li><li><a href="../omt/omt-inversion.html">轉位</a></li><li><a href="../omt/omt-roman-numerals.html">羅馬數字</a></li><li><a href="../omt/omt-figured-bass.html">數字低音與附數字的羅馬數字</a></li><li><a href="../omt/omt-chords-in-satb-style.html">SATB 四部和聲中的和弦</a></li></ul></details><details class="toc-group"><summary>II. 對位法與嘉蘭特圖式</summary><ul><li><a href="../omt/omt-counterpoint.html">II. 對位法與嘉蘭特圖式</a></li><li><a href="../omt/omt-species-counterpoint.html">類種對位法入門</a></li><li><a href="../omt/omt-first-species-counterpoint.html">第一類對位法</a></li><li><a href="../omt/omt-second-species-counterpoint.html">第二類對位法</a></li><li><a href="../omt/omt-third-species-counterpoint.html">第三類對位法</a></li><li><a href="../omt/omt-fourth-species-counterpoint.html">第四類對位法</a></li><li><a href="../omt/omt-fifth-species-counterpoint.html">第五類對位法</a></li><li><a href="../omt/omt-gradus-ad-parnassum-exercises.html">《Gradus ad Parnassum》練習</a></li><li><a href="../omt/omt-16th-century-contrapuntal-style.html">十六世紀的對位風格</a></li><li><a href="../omt/omt-high-baroque-fugal-exposition.html">巴洛克盛期賦格的呈示部</a></li><li><a href="../omt/omt-ground-bass.html">固定低音</a></li><li><a href="../omt/omt-galant-schemas.html">嘉蘭特圖式</a></li><li><a href="../omt/omt-galant-schemas-summary.html">嘉蘭特圖式摘要</a></li><li><a href="../omt/omt-rule-of-the-octave.html">嘉蘭特圖式：八度法則與音階的模進配和聲</a></li></ul></details><details class="toc-group"><summary>III. 西方古典音樂的自然音和聲、主音化與轉調</summary><ul><li><a href="../omt/omt-diatonic-harmony.html">III. 西方古典音樂的自然音和聲、主音化與轉調</a></li><li><a href="../omt/omt-intro-to-harmony.html">和聲、終止式與樂句結尾入門</a></li><li><a href="../omt/omt-strengthening-endings-with-v7.html">以 V⁷ 加強結尾</a></li><li><a href="../omt/omt-strong-predominants.html">以強屬前和弦加強結尾</a></li><li><a href="../omt/omt-embellishing-tones.html">裝飾性和弦外音</a></li><li><a href="../omt/omt-cadential-64.html">以終止四六和弦加強結尾</a></li><li><a href="../omt/omt-inverted-v7s.html">以 V⁶ 與轉位 V⁷ 在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-performing-harmonic-analysis-using-the-phrase-model.html">運用樂句模型進行和聲分析</a></li><li><a href="../omt/omt-leading-tone-chord.html">以導音和弦在樂句開頭延長主和聲</a></li><li><a href="../omt/omt-64-chords-as-prolongations.html">以四六和弦延長和聲</a></li><li><a href="../omt/omt-plagal-motion.html">以變格進行延長和聲</a></li><li><a href="../omt/omt-la-in-the-bass.html">低音 la（第六級）在樂句開頭、中段與結尾的用法</a></li><li><a href="../omt/omt-the-mediant.html">以中音和弦為低音 mi（第三級）配置和聲</a></li><li><a href="../omt/omt-predominant-seventh-chords.html">屬前七和弦</a></li><li><a href="../omt/omt-diatonic-sequences.html">樂句中段的自然音模進</a></li><li><a href="../omt/omt-tonicization.html">主音化</a></li><li><a href="../omt/omt-extended-tonicization-and-modulation-to-closely-related-keys.html">延伸主音化與近系調轉調</a></li></ul></details><details class="toc-group" open=""><summary>IV. 曲式</summary><ul><li><a href="../omt/omt-form.html">IV. 曲式</a></li><li><a href="../omt/omt-foundational-concepts.html">樂句層次曲式的基礎概念</a></li><li><a href="../omt/omt-phrase-archetypes-unique-forms.html">樂句、典型結構與獨特形式</a></li><li><a href="../omt/omt-hybrid-phrase-level-forms.html">混合的樂句層次形式</a></li><li><a href="../omt/omt-expansion-and-contraction.html">樂句層次的擴展與縮減</a></li><li><a aria-current="page" href="../omt/omt-formal-sections-in-general.html">曲式段落概論</a></li><li><a href="../omt/omt-binary-form.html">二段式</a></li><li><a href="../omt/omt-ternary-form.html">三段式</a></li><li><a href="../omt/omt-sonata-form.html">奏鳴曲式</a></li><li><a href="../omt/omt-rondo.html">輪旋曲式</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li></ul></details><details class="toc-group"><summary>V. 西方古典音樂的半音化技法</summary><ul><li><a href="../omt/omt-chromaticism.html">V. 西方古典音樂的半音化技法</a></li><li><a href="../omt/omt-modal-mixture.html">調式混合</a></li><li><a href="../omt/omt-bii6.html">拿坡里六和弦（♭II⁶）</a></li><li><a href="../omt/omt-augmented-sixth-chords.html">增六和弦</a></li><li><a href="../omt/omt-common-tone-chords.html">共同音和弦</a></li><li><a href="../omt/omt-harmonic-elision.html">和聲省略</a></li><li><a href="../omt/omt-reinterpreting-augmented-sixth-chords.html">半音轉調</a></li><li><a href="../omt/omt-augmented-options.html">增三和弦的運用</a></li><li><a href="../omt/omt-equal-divisions-of-the-octave.html">八度的等分</a></li><li><a href="../omt/omt-chromatic-sequences.html">半音模進</a></li><li><a href="../omt/omt-the-omnibus-progression.html">Omnibus 進行</a></li><li><a href="../omt/omt-altered-and-extended-dominant-chords.html">變化與延伸和弦</a></li><li><a href="../omt/omt-neo-riemannian-triadic-progressions.html">新黎曼三和弦進行</a></li><li><a href="../omt/omt-mediants.html">中音關係</a></li></ul></details><details class="toc-group"><summary>VI. 爵士樂</summary><ul><li><a href="../omt/omt-jazz.html">VI. 爵士樂</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-chord-symbols.html">和弦代號</a></li><li><a href="../omt/omt-jazz-voicings.html">爵士和弦配置</a></li><li><a href="../omt/omt-ii-v-i.html">ii–V–I</a></li><li><a href="../omt/omt-jazz-embellishing-chords.html">爵士裝飾和弦</a></li><li><a href="../omt/omt-substitutions.html">替代和弦</a></li><li><a href="../omt/omt-chord-scale-theory.html">和弦—音階理論</a></li><li><a href="../omt/omt-blues-harmony.html">藍調和聲</a></li><li><a href="../omt/omt-blues-melodies-and-the-blues-scale.html">藍調旋律與藍調音階</a></li></ul></details><details class="toc-group"><summary>VII. 流行音樂</summary><ul><li><a href="../omt/omt-popular-music.html">流行音樂</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-melody-and-phrasing.html">旋律與樂句</a></li><li><a href="../omt/omt-intro-to-form-in-popular-music.html">流行音樂曲式入門</a></li><li><a href="../omt/omt-aaba-and-strophic-form.html">AABA與分節歌形式</a></li><li><a href="../omt/omt-verse-chorus-form.html">主歌—副歌曲式</a></li><li><a href="../omt/omt-texture-in-pop-music.html">流行音樂的織體</a></li><li><a href="../omt/omt-intro-to-pop-schemas.html">流行音樂和聲圖式入門</a></li><li><a href="../omt/omt-blues-based-schemas.html">以藍調為基礎的圖式</a></li><li><a href="../omt/omt-4-chord-schemas.html">四和弦圖式</a></li><li><a href="../omt/omt-classical-schemas.html">流行音樂中的古典圖式</a></li><li><a href="../omt/omt-puff-schemas.html">Puff圖式</a></li><li><a href="../omt/omt-modal-schemas.html">調式圖式</a></li><li><a href="../omt/omt-pentatonic-harmony.html">五聲和聲</a></li><li><a href="../omt/omt-fragile-absent-and-emergent-tonics.html">不穩固、缺席及浮現的主音</a></li></ul></details><details class="toc-group"><summary>VIII. 二十與二十一世紀技法</summary><ul><li><a href="../omt/omt-20th-and-21st-century-techniques.html">VIII. 二十與二十一世紀技法</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li><li><a href="../omt/omt-pitch-and-pitch-class.html">音高與音高類</a></li><li><a href="../omt/omt-intervals-in-integer-notation.html">整數記譜法中的音程</a></li><li><a href="../omt/omt-pc-sets-normal-order-and-transformations.html">音高類集合、標準排序與變換</a></li><li><a href="../omt/omt-set-class-and-prime-form.html">集合類與原型</a></li><li><a href="../omt/omt-interval-class-vectors.html">音程類向量</a></li><li><a href="../omt/omt-analyzing-with-set-theory.html">用集合論分析，或選擇不用！</a></li><li><a href="../omt/omt-diatonic-modes.html">自然音調式</a></li><li><a href="../omt/omt-collections.html">音集</a></li><li><a href="../omt/omt-analyzing-with-collections-scales-and-modes.html">以調式、音階與音集分析</a></li></ul></details><details class="toc-group"><summary>IX. 十二音音樂</summary><ul><li><a href="../omt/omt-twelve-tone-music.html">十二音音樂</a></li><li><a href="../omt/omt-basics-of-twelve-tone-theory.html">十二音理論基礎</a></li><li><a href="../omt/omt-naming-conventions-for-rows.html">音列的命名慣例</a></li><li><a href="../omt/omt-row-properties.html">音列的特性</a></li><li><a href="../omt/omt-twelve-tone-analysis-examples-webern-op-21-and-24.html">十二音分析範例：魏本Op.21與Op.24</a></li><li><a href="../omt/omt-composing-with-twelve-tones.html">用十二音作曲</a></li><li><a href="../omt/omt-history-and-context-of-serialism.html">序列技法的歷史與脈絡</a></li></ul></details><details class="toc-group"><summary>X. 配器法</summary><ul><li><a href="../omt/omt-orchestration.html">管弦樂配器法</a></li><li><a href="../omt/omt-core-principles-of-orchestration.html">配器法的核心原則</a></li><li><a href="../omt/omt-subtle-color-changes.html">細微的音色變化</a></li><li><a href="../omt/omt-transcription-from-piano.html">從鋼琴改編為管弦樂</a></li></ul></details><details class="toc-group"><summary>XI. 節奏與拍節</summary><ul><li><a href="../omt/omt-rhythm-and-meter.html">節奏與拍節</a></li><li><a href="../omt/omt-notating-rhythm.html">節奏記譜</a></li><li><a href="../omt/omt-simple-meter-and-time-signatures.html">單拍子與拍號</a></li><li><a href="../omt/omt-compound-meters-and-time-signatures.html">複拍子與拍號</a></li><li><a href="../omt/omt-other-rhythmic-essentials.html">其他節奏基礎</a></li><li><a href="../omt/omt-hypermeter.html">超小節拍節</a></li><li><a href="../omt/omt-metrical-dissonance.html">拍節不協和</a></li><li><a href="../omt/omt-swing-rhythms.html">搖擺節奏</a></li><li><a href="../omt/omt-rhythm-and-meter-in-pop-music.html">流行音樂的節奏與拍子</a></li><li><a href="../omt/omt-drumbeats.html">鼓點</a></li><li><a href="../omt/omt-twentieth-century-rhythmic-techniques.html">二十世紀節奏技法</a></li></ul></details><details class="toc-group"><summary>樂曲選集</summary><ul><li><a href="../omt/omt-anthology.html">譜例選集</a></li><li><a href="../omt/omt-anthology-harmony.html">和聲譜例選集</a></li><li><a href="../omt/omt-anthology-meter.html">拍節譜例選集</a></li><li><a href="../omt/omt-anthology-twelve-tone.html">十二音音列選集</a></li></ul></details><details class="toc-group"><summary>聽音訓練附錄</summary><ul><li><a href="../omt/omt-ear-training.html">聽音訓練附錄</a></li><li><a href="../omt/omt-the-basics-of-sight-singing-and-dictation.html">視唱與聽寫基礎</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing.html">看譜數拍與視唱範例：第1級</a></li><li><a href="../omt/omt-examples-for-sight-counting-and-sight-singing-level-2.html">看譜數拍與視唱範例：第2級</a></li></ul></details><details class="toc-group"><summary>編寫中的章節</summary><ul><li><a href="../omt/omt-chapters-in-development.html">編寫中的章節</a></li><li><a href="../omt/omt-graphic-notation-and-scores.html">圖像記譜與樂譜</a></li><li><a href="../omt/omt-hypermeter2.html">超小節拍節（新版）</a></li><li><a href="../omt/omt-glossary.html">詞彙表</a></li><li><a href="../omt/omt-feedback.html">建議與回饋</a></li><li><a href="../omt/omt-helpful-documents.html">實用文件</a></li></ul></details></nav></details></aside><div class="reading-stack"><article class="reading" data-page-id="omt-formal-sections-in-general" data-book="omt" data-page-url="/omt/omt-formal-sections-in-general.html" data-next-url="/omt/omt-binary-form.html"><p class="book-label">Open Music Theory：繁體中文版</p><h1 tabindex="-1">曲式段落概論</h1><p class="authors">Brian Jarvis</p><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0001"><div class="textbox textbox--key-takeaways"><header class="textbox__header"><p class="textbox__title">重點整理</p></header><div class="textbox__content"><ul><li>曲式分析需要判斷各段音樂材料的身分與功能。</li><li>音樂段落可分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-core-section-pop">核心段落</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-auxiliary-section">輔助段落</a>。</li><li>核心段落再分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-main-section">主要段落</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contrasting-section">對比段落</a>。</li><li>輔助段落再分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-external-auxiliary-section">外部</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-connective-auxiliary-sections">連接</a>兩類。</li></ul></div></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><div class="textbox textbox--key-takeaways">
+<header class="textbox__header">
+<p class="textbox__title">Key Takeaways</p>
+</header>
+<div class="textbox__content">
+<ul>
+<li>Analyzing musical form involves determining the identity and function of musical spans.</li>
+<li>Musical sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-core-section-pop">core</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-auxiliary-section">auxiliary</a>.</li>
+<li>Core sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-main-section">main</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contrasting-section">contrasting</a>.</li>
+<li>Auxiliary sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-external-auxiliary-section">external</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-connective-auxiliary-sections">connective</a>.</li>
+</ul>
+</div>
+</div></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0002"><h2 id="zh-omt-formal-sections-in-general-chapter-2048-section-1" class="section-header">曲式段落概述</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0003"><p>理解作品的曲式，通常要依各段音樂彼此相似或對比的方式，將作品劃分為不同的時間區段；再依音樂材料的身分，以及該段落在整首作品中的「功能」加以分類。曲式功能最廣的兩類是核心段落與輔助段落。<a class="footnote" title="這種二分法由 Jay Summach（2012）提出。" id="zh-omt-formal-sections-in-general-return-footnote-2048-1" href="../omt/omt-formal-sections-in-general.html#zh-omt-formal-sections-in-general-footnote-2048-1"><sup class="footnote">[1]</sup></a>下方<a class="example-caption-name" href="../omt/omt-formal-sections-in-general.html#omt-formal-sections-in-general-u0004">例 1</a> 彙整常見段落類型的層級關係。最上層先分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-core-section-pop">核心</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-auxiliary-section">輔助</a>；核心段落再分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-main-section">主要</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-contrasting-section">對比</a>，輔助段落則分為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-external-auxiliary-section">外部</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-connective-auxiliary-sections">連接</a>兩類。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0004"><figure id="zh-omt-formal-sections-in-general-attachment_9975" aria-describedby="zh-omt-formal-sections-in-general-caption-attachment-9975" class="wp-caption aligncenter"><a href="../assets/omt/dfb2f284f49f38df.png"><img class="wp-image-9975 size-large zoomable" src="../assets/omt/dfb2f284f49f38df.png" alt="曲式段落分類樹：核心分為主要與對比段落，對比可安定或不安定；輔助分為連接與外部，外部再分前綴與後綴。各類列有古典與流行音樂常用名稱。" data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/hierarchy_of_form_jarvis_02.png" loading="lazy" tabindex="0" role="button" width="3702" height="2139"></a><figcaption id="zh-omt-formal-sections-in-general-caption-attachment-9975" class="wp-caption-text"><span class="example-caption-name">例 1。</span>核心與輔助曲式段落的分類。</figcaption></figure></div><div class="image-labels structured-labels" aria-label="圖中文字"><section class="label-section"><p>Section＝段落。</p><ul class="label-terms"><li>Core＝核心；</li><li>Main＝主要：A、Primary Theme＝主部主題、Exposition＝呈示部、Chorus＝副歌、Strophe＝歌節、Refrain (large)＝大型疊句。</li></ul><ul class="label-terms"><li>Contrasting＝對比；</li><li>Stable＝安定：B/C/D等、Secondary Theme＝副部主題、Episode＝插部、Verse＝主歌；</li><li>Unstable＝不安定：Development＝發展部、Digression＝離題段、Contrasting Middle＝對比中段、Bridge＝橋段。</li></ul><ul class="label-terms"><li>Auxiliary＝輔助；</li><li>Connective＝連接：Transition＝過渡段、Retransition＝再過渡段、Prechorus＝副歌前段、Turnaround＝回轉進行。</li></ul><ul class="label-terms"><li>External＝外部；</li><li>Prefix＝前綴：Introduction＝導奏、Thematic Introduction＝主題導奏、Vamp＝反覆伴奏型、Intro＝前奏；</li><li>Suffix＝後綴：Coda＝尾聲、Codetta＝小尾聲、Closing Section＝結束段、Outro＝尾奏、Post-Chorus＝副歌後段。</li></ul></section></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-formal-sections-in-general-chapter-2048-section-1" class="section-header">Overview of Formal Sections in General</h2><p>Understanding the form of a musical work typically involves breaking it down into spans of time, based on how each span is similar to and/or contrasts with other spans. These spans are then classified based on the identity of their musical material and how the section “functions” in the context of the piece. The two largest categories of formal function are core sections and auxiliary sections.<a class="footnote" title="This particular dichotomy was introduced by Jay Summach (2012)." id="en-omt-formal-sections-in-general-return-footnote-2048-1" href="../omt/omt-formal-sections-in-general.html#en-omt-formal-sections-in-general-footnote-2048-1"><sup class="footnote">[1]</sup></a> <a class="example-caption-name" href="../omt/omt-formal-sections-in-general.html#omt-formal-sections-in-general-u0004">Example 1</a> below summarizes the hierarchical relationship between some of the most common section types. At the broadest level, musical sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-core-section-pop">core</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-auxiliary-section">auxiliary</a>. Core sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-main-section">main</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-contrasting-section">contrasting</a>, and auxiliary sections are either <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-external-auxiliary-section">external</a> or <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-connective-auxiliary-sections">connective</a>.</p><figure id="en-omt-formal-sections-in-general-attachment_9975" aria-describedby="en-omt-formal-sections-in-general-caption-attachment-9975" class="wp-caption aligncenter"><a href="../assets/omt/dfb2f284f49f38df.png"><img class="wp-image-9975 size-large zoomable" src="../assets/omt/dfb2f284f49f38df.png" alt="Hierarchy chart of formal sections that summarizes the lists below." data-source="https://viva.pressbooks.pub/app/uploads/sites/12/2021/07/hierarchy_of_form_jarvis_02.png" loading="lazy" tabindex="0" role="button" width="3702" height="2139"></a><figcaption id="en-omt-formal-sections-in-general-caption-attachment-9975" class="wp-caption-text"><span class="example-caption-name">Example 1.</span> Core versus auxiliary formal sections.</figcaption></figure></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0005"><h2 id="zh-omt-formal-sections-in-general-chapter-2048-section-2" class="section-header">核心段落</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0006"><p><a class="example-caption-name" href="../omt/omt-formal-sections-in-general.html#omt-formal-sections-in-general-u0004">例 1</a> 的核心段落，通常負責引入並重複作品的主要音樂內容。可以這樣想：若有人問這首曲子「是怎麼唱的」，你可能會唱給他聽的部分，就是核心段落。也可以把它們理解為包含作品主題的段落，不過「主題」一詞可有廣義或狹義用法。核心段落也常會重複，這是它們較容易留下深刻印象的另一個原因。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-formal-sections-in-general-chapter-2048-section-2" class="section-header">Core Sections</h2><p>The core sections identified in <a class="example-caption-name" href="../omt/omt-formal-sections-in-general.html#omt-formal-sections-in-general-u0004">Example 1</a> typically introduce and repeat a work’s primary musical content. You can think of them as the sections you might sing for someone if they asked you how the work “goes.” You can also think of core sections as containing the work’s themes, though the term “theme” can be used in a broad or specific sense. Core sections also tend to repeat, which is another reason they will often make a stronger impression on your memory.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0007"><h2>主要段落</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0008"><p>主要段落通常是最先呈現主要音樂內容的段落，之後往往還會重複出現，並帶有相對安定的感覺。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Main Sections</h2><p>Main sections are typically the first section that presents primary musical content; they are usually repeated later in the work and are characterized by a relative sense of stability.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0009"><h3>術語</h3></div><div class="translation-unit" id="omt-formal-sections-in-general-u0010"><p><span>主要段落的名稱，會隨樂種與曲式的慣例改變；這裡的曲式是指有特定名稱的形式。一般討論曲式時，主要段落可稱為 <strong>A</strong>；在特定曲式中，則可能有以下名稱，但不限於這些：</span></p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0011"><ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-primary-theme-p-theme">主部主題</a>（primary theme；<a href="../omt/omt-sonata-form.html">奏鳴曲式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-refrain-rondo-form">疊句</a>（refrain；<a href="../omt/omt-rondo.html">輪旋曲式</a>或主歌－疊句形式）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-exposition-sonata-form">呈示部</a>（exposition；<a href="../omt/omt-sonata-form.html">奏鳴曲式</a>）。</li><li>一組變奏曲的主題。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-chorus">副歌</a>（chorus；<a href="../omt/omt-verse-chorus-form.html">主歌－副歌形式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dance-chorus">舞曲式副歌</a>（dance chorus；<a href="../omt/omt-verse-chorus-form.html">主歌－副歌形式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-strophe">歌節</a>（strophe；<a href="../omt/omt-aaba-and-strophic-form.html">AABA 與分節歌式</a>）。</li></ul></div><aside class="translator-note">譯註：本章exposition是奏鳴曲式的大型呈示部；前面樂句型中的presentation也譯為呈示部，但層次不同。Dance chorus依本書術語表，指保留副歌和聲與記憶點、加強能量以鼓勵舞動的副歌版本；此處譯為舞曲式副歌。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Terminology</h3><p><span>The terms for main sections change depending upon the conventions of the genre and form (if it is a form with a name). When thinking about form in general, the main section should be called <strong>A</strong>, but within a known form, it may go by many names, including but not limited to:</span></p><ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-primary-theme-p-theme">primary theme</a> (<a href="../omt/omt-sonata-form.html">sonata</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-refrain-rondo-form">refrain</a> (<a href="../omt/omt-rondo.html">rondo</a> or verse-refrain)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-exposition-sonata-form">exposition</a> (<a href="../omt/omt-sonata-form.html">sonata</a>)</li>
+<li>theme from a set of variations</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-chorus">chorus</a> (<a href="../omt/omt-verse-chorus-form.html">verse-chorus</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dance-chorus">dance chorus</a> (<a href="../omt/omt-verse-chorus-form.html">verse-chorus</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-strophe">strophe</a> (<a href="../omt/omt-aaba-and-strophic-form.html">AABA and strophic</a>)</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0012"><h2>對比段落</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0013"><p>對比段落在情緒與安定程度上差異很大，因此不容易概括。有時它完全安定，主要只是因為排在第二而非第一，才形成對比；有時，它卻可能是全曲最不安定的段落。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0014"><p>不安定的對比段落，可能與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-connective-auxiliary-sections">具連接功能的輔助段落</a>（下文將定義）共享許多音樂特徵。差別在於是否視為核心段落：對比段落聽起來是作品中一個主要的所在，連接段落則像是兩個核心段落之間的地帶。若兩者界線模糊，可以依整首作品的曲式慣例判斷，或使用多重功能描述，例如<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-becoming--the-process-of">轉化</a>（becoming），讓分類準確而不勉強。</p></div><aside class="translator-note">譯註：本書becoming（⇒）指聆聽過程中，重新理解一個段落的功能，例如「主部主題⇒過渡段」或「後綴⇒過渡段」。這是在描述功能如何轉化，不是要求每段都只能選一個固定名稱。</aside><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Contrasting Sections</h2><p>Contrasting sections are hard to generalize, since they can vary in affect and stability. In some cases, the section is perfectly stable, and it contrasts mainly because it comes second instead of first; in other cases, a contrasting section may be the most unstable section of the work.</p><p>Unstable contrasting sections may share many musical features with <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-connective-auxiliary-sections">connective auxiliary sections</a> (defined below). The distinction lies in whether or not it is considered a core section: contrasting sections sound like a primary place in the work, whereas connective sections sound like a place between two core sections. In cases where the line between the two is blurry, a decision can be made based on the conventions of the overall form of the piece, or multiple formal descriptors (e.g., <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-becoming--the-process-of">becoming</a>) can be used to create an accurate and unforced classification.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0015"><h3>安定性</h3></div><div class="translation-unit" id="omt-formal-sections-in-general-u0016"><p>曲式上的安定性，指一段音樂帶來的緊張或平靜感。作品中相對的安定程度，常用來劃分曲式，也關係到音樂如何營造戲劇性：它能產生推進力，並引導聽者依對該樂種或風格其他作品的經驗，期待接下來可能發生什麼。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0017"><p>兩者常見的特徵，可能包含下列若干項的組合，但不限於此：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0018"><ul><li><ul><li><b>安定：</b>變化相對較少、力度維持不變或降低、主和聲延長、規律的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-hypermeter">超小節拍節</a>、沒有<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-modulation">轉調</a>、自然音旋律與自然音和聲。</li><li><b>不安定：</b>變化相對較多、力度增加、極端音域、半音化增加（主音化）、節奏活動增加、轉調、屬和聲持續、<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-sequence">模進</a>（尤其是半音模進）、不規律的超小節拍節，以及不規律的樂句長度。</li></ul></li></ul></div><div class="translation-unit" id="omt-formal-sections-in-general-u0019"><p>由於作品常以安定段落開始，如果一開頭就是不安定的對比段落，通常會聽起來不太尋常。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Stability</h3><p>Formal stability is the sense of tension vs. calmness in a portion of music. A relative sense of stability in a work is a common means of delineating form, and it is an important dramatic concern for creating momentum and engaging a listener’s expectations about what might happen, given their familiarity with how other pieces in a given genre/style behave.</p><p>Common features for each might include some combination of the following, among others:</p><ul>
+<li>
+<ul>
+<li><b>Stability:</b> relatively less change, consistent or decreasing dynamic level, tonic expansions, regular <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-hypermeter">hypermeter</a>, no <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-modulation">modulation</a>, diatonic melody, and diatonic harmony</li>
+<li><b>Instability:</b> relatively more change, increasing dynamic level, extreme registers, increased chromaticism (tonicization), increased rhythmic activity, modulation, sustained dominant, <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-sequence">sequences</a> (especially chromatic ones), irregular hypermeter, and irregular phrase lengths</li>
+</ul>
+</li>
+</ul><p>Because it’s statistically common for works to start with a stable section, an unstable contrasting section would likely sound unusual at the beginning of a work.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0020"><h3>術語</h3></div><div class="translation-unit" id="omt-formal-sections-in-general-u0021"><p>一般討論曲式時，第一個對比段落標為 <strong>B</strong>，之後每出現新的段落，就依字母順序標為 <strong>C</strong>、<strong>D</strong>、<strong>E</strong> 等。在特定曲式中，對比段落可能有以下名稱，但不限於這些：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0022"><ul><li>安定的對比段落<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-secondary-theme-s-theme">副部主題</a>（secondary theme；<a href="../omt/omt-sonata-form.html">奏鳴曲式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-episode">插部</a>（episode；<a href="../omt/omt-rondo.html">輪旋曲式</a>、<a href="../omt/omt-high-baroque-fugal-exposition.html">賦格</a>）。<ul><li>注意：插部同樣也常是不安定的。</li></ul></li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-verse">主歌</a>（verse；<a href="../omt/omt-verse-chorus-form.html">主歌－副歌形式</a>）。</li></ul></li><li>不安定的對比段落<ul><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-development">發展部</a>（development；<a href="../omt/omt-sonata-form.html">奏鳴曲式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-episode">插部</a>（episode；<a href="../omt/omt-rondo.html">輪旋曲式</a>、<a href="../omt/omt-high-baroque-fugal-exposition.html">賦格</a>）。</li><li>離題段（digression；<a href="../omt/omt-binary-form.html">二段式</a>）。</li><li>對比中段（contrasting middle；<a href="../omt/omt-binary-form.html">二段式</a>）。</li><li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-bridge">橋段</a>（bridge；<a href="../omt/omt-aaba-and-strophic-form.html">多種流行歌曲形式</a>）。<ul><li>注意：這裡的 bridge 僅指流行曲式中的術語。</li></ul></li></ul></li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h3>Terminology</h3><p>In terms of form in general, the first contrasting section is labeled <strong>B</strong>, and each subsequent new section receives the next letter of the alphabet (<strong>C</strong>, <strong>D</strong>, <strong>E</strong>, etc.).Within a known form, contrasting sections go by many names, including but not limited to:</p><ul>
+<li>Stable
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-secondary-theme-s-theme">secondary theme</a> (<a href="../omt/omt-sonata-form.html">sonata</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-episode">episode</a> (<a href="../omt/omt-rondo.html">rondo</a>, <a href="../omt/omt-high-baroque-fugal-exposition.html">fugue</a>)
+<ul>
+<li>Note: episodes are just as often unstable</li>
+</ul>
+</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-verse">verse</a> (<a href="../omt/omt-verse-chorus-form.html">verse-chorus</a>)</li>
+</ul>
+</li>
+<li>Unstable
+<ul>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-development">development</a> (<a href="../omt/omt-sonata-form.html">sonata</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-episode">episode</a> (<a href="../omt/omt-rondo.html">rondo</a>, <a href="../omt/omt-high-baroque-fugal-exposition.html">fugue</a>)</li>
+<li>digression (<a href="../omt/omt-binary-form.html">binary</a>)</li>
+<li>contrasting middle (<a href="../omt/omt-binary-form.html">binary</a>)</li>
+<li><a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-bridge">bridge</a> (<a href="../omt/omt-aaba-and-strophic-form.html">multiple popular song forms</a>)
+<ul>
+<li>Note: “bridge” in this context is referring only to popular-form terminology</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0023"><h2 id="zh-omt-formal-sections-in-general-chapter-2048-section-3" class="section-header">輔助曲式段落</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0024"><p>除了作品的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-core-section-classical">核心段落</a>，還可能有其他段落負責引入核心內容、接在核心段落之後，或位於兩個核心段落之間。這些稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-auxiliary-section">輔助段落</a>，大致分成<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-external-auxiliary-section">外部</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-connective-auxiliary-sections">連接</a>兩類。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-formal-sections-in-general-chapter-2048-section-3" class="section-header">Auxiliary Formal Sections</h2><p>In addition to the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-core-section-classical">core</a> sections of a work, other sections may introduce, follow, or come between these core sections. These sections are called <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-auxiliary-section">auxiliary sections</a>, and there are two general categories: <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-external-auxiliary-section">external</a> and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-connective-auxiliary-sections">connective</a>.</p></div></details></section><section class="bilingual-section compact-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0025"><h2 id="zh-omt-formal-sections-in-general-chapter-2048-section-4" class="section-header">外部輔助段落</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0026"><p>外部輔助段落可以在作品或段落之前引入音樂，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-prefix">前綴</a>；也可以接在作品或段落的常規結尾之後，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-suffix">後綴</a>。前綴與後綴都有小型與大型兩種。</p></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-formal-sections-in-general-chapter-2048-section-4" class="section-header">External Auxiliary Sections</h2><p>External auxiliary sections either introduce a piece/section (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-prefix">prefix</a>) or follow the generic conclusion of the piece or section (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-suffix">suffix</a>). Prefixes and suffixes come in small and large varieties.</p></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0027"><h2>前綴</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0028"><p>前綴（Rothstein 1989）指的是出現在樂句或作品常規開頭之前的音樂，在曲式上帶來「開始之前」的感覺。它可分為小型或大型，取決於是否包含完整的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>：大型前綴至少有一個樂句；小型前綴沒有完整樂句，通常也遠不如大型前綴明顯。小型前綴往往只是某段伴奏先於旋律開始，而且可以放在作品中任何樂句之前。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0029"><p>最常見的大型前綴稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-introduction-classical-form">導奏</a>（introduction）。導奏的速度常比作品其他部分慢，也常有自己的主題材料。多數樂種與時期的作品都能找到小型前綴；大型前綴則沒那麼普遍，較常見於某些特定樂種，例如交響曲開頭。不過，鋼琴奏鳴曲、弦樂四重奏與舞曲形式也可能使用，例如貝多芬《告別》奏鳴曲 Op. 81a、莫札特《不協和音》四重奏，以及喬普林的雷格泰姆舞曲〈The Entertainer〉。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0030"><p>以下是一些範例：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0031"><ul><li>小型前綴：<ul><li><a href="https://www.youtube.com/watch?v=Bj4XjCrN0nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="蕭邦 C 小調波蘭舞曲 Op. 40 第2號（外部網站，另開分頁）">蕭邦 C 小調波蘭舞曲 Op. 40 第2號</a>：開頭兩小節。</li><li><a href="https://www.youtube.com/watch?v=SpNvf43V_Nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="Kiesza〈Dearly Beloved〉（外部網站，另開分頁）">Kiesza〈Dearly Beloved〉</a>：開頭。</li></ul></li><li>大型前綴：<ul><li><a href="https://www.youtube.com/watch?v=VarJ-MbdgHg" target="_blank" rel="noopener noreferrer" class="external" aria-label="莫札特 C 大調《不協和音》弦樂四重奏 K. 465，第一樂章的導奏（外部網站，另開分頁）">莫札特 C 大調《不協和音》弦樂四重奏 K. 465，第一樂章的導奏</a>：整個樂章約10分鐘，慢速導奏這個大型前綴，持續將近兩分鐘後，才開始奏鳴曲式本體。在1:59，速度明顯由慢轉快，清楚標出界線。</li><li><a href="https://www.youtube.com/watch?v=fPmruHc4S9Q" target="_blank" rel="noopener noreferrer" class="external" aria-label="喬普林〈The Entertainer〉（外部網站，另開分頁）">喬普林〈The Entertainer〉</a>：開頭四小節。</li><li><a href="https://www.youtube.com/watch?v=GuJQSAiODqI" target="_blank" rel="noopener noreferrer" class="external" aria-label="瑪丹娜〈Vogue〉（外部網站，另開分頁）">瑪丹娜〈Vogue〉</a>：這段大型前綴包含數個小段，起點分別在0:00、0:34、0:50；但歌曲本體直到她在1:07開始演唱才展開。</li></ul></li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Prefix</h2><p>A prefix (Rothstein 1989) refers to music that comes before the generic start of a phrase or piece and tends to express a formal sense of “before the beginning.” A prefix can be described as either small or large depending on whether or not it contains a complete <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a>. Large prefixes contain at least one phrase, while small prefixes don’t have complete phrases and are typically far less noticeable. Small prefixes are often nothing more than the accompaniment for a section starting before the melody begins, and they may precede any phrase in a work.</p><p>The most common type of large prefix is called an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-introduction-classical-form">introduction</a>. Introductions are often in a slower tempo than the rest of the work and often contain their own thematic material. Small prefixes can be found in works of most genres and eras, but large prefixes are less ubiquitous and tend to show up more often in particular genres, like the opening of a symphony. However, other genres like the piano sonata (Beethoven’s “Das Lebewohl,” Op. 81a), string quartet (Mozart’s “Dissonance” quartet), and dance forms like ragtime (Joplin, “The Entertainer”) can contain them as well.</p><p>Below are some examples:</p><ul>
+<li>Small Prefix:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Bj4XjCrN0nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="Chopin’s Polonaise in C minor, Op. 40, no. 2（外部網站，另開分頁）">Chopin’s Polonaise in C minor, Op. 40, no. 2</a> – First two measures</li>
+<li><a href="https://www.youtube.com/watch?v=SpNvf43V_Nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="Kiesza’s “Dearly Beloved”（外部網站，另開分頁）">Kiesza’s “Dearly Beloved”</a> – Opening</li>
+</ul>
+</li>
+<li>Large Prefix:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VarJ-MbdgHg" target="_blank" rel="noopener noreferrer" class="external" aria-label="Introduction of the 1st movement of Mozart’s “Dissonance” string quartet in C major (K. 465)（外部網站，另開分頁）">Introduction of the 1st movement of Mozart’s “Dissonance” string quartet in C major (K. 465)</a> – The whole movement is about 10 minutes long, and its slow introduction (large prefix) lasts for nearly two minutes until the sonata form proper starts. There is a stark tempo change from slow to fast at 1:59 that makes the boundary clear.</li>
+<li><a href="https://www.youtube.com/watch?v=fPmruHc4S9Q" target="_blank" rel="noopener noreferrer" class="external" aria-label="Joplin’s “The Entertainer”（外部網站，另開分頁）">Joplin’s “The Entertainer”</a> – First four measures</li>
+<li><a href="https://www.youtube.com/watch?v=GuJQSAiODqI" target="_blank" rel="noopener noreferrer" class="external" aria-label="Madonna’s “Vogue”（外部網站，另開分頁）">Madonna’s “Vogue”</a> – This large prefix has many subsections (0:00, 0:34, 0:50), but the song proper doesn’t start until she begins singing at 1:07.</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0032"><h2>後綴</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0033"><p>後綴（Rothstein 1989）指的是樂句或作品收束之後的音樂，在曲式上帶來「結束之後」的感覺。大小之分，同樣取決於是否包含完整的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>。任何樂句結束後都可能有小型後綴，但它跟在哪一類終止式後面，會帶來不同效果：正格終止後，通常延續安定與收束感；半終止後，則常準備下一個段落的進入，因此帶有不安定感。大型後綴雖也可能出現在任何樂句之後，通常集中於兩個位置：（1）作品最末端的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-coda-classical">尾聲</a>；（2）奏鳴曲式呈示部與再現部的結束段，見〈<a href="../omt/omt-sonata-form.html#zh-omt-sonata-form-exposition">奏鳴曲式</a>〉。多數後綴的材料不同於緊接在它前面的樂句，但仍可能取自更早的樂句。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0034"><p>以下是一些範例：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0035"><ul><li>小型後綴：<ul><li><a href="https://www.youtube.com/watch?v=DlLvRY8QoY4" target="_blank" rel="noopener noreferrer" class="external" aria-label="Dove Shack〈Summertime in the LBC〉（外部網站，另開分頁）">Dove Shack〈Summertime in the LBC〉</a>：最後一次副歌之後，以簡單伴奏作為小型後綴，從3:41逐漸淡出至歌曲結束。</li><li><a href="https://youtu.be/Za5V6NQDc2Y?t=112" target="_blank" rel="noopener noreferrer" class="external" aria-label="比才《卡門》〈哈巴奈拉〉（外部網站，另開分頁）">比才《<i>卡門</i>》〈哈巴奈拉〉</a>：歌者持續一個高音，隨即與管弦樂團一起形成終止式（2:01），結束B段。之後樂團只是將伴奏音型重複幾次；2:01–2:06就是小型後綴。</li></ul></li><li>大型後綴：<ul><li><a href="https://www.youtube.com/watch?v=IPuXxkqbvw0" target="_blank" rel="noopener noreferrer" class="external" aria-label="普契尼《強尼・史基基》〈O Mio Babbino Caro〉（外部網站，另開分頁）">普契尼《<em>強尼・史基基</em>》〈O Mio Babbino Caro〉</a>的結尾：在1:48唱到「O Dio, vorrei morir!」時，可聽到詠嘆調在曲式上的結束；它原本可以在此滿足地收尾。不過，弦樂在獨唱者唱完這一句時，以銜接重疊的方式進入，接著演奏主旋律，也就是器樂反覆段（ritornello）。請留意1:48至結尾的安定感，這也是後綴接在正格終止之後的常見效果。</li><li><a href="https://www.youtube.com/watch?v=VarJ-MbdgHg" target="_blank" rel="noopener noreferrer" class="external" aria-label="莫札特 C 大調《不協和音》弦樂四重奏 K. 465，第一樂章結尾（外部網站，另開分頁）">莫札特 C 大調《不協和音》弦樂四重奏 K. 465，第一樂章結尾</a>：在9:58進入尾聲，這是位於作品最末端的大型後綴。它開始於再現部結束段的材料結束之後。比較呈示部最末端（6:12）與再現部最末端（9:28），就能聽出這個大型後綴是呈示部原本沒有的新增材料，雖然其中許多動機與樂思之前已出現過。</li><li><a href="https://www.youtube.com/watch?v=20Gb0JcviRA" target="_blank" rel="noopener noreferrer" class="external" aria-label="布拉姆斯 A 大調間奏曲 Op. 118 第2號（外部網站，另開分頁）">布拉姆斯 A 大調間奏曲 Op. 118 第2號</a>：本曲是三段式。A段於1:28結束，接著有一段後綴，直到B段在1:57開始之前。</li></ul></li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Suffix</h2><p>A suffix (Rothstein 1989) refers to music that comes after the close of a phrase or piece and tends to express a formal sense of “after the end.” The distinction between large and small again concerns whether or not it contains a complete <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a>. Small suffixes can be found after the close of any phrase, but the affect is quite different depending on the type of cadence they follow. After an authentic cadence, they typically project a sense of stability and closure, but after half cadences, they tend to prepare for the entrance of the upcoming section and therefore project a sense of instability. Though possible after any phrase, large suffixes typically appear in two specific locations: (1) at the very end of a piece in the form of a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-coda-classical">coda</a>, and (2) as the closing section of a sonata form’s exposition and recapitulation (see <a href="../omt/omt-sonata-form.html#en-omt-sonata-form-exposition">Sonata Form</a>). In most cases, a suffix contains musical material that is different from the phrase it follows, though that material may be derived from an earlier phrase.</p><p>Below are some examples:</p><ul>
+<li>Small Suffix:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DlLvRY8QoY4" target="_blank" rel="noopener noreferrer" class="external" aria-label="Dove Shack’s “Summertime in the LBC”（外部網站，另開分頁）">Dove Shack’s “Summertime in the LBC”</a> – After the final chorus, a small suffix (in the form of a simple accompaniment) ends the song as it fades out from 3:41 until the end.</li>
+<li><a href="https://youtu.be/Za5V6NQDc2Y?t=112" target="_blank" rel="noopener noreferrer" class="external" aria-label="Bizet, Habanera from Carmen（外部網站，另開分頁）">Bizet, Habanera from <i>Carmen</i></a> – The B section ends just after the singer sustains a high note and cadences with the orchestra immediately after (cadence is at 2:01). After this cadence, the orchestra just repeats an accompanimental pattern a few times. The music from 2:01-2:06 is the small suffix.</li>
+</ul>
+</li>
+<li>Large Suffix:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=IPuXxkqbvw0" target="_blank" rel="noopener noreferrer" class="external" aria-label="Puccini, “O Mio Babbino Caro” from Gianni Schicchi（外部網站，另開分頁）">Puccini, “O Mio Babbino Caro” from <em>Gianni Schicchi</em></a> – Ending: You can hear the formal ending of the aria at 1:48 with the line “O Dio, vorrei morir!” at which time the aria could have ended satisfactorily. However, an elision occurs with the strings, which play the main melody (a.k.a. ritornello) after the soloist finishes her line. Notice that the music from 1:48 to the end projects a sense of stability, as suffixes tend to do when they follow an authentic cadence.</li>
+<li><a href="https://www.youtube.com/watch?v=VarJ-MbdgHg" target="_blank" rel="noopener noreferrer" class="external" aria-label="End of the 1st movement of Mozart’s “Dissonance” string quartet in C major (K. 465)（外部網站，另開分頁）">End of the 1st movement of Mozart’s “Dissonance” string quartet in C major (K. 465)</a> – This movement ends with a coda at 9:58 (large suffix at the very end of a piece). Notice that it starts after the material from the closing section of the recapitulation comes to an end. You can compare the very end of the exposition (6:12) to the very end of the recapitulation (9:28) to hear how this large suffix is added material that was not in the exposition (even though many of its motives and ideas have been heard before).</li>
+<li><a href="https://www.youtube.com/watch?v=20Gb0JcviRA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Brahms’s Intermezzo in A major, op. 118, no. 2（外部網站，另開分頁）">Brahms’s Intermezzo in A major, op. 118, no. 2</a> – This work is in ternary form. The A section ends at 1:28 and is followed by a suffix from then until before the B section starts at 1:57.</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0036"><h2 id="zh-omt-formal-sections-in-general-chapter-2048-section-5" class="section-header">具連接功能的輔助段落</h2></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2 id="en-omt-formal-sections-in-general-chapter-2048-section-5" class="section-header">Connective Auxiliary Sections</h2></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0037"><h2>過渡段</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0038"><p>一般而言，過渡段（transition）是連接兩個<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-core-section-classical">核心段落</a>的音樂。它通常幫助音樂離開主要段落，走向對比段落。更具體地說，過渡段後面的段落，不是大規模返回的起點；例如位於<strong>A</strong>與<strong>B</strong>之間，而非<strong>B</strong>與<strong>A</strong>之間。它常藉由<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-modulation">轉調</a>準備新調的段落，但不一定需要轉調。過渡段也參與作品安定與不安定的平衡：核心段落往往是相對安定的主題陳述，過渡段則通常引入不安定感，並提高能量；後續段落的安定感，往往會與之形成平衡。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0039"><p>如同前綴與後綴，過渡段與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-retransition">再過渡段</a>（下文將詳述）也有「大型」與「小型」之分，取決於是否包含完整的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase">樂句</a>。大型過渡段至少包含一個樂句；小型過渡段沒有完整樂句，通常也遠不如大型過渡段明顯。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0040"><p>過渡段與再過渡段接近結尾時，常朝向即將到來之調性的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dominant-function">屬和弦</a>推進。抵達屬和弦後，常會開始一段後綴；這種情況有時稱為「停留在屬和聲上」（standing on the dominant，William Caplin），或「<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-dominant-lock">屬和聲鎖定</a>」（dominant lock，James Hepokoski與Warren Darcy）。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0041"><p>過渡段可能在下一段落開始前，有清楚的停歇點；也可能有一條旋律線填補它與下一段落之間的空隙，稱為<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-caesura-fill">停頓填充</a>（caesura fill）；還可能以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase-elision">銜接重疊</a>（elision）的方式，在新段落開始的同時結束。較模糊的情況下，不容易精確指出過渡段何時結束、新段落何時開始，但仍可確定這個轉換發生在某個時間範圍內。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0042"><p>過渡段常見於<a href="../omt/omt-sonata-form.html">奏鳴曲式</a>的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-primary-theme-p-theme">主部主題</a>與<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-secondary-theme-s-theme">副部主題</a>之間，也常見於<a href="../omt/omt-rondo.html">輪旋曲式</a>的A段（<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-refrain-rondo-form">疊句</a>）與對比段落（<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-episode">插部</a>）之間。<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-ternary-form">三段式</a>也常以小型過渡段，連接<strong>A</strong>與<strong>B</strong>段。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0043"><p>以下是一個範例：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0044"><ul><li>大型過渡段：<ul><li><a href="https://www.youtube.com/watch?v=h_dOL3XD2DE" target="_blank" rel="noopener noreferrer" class="external" aria-label="莫札特 B♭ 大調鋼琴奏鳴曲 K. 333，第一樂章（外部網站，另開分頁）">莫札特 B♭ 大調鋼琴奏鳴曲 K. 333，第一樂章</a>：本曲採用奏鳴曲式，主部主題與副部主題之間的過渡段，位於0:20–0:42。</li></ul></li></ul></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Transition</h2><p>Generally, a transition is a section of music that functions to connect two <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-core-section-classical">core</a> sections. Transitions usually help to lead away from the piece’s main section toward a contrasting section. In particular, a transition comes between two sections where the upcoming section is not the initiation of a large-scale return (i.e., between <strong>A</strong> and <strong>B</strong>, not between <strong>B</strong> and <strong>A</strong>). Often a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-modulation">modulation</a> is introduced to help prepare a section in a new key, though it is not required. A transition also plays a role in the balance of stability and instability in a work. Core sections of a work are very often stable thematic statements (relatively), but transitions typically introduce instability (and a gain in energy), which will likely be countered by the stability of the section that follows.</p><p>Like suffixes and prefixes, transitions and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-retransition">retransitions</a> (discussed further below) come in “large” and “small” varieties. A transition can be described as either small or large depending on whether or not it contains a complete <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase">phrase</a>. Large transitions contain at least one phrase, while small transitions don’t have complete phrases and are typically far less noticeable.</p><p>Near their end, transitions (and retransitions) often drive toward attaining the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dominant-function">dominant chord</a> of the upcoming key. Often, a suffix will begin once the dominant has been attained in a situation sometimes called “standing on the dominant” (William Caplin) or “<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-dominant-lock">dominant lock</a>” (James Hepokoski and Warren Darcy).</p><p>A transition may have a clear stopping point before the next section starts, or there may be a single melodic line that fills the space between it and the upcoming section (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-caesura-fill">caesura fill</a>), or the transition my end at the onset of the new section with an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase-elision">elision</a>. In more vague cases, the end of the transition and the start of the new section may be hard to pinpoint, but it is still clear that it must have happened during a particular span of time.</p><p>Transitions are commonly found in <a href="../omt/omt-sonata-form.html">sonata forms</a> between the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-primary-theme-p-theme">primary</a> and <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-secondary-theme-s-theme">secondary themes</a> and in <a href="../omt/omt-rondo.html">rondo forms</a> between the A section (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-refrain-rondo-form">refrain</a>) and a contrasting section (<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-episode">episode</a>). Small transitions are often found in <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-ternary-form">ternary forms</a> to connect the <strong>A</strong> and <strong>B</strong> sections.</p><p>Below are some examples:</p><ul>
+<li>Large Transition:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=h_dOL3XD2DE" target="_blank" rel="noopener noreferrer" class="external" aria-label="Mozart’s piano sonata in B♭ major, K. 333, 1st（外部網站，另開分頁）">Mozart’s piano sonata in B♭ major, K. 333, 1st</a> – This work is in sonata form. The transition between the primary theme and the secondary theme occurs between 0:20 and 0:42.</li>
+</ul>
+</li>
+</ul></div></details></section><section class="bilingual-section"><div class="translation-unit" id="omt-formal-sections-in-general-u0045"><h2>再過渡段</h2></div><div class="translation-unit" id="omt-formal-sections-in-general-u0046"><p>再過渡段（retransition）與過渡段很相似，但位置與功能不同。它後面的段落是大規模返回的起點，例如位於<strong>B</strong>與<strong>A</strong>之間，而非<strong>A</strong>與<strong>B</strong>之間。多數情況下，再過渡段準備作品<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-main-section">主要段落</a>的返回：可能是<a href="../omt/omt-ternary-form.html">三段式</a>或<a href="../omt/omt-rondo.html">輪旋曲式</a>的<strong>A</strong>段返回，也可能是奏鳴曲式<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-recapitulation">再現部</a>開頭的<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-primary-theme-p-theme">主部主題</a>重現。再過渡段常推向原調的屬和弦，抵達後又常以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-suffix">後綴</a>的形式延長屬和聲。它可能有清楚的半終止結尾，之後也可能再接後綴；也可能以<a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#zh-omt-glossary-dfn-phrase-elision">銜接重疊</a>收尾，同時開始下一個段落。</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0047"><p>以下是一些範例：</p></div><div class="translation-unit" id="omt-formal-sections-in-general-u0048"><ul><li>小型再過渡段：<ul><li><a href="https://www.youtube.com/watch?v=Bj4XjCrN0nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="蕭邦 C 小調波蘭舞曲 Op. 40 第2號（外部網站，另開分頁）">蕭邦 C 小調波蘭舞曲 Op. 40 第2號</a>：本曲為複合三段式。整體ABA形式的第一個大型A段內，B與A之間在2:35–2:39有一個小型再過渡段，只有一小節長。</li><li><a href="https://youtu.be/yyQ4hZMuu20?t=50" target="_blank" rel="noopener noreferrer" class="external" aria-label="韓德爾《里納爾多》詠嘆調〈Lascia ch’io pianga〉（外部網站，另開分頁）">韓德爾《<i>里納爾多</i>》詠嘆調〈Lascia ch’io pianga〉</a>：本例按五段輪旋曲式（ABACA）分析，在B與A段之間，1:41–1:44有一段很短的小型再過渡段。</li></ul></li><li>大型再過渡段：<ul><li><a href="https://www.youtube.com/watch?v=h_dOL3XD2DE" target="_blank" rel="noopener noreferrer" class="external" aria-label="莫札特 B♭ 大調鋼琴奏鳴曲 K. 333，第一樂章（外部網站，另開分頁）">莫札特 B♭ 大調鋼琴奏鳴曲 K. 333，第一樂章</a>：本曲採用奏鳴曲式，發展部與再現部之間的再過渡段，位於4:29–4:45。</li><li><a href="https://www.youtube.com/watch?v=20Gb0JcviRA" target="_blank" rel="noopener noreferrer" class="external" aria-label="布拉姆斯 A 大調間奏曲 Op. 118 第2號（外部網站，另開分頁）">布拉姆斯 A 大調間奏曲 Op. 118 第2號</a>：本曲為三段式，在B段與最後的A段之間，3:08–3:19有一段再過渡段。</li></ul></li></ul></div><div class="translation-unit" id="omt-formal-sections-in-general-u0049"><div class="textbox shaded"><a id="zh-omt-formal-sections-in-general-further-reading"></a>延伸閱讀</div></div><div class="translation-unit" id="omt-formal-sections-in-general-u0050"><ul><li>Rothstein, William. 1989. <em>Phrase Rhythm in Tonal Music</em>. New York: Schirmer.</li><li>Summach, Jason. 2012. “Form in Top-20 Rock Music, 1955–89.” PhD diss., Yale University.</li></ul></div><div class="translation-unit" id="omt-formal-sections-in-general-u0051"><div class="media-attributions clear"><h2>媒體素材署名</h2><ul><li>hierarchy_of_form_jarvis_02（原素材識別名稱）。</li></ul></div></div><div class="translation-unit" id="omt-formal-sections-in-general-u0052"><div class="footnotes"><ol><li id="zh-omt-formal-sections-in-general-footnote-2048-1">這種二分法由 Jay Summach（2012）提出。 <a href="../omt/omt-formal-sections-in-general.html#zh-omt-formal-sections-in-general-return-footnote-2048-1" class="return-footnote">↵</a></li></ol></div></div><details class="english"><summary>查看英文原文</summary><div lang="en"><h2>Retransition</h2><p>A retransition is very similar to a transition, but its location and function are different. Retransitions come between two sections where the upcoming section is the initiation of a large-scale return (i.e., between <strong>B</strong> and <strong>A</strong>, not between <strong>A</strong> and <strong>B</strong>). In most cases, retransitions help to prepare the return of the piece’s <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-main-section">main section</a>: the return of the <strong>A</strong> section in <a href="../omt/omt-ternary-form.html">ternary</a> or <a href="../omt/omt-rondo.html">rondo</a> form, or the restatement of the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-primary-theme-p-theme">primary theme</a> at the onset of the <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-recapitulation">recapitulation</a> in sonata form. A retransition often drives toward attaining the dominant chord of the home key and will often prolong the dominant once attained, usually in the form of a <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-suffix">suffix</a>. Retransitions may have a clear half-cadential ending (possibly followed by a suffix), or they may have an <a class="glossary-term" aria-describedby="" href="../omt/omt-glossary.html#en-omt-glossary-dfn-phrase-elision">elided</a> ending that coincides with the initiation of the following section.</p><p>Below are some examples:</p><ul>
+<li>Small Retransition:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Bj4XjCrN0nk" target="_blank" rel="noopener noreferrer" class="external" aria-label="Chopin’s Polonaise in C minor, Op. 40, no. 2（外部網站，另開分頁）">Chopin’s Polonaise in C minor, Op. 40, no. 2</a> – This work is in compound ternary form. In the first, large A section of the overall ABA form, there is a small retransition between B and A from 2:35 to 2:39. It is only one measure long.</li>
+<li><a href="https://youtu.be/yyQ4hZMuu20?t=50" target="_blank" rel="noopener noreferrer" class="external" aria-label="Handel’s aria “Lascia ch’io pianga” from Rinaldo（外部網站，另開分頁）">Handel’s aria “Lascia ch’io pianga” from <i>Rinaldo</i></a> – This work is in five-part rondo form (ABACA). There is a very short, small retransition between the B and A sections from 1:41 to 1:44.</li>
+</ul>
+</li>
+<li>Large Retransition:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=h_dOL3XD2DE" target="_blank" rel="noopener noreferrer" class="external" aria-label="Mozart’s piano sonata in B♭ major, K. 333, 1st（外部網站，另開分頁）">Mozart’s piano sonata in B♭ major, K. 333, 1st</a> – This work is in sonata form. The retransition between the development and the recapitulation occurs between 4:29 and 4:45.</li>
+<li><a href="https://www.youtube.com/watch?v=20Gb0JcviRA" target="_blank" rel="noopener noreferrer" class="external" aria-label="Brahms’s Intermezzo in A major, Op. 118, no. 2（外部網站，另開分頁）">Brahms’s Intermezzo in A major, Op. 118, no. 2</a> – This work is in ternary form. There is a retransition between the B section and the final A section from 3:08 to 3:19.</li>
+</ul>
+</li>
+</ul><div class="textbox shaded"><a id="en-omt-formal-sections-in-general-further-reading"></a>Further Reading</div><ul>
+<li>Rothstein, William. 1989. <em>Phrase Rhythm in Tonal Music</em>. New York: Schirmer.</li>
+<li>Summach, Jason. 2012. “Form in Top-20 Rock Music, 1955–89.” PhD diss., Yale University.</li>
+</ul><div class="media-attributions clear"><h2>Media Attributions</h2><ul><li>hierarchy_of_form_jarvis_02       </li></ul></div><div class="footnotes"><ol><li id="en-omt-formal-sections-in-general-footnote-2048-1">This particular dichotomy was introduced by Jay Summach (2012). <a href="../omt/omt-formal-sections-in-general.html#en-omt-formal-sections-in-general-return-footnote-2048-1" class="return-footnote">↵</a></li></ol></div></div></details></section><nav class="page-nav" aria-label="前後章節"><a href="../omt/omt-expansion-and-contraction.html">上一節：樂句層次的擴展與縮減</a><a href="../omt/omt-binary-form.html">下一節：二段式</a></nav><footer class="source"><a href="https://viva.pressbooks.pub/openmusictheory/chapter/formal-sections-in-general/" target="_blank" rel="noopener noreferrer" class="external" aria-label="英文來源（外部網站，另開分頁）">英文來源</a> · <a href="../omt/index.html#source">作者與授權</a></footer></article></div></div><p class="publication-note"><a href="../licenses.html">來源、授權與版本說明</a></p></main><dialog id="search-dialog"><form method="dialog"><button class="dialog-close">關閉搜尋</button></form><label for="book-search">搜尋兩本書</label><input id="book-search" type="search" placeholder="輸入中文術語或英文" autocomplete="off"><p id="search-summary" aria-live="polite"></p><ol id="search-results"></ol></dialog><dialog id="image-dialog"><form method="dialog"><button class="dialog-close">關閉圖片</button></form><div class="image-scroll"><img id="enlarged-image" alt=""></div><p id="image-caption"></p></dialog><p id="navigation-status" role="status" class="visually-hidden"></p>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+</body></html>
